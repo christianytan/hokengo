@@ -1,0 +1,858 @@
+[
+  {
+    "id": "hoken-keiyaku",
+    "term": "保険契約",
+    "kana": "ほけんけいやく",
+    "romaji": "hoken keiyaku",
+    "translation": "insurance contract",
+    "alternativeTranslations": [
+      "policy (informal)"
+    ],
+    "definitionJa": "一定の事由が生じたことを条件として保険者が財産上の給付を行うことを約し、相手方が保険料を支払うことを約する契約。",
+    "explanationEn": "The legal contract itself: one party promises a payment if a specified event occurs, the other promises to pay premiums. In policy administration systems this is the central record that screens and processes are organised around (契約番号, 契約者コード).",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract concepts",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "本システムでは、保険契約の単位で契約者・被保険者・保険金受取人の関係を管理します。",
+      "kana": "ほんシステムでは、ほけんけいやくのたんいでけいやくしゃ・ひほけんしゃ・ほけんきんうけとりにんのかんけいをかんりします。",
+      "romaji": "Hon shisutemu de wa, hoken keiyaku no tan'i de keiyakusha, hikōsha, hokenkin uketonin no kankei o kanri shimasu.",
+      "translation": "In this system, the relationship between policyholder, insured person and beneficiary is managed at the level of the insurance contract."
+    },
+    "context": "Core entity of any policy administration system: 契約照会, 契約変更 and contract-level reports all key off this record.",
+    "confusedTerms": [
+      {
+        "term": "共済契約",
+        "reading": "きょうさいけいやく",
+        "termId": "kyosai-keiyaku",
+        "distinction": "共済契約 is a mutual-aid contract using different terminology (掛金/共済金) under a different legal framework."
+      },
+      {
+        "term": "保険証券",
+        "reading": "ほけんしょうけん",
+        "termId": "hoken-shoken",
+        "distinction": "保険証券 is the document evidencing the contract, not the contract itself."
+      }
+    ],
+    "components": [
+      {
+        "element": "保",
+        "reading": "ほ",
+        "meaning": "keep, preserve"
+      },
+      {
+        "element": "険",
+        "reading": "けん",
+        "meaning": "risk, danger"
+      },
+      {
+        "element": "契",
+        "reading": "けい",
+        "meaning": "bond, pact"
+      },
+      {
+        "element": "約",
+        "reading": "やく",
+        "meaning": "promise, terms"
+      }
+    ],
+    "relatedTerms": [
+      "hoken-jiko",
+      "hokensha",
+      "hoken-keiyakusha"
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E4%BF%9D%E9%99%BA",
+    "verification": "verified",
+    "verificationNote": "Definition follows the Insurance Act (保険法第2条) wording quoted in the cited article.",
+    "tags": [
+      "contract",
+      "core",
+      "entity"
+    ]
+  },
+  {
+    "id": "shukeiyaku",
+    "term": "主契約",
+    "kana": "しゅけいやく",
+    "romaji": "shukeiyaku",
+    "translation": "main contract; base coverage",
+    "alternativeTranslations": [
+      "base policy",
+      "core contract"
+    ],
+    "definitionJa": "特約を追加するための基となる保険契約本体。単独で成立する基本的な保障。",
+    "explanationEn": "The base coverage that can stand on its own; riders attach to it. Product configuration screens model 主契約 plus a list of 特約, and rules such as 'a rider cannot be registered without a base contract' come from this structure.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract structure",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "入院特約は、主契約がある場合に限り付加できます。",
+      "kana": "にゅういんとくやくは、しゅけいやくがあるばあいに限りふかできます。",
+      "romaji": "Nyūin tokuyaku wa, shukeiyaku ga aru baai ni kagiri fuka dekimasu.",
+      "translation": "A hospitalization rider can only be added when there is a base contract."
+    },
+    "context": "Product definition, 契約内容照会 screens, and validation rules for rider eligibility.",
+    "confusedTerms": [
+      {
+        "term": "特約",
+        "reading": "とくやく",
+        "termId": "tokuyaku",
+        "distinction": "主契約 is the principal standalone coverage; 特約 adds supplementary provisions and normally cannot exist by itself."
+      }
+    ],
+    "relatedTerms": [
+      "tokuyaku",
+      "hoken-shurui"
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "The exact base-contract/rider relationship varies by product; check the product 約款.",
+    "tags": [
+      "contract",
+      "product-config",
+      "rider"
+    ]
+  },
+  {
+    "id": "tokuyaku",
+    "term": "特約",
+    "kana": "とくやく",
+    "romaji": "tokuyaku",
+    "translation": "rider; supplementary contractual provision",
+    "alternativeTranslations": [
+      "special provision",
+      "endorsement (context-dependent)"
+    ],
+    "definitionJa": "主契約に追加して、保障内容や支払条件などを定める契約上の取り決め。単独では成立しないのが一般的。",
+    "explanationEn": "A rider: an additional provision attached to a base contract, not a standalone insurance policy. In general contract language 特約 can also mean 'a special stipulation', and in systems it is often a code table (特約コード) attached to a contract record.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract structure",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "この契約には、入院特約が付加されています。",
+      "kana": "このけいやくには、にゅういんとくやくがふかされています。",
+      "romaji": "Kono keiyaku ni wa, nyūin tokuyaku ga fuka sarete imasu.",
+      "translation": "This policy includes a hospitalization rider."
+    },
+    "context": "Product configuration, policy detail screens, and rider add/remove procedures (特約付加・特約解約).",
+    "confusedTerms": [
+      {
+        "term": "主契約",
+        "reading": "しゅけいやく",
+        "termId": "shukeiyaku",
+        "distinction": "主契約 is the principal coverage; 特約 adds supplementary provisions. The precise structure depends on the product."
+      },
+      {
+        "term": "保険約款",
+        "reading": "ほけんいかん",
+        "termId": "hoken-ikan",
+        "distinction": "約款 are the standard terms drafted by the insurer; 特約 modifies them for one specific contract."
+      }
+    ],
+    "components": [
+      {
+        "element": "特",
+        "reading": "とく",
+        "meaning": "special"
+      },
+      {
+        "element": "約",
+        "reading": "やく",
+        "meaning": "stipulation, terms"
+      }
+    ],
+    "relatedTerms": [
+      "shukeiyaku",
+      "hoken-shurui"
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "Whether a rider is treated as a separate contract differs by product and insurer.",
+    "tags": [
+      "rider",
+      "product-config",
+      "core"
+    ]
+  },
+  {
+    "id": "hoken-keiyakusha",
+    "term": "保険契約者",
+    "kana": "ほけんけいやくしゃ",
+    "romaji": "hoken keiyakusha",
+    "translation": "policyholder",
+    "alternativeTranslations": [
+      "contracting party"
+    ],
+    "definitionJa": "保険契約を締結し、保険料を支払う義務を負う契約の当事者。",
+    "explanationEn": "The party who concludes the contract and bears the duty to pay premiums — not necessarily the insured person and not the beneficiary. In systems, 契約者コード identifies this party and is normally the account owner for customer portals and the target of 督促 (payment reminders).",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract parties",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険契約者と被保険者が異なる契約も取り扱っています。",
+      "kana": "ほけんけいやくしゃとひほけんしゃがことなるけいやくもとりあつかっています。",
+      "romaji": "Hoken keiyakusha to hikōsha ga kotonaru keiyaku mo toriatsukatte imasu.",
+      "translation": "We also handle contracts where the policyholder and the insured person are different people."
+    },
+    "context": "Customer master design, portal accounts, premium collection, and any change procedure requiring the policyholder's application.",
+    "confusedTerms": [
+      {
+        "term": "被保険者",
+        "reading": "ひほけんしゃ",
+        "termId": "hikosha",
+        "distinction": "被保険者 is the person the coverage is about; 保険契約者 is the contracting party who pays premiums."
+      },
+      {
+        "term": "保険者",
+        "reading": "ほけんしゃ",
+        "termId": "hokensha",
+        "distinction": "保険者 is the insurer bearing the risk, not the customer-side party."
+      },
+      {
+        "term": "保険金受取人",
+        "reading": "ほけんきんうけとりにん",
+        "termId": "hokenkin-uketonin",
+        "distinction": "保険金受取人 only receives the benefit and is not a party to the contract."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E4%BF%9D%E9%99%BA",
+    "verification": "verified",
+    "verificationNote": "The cited article states that the party bearing the premium payment obligation under an insurance contract is the 保険契約者.",
+    "tags": [
+      "parties",
+      "core",
+      "master-data"
+    ]
+  },
+  {
+    "id": "hikosha",
+    "term": "被保険者",
+    "kana": "ひほけんしゃ",
+    "romaji": "hikōsha",
+    "translation": "insured person; life insured",
+    "definitionJa": "保険事故の対象となる者。生命保険では生死、損害保険では身体・財産などが保険の対象とされる者。",
+    "explanationEn": "The person whose life, body or property the contract is about. Underwriting (age, health, occupation) is assessed on the 被保険者, and benefit triggers are defined with reference to this person rather than the policyholder. In motor insurance the equivalent role is usually called 記名被保険者.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract parties",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "死亡保険金は、被保険者の死亡を事由として支払われます。",
+      "kana": "しぼうほけんきんは、ひほけんしゃのしぼうをじゆうとしてしはらわれます。",
+      "romaji": "Shibō hokenkin wa, hikōsha no shibō o jiyū to shite harawaremasu.",
+      "translation": "A death benefit is paid on the basis of the death of the insured person."
+    },
+    "context": "Underwriting screens (被保険者情報), benefit trigger logic, and data models where 契約者 and 被保険者 are separate records.",
+    "confusedTerms": [
+      {
+        "term": "保険契約者",
+        "reading": "ほけんけいやくしゃ",
+        "termId": "hoken-keiyakusha",
+        "distinction": "保険契約者 contracts and pays premiums; 被保険者 is the person whose life or body is covered."
+      },
+      {
+        "term": "記名被保険者",
+        "reading": "きめいひほけんしゃ",
+        "termId": "komei-hikosha",
+        "distinction": "記名被保険者 is the motor-insurance term for the person named on the policy."
+      }
+    ],
+    "relatedTerms": [
+      "hoken-jiko",
+      "kokuchi-gimu"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "parties",
+      "core",
+      "underwriting"
+    ]
+  },
+  {
+    "id": "komei-hikosha",
+    "term": "記名被保険者",
+    "kana": "きめいひほけんしゃ",
+    "romaji": "kimei hikōsha",
+    "translation": "named insured (motor / non-life)",
+    "definitionJa": "自動車保険などで、証券に記名された、保険の対象となる者。車両の所有者や運転者とは区別される。",
+    "explanationEn": "A non-life term, typical of motor insurance, for the person named on the policy as the insured party. It is deliberately different from 車両所有者 (vehicle owner) and 運転者 (driver); the three roles drive different coverage rules.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract parties",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "domainNote": "Used mainly in motor insurance conditions; life insurance uses 被保険者 instead.",
+    "example": {
+      "ja": "記名被保険者を変更する場合は、変更の届出が必要です。",
+      "kana": "きめいひほけんしゃをへんこうするばあいは、へんこうのとどけがひつようです。",
+      "romaji": "Kimei hikōsha o henkō suru baai wa, henkō no todoke ga hitsuyō desu.",
+      "translation": "If you change the named insured, you must file a change notification."
+    },
+    "context": "Motor policy maintenance screens; 記名被保険者コード is a common screen field and a rating factor.",
+    "confusedTerms": [
+      {
+        "term": "被保険者",
+        "reading": "ひほけんしゃ",
+        "termId": "hikosha",
+        "distinction": "被保険者 is the general term; 記名被保険者 is the specific motor-insurance role named on the certificate."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Follows motor insurance 約款 conventions; confirm against the specific product's conditions.",
+    "tags": [
+      "parties",
+      "motor",
+      "non-life"
+    ]
+  },
+  {
+    "id": "hokensha",
+    "term": "保険者",
+    "kana": "ほけんしゃ",
+    "romaji": "hokensha",
+    "translation": "insurer",
+    "definitionJa": "保険料を受領し、保険事故が発生した場合に保険金を支払う義務を負う契約の当事者。保険会社。",
+    "explanationEn": "The contracting party that collects premiums and pays benefits, i.e. the insurance company. Note the one-character visual similarity to 保険契約者: reading it carelessly reverses who owes what. In interface specifications 保険者 can also appear as a counterparty/company code.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract parties",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険者は、保険金の支払事由に該当するかを審査します。",
+      "kana": "ほけんしゃは、ほけんきんのしはらじゆうにがとうするかをしんさします。",
+      "romaji": "Hokensha wa, hokenkin no shiharai jiyū ni gatō suru ka o shinsa shimasu.",
+      "translation": "The insurer examines whether the event falls under a ground for payment."
+    },
+    "context": "Payment decision rules, 保険者コード in interface specifications, and regulatory documents.",
+    "confusedTerms": [
+      {
+        "term": "保険契約者",
+        "reading": "ほけんけいやくしゃ",
+        "termId": "hoken-keiyakusha",
+        "distinction": "保険者 bears the risk and pays benefits; 保険契約者 pays premiums. The two words differ by a single kanji."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E4%BF%9D%E9%99%BA",
+    "verification": "verified",
+    "verificationNote": "The cited article defines 保険者 as the party undertaking payment of the insurance benefit.",
+    "tags": [
+      "parties",
+      "core",
+      "legal"
+    ]
+  },
+  {
+    "id": "hokenkin-uketonin",
+    "term": "保険金受取人",
+    "kana": "ほけんきんうけとりにん",
+    "romaji": "hokenkin uketonin",
+    "translation": "insurance beneficiary; benefit recipient",
+    "definitionJa": "保険金の支払を受ける者。契約者自身または第三者を指定できる。",
+    "explanationEn": "The person entitled to receive a benefit payment; they are not a party to the contract. Changing a designated beneficiary after designation is commonly said to require the consent of the person already designated — confirm the statutory basis and the insurer's procedure before relying on that rule.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract parties",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険金受取人は、契約内容変更の手続きで変更できます。",
+      "kana": "ほけんきんうけとりにんは、けいやくないようへんこうのてつづきでへんこうできます。",
+      "romaji": "Hokenkin uketonin wa, keiyaku naiyō henkō no tetsuzuki de henkō dekimasu.",
+      "translation": "The insurance beneficiary can be changed through the policy-change procedure."
+    },
+    "context": "Beneficiary change screens (続柄, 氏名, 生年月日, 受取割合), claim payment destination logic, and tax documents.",
+    "confusedTerms": [
+      {
+        "term": "死亡保険金受取人",
+        "reading": "しぼうほけんきんうけとりにん",
+        "termId": "shibo-hokenkin-uketonin",
+        "distinction": "死亡保険金受取人 is the specific designation for a death benefit; 保険金受取人 is the general role name."
+      },
+      {
+        "term": "保険契約者",
+        "reading": "ほけんけいやくしゃ",
+        "termId": "hoken-keiyakusha",
+        "distinction": "The policyholder contracts and pays; the beneficiary only receives the money."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The consent requirement for beneficiary change is widely cited; confirm the current statutory article before using it in documentation.",
+    "tags": [
+      "parties",
+      "core",
+      "benefit"
+    ]
+  },
+  {
+    "id": "hokenryou",
+    "term": "保険料",
+    "kana": "ほけんりょう",
+    "romaji": "hokenryō",
+    "translation": "insurance premium",
+    "definitionJa": "保険契約者が保険者に支払う金銭。保険事故の発生確率などに応じて定められる。",
+    "explanationEn": "The money the customer pays the insurer. It is never the money paid out — that is 保険金. The one-character difference (料 vs 金) is the most common error in Japanese insurance vocabulary. In 共済 products the equivalent is called 掛金 / 共済掛金.",
+    "category": "contract-fundamentals",
+    "subcategory": "Money flows",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "domainNote": "共済 uses 掛金 instead of 保険料 and 共済金 instead of 保険金.",
+    "example": {
+      "ja": "保険料の払込が滞ると、契約が失効する場合があります。",
+      "kana": "ほけんりょうのはらこみがとどこおると、けいやくがしっこうするばあいがります。",
+      "romaji": "Hokenryō no harakomi ga totokoōru to, keiyaku ga shikkō suru baai ga arimasu.",
+      "translation": "If premium payments fall into arrears, the contract may lapse."
+    },
+    "context": "Premium calculation (保険料算出), collection (口座振替, 払込方法), arrears handling and 督促 workflows.",
+    "confusedTerms": [
+      {
+        "term": "保険金",
+        "reading": "ほけんきん",
+        "termId": "hokenkin",
+        "distinction": "保険料 is paid IN by the customer; 保険金 is paid OUT by the insurer."
+      },
+      {
+        "term": "保険金額",
+        "reading": "ほけんがくがく",
+        "termId": "hoken-gakaku",
+        "distinction": "保険金額 is the contractual benefit amount (sum insured), not the periodic premium."
+      }
+    ],
+    "components": [
+      {
+        "element": "料",
+        "reading": "りょう",
+        "meaning": "fee, charge"
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E4%BF%9D%E9%99%BA",
+    "verification": "industry-standard",
+    "tags": [
+      "money",
+      "core",
+      "premium"
+    ]
+  },
+  {
+    "id": "hokenkin",
+    "term": "保険金",
+    "kana": "ほけんきん",
+    "romaji": "hokenkin",
+    "translation": "insurance benefit; claim payout",
+    "alternativeTranslations": [
+      "insurance payout",
+      "indemnity (non-life)"
+    ],
+    "definitionJa": "保険事故が発生した場合に、保険者が支払う金銭。",
+    "explanationEn": "The money the insurer pays when the insured event occurs. Distinguish 保険料 (paid in), 保険金額 (the contractual maximum) and 給付金 (wording used for many fixed medical/accident benefits). The amount actually paid out is 支払金額, which may be lower than 保険金額.",
+    "category": "contract-fundamentals",
+    "subcategory": "Money flows",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険金は、請求書類を受理した後に支払査定を行います。",
+      "kana": "ほけんきんは、せいきゅうしょるいをじゅりしたあとに、しはらさてんをおこないます。",
+      "romaji": "Hokenkin wa, seikyū shorui o juri shita ato ni, shiharai saten o okonai masu.",
+      "translation": "For a benefit claim, the claim is assessed after the claim documents have been accepted."
+    },
+    "context": "Payment processing, 保険金支払 status management, and reconciliation between 保険金額 and 支払金額.",
+    "confusedTerms": [
+      {
+        "term": "保険料",
+        "reading": "ほけんりょう",
+        "termId": "hokenryou",
+        "distinction": "保険料 is the premium paid in; 保険金 is the money paid out."
+      },
+      {
+        "term": "給付金",
+        "reading": "きゅうふきん",
+        "termId": "kyufukin",
+        "distinction": "給付金 is the wording commonly used for fixed medical/accident benefits; the boundary is product- and company-specific."
+      },
+      {
+        "term": "保険金額",
+        "reading": "ほけんがくがく",
+        "termId": "hoken-gakaku",
+        "distinction": "保険金額 is the maximum amount in the contract, not the amount actually paid."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "money",
+      "core",
+      "benefit"
+    ]
+  },
+  {
+    "id": "hoken-jiko",
+    "term": "保険事故",
+    "kana": "ほけんじこ",
+    "romaji": "hoken jiko",
+    "translation": "insured event",
+    "definitionJa": "保険金の支払の契機となる事故・事件。契約で定められた一定の事由。",
+    "explanationEn": "The event that triggers payment: death, hospitalization, fire, a traffic accident. Note that 事故 on its own also means 'incident' in IT usage, so 保険事故 must not be read as a system incident.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract concepts",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険事故が発生したときは、速やかに請求手続きを行ってください。",
+      "kana": "ほけんじこがはっせいしたときは、すみやかにせいきゅうてつづきを行ってください。",
+      "romaji": "Hoken jiko ga hassei shita toki wa, sumiyaka ni seikyū tetsuzuki o okonatte kudasai.",
+      "translation": "When an insured event occurs, please submit a claim without delay."
+    },
+    "context": "Claim intake rules, benefit trigger definitions, and 保険事故日 input fields with validation against 保険期間.",
+    "confusedTerms": [
+      {
+        "term": "支払事由",
+        "reading": "しはらじゆう",
+        "termId": "shiharai-jiyu",
+        "distinction": "支払事由 is the broader contractual trigger (which can include maturity or survival); 保険事故 emphasises an accidental event."
+      }
+    ],
+    "relatedTerms": [
+      "shiharai-jiyu",
+      "menshaku-jiyu"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "contract",
+      "core",
+      "claims"
+    ]
+  },
+  {
+    "id": "hoken-ikan",
+    "term": "保険約款",
+    "kana": "ほけんいかん",
+    "romaji": "hoken ikan",
+    "translation": "policy conditions; general terms and conditions",
+    "alternativeTranslations": [
+      "standard policy terms"
+    ],
+    "definitionJa": "保険契約の内容を定めるために保険者が作成した約款。保険金の支払条件や免責などを定める。",
+    "explanationEn": "The standard terms drafted by the insurer that govern the contract, including payment conditions and exclusions. 約款 are the standard set; a 特約 modifies them for one particular contract.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract documents",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "blankVariants": [
+      "約款"
+    ],
+    "example": {
+      "ja": "約款では、免責事由に該当する場合は保険金を支払わないと定められています。",
+      "kana": "いかんでは、めんしゃくじゆうにがとうするばあいはほけんきんをしはらわないとさだめられています。",
+      "romaji": "Ikan dewa, menshaku jiyū ni gatō suru baai wa hokenkin o harawana i to sadamerarete imasu.",
+      "translation": "The policy conditions state that no benefit is paid when the event falls under an exclusion."
+    },
+    "context": "Business rule sources for payment/exclusion logic, 約款改定 projects, and requirement traceability to conditions text.",
+    "confusedTerms": [
+      {
+        "term": "特約",
+        "reading": "とくやく",
+        "termId": "tokuyaku",
+        "distinction": "約款 are the insurer's standard terms; 特約 is a modification agreed for one specific contract."
+      },
+      {
+        "term": "保険証券",
+        "reading": "ほけんしょうけん",
+        "termId": "hoken-shoken",
+        "distinction": "証券 is the certificate issued to the customer; 約款 is the body of terms itself."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "documents",
+      "legal",
+      "rules"
+    ]
+  },
+  {
+    "id": "hoken-shoken",
+    "term": "保険証券",
+    "kana": "ほけんしょうけん",
+    "romaji": "hoken shōken",
+    "translation": "policy document; certificate of insurance",
+    "definitionJa": "保険契約の内容を証する書類。契約者へ交付される。",
+    "explanationEn": "The document evidencing the contract, issued to the policyholder (paper or PDF). It records 保険証券番号, the parties, the coverage and the premium. In systems you will see 証券発行処理, 証券印刷 and 証券番号 as identifiers.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract documents",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険証券の写しを請求書類として提出していただきます。",
+      "kana": "ほけんしょうけんのうつしをせいきゅうしょるいとしてしゅつだしいただきます。",
+      "romaji": "Hoken shōken no utsushi o seikyū shorui to shite shutsudashi itadakimasu.",
+      "translation": "Please submit a copy of the policy document as a claim document."
+    },
+    "context": "Document generation (帳票), 証券番号 as a search key in inquiry screens, and print/e-delivery processing.",
+    "confusedTerms": [
+      {
+        "term": "保険約款",
+        "reading": "ほけんいかん",
+        "termId": "hoken-ikan",
+        "distinction": "約款 is the body of terms; 証券 is the issued certificate evidencing the contract."
+      },
+      {
+        "term": "保険契約",
+        "reading": "ほけんけいやく",
+        "termId": "hoken-keiyaku",
+        "distinction": "保険契約 is the legal agreement; 証券 is only its documentary evidence."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "documents",
+      "core",
+      "output"
+    ]
+  },
+  {
+    "id": "keiyaku-henko",
+    "term": "契約変更",
+    "kana": "けいやくへんこう",
+    "romaji": "keiyaku henkō",
+    "translation": "contract modification; policy change",
+    "definitionJa": "締結済みの保険契約の契約内容を変更する手続き・処理。",
+    "explanationEn": "The umbrella term for post-issue changes: address, beneficiary, sum insured, payment method. Systems usually expose a 契約変更 menu with sub-types, each with its own 受付条件 and effective-date rules. Do not confuse it with 改修, which is a change to the software.",
+    "category": "contract-fundamentals",
+    "subcategory": "Procedures",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "契約変更の申請は、毎月1日から25日まで受け付けます。",
+      "kana": "けいやくへんこうのしんせいまいげつ1にちから25にちまでうけつけます。",
+      "romaji": "Keiyaku henkō no shinsei wa, maigatsu tsuitachi kara nijūgo-nichi made uketsukemasu.",
+      "translation": "Policy change requests are accepted from the 1st to the 25th of each month."
+    },
+    "context": "Change menus, effective-date (変更反映日) logic, and approval workflows for certain change types.",
+    "confusedTerms": [
+      {
+        "term": "名義変更",
+        "reading": "めいぎへんこう",
+        "termId": "meigi-henko",
+        "distinction": "名義変更 is one specific kind of change (ownership/name); 契約変更 is the general category."
+      },
+      {
+        "term": "改修",
+        "reading": "かいしゅう",
+        "termId": "kaishu",
+        "distinction": "改修 modifies the IT system; 契約変更 modifies a customer's contract."
+      }
+    ],
+    "relatedTerms": [
+      "meigi-henko",
+      "juusho-henko",
+      "keiyakusha-henko"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "procedure",
+      "core",
+      "screen"
+    ]
+  },
+  {
+    "id": "mukou",
+    "term": "無効",
+    "kana": "むこう",
+    "romaji": "mukō",
+    "translation": "void; invalid; invalidated",
+    "alternativeTranslations": [
+      "invalid (data state)"
+    ],
+    "definitionJa": "契約や法律行為が効力を生じないこと。システムではコードやデータが使用できない状態を指すこともある。",
+    "explanationEn": "In legal usage it means a contract produces no effect. In system documents the same word often describes data state: 無効コード (retired code), 無効フラグ. Which meaning applies is entirely context-dependent, so read the surrounding sentence carefully.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract status",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "general",
+      "it"
+    ],
+    "example": {
+      "ja": "このコードは廃止済みのため、登録画面では無効として表示されます。",
+      "kana": "このコードははいしずみのため、とうろくがめんではむこうとしてひょうじされます。",
+      "romaji": "Kono kōdo wa haishi-zumi no tame, tōroku gamen de wa mukō to shite hyōji saremasu.",
+      "translation": "Because this code has been retired, it is shown as invalid on the registration screen."
+    },
+    "context": "Code/master data maintenance, contract status handling, and validation messages.",
+    "confusedTerms": [
+      {
+        "term": "失効",
+        "reading": "しっこう",
+        "termId": "shikko",
+        "distinction": "失効 is lapse of a contract that was valid; 無効 covers contracts that never took effect, and also disabled data states."
+      },
+      {
+        "term": "活性・非活性",
+        "reading": "かっせい・ひかっせい",
+        "termId": "kassei-hikassei",
+        "distinction": "活性・非活性 describes UI control state; 無効 describes legal effect or record validity."
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "The data-state usage is common in system documentation but is not a legal term.",
+    "tags": [
+      "status",
+      "legal",
+      "data-state"
+    ]
+  },
+  {
+    "id": "torikeshi",
+    "term": "取消し",
+    "kana": "とりけし",
+    "romaji": "torikeshi",
+    "translation": "cancellation of a transaction; reversal; rescission",
+    "definitionJa": "登録や契約の効力を遡って消滅させること。誤入力・誤契約の訂正として行われる。",
+    "explanationEn": "Undoing something as if it had not happened. In transaction processing it is a reversal (取消し伝票), while for contracts it is a retroactive rescission. It differs from 解約, which ends a valid contract going forward.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract status",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "general",
+      "it"
+    ],
+    "example": {
+      "ja": "誤って登録した契約は、取消し処理を行ってから再登録します。",
+      "kana": "誤ってとうろくしたけいやくは、とりけししょりをとおこなってからさいとうろくします。",
+      "romaji": "Ayamatte tōroku shita keiyaku wa, torikeshi shori o okonatte kara sai-tōroku shimasu.",
+      "translation": "A contract registered by mistake is reversed and then registered again."
+    },
+    "context": "Transaction reversal screens, audit trails, and correction procedures in test execution.",
+    "confusedTerms": [
+      {
+        "term": "解約",
+        "reading": "かいやく",
+        "termId": "kaiyaku",
+        "distinction": "解約 ends a valid contract for the future; 取消し treats the registration as if it never happened."
+      },
+      {
+        "term": "解除",
+        "reading": "かいじょ",
+        "termId": "kaijo",
+        "distinction": "解除 is cancellation exercised as a legal right (e.g. for breach of disclosure); 取消し is a correction/reversal."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "status",
+      "transaction",
+      "correction"
+    ]
+  },
+  {
+    "id": "kaijo",
+    "term": "解除",
+    "kana": "かいじょ",
+    "romaji": "kaijo",
+    "translation": "cancellation (exercise of a contractual right)",
+    "alternativeTranslations": [
+      "avoidance",
+      "rescission (legal)",
+      "termination for cause"
+    ],
+    "definitionJa": "法律や約款に基づく権利の行使として、契約を将来に向かって消滅させること。",
+    "explanationEn": "Cancellation exercised as a right, typically by the insurer when the duty of disclosure has been breached. It is not the customer's voluntary 解約. Systems distinguish the actor and the reason code, which drives whether 解約返戻金 is payable.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract status",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "告知義務違反がある場合、保険者は契約を解除できます。",
+      "kana": "こくちぎむいはんがあるばあい、ほけんしゃはけいやくをかいかいじょできます。",
+      "romaji": "Kokuchi gimu ippa ga aru baai, hokensha wa keiyaku o kaijo dekimasu.",
+      "translation": "Where there is a breach of the duty of disclosure, the insurer may cancel the contract."
+    },
+    "context": "Underwriting follow-up processing, 解除 reason codes, and benefit denial rules.",
+    "confusedTerms": [
+      {
+        "term": "解約",
+        "reading": "かいやく",
+        "termId": "kaiyaku",
+        "distinction": "解約 is voluntary cancellation by the policyholder; 解除 is cancellation exercised as a right because of a defect or breach."
+      },
+      {
+        "term": "取消し",
+        "reading": "とりけし",
+        "termId": "torikeshi",
+        "distinction": "取消し is a correction reversing the contract; 解除 ends a valid contract on stated grounds."
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "Effects (retroactive vs prospective) depend on the 約款 and the Insurance Act; confirm for the specific case.",
+    "tags": [
+      "status",
+      "legal",
+      "underwriting"
+    ]
+  },
+  {
+    "id": "kyosai-keiyaku",
+    "term": "共済契約",
+    "kana": "きょうさいけいやく",
+    "romaji": "kyōsai keiyaku",
+    "translation": "mutual aid contract",
+    "definitionJa": "共済事業主体と組合員等の間で結ばれる契約。保険に似た仕組みだが用語・制度が異なる。",
+    "explanationEn": "A mutual-aid contract (JA共済, コープ共済, 全労済, 都道府県民共済 and similar). Functionally similar to insurance, but the premium is 掛金, the payout is 共済金, and the legal framework differs. Important when integrating with 共済 systems or mapping data.",
+    "category": "contract-fundamentals",
+    "subcategory": "Contract concepts",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "general"
+    ],
+    "domainNote": "Terminology differs by 共済 group; do not assume one set of terms applies to all.",
+    "example": {
+      "ja": "共済契約では保険料の代わりに掛金という用語が使われるため、データ連携時に項目マッピングが必要です。",
+      "kana": "きょうさいけいやくではほけんりょうのかわりにかけんというようごがつかわれるため、データれんけいじにこうもまっぴんぐがひつようです。",
+      "romaji": "Kyōsai keiyaku dewa hokenryō no kawari ni kakekin to iu yōgo ga tsukawareru tame, dēta renkei-ji ni kōmo mappingu ga hitsuyō desu.",
+      "translation": "Because mutual-aid contracts use 掛金 instead of 保険料, field mapping is required when integrating the data."
+    },
+    "context": "Data integration with 共済 organisations, terminology mapping tables, and mixed product portfolios.",
+    "confusedTerms": [
+      {
+        "term": "保険契約",
+        "reading": "ほけんけいやく",
+        "termId": "hoken-keiyaku",
+        "distinction": "Different legal regime and vocabulary: 共済金/掛金 vs 保険金/保険料."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Naming and legal treatment vary between 共済 groups; verify for the specific organisation.",
+    "tags": [
+      "contract",
+      "kyosai",
+      "mapping"
+    ]
+  }
+]

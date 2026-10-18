@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "youken-teigi",
+    "term": "要件定義",
+    "kana": "ようけんていぎ",
+    "romaji": "yōken teigi",
+    "translation": "requirements definition (deciding what the system must do)",
+    "definitionJa": "システムが実現すべきことを決め、その内容を関係者で合意する工程。業務要件をシステム側の要件に落とし込み、画面・データ・処理の範囲を決める。",
+    "explanationEn": "要件 is \"requirement\", 定義 is \"define\". This is the upstream activity that produces a 要件定義書, and Japanese projects draw the line between 業務要件 (business need) and システム要件 (system requirement) explicitly here. It is also where 保険料/掛金 naming and 保険/共済 field mappings get decided, so business vocabulary ends up baked into table and screen names.",
+    "category": "insurance-it",
+    "subcategory": "Requirements",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "要件定義では、画面項目と登録処理の単位を合わせて決めます。",
+      "kana": "ようけんていぎでは、がめんこうもくととうろくしょりのたんいをあわせてきめます。",
+      "romaji": "Yōken teigi de wa, gamen kōmoku to tōroku shori no tan'i o awasete kime masu.",
+      "translation": "During requirements definition the screen fields and the unit of a registration process are decided together."
+    },
+    "context": "Project kickoff, scoping of screens and interfaces, and hand-off to the requirements definition document.",
+    "confusedTerms": [
+      {
+        "term": "要件定義書",
+        "reading": "ようけんていぎしょ",
+        "termId": "youken-teigi-sho",
+        "distinction": "要件定義 is the activity; the 要件定義書 is the document it produces."
+      },
+      {
+        "term": "業務要件",
+        "reading": "ぎょうむようけん",
+        "termId": "gyomu-yoken",
+        "distinction": "業務要件 are the business needs themselves; 要件定義 is the process of turning them into an agreed system scope."
+      }
+    ],
+    "components": [
+      {
+        "element": "要",
+        "reading": "よう",
+        "meaning": "need, essential"
+      },
+      {
+        "element": "定義",
+        "reading": "ていぎ",
+        "meaning": "definition"
+      }
+    ],
+    "relatedTerms": [
+      "youken-teigi-sho",
+      "gyomu-yoken",
+      "gyomu-flow"
+    ],
+    "verification": "industry-standard",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "要件定義 is listed as a headword in the IPSJ terminology list (code4fukui/ipsj-words, ipsj-words-ver.1.0_2024-4-10.csv) without a published definition; the wording here follows normal Japanese project usage.",
+    "tags": [
+      "it",
+      "requirements",
+      "project",
+      "core"
+    ]
+  },
+  {
+    "id": "tantai-test",
+    "term": "単体テスト",
+    "kana": "たんたいてすと",
+    "romaji": "tantai tesuto",
+    "translation": "unit test of one module on its own",
+    "definitionJa": "個々のプログラムや処理単位を単独で実行し、期待どおりに動くか確認するテスト。結合テストの前に行う。",
+    "explanationEn": "単体 means \"single unit\". The Japanese project ladder is 単体テスト → 結合テスト → 総合テスト, which maps onto unit / integration / system testing but the boundaries are defined per team, so a テスト仕様書 has to state what counts as a 単体. In insurance systems the unit is often a 業務ルール (an input check, a date rule) rather than a class, which is why test specifications are written against the rule table.",
+    "category": "insurance-it",
+    "subcategory": "Testing",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "単体テストでは、入力チェックの境界値だけを切り出して確認します。",
+      "kana": "たんたいてすとでは、にゅうりょくちぇっくのきょうかいちだけをきりだしてかくにんします。",
+      "romaji": "Tantai tesuto de wa, nyūryoku chekku no kyōkai-chi dake o kiridashite kakunin shimasu.",
+      "translation": "In unit testing only the boundary values of an input check are isolated and verified."
+    },
+    "context": "Program-level testing, boundary-value cases, and the test specification that defines the unit boundary.",
+    "confusedTerms": [
+      {
+        "term": "結合テスト",
+        "reading": "けつごうてすと",
+        "termId": "ketsugo-test",
+        "distinction": "単体テスト checks one module alone; 結合テスト checks modules working together."
+      },
+      {
+        "term": "テスト仕様書",
+        "reading": "てすとしようしょ",
+        "termId": "test-shiyousho",
+        "distinction": "The テスト仕様書 describes what is to be tested; 単体テスト is the execution of one level of it."
+      }
+    ],
+    "components": [
+      {
+        "element": "単",
+        "reading": "たん",
+        "meaning": "single, alone"
+      },
+      {
+        "element": "体",
+        "reading": "たい",
+        "meaning": "body, unit"
+      }
+    ],
+    "relatedTerms": [
+      "ketsugo-test",
+      "sogo-test",
+      "test-shiyousho",
+      "nyuryoku-check"
+    ],
+    "verification": "industry-standard",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "単体テスト is a headword in the IPSJ terminology list without a published definition; the wording here follows normal Japanese project usage.",
+    "tags": [
+      "it",
+      "testing",
+      "quality"
+    ]
+  },
+  {
+    "id": "kiki-test",
+    "term": "回帰テスト",
+    "kana": "かいきてすと",
+    "romaji": "kaiki tesuto",
+    "translation": "re-running tests after a change to prove nothing broke",
+    "definitionJa": "改修や修正の後で、以前に正しく動いていた機能が壊れていないことを確認するために再実行するテスト。",
+    "explanationEn": "回帰 means \"return, regression\" - the point is to protect behaviour that already worked. In insurance systems one 改修 to 支払査定 or 掛金計算 rules touches many products at once, so regression suites are organised by 業務ルール rather than by module. The practical skill is deciding the 影響範囲 and then re-running exactly the matching regression set.",
+    "category": "insurance-it",
+    "subcategory": "Testing",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "回帰テストは、支払ルールの改修後に既存契約の計算結果を比較して行います。",
+      "kana": "かいきてすとは、しはらるーるのかいしゅうごにけいぞくけいやくのけいさんけっかをひかくしておこないます。",
+      "romaji": "Kaiki tesuto wa, shiharai rūru no kaishū go ni keizoku-keiyaku no keisan kekka o hikakushite okonai masu.",
+      "translation": "Regression testing is done after a payment-rule change by comparing the calculated results for existing contracts."
+    },
+    "context": "Change management, regression suites grouped by business rule, and before/after comparison of calculated amounts.",
+    "confusedTerms": [
+      {
+        "term": "結合テスト",
+        "reading": "けつごうてすと",
+        "termId": "ketsugo-test",
+        "distinction": "結合テスト checks that modules work together when first assembled; 回帰テスト re-runs existing tests after a change to check nothing that worked has broken."
+      },
+      {
+        "term": "影響範囲",
+        "reading": "えいきょうはんい",
+        "termId": "eikyo-hani",
+        "distinction": "影響範囲 is the analysis of what a change touches; 回帰テスト is the testing done to protect it."
+      }
+    ],
+    "components": [
+      {
+        "element": "回",
+        "reading": "かい",
+        "meaning": "round, return"
+      },
+      {
+        "element": "帰",
+        "reading": "き",
+        "meaning": "return, go back"
+      }
+    ],
+    "relatedTerms": [
+      "ketsugo-test",
+      "sogo-test",
+      "eikyo-hani",
+      "kaishu"
+    ],
+    "verification": "industry-standard",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "回帰テスト is a headword in the IPSJ terminology list without a published definition; the wording here follows normal Japanese project usage.",
+    "tags": [
+      "it",
+      "testing",
+      "change-management"
+    ]
+  },
+  {
+    "id": "deetabeesu",
+    "term": "データベース",
+    "kana": "でーたべーす",
+    "romaji": "dētabēsu",
+    "translation": "organised store of data that programs can share and reuse",
+    "definitionJa": "大量のデータを体系的に整理し、容易に共用・再利用できるようにしたもの。契約・掛金・事故などのデータを、プログラムを問わず使える形で保持する。",
+    "explanationEn": "The IPSJ definition stresses 共用・再利用 (shared and reused) - that, not storage, is the point of a database. In an insurance system the same contract record is read by intake, rating, claims and reporting programs, which is why the data model rather than the program list is the real specification. Words you will meet alongside it: DBMS, スキーマ, 照会, 帳票.",
+    "category": "insurance-it",
+    "subcategory": "Data management",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "契約データベースへは、登録処理が成功した後にだけ書き込まれます。",
+      "kana": "けいやくでーたべーすへは、とうろくしょりがせいこうしたあとにだけかきこまれます。",
+      "romaji": "Keiyaku dētabēsu e wa, tōroku shori ga seikō shita ato ni dake kakikomaremasu.",
+      "translation": "The contract database is written to only after the registration process has succeeded."
+    },
+    "context": "System design documents, data models shared by several business programs, and migration planning.",
+    "confusedTerms": [
+      {
+        "term": "マスタデータ",
+        "reading": "ますたでーた",
+        "termId": "master-data",
+        "distinction": "マスタデータ is the reference content (codes, rates, product definitions) held inside a database; データベース is the whole organised store."
+      },
+      {
+        "term": "テーブル",
+        "reading": "てーぶる",
+        "termId": "teeburu",
+        "distinction": "A テーブル is one structure inside a database; the データベース is the entire organised collection."
+      }
+    ],
+    "relatedTerms": [
+      "teeburu",
+      "rekoodo",
+      "master-data",
+      "shoukai-shori"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row データベース (category データベース).",
+    "tags": [
+      "it",
+      "data",
+      "core"
+    ]
+  },
+  {
+    "id": "teeburu",
+    "term": "テーブル",
+    "kana": "てーぶる",
+    "romaji": "tēburu",
+    "translation": "records arranged in one dimension (a table)",
+    "definitionJa": "レコードが1次元的に並んだ構造。リレーショナルデータベースでは行がレコード、列がフィールドにあたる。",
+    "explanationEn": "Japanese database writing uses three vocabularies for the same object: テーブル/行/列 (DB side), レコード/フィールド (record side) and 表/項目 (business side). Insurance specifications usually say 項目 (画面項目, 入力項目, 必須項目) while the DB team says フィールド/列, and 帳票 are described as joins across several テーブル - so you have to read all three.",
+    "category": "insurance-it",
+    "subcategory": "Data management",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "掛金テーブルは契約1件につき1行を持ち、月ごとの金額を列で持ちます。",
+      "kana": "かけきんてーぶるはけいやくいっけんにつきいちぎょうをもち、つきごとのきんがくをれつでもちます。",
+      "romaji": "Kakekin tēburu wa keiyaku ikken ni tsuki ichi-gyō o mochi, tsuki goto no kingaku o retsu de mochi masu.",
+      "translation": "The premium table has one row per contract and holds the monthly amounts in columns."
+    },
+    "context": "Data modelling, screen-to-table mapping, and report definitions that join several tables.",
+    "confusedTerms": [
+      {
+        "term": "レコード",
+        "reading": "れこーど",
+        "termId": "rekoodo",
+        "distinction": "A レコード is one row holding one object's values; a テーブル is the structure that holds many of them."
+      },
+      {
+        "term": "画面項目",
+        "reading": "がめんこうもく",
+        "termId": "gamen-komoku",
+        "distinction": "画面項目 is what the user sees on a screen; a table column is where a value is stored. They often correspond, but a screen field may be calculated or not stored at all."
+      }
+    ],
+    "relatedTerms": [
+      "rekoodo",
+      "fiirudo",
+      "shukikii",
+      "gamen-komoku"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row テーブル (category レコード / データベース).",
+    "tags": [
+      "it",
+      "data",
+      "core"
+    ]
+  },
+  {
+    "id": "rekoodo",
+    "term": "レコード",
+    "kana": "れこーど",
+    "romaji": "rekōdo",
+    "translation": "a set of related values treated as one row",
+    "definitionJa": "複数の値が組となった構造。テーブルの中では1行にあたり、契約1件や事故1件に対応づけられることが多い。",
+    "explanationEn": "In file and database work レコード = one row = one business object (one contract, one claim). Record counts are the unit used in 移行 and 突合 reports - 「120万件のレコードを移行」 - and reconciliation failures are reported as レコード件数の差異. Note the word also means \"recording\" in other contexts, so 記録 and レコード overlap in Japanese IT prose.",
+    "category": "insurance-it",
+    "subcategory": "Data management",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "契約1件がレコード1件に対応するよう、移行プログラムで対応表を作ります。",
+      "kana": "けいやくいっけんがれこーどいっけんにたいおうするよう、いこうプログラムでたいおうずをつくります。",
+      "romaji": "Keiyaku ikken ga rekōdo ikken ni taiō suru yō, ikō puroguramu de taiō-zu o tsukuri masu.",
+      "translation": "A mapping table is built in the migration program so that one contract corresponds to one record."
+    },
+    "context": "Data migration, record-count reconciliation, and one-to-one mapping between business objects and rows.",
+    "confusedTerms": [
+      {
+        "term": "フィールド",
+        "reading": "ふぃーるど",
+        "termId": "fiirudo",
+        "distinction": "A フィールド is one value slot inside a record; the レコード is the whole row."
+      },
+      {
+        "term": "主キー",
+        "reading": "しゅきー",
+        "termId": "shukikii",
+        "distinction": "The 主キー is the item that identifies one record uniquely; the レコード is the row it identifies."
+      }
+    ],
+    "relatedTerms": [
+      "teeburu",
+      "fiirudo",
+      "shukikii",
+      "tsugo"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row レコード (category レコード / データベース).",
+    "tags": [
+      "it",
+      "data",
+      "migration"
+    ]
+  },
+  {
+    "id": "fiirudo",
+    "term": "フィールド",
+    "kana": "ふぃーるど",
+    "romaji": "fīrudo",
+    "translation": "a named value slot inside a record (column)",
+    "definitionJa": "レコードの複数の値のどれかを示す名前。テーブルでは列にあたり、画面項目や帳票項目の裏側にあるデータ単位になる。",
+    "explanationEn": "フィールド is the record/DB-side word, 列 the SQL-side word, 項目 the business-side word. Insurance specifications talk about 項目 (画面項目, 入力項目, 必須項目) while the DB team talks about フィールド/列; mapping documents exist precisely to connect the two, and a field may be derived, defaulted or not stored at all.",
+    "category": "insurance-it",
+    "subcategory": "Data management",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "生年月日のフィールドは、画面で2項目に分かれていても1つで持ちます。",
+      "kana": "せいねんがっぴのふぃーるどは、がめんにてこうもくにわかれていてもひとつでもちます。",
+      "romaji": "Seinengappi no fīrudo wa, gamen de ni-kōmoku ni wakarete ite mo hitotsu de mochi masu.",
+      "translation": "The date-of-birth field is stored as one value even when the screen splits it into two items."
+    },
+    "context": "Screen-to-database mapping, field definitions in design documents, and data migration mapping tables.",
+    "confusedTerms": [
+      {
+        "term": "レコード",
+        "reading": "れこーど",
+        "termId": "rekoodo",
+        "distinction": "The レコード is the whole row; a フィールド is one named value inside it."
+      },
+      {
+        "term": "画面項目",
+        "reading": "がめんこうもく",
+        "termId": "gamen-komoku",
+        "distinction": "画面項目 is what the user sees; a フィールド is the stored data behind it. They often correspond but a screen field may be calculated or not stored."
+      }
+    ],
+    "relatedTerms": [
+      "rekoodo",
+      "teeburu",
+      "gamen-komoku",
+      "nyuryoku-komoku"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row フィールド (category レコード / データベース).",
+    "tags": [
+      "it",
+      "data",
+      "screen-mapping"
+    ]
+  },
+  {
+    "id": "shukikii",
+    "term": "主キー",
+    "kana": "しゅきー",
+    "romaji": "shukī",
+    "translation": "primary key: the item that identifies a record",
+    "definitionJa": "レコードの識別に最も好ましい項目。重複せず、変更されず、空にならない値が選ばれる。",
+    "explanationEn": "主 means \"primary, main\". The IPSJ wording (\"most suitable item\") is deliberately soft, because the real choice is a surrogate code - 契約番号, 証券番号 - rather than a natural attribute: names, addresses and dates all change. Keying on 顧客番号 plus a product code is exactly the decision that later causes trouble in 名寄せ and 契約者変更.",
+    "category": "insurance-it",
+    "subcategory": "Data management",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "契約番号を主キーにすれば、契約者変更があっても参照は切れません。",
+      "kana": "けいやくばんごうをしゅきーにすれば、けいやくしゃへんこうがあってもさんしょうはきれません。",
+      "romaji": "Keiyaku bangō o shukī ni sureba, keiyakusha henkō ga atte mo sanshō wa kore masen.",
+      "translation": "If the contract number is used as the primary key, references do not break when the policyholder changes."
+    },
+    "context": "Data modelling, migration key design, and referential integrity across contract records.",
+    "confusedTerms": [
+      {
+        "term": "外部キー",
+        "reading": "がいきー",
+        "termId": "gaikikii",
+        "distinction": "The 主キー identifies a row in its own table; an 外部キー is a value pointing at another table's 主キー."
+      },
+      {
+        "term": "マスタデータ",
+        "reading": "ますたでーた",
+        "termId": "master-data",
+        "distinction": "マスタデータ is reference content; a 主キー is the identifier used to point at one row of it."
+      }
+    ],
+    "components": [
+      {
+        "element": "主",
+        "reading": "しゅ",
+        "meaning": "primary, main"
+      }
+    ],
+    "relatedTerms": [
+      "gaikikii",
+      "rekoodo",
+      "master-data",
+      "koyose"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row 主キー (category リレーショナルデータベース).",
+    "tags": [
+      "it",
+      "data",
+      "core"
+    ]
+  },
+  {
+    "id": "gaikikii",
+    "term": "外部キー",
+    "kana": "がいきー",
+    "romaji": "gaikī",
+    "translation": "foreign key: a value pointing at another table's key",
+    "definitionJa": "他のテーブルの主キーを参照する項目。契約テーブルが商品マスタの主キーを持つ、といった関係を作る。",
+    "explanationEn": "外部 means \"external\". The link it creates is called 関連 - the same word as in 関連用語 and データ連携. Enforcing it (外部キー制約) prevents orphan rows; many legacy insurance systems do not enforce it in the database and rely on 照合 or 突合 jobs instead, which is a legitimate design choice you should be able to recognise in a design document.",
+    "category": "insurance-it",
+    "subcategory": "Data management",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "商品コードは商品マスタの外部キーになっており、存在しないコードは登録できません。",
+      "kana": "しょうひんこーどはしょうひんますたのがいきーになっており、そんざいしないこーどはとうろくできません。",
+      "romaji": "Shōhin kōdo wa shōhin masuta no gaikī ni natte ori, sonzai shinai kōdo wa tōroku dekimasen.",
+      "translation": "The product code is a foreign key into the product master, so a code that does not exist cannot be registered."
+    },
+    "context": "Referential integrity, master-data validation on input, and orphan-row checks in reconciliation jobs.",
+    "confusedTerms": [
+      {
+        "term": "主キー",
+        "reading": "しゅきー",
+        "termId": "shukikii",
+        "distinction": "The 主キー identifies a row in its own table; the 外部キー is the copy that points to it from another table."
+      },
+      {
+        "term": "データ連携",
+        "reading": "でーたれんけい",
+        "termId": "data-renkei",
+        "distinction": "データ連携 is the transfer of data between systems; an 外部キー is how one table points to another inside one database."
+      }
+    ],
+    "components": [
+      {
+        "element": "外",
+        "reading": "がい",
+        "meaning": "outside, external"
+      }
+    ],
+    "relatedTerms": [
+      "shukikii",
+      "teeburu",
+      "master-data",
+      "nyuryoku-check"
+    ],
+    "verification": "industry-standard",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "外部キー is a headword in the IPSJ terminology list without a published definition; the wording here follows standard database usage in Japanese project documents.",
+    "tags": [
+      "it",
+      "data",
+      "referential-integrity"
+    ]
+  },
+  {
+    "id": "toransakushon",
+    "term": "トランザクション",
+    "kana": "とらんざくしょん",
+    "romaji": "toransakushon",
+    "translation": "a unit of work that either completes fully or not at all",
+    "definitionJa": "一括で完了すべき処理の単位。登録・更新・削除がまとめて成功するか、まとめて取り消されるかが保証される。",
+    "explanationEn": "In business Japanese トランザクション can mean \"a piece of business\" or \"a trade\"; in IT it is the atomic unit of work - the same loanword, two senses you have to separate from context. The pairing you need is with 排他制御: the transaction defines the unit, the lock protects it. Screens that write several tables in one 登録処理 depend on this, and a half-written contract record is the classic 不具合.",
+    "category": "insurance-it",
+    "subcategory": "Technical design",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "契約の登録処理は、一つのトランザクションとして完了するか取り消すかを決めます。",
+      "kana": "けいやくのとうろくしょりは、ひとつのとらんざくしょんとしてかんりょうするかとりけすかをきめます。",
+      "romaji": "Keiyaku no tōroku shori wa, hitotsu no toransakushon toshite kanryō suru ka torikesu ka o kime masu.",
+      "translation": "The contract registration process either completes as one transaction or is rolled back."
+    },
+    "context": "Commit/rollback design, screen operations that write several tables, and concurrency behaviour under duplicate submits.",
+    "confusedTerms": [
+      {
+        "term": "排他制御",
+        "reading": "はたせいぎょ",
+        "termId": "hata-seigyo",
+        "distinction": "The transaction is the unit of work; 排他制御 is the locking that stops two of them from updating the same data at once."
+      },
+      {
+        "term": "登録処理",
+        "reading": "とうろくしょり",
+        "termId": "touroku-shori",
+        "distinction": "登録処理 is a business operation on a screen; the transaction is the commit unit that keeps its writes consistent."
+      }
+    ],
+    "relatedTerms": [
+      "hata-seigyo",
+      "touroku-shori",
+      "koushin-shori",
+      "error-shori"
+    ],
+    "verification": "industry-standard",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "トランザクション is a headword in the IPSJ terminology list without a published definition; the wording here follows standard database usage in Japanese project documents.",
+    "tags": [
+      "it",
+      "data",
+      "consistency"
+    ]
+  },
+  {
+    "id": "moji-code",
+    "term": "文字コード",
+    "kana": "もじこーど",
+    "romaji": "moji kōdo",
+    "translation": "the number or bit pattern assigned to a character",
+    "definitionJa": "文字に対して割り振った番号ないしビット列。コード体系が異なる境界では、文字化けや検索・名寄せの失敗が起きる。",
+    "explanationEn": "The practical Japanese-IT problem is not the theory but the boundaries: 全角/半角, 旧字体/新字体, combined vs decomposed kana voicing marks (NFC/NFKC), and Shift_JIS versus UTF-8 at 帳票 or CSV hand-off points. 名寄せ and name matching break silently when the same name is stored with different code points, which is why normalisation is done at the input boundary rather than at query time.",
+    "category": "insurance-it",
+    "subcategory": "Data and text handling",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "文字コードが異なるCSVを受け取ると、名前欄が文字化けして名寄せできません。",
+      "kana": "もじこーどがことなるしーえぶいをうけとると、なまえらんがもじばけしてこよせできません。",
+      "romaji": "Moji kōdo ga kotonaru CSV o uketoru to, namae-ran ga moji-bake shite koyose dekimasen.",
+      "translation": "When a CSV with a different character encoding arrives, the name column turns into mojibake and cannot be matched."
+    },
+    "context": "File hand-offs, CSV and 帳票 output specifications, and name-matching quality problems.",
+    "confusedTerms": [
+      {
+        "term": "全角",
+        "reading": "ぜんかく",
+        "termId": "zenkaku",
+        "distinction": "全角/半角 is about the form and width a character is written in; 文字コード is the numeric assignment behind the character. Both cause 文字化け-type defects."
+      },
+      {
+        "term": "名寄せ",
+        "reading": "こよせ",
+        "termId": "koyose",
+        "distinction": "名寄せ fails when the same name exists under different encodings or full-width/half-width forms; 文字コード is the underlying cause."
+      }
+    ],
+    "components": [
+      {
+        "element": "文字",
+        "reading": "もじ",
+        "meaning": "character, letter"
+      }
+    ],
+    "relatedTerms": [
+      "zenkaku",
+      "hankaku",
+      "koyose",
+      "data-renkei"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row 文字コード (category テキストデータ).",
+    "tags": [
+      "it",
+      "text",
+      "encoding",
+      "data-quality"
+    ]
+  },
+  {
+    "id": "zenkaku",
+    "term": "全角",
+    "kana": "ぜんかく",
+    "romaji": "zenkaku",
+    "translation": "full-width form, occupying one whole character cell",
+    "definitionJa": "一文字が文字一文字分の幅を占める形。日本語の文字や記号は通常全角で、半角カナや半角英数字と区別される。",
+    "explanationEn": "全 is \"whole\", 角 is the \"corner\" of the square cell a character occupies. Full-width versus half-width is a specifically Japanese data-quality problem: 住所, 人名, 電話番号 and 記号 are each specified in one form or the other, and mixed forms break search, matching and printing. Most systems normalise Japanese text to full-width and keep alphanumeric identifiers half-width - and the specification has to say which, field by field.",
+    "category": "insurance-it",
+    "subcategory": "Data and text handling",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "姓名は全角で統一し、コード値は半角で持つのがこの画面のルールです。",
+      "kana": "せいめいはぜんかくでとういつし、こーどちははんかくでもつのがこのがめんのるーるです。",
+      "romaji": "Seimei wa zenkaku de tōitsu shi, kōdo-chi wa hankaku de motsu no ga kono gamen no rūru desu.",
+      "translation": "The rule on this screen is that names are unified in full-width form while code values are kept half-width."
+    },
+    "context": "Input validation rules, name and address storage, and matching or printing defects caused by mixed widths.",
+    "confusedTerms": [
+      {
+        "term": "半角",
+        "reading": "はんかく",
+        "termId": "hankaku",
+        "distinction": "Half-width characters take half a cell (ASCII, half-width kana); full-width characters take a whole cell. Mixing them breaks matching and printing."
+      },
+      {
+        "term": "入力チェック",
+        "reading": "にゅうりょくちぇっく",
+        "termId": "nyuryoku-check",
+        "distinction": "入力チェック is the validation step where the width rule is enforced; 全角 is one of the values that rule accepts or converts to."
+      }
+    ],
+    "components": [
+      {
+        "element": "全",
+        "reading": "ぜん",
+        "meaning": "whole, all"
+      },
+      {
+        "element": "角",
+        "reading": "かく",
+        "meaning": "corner, character cell"
+      }
+    ],
+    "relatedTerms": [
+      "hankaku",
+      "moji-code",
+      "nyuryoku-check",
+      "koyose"
+    ],
+    "verification": "industry-standard",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "全角 and 全角文字 are headwords in the IPSJ terminology list without published definitions; the wording here follows normal Japanese IT usage.",
+    "tags": [
+      "it",
+      "text",
+      "data-quality",
+      "input-rules"
+    ]
+  },
+  {
+    "id": "hankaku",
+    "term": "半角",
+    "kana": "はんかく",
+    "romaji": "hankaku",
+    "translation": "half-width form, taking half a character cell",
+    "definitionJa": "一文字が半分の幅を占める形。半角英数字や半角カナがあり、全角と混在すると検索・照合・印刷で問題になる。",
+    "explanationEn": "半 is \"half\". Half-width katakana (ｵｵｻｶ against オオサカ) is the notorious case: it looks almost identical to a user but is a different code point, so 名寄せ and on-screen search fail silently. Input systems normally convert half-width kana to full-width automatically and reject the rest - a rule that belongs in the 入力チェック specification.",
+    "category": "insurance-it",
+    "subcategory": "Data and text handling",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "カタカナ名が半角で入力された場合は、正規化してから保存します。",
+      "kana": "かたかなめいがはんかくでにゅうりょくされたばあいは、せいかかしてからほぞうします。",
+      "romaji": "Katakana-mei ga hankaku de nyūryoku sareta baai wa, seika shite kara hozō shimasu.",
+      "translation": "If a katakana name is entered half-width, it is normalised before being stored."
+    },
+    "context": "Katakana name entry, normalisation at the input boundary, and silent failures in matching and search.",
+    "confusedTerms": [
+      {
+        "term": "全角",
+        "reading": "ぜんかく",
+        "termId": "zenkaku",
+        "distinction": "Full-width characters occupy a whole cell, half-width characters half a cell; the two forms of the same text do not match each other."
+      },
+      {
+        "term": "照合",
+        "reading": "しょうごう",
+        "termId": "shogou",
+        "distinction": "照合 is the comparison step that silently fails when the two sides differ in width; 半角 is one of the forms that causes it."
+      }
+    ],
+    "components": [
+      {
+        "element": "半",
+        "reading": "はん",
+        "meaning": "half"
+      }
+    ],
+    "relatedTerms": [
+      "zenkaku",
+      "moji-code",
+      "nyuryoku-check",
+      "shogou"
+    ],
+    "verification": "industry-standard",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "半角 and 半角文字 are headwords in the IPSJ terminology list without published definitions; the wording here follows normal Japanese IT usage.",
+    "tags": [
+      "it",
+      "text",
+      "data-quality",
+      "input-rules"
+    ]
+  },
+  {
+    "id": "himitsu-sei",
+    "term": "機密性",
+    "kana": "きみつせい",
+    "romaji": "kimitsusei",
+    "translation": "confidentiality: information is not used by people without the right",
+    "definitionJa": "情報セキュリティの三要素の一つで、情報が権利のない人に使われないこと。個人情報を含む契約データを、権限のない職員が見られないようにする性質を指す。",
+    "explanationEn": "機密 means \"secret, confidential\", 性 is the \"-ness\" suffix. The IPSJ wording is unusually concrete - 権利のない人に使われない, \"not used by people who have no right to it\" - not secrecy in the abstract. In insurance systems this is implemented as 権限 management and screen-level access control, and it is the element that personal-information rules make non-negotiable.",
+    "category": "insurance-it",
+    "subcategory": "Security",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "契約データの機密性を保つため、画面は部署別の権限で制御します。",
+      "kana": "けいやくでーたのきみつせいをたもつため、がめんはぶしょべつのけんげんでせいぎょします。",
+      "romaji": "Keiyaku dēta no kimitsusei o tamotsu tame, gamen wa bosho-betsu no kengen de seigyo shimasu.",
+      "translation": "To preserve the confidentiality of contract data, screens are controlled by per-department authority."
+    },
+    "context": "Access control design, screen and report permissions, and personal-data handling rules.",
+    "confusedTerms": [
+      {
+        "term": "完全性",
+        "reading": "かんようせい",
+        "termId": "integrity-kanousei",
+        "distinction": "機密性 is about who may use the data; 完全性 is about the data not being lost or altered."
+      },
+      {
+        "term": "可用性",
+        "reading": "かんようせい",
+        "termId": "availability-kanousei",
+        "distinction": "可用性 is about being able to use the data when needed; 機密性 is about who is allowed to use it."
+      }
+    ],
+    "components": [
+      {
+        "element": "機密",
+        "reading": "きみつ",
+        "meaning": "secret, confidential matter"
+      },
+      {
+        "element": "性",
+        "reading": "せい",
+        "meaning": "-ness, property"
+      }
+    ],
+    "relatedTerms": [
+      "integrity-kanousei",
+      "availability-kanousei",
+      "ouka",
+      "shoukai-shori"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row 機密性 (category 情報セキュリティ).",
+    "tags": [
+      "it",
+      "security",
+      "triad",
+      "core"
+    ]
+  },
+  {
+    "id": "integrity-kanousei",
+    "term": "完全性",
+    "kana": "かんようせい",
+    "romaji": "kan'yōsei",
+    "translation": "integrity: information is not lost or tampered with",
+    "definitionJa": "情報セキュリティの三要素の一つで、情報が失われたり改ざんされたりしないこと。登録済みの契約内容が正しく残っていることを保証する性質を指す。",
+    "explanationEn": "This is read かんようせい - identically to 可用性 - so the two are told apart only by the kanji or by spelling them out. 改ざん (\"tampering\") is the key verb here, and it is why 監査ログ and 照合 jobs appear in insurance system designs: the question they answer is whether a stored value still equals what was registered.",
+    "category": "insurance-it",
+    "subcategory": "Security",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "契約内容の完全性は、監査ログと突合ジョブで確認します。",
+      "kana": "けいやくないようのかんようせいは、かんさろぐとつごうじょぶでかくにんします。",
+      "romaji": "Keiyaku naiyō no kan'yōsei wa, kansa rogu to tsugō jobu de kakunin shimasu.",
+      "translation": "The integrity of contract contents is verified through audit logs and reconciliation jobs."
+    },
+    "context": "Audit logging, reconciliation between systems, and protection against silent data change.",
+    "confusedTerms": [
+      {
+        "term": "可用性",
+        "reading": "かんようせい",
+        "termId": "availability-kanousei",
+        "distinction": "Same reading, different meaning: 完全性 protects data from being changed or lost, 可用性 keeps it reachable when needed."
+      },
+      {
+        "term": "機密性",
+        "reading": "きみつせい",
+        "termId": "himitsu-sei",
+        "distinction": "機密性 controls who may use the data; 完全性 protects it from loss and tampering."
+      }
+    ],
+    "components": [
+      {
+        "element": "完全",
+        "reading": "かんぜん",
+        "meaning": "complete, intact"
+      }
+    ],
+    "relatedTerms": [
+      "himitsu-sei",
+      "availability-kanousei",
+      "tsugo",
+      "shogou"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row 完全性 (category 情報セキュリティ).",
+    "tags": [
+      "it",
+      "security",
+      "triad",
+      "homograph",
+      "core"
+    ]
+  },
+  {
+    "id": "availability-kanousei",
+    "term": "可用性",
+    "kana": "かんようせい",
+    "romaji": "kan'yōsei",
+    "translation": "availability: information can be used when it is needed",
+    "definitionJa": "情報セキュリティの三要素の一つで、情報が必要なときに利用できること。契約照会や支払処理が、必要な時間に使える状態にあるかを指す。",
+    "explanationEn": "The element of the triad that business people actually feel: a 照会 that is down during 支払 processing is an 障害 with a business impact, not just an IT metric. It is measured as 稼働率 and designed for with 冗長化, バックアップ and 復旧 - words that appear in every Japanese system-operations document.",
+    "category": "insurance-it",
+    "subcategory": "Security",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "稼働時間の測定は、契約照会の可用性を見る指標になります。",
+      "kana": "かどうじかんのそくていは、けいやくしょうかいのかんようせいをみるしひょうになります。",
+      "romaji": "Kadō jikan no sokutei wa, keiyaku shōkai no kan'yōsei o miru shihyō ni narimasu.",
+      "translation": "Measuring uptime becomes an indicator of the availability of contract inquiry."
+    },
+    "context": "Service-level design, uptime measurement, and capacity or recovery planning for business-critical screens.",
+    "confusedTerms": [
+      {
+        "term": "完全性",
+        "reading": "かんようせい",
+        "termId": "integrity-kanousei",
+        "distinction": "Identical reading, different concern: 可用性 keeps the system usable, 完全性 keeps the data unaltered."
+      },
+      {
+        "term": "障害対応",
+        "reading": "しょうがいたいおう",
+        "termId": "shogai-taiou",
+        "distinction": "障害対応 is the work of handling an incident; 可用性 is the property an incident damages."
+      }
+    ],
+    "components": [
+      {
+        "element": "可",
+        "reading": "か",
+        "meaning": "possible, can be"
+      }
+    ],
+    "relatedTerms": [
+      "integrity-kanousei",
+      "himitsu-sei",
+      "shogai-taiou",
+      "shoukai-shori"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row 可用性 (category 情報セキュリティ).",
+    "tags": [
+      "it",
+      "security",
+      "triad",
+      "homograph",
+      "operations"
+    ]
+  },
+  {
+    "id": "ouka",
+    "term": "暗号化",
+    "kana": "おうか",
+    "romaji": "ōka",
+    "translation": "turning plaintext into ciphertext with a key",
+    "definitionJa": "もとの文、つまり平文を暗号文に変換すること。保存時の個人情報や通信時の契約データを、鍵を使って読み出せない形にする。",
+    "explanationEn": "暗号 is a \"cipher\", 化 is \"-ise\". The chain of words you need: 平文 (plaintext) → 暗号化 → 暗号文 (ciphertext) → 復号 (decryption), with 鍵 (key) and 暗号化キー. In insurance systems encryption shows up in two places - 通信 on inquiry screens, and 保存 of personal identifiers in the database - and specifications distinguish it from ハッシュ化, the one-way form used for passwords and matching keys.",
+    "category": "insurance-it",
+    "subcategory": "Security",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "顧客番号は保存時に限り暗号化し、鍵を使って元に戻せる形で持ちます。",
+      "kana": "こきゃくばんごうはほぞんじにかぎっておうかし、かぎをつかってもとにもどせるかたちでもちます。",
+      "romaji": "Kokyaku bangō wa hozon-ji ni kagitte ōka shi, kagi o tsukatte moto ni modoseru katachi de mochi masu.",
+      "translation": "Customer numbers are encrypted only at rest, and can be restored to their original form with a key."
+    },
+    "context": "Encryption at rest and in transit, key management, and the difference between reversible encryption and hashing.",
+    "confusedTerms": [
+      {
+        "term": "認証",
+        "reading": "にんしょう",
+        "termId": "ninshou",
+        "distinction": "認証 establishes who a user is; 暗号化 hides the content of the data. They are used together but answer different questions."
+      },
+      {
+        "term": "機密性",
+        "reading": "きみつせい",
+        "termId": "himitsu-sei",
+        "distinction": "機密性 is the goal - only the right people may use the data; 暗号化 is one technique for reaching it."
+      }
+    ],
+    "components": [
+      {
+        "element": "暗号",
+        "reading": "あんごう",
+        "meaning": "cipher, code"
+      },
+      {
+        "element": "化",
+        "reading": "か",
+        "meaning": "-ise, transform into"
+      }
+    ],
+    "relatedTerms": [
+      "himitsu-sei",
+      "ninshou",
+      "koyose",
+      "moji-code"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV row 暗号化 (category 暗号).",
+    "tags": [
+      "it",
+      "security",
+      "encryption",
+      "core"
+    ]
+  },
+  {
+    "id": "ninshou",
+    "term": "認証",
+    "kana": "にんしょう",
+    "romaji": "ninshō",
+    "translation": "confirming who the user of a system is",
+    "definitionJa": "ユーザが誰であるかを確認すること。IDとパスワード、証明書などを使って、画面を使っている人物を特定する。",
+    "explanationEn": "Careful - 認証 is a homograph in this industry. In IT it is authentication. In insurance, 認定期間 is the cooling-off period and 承諾 (not 認証) is the insurer's acceptance of an offer. In IT documents 認証 is paired with 認可 or 権限 (authorisation), though the two are often written loosely. The practical distinction in a system design is: 認証 answers \"who are you\", 権限 answers \"what may you do\".",
+    "category": "insurance-it",
+    "subcategory": "Security",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "認証が済んだ職員だけが、契約内容照会の画面を使えます。",
+      "kana": "にんしょうがすんだしょくいんだけが、けいやくないようしょうかいのがめんをつかえます。",
+      "romaji": "Ninshō ga sunda shokuin dake ga, keiyaku naiyō shōkai no gamen o tsuka e masu.",
+      "translation": "Only staff who have authenticated may use the contract-inquiry screen."
+    },
+    "context": "Login and single sign-on design, screen permissions, and audit trails that record who acted.",
+    "confusedTerms": [
+      {
+        "term": "承諾",
+        "reading": "しょうだく",
+        "termId": "shodaku",
+        "distinction": "承諾 is an insurer accepting an application; 認証 in IT is confirming a user's identity. Both carry a \"confirm\" flavour but the processes are unrelated."
+      },
+      {
+        "term": "承認",
+        "reading": "しょうにん",
+        "termId": "shonin",
+        "distinction": "承認 is an internal approval step in a workflow; 認証 only establishes who is logged in."
+      },
+      {
+        "term": "暗号化",
+        "reading": "おうか",
+        "termId": "ouka",
+        "distinction": "認証 identifies the user; 暗号化 protects the content of the data."
+      }
+    ],
+    "components": [
+      {
+        "element": "認",
+        "reading": "にん",
+        "meaning": "acknowledge, identify"
+      },
+      {
+        "element": "証",
+        "reading": "しょう",
+        "meaning": "proof, evidence"
+      }
+    ],
+    "relatedTerms": [
+      "ouka",
+      "himitsu-sei",
+      "shonin",
+      "shodaku"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://github.com/code4fukui/ipsj-words",
+    "verificationNote": "Term and definition taken from the IPSJ 情報科学テキスト用語集 (CC BY-SA 4.0) as redistributed in code4fukui/ipsj-words, CSV rows 認証 (categories 認証 / アクセス制御と認証).",
+    "tags": [
+      "it",
+      "security",
+      "access-control",
+      "homograph",
+      "core"
+    ]
+  }
+]

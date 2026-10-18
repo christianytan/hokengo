@@ -1,0 +1,765 @@
+[
+  {
+    "id": "shibo-hokenkin",
+    "term": "死亡保険金",
+    "kana": "しぼうほけんきん",
+    "romaji": "shibō hokenkin",
+    "translation": "death benefit",
+    "definitionJa": "被保険者の死亡を保険事故として支払われる保険金。",
+    "explanationEn": "The benefit paid when the insured person dies. The recipient is the 死亡保険金受取人, who is not necessarily an heir — this matters for both data modelling and tax documents.",
+    "category": "life-benefits",
+    "subcategory": "Benefit types",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "死亡保険金の請求には、死亡を証する書類が必要です。",
+      "kana": "しぼうほけんきんのせいきゅうには、しぼうをあかすしょるいがひつようです。",
+      "romaji": "Shibō hokenkin no seikyū ni wa, shibō o shōsuru shorui ga hitsuyō desu.",
+      "translation": "A claim for a death benefit requires documents evidencing the death."
+    },
+    "context": "Death claim intake, beneficiary determination logic, and 保険金額 vs 支払金額 checks in test specifications.",
+    "confusedTerms": [
+      {
+        "term": "満期保険金",
+        "reading": "まんきほけんきん",
+        "termId": "manki-hokenkin",
+        "distinction": "満期保険金 is paid when the term ends with the insured alive; 死亡保険金 is paid on death."
+      },
+      {
+        "term": "死亡保険金受取人",
+        "reading": "しぼうほけんきんうけとりにん",
+        "termId": "shibo-hokenkin-uketonin",
+        "distinction": "The 受取人 is the person who receives it; 保険金 is the money itself."
+      }
+    ],
+    "relatedTerms": [
+      "hokenkin",
+      "shibo-hokenkin-uketonin"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "benefit",
+      "death",
+      "life"
+    ]
+  },
+  {
+    "id": "shibo-hokenkin-uketonin",
+    "term": "死亡保険金受取人",
+    "kana": "しぼうほけんきんうけとりにん",
+    "romaji": "shibō hokenkin uketonin",
+    "translation": "beneficiary of a death benefit",
+    "definitionJa": "死亡保険金の支払を受ける者として指定された人。",
+    "explanationEn": "The person designated to receive the death benefit. Designating and changing this role are separate procedures from changing the policyholder, and the field set involved (続柄, 氏名, 生年月日, 受取割合) is a classic source of validation requirements.",
+    "category": "life-benefits",
+    "subcategory": "Contract parties",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "死亡保険金受取人の変更は、所定の変更手続きで受け付けます。",
+      "kana": "しぼうほけんきんうけとりにんのへんこうは、しょてんのへんこうてつづきでうけつけます。",
+      "romaji": "Shibō hokenkin uketonin no henkō wa, shōten no henkō tetsuzuki de uketsukemasu.",
+      "translation": "Changes to the beneficiary of the death benefit are accepted through the prescribed change procedure."
+    },
+    "context": "Beneficiary change screens, claim payment destination determination, and inheritance/tax documents.",
+    "confusedTerms": [
+      {
+        "term": "保険金受取人",
+        "reading": "ほけんきんうけとりにん",
+        "termId": "hokenkin-uketonin",
+        "distinction": "保険金受取人 is the general role; this term is the specific designation for the death benefit."
+      },
+      {
+        "term": "保険契約者",
+        "reading": "ほけんけいやくしゃ",
+        "termId": "hoken-keiyakusha",
+        "distinction": "The policyholder is the contracting party; the beneficiary only receives the death benefit."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "parties",
+      "death",
+      "life"
+    ]
+  },
+  {
+    "id": "manki-hokenkin",
+    "term": "満期保険金",
+    "kana": "まんきほけんきん",
+    "romaji": "manki hokenkin",
+    "translation": "maturity benefit",
+    "alternativeTranslations": [
+      "maturity payment"
+    ],
+    "definitionJa": "保険期間の満期時に、被保険者が生存している場合に支払われる保険金。",
+    "explanationEn": "Paid when the coverage period ends and the insured person is still alive. 定期保険 normally has no 満期保険金, while 養老保険 and endowment-type products do — a frequent source of product-configuration test cases.",
+    "category": "life-benefits",
+    "subcategory": "Benefit types",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "定期保険には満期保険金がないため、満期時の支払はありません。",
+      "kana": "ていきほけんにはまんきほけんきんがないため、まんきじのしはらはありません。",
+      "romaji": "Teiki hoken ni wa manki hokenkin ga nai tame, manki-ji no shiharai wa arimasen.",
+      "translation": "Term insurance has no maturity benefit, so there is no payment at maturity."
+    },
+    "context": "Maturity processing (満期処理), maturity notices, and date-driven batch jobs.",
+    "confusedTerms": [
+      {
+        "term": "死亡保険金",
+        "reading": "しぼうほけんきん",
+        "termId": "shibo-hokenkin",
+        "distinction": "Different trigger: survival to maturity vs death during the term."
+      },
+      {
+        "term": "解約返戻金",
+        "reading": "かいやくへんれいきん",
+        "termId": "kaiyaku-henrenkin",
+        "distinction": "解約返戻金 arises from cancelling before maturity; 満期保険金 from reaching maturity."
+      }
+    ],
+    "relatedTerms": [
+      "hoken-kikan",
+      "teiki-hoken",
+      "yoro-hoken"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "benefit",
+      "maturity",
+      "life"
+    ]
+  },
+  {
+    "id": "kyufukin",
+    "term": "給付金",
+    "kana": "きゅうふきん",
+    "romaji": "kyūfukin",
+    "translation": "benefit payment",
+    "alternativeTranslations": [
+      "fixed benefit (medical/accident type)"
+    ],
+    "definitionJa": "所定の状態や事故に該当した場合に支払われる金銭。医療・傷害を扱う商品で用いられる呼称。",
+    "explanationEn": "A benefit payment for meeting specified conditions, e.g. 入院給付金. Life insurers usually call the main payout 保険金, while fixed medical/accident payments are commonly written 給付金, especially in non-life and third-sector products. Treat the difference as product-specific naming rather than a legal boundary.",
+    "category": "life-benefits",
+    "subcategory": "Money flows",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "domainNote": "Naming differs by insurer and product line; some companies call the same money 保険金.",
+    "example": {
+      "ja": "給付金の支払対象となるかは、所定の要件に該当するかで判断します。",
+      "kana": "きゅうふきんのしはらたいしょうとなるかは、しょてんのようけんがたとうするかではんだんします。",
+      "romaji": "Kyūfukin no shiharai taishō to naru ka wa, shōten no yōken ni gatō suru ka de handan shimasu.",
+      "translation": "Whether a benefit payment is payable is decided by whether the specified requirements are met."
+    },
+    "context": "Medical and cancer claim processing, 給付金種目 code tables, and payment rule specifications.",
+    "confusedTerms": [
+      {
+        "term": "保険金",
+        "reading": "ほけんきん",
+        "termId": "hokenkin",
+        "distinction": "保険金 is the general term for the insurer's payment; 給付金 is the wording used for many fixed medical/accident benefits."
+      },
+      {
+        "term": "保険料",
+        "reading": "ほけんりょう",
+        "termId": "hokenryou",
+        "distinction": "保険料 is what the customer pays in; 給付金 is what the insurer pays out."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The 保険金/給付金 boundary is not a strict legal distinction; verify against the product's 約款 wording.",
+    "tags": [
+      "money",
+      "benefit",
+      "medical"
+    ]
+  },
+  {
+    "id": "hoken-gakaku",
+    "term": "保険金額",
+    "kana": "ほけんがくがく",
+    "romaji": "hoken gakaku",
+    "translation": "sum insured; benefit amount",
+    "alternativeTranslations": [
+      "amount of insurance",
+      "coverage amount"
+    ],
+    "definitionJa": "保険契約で定められた、保険金の支払の限度となる金額。",
+    "explanationEn": "The contractual maximum amount payable — not the periodic premium (保険料) and not necessarily the amount actually paid (支払金額). In property contracts it also interacts with market value and 免責金額. Fields such as 保険金額入力 are a common source of unit and scale defects.",
+    "category": "life-benefits",
+    "subcategory": "Money flows",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険金額は、契約変更の手続きで増減できます。",
+      "kana": "ほけんがくがくは、けいやくへんこうのてつづきでぞうげんできます。",
+      "romaji": "Hoken gakaku wa, keiyaku henkō no tetsuzuki de zōgen dekimasu.",
+      "translation": "The sum insured can be increased or decreased through the policy-change procedure."
+    },
+    "context": "Contract configuration, premium calculation inputs, 支払限度額 rules, and reconciliation tests.",
+    "confusedTerms": [
+      {
+        "term": "保険料",
+        "reading": "ほけんりょう",
+        "termId": "hokenryou",
+        "distinction": "保険料 is the premium paid by the customer; 保険金額 is the maximum benefit amount in the contract."
+      },
+      {
+        "term": "免責金額",
+        "reading": "めんしゃくきんがく",
+        "termId": "menshaku-kingaku",
+        "distinction": "免責金額 is the deductible retained by the customer and is subtracted from the payable amount."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "money",
+      "core",
+      "contract-config"
+    ]
+  },
+  {
+    "id": "hoken-kikan",
+    "term": "保険期間",
+    "kana": "ほけんきかん",
+    "romaji": "hoken kikan",
+    "translation": "insurance coverage period",
+    "alternativeTranslations": [
+      "policy period"
+    ],
+    "definitionJa": "保険契約の効力により保障が続く期間。開始日から満了日まで。",
+    "explanationEn": "The period during which cover is in force, from start date to expiry. Distinct from 払込期間, which is only the window in which premiums are paid. Confusing the two is a classic requirement defect in contract-configuration screens.",
+    "category": "life-benefits",
+    "subcategory": "Contract terms",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険期間10年の契約で、払込期間は5年です。",
+      "kana": "ほけんきかん10ねんのけいやくで、はらこみきかんは5ねんです。",
+      "romaji": "Hoken kikan jū-nen no keiyaku de, harakomi kikan wa go-nen desu.",
+      "translation": "The contract has a ten-year coverage period and a five-year premium payment period."
+    },
+    "context": "Contract configuration screens (保険期間・払込期間 selectors), renewal logic, and date-calculation test cases.",
+    "confusedTerms": [
+      {
+        "term": "払込期間",
+        "reading": "はらこみきかん",
+        "termId": "harakomi-kikan",
+        "distinction": "払込期間 is only the window in which premiums must be paid; 保険期間 is the whole period of cover."
+      }
+    ],
+    "relatedTerms": [
+      "harakomi-kikan",
+      "harakomi-miryou",
+      "keiyaku-koshin"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "dates",
+      "core",
+      "contract-config"
+    ]
+  },
+  {
+    "id": "harakomi-kikan",
+    "term": "払込期間",
+    "kana": "はらこみきかん",
+    "romaji": "harakomi kikan",
+    "translation": "premium payment period",
+    "definitionJa": "保険料の払込が必要な期間。保険期間と一致する場合としない場合がある。",
+    "explanationEn": "The window over which premiums must be paid. It may be shorter than the coverage period, or end at a certain age (払込期間60歳満了). Forms usually offer both as separate selectors and validation must reject impossible combinations.",
+    "category": "life-benefits",
+    "subcategory": "Contract terms",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "払込期間を60歳満了に設定すると、それ以降の保険料の請求はありません。",
+      "kana": "はらこみきかんを60さいまんりょうにせっていすると、それいこうのほけんりょうのせいきゅうはありません。",
+      "romaji": "Harakomi kikan o rokusai-sai manryō ni settei suru to, sore ikō no hokenryō no seikyū wa arimasen.",
+      "translation": "If the payment period is set to end at age 60, no premiums are billed after that."
+    },
+    "context": "Contract configuration, premium billing schedules, and 払込満了 driven processing.",
+    "confusedTerms": [
+      {
+        "term": "保険期間",
+        "reading": "ほけんきかん",
+        "termId": "hoken-kikan",
+        "distinction": "保険期間 is the period of cover; 払込期間 is only the payment window."
+      },
+      {
+        "term": "払込満了",
+        "reading": "はらこみまんりょう",
+        "termId": "harakomi-miryou",
+        "distinction": "払込満了 is the event of completing the payment period, not the period itself."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "dates",
+      "premium",
+      "contract-config"
+    ]
+  },
+  {
+    "id": "harakomi-miryou",
+    "term": "払込満了",
+    "kana": "はらこみまんりょう",
+    "romaji": "harakomi manryō",
+    "translation": "completion of the premium payment period",
+    "alternativeTranslations": [
+      "paid-up status"
+    ],
+    "definitionJa": "払込期間の保険料をすべて払い終えること。満了後は保険料の払込が不要になる。",
+    "explanationEn": "The point at which all required premiums have been paid (the contract becomes paid-up). Cover normally continues. In systems this is a milestone event: it stops billing, changes contract status, and often triggers a completion notice.",
+    "category": "life-benefits",
+    "subcategory": "Contract events",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "払込満了の翌月に、払込完了のお知らせを送付します。",
+      "kana": "はらこみまんりょうのげつぎのつきに、はらこみかん完のおしらせをそうふします。",
+      "romaji": "Harakomi manryō no tsugi no tsuki ni, harakomi kanzen no oshirase o sōfu shimasu.",
+      "translation": "In the month after the payment period completes, we send a payment-completion notice."
+    },
+    "context": "Billing stop logic, contract status transitions, and scheduled notice generation.",
+    "confusedTerms": [
+      {
+        "term": "満期保険金",
+        "reading": "まんきほけんきん",
+        "termId": "manki-hokenkin",
+        "distinction": "払込満了 ends premium payment, not cover; 満期保険金 is a payment at the end of the coverage period."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "premium",
+      "status",
+      "life"
+    ]
+  },
+  {
+    "id": "kaiyaku-henrenkin",
+    "term": "解約返戻金",
+    "kana": "かいやくへんれいきん",
+    "romaji": "kaiyaku henrenkin",
+    "translation": "policy surrender value",
+    "alternativeTranslations": [
+      "cash surrender value",
+      "surrender refund"
+    ],
+    "definitionJa": "保険契約を解約したときに、保険者から契約者に返還される金銭。",
+    "explanationEn": "The amount refunded when a policy is cancelled before maturity. Under a level-premium design, premiums collected in advance are held as 責任準備金, and part of that is returned on surrender. Refunds of unearned premium in non-life contracts are calculated differently.",
+    "category": "life-benefits",
+    "subcategory": "Money flows",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "domainNote": "Non-life refunds for the unearned period use different calculation logic and sometimes different wording.",
+    "example": {
+      "ja": "解約返戻金は、解約の受付日ではなく解約日に計算されます。",
+      "kana": "かいやくへんれいきんは、かいやくのうけつけびではなくかいやくびにけいさんされます。",
+      "romaji": "Kaiyaku henrenkin wa, kaiyaku no uketsukebi de wa naku kaiyaku-bi ni keisan saremasu.",
+      "translation": "The surrender value is calculated on the cancellation date, not on the date the request was accepted."
+    },
+    "context": "Cancellation screens (解約金シミュレーション), accounting entries, and 契約者貸付 limit calculations.",
+    "confusedTerms": [
+      {
+        "term": "満期保険金",
+        "reading": "まんきほけんきん",
+        "termId": "manki-hokenkin",
+        "distinction": "Surrender value is paid for early cancellation; maturity benefit is paid at the end of the term."
+      },
+      {
+        "term": "責任準備金",
+        "reading": "せきにんじんびきん",
+        "termId": "sekinin-junbikin",
+        "distinction": "責任準備金 is the reserve the insurer holds; only part of it may be returned as surrender value."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E4%BF%9D%E9%99%BA",
+    "verification": "verified",
+    "verificationNote": "The cited article explains 解約返戻金 as the refund of premiums collected in advance under a level-premium design.",
+    "tags": [
+      "money",
+      "cancellation",
+      "life"
+    ]
+  },
+  {
+    "id": "menshaku-jiyu",
+    "term": "免責事由",
+    "kana": "めんしゃくじゆう",
+    "romaji": "menshaku jiyū",
+    "translation": "grounds for exclusion from payment",
+    "alternativeTranslations": [
+      "exclusion grounds"
+    ],
+    "definitionJa": "約款などで、保険金の支払を行わないと定められた事由。",
+    "explanationEn": "The stated grounds on which the insurer will not pay — for example certain intentional acts, or exclusion of suicide within a defined period in some life products. The exact list is defined in the 約款 of each product, so never assume it is universal.",
+    "category": "life-benefits",
+    "subcategory": "Exclusions",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "domainNote": "The list of exclusions is product-specific; life and non-life exclusions differ substantially.",
+    "example": {
+      "ja": "所定の免責事由に該当する場合、保険金は支払われません。",
+      "kana": "しょてんのめんしゃくじゆうにがとうするばあい、ほけんきんはしはらわれません。",
+      "romaji": "Shōten no menshaku jiyū ni gatō suru baai, hokenkin wa harawaremasen.",
+      "translation": "Where the stated exclusion grounds apply, no benefit is paid."
+    },
+    "context": "Payment decision rules, 免責チェック logic in assessment screens, and exclusion reason codes.",
+    "confusedTerms": [
+      {
+        "term": "免責事項",
+        "reading": "めんしゃくじこう",
+        "termId": "menshaku-jiko",
+        "distinction": "免責事項 is the section/wording shown to customers; 免責事由 is the specific triggering ground used in the rules."
+      },
+      {
+        "term": "免責金額",
+        "reading": "めんしゃくきんがく",
+        "termId": "menshaku-kingaku",
+        "distinction": "免責金額 is a deductible that reduces the payment; 免責事由 excludes payment entirely."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Exclusion lists vary by product and 約款; always confirm against the specific conditions.",
+    "tags": [
+      "exclusion",
+      "rules",
+      "claims"
+    ]
+  },
+  {
+    "id": "nyu-in-kyufukin",
+    "term": "入院給付金",
+    "kana": "にゅういんきゅうふきん",
+    "romaji": "nyūin kyūfukin",
+    "translation": "hospitalization benefit",
+    "definitionJa": "入院した日数に応じて支払われる給付金。日額と支払限度日数が定められる。",
+    "explanationEn": "A hospitalization benefit paid on a per-day basis, subject to a maximum number of days per claim and per contract year. The interaction of 入院日数, 支払限度日数 and 通算 is one of the densest areas of medical-insurance business rules.",
+    "category": "life-benefits",
+    "subcategory": "Benefit types",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "入院給付金は、入院1日あたりの金額に入院日数を乗じて計算します。",
+      "kana": "にゅういんきゅうふきんは、にゅういん1にちあたりのきんがくににゅういんにんすうをのじてけいさんします。",
+      "romaji": "Nyūin kyūfukin wa, nyūin ichi-nichi atari no kingaku ni nyūin nissū o nojite keisan shimasu.",
+      "translation": "The hospitalization benefit is calculated by multiplying the per-day amount by the number of hospitalised days."
+    },
+    "context": "Medical claim assessment screens, 入院日数 input validation, and 支払限度額 rule engines.",
+    "confusedTerms": [
+      {
+        "term": "手術給付金",
+        "reading": "しゅじゅつきゅうふきん",
+        "termId": "shujutsu-kyufukin",
+        "distinction": "手術給付金 is triggered by a specified operation, not by days hospitalised."
+      },
+      {
+        "term": "一時金",
+        "reading": "いちじきん",
+        "termId": "ichijikin",
+        "distinction": "一時金 is a single lump-sum payment; 入院給付金 accrues per day."
+      }
+    ],
+    "relatedTerms": [
+      "shiharai-gendogaku",
+      "shojo-yoken"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "benefit",
+      "medical",
+      "calculation"
+    ]
+  },
+  {
+    "id": "shujutsu-kyufukin",
+    "term": "手術給付金",
+    "kana": "しゅじゅつきゅうふきん",
+    "romaji": "shujutsu kyūfukin",
+    "translation": "surgery benefit",
+    "definitionJa": "所定の手術を受けた場合に支払われる給付金。手術の種類に応じて金額が区分される。",
+    "explanationEn": "A benefit paid when a specified operation is performed, usually with amounts banded by the type of surgery. In system terms this means a code table mapping procedure codes to benefit categories — a frequent source of mapping defects.",
+    "category": "life-benefits",
+    "subcategory": "Benefit types",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "手術給付金は、実施された手術の区分に応じて支払われます。",
+      "kana": "しゅじゅつきゅうふきんは、じっしされたしゅじゅつのくぶんにおうじてしはらわれます。",
+      "romaji": "Shujutsu kyūfukin wa, jisshi sareta shujutsu no kubun ni ōjite harawaremasu.",
+      "translation": "The surgery benefit is paid according to the category of the operation performed."
+    },
+    "context": "Surgery code mapping tables, claim assessment screens, and 所定要件 rule specifications.",
+    "confusedTerms": [
+      {
+        "term": "入院給付金",
+        "reading": "にゅういんきゅうふきん",
+        "termId": "nyu-in-kyufukin",
+        "distinction": "Different trigger: an operation vs days of hospitalisation."
+      }
+    ],
+    "relatedTerms": [
+      "shojo-yoken",
+      "shindansho"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "benefit",
+      "medical",
+      "code-table"
+    ]
+  },
+  {
+    "id": "ichijikin",
+    "term": "一時金",
+    "kana": "いちじきん",
+    "romaji": "ichijikin",
+    "translation": "lump-sum payment",
+    "definitionJa": "一度に一時金として支払われる金銭。年金形式と対比される。",
+    "explanationEn": "A one-off lump sum, as opposed to receiving the same amount as an annuity (年金形式). Product screens often offer a choice between 一時金受取 and 年金受取, and the choice changes downstream records and tax documents.",
+    "category": "life-benefits",
+    "subcategory": "Payment form",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "満期金は、一時金で受け取るか年金で受け取るか選択できます。",
+      "kana": "まんききんは、いちじきんでうけとるかねんきんでうけとるかせんたくできます。",
+      "romaji": "Manki-kin wa, ichijikin de uketoru ka nenkin de uketoru ka sentaku dekimasu.",
+      "translation": "You can choose to receive the maturity proceeds as a lump sum or as an annuity."
+    },
+    "context": "Payment method selection screens, 支払方法 code tables, and downstream accounting entries.",
+    "confusedTerms": [
+      {
+        "term": "年金原金",
+        "reading": "ねんきんげんきん",
+        "termId": "nenkin-genchin",
+        "distinction": "年金原金 is the base amount converted into an annuity; 一時金 is the same money taken in one payment."
+      }
+    ],
+    "blankVariants": [
+      "一時金"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "money",
+      "payment-form",
+      "life"
+    ]
+  },
+  {
+    "id": "keiyakusha-kashitsuke",
+    "term": "契約者貸付",
+    "kana": "けいやくしゃかしかけ",
+    "romaji": "keiyakusha kashitsuke",
+    "translation": "policyholder loan",
+    "definitionJa": "解約返戻金を担保として、契約者が保険者から資金の貸付を受ける制度。",
+    "explanationEn": "A loan secured on the policy's surrender value. Available only for contracts that have meaningful 解約返戻金, and the loan balance reduces the amount ultimately paid out. Lending rules, interest (貸付金利息) and repayment are separate business rules in the system.",
+    "category": "life-benefits",
+    "subcategory": "Contract services",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "契約者貸付の借入額は、解約返戻金の範囲内で決まります。",
+      "kana": "けいやくしゃかしかけのかりいれがくは、かいやくへんれいきんのはんいないできまります。",
+      "romaji": "Keiyakusha kashitsuke no kaire-gaku wa, kaiyaku henrenkin no han'i nai de kimarimasu.",
+      "translation": "The amount that can be borrowed under a policyholder loan is limited to the surrender value."
+    },
+    "context": "Loan application screens, balance/limit checks, and interest accrual processing.",
+    "confusedTerms": [
+      {
+        "term": "解約返戻金",
+        "reading": "かいやくへんれいきん",
+        "termId": "kaiyaku-henrenkin",
+        "distinction": "解約返戻金 is the refund on cancellation; it serves as the collateral ceiling for 契約者貸付."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "loan",
+      "life",
+      "service"
+    ]
+  },
+  {
+    "id": "hokenryou-harakomi-menjo",
+    "term": "保険料払込免除",
+    "kana": "ほけんりょうはらこみめんじょ",
+    "romaji": "hokenryō harakomi menjo",
+    "translation": "waiver of premium payments",
+    "definitionJa": "所定の状態に該当した場合に、以後の保険料の払込を不要とする特約・制度。",
+    "explanationEn": "A waiver provision: if specified conditions are met (for example a designated state of illness or a care level), future premiums are waived while cover continues. It is usually a rider (払込免除特約) and its qualification rules generate a lot of assessment logic.",
+    "category": "life-benefits",
+    "subcategory": "Contract services",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険料払込免除に該当すると判定された場合、以後の払込は不要となります。",
+      "kana": "ほけんりょうはらこみめんじょにがとうすると判定されたばあい、いごのはらこみはふようとります。",
+      "romaji": "Hokenryō harakomi menjo ni gatō suru to hantei sareta baai, igo no harakomi wa fuyō to narimasu.",
+      "translation": "If it is determined that the waiver conditions are met, no further premium payments are required."
+    },
+    "context": "Waiver assessment workflows, billing stop logic, and rider eligibility rules.",
+    "confusedTerms": [
+      {
+        "term": "払込満了",
+        "reading": "はらこみまんりょう",
+        "termId": "harakomi-miryou",
+        "distinction": "払込満了 is completing the scheduled payments; 保険料払込免除 stops them early because qualifying conditions were met."
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "Qualifying conditions differ widely by product; confirm against the rider's 約款.",
+    "tags": [
+      "premium",
+      "rider",
+      "waiver"
+    ]
+  },
+  {
+    "id": "sekinin-junbikin",
+    "term": "責任準備金",
+    "kana": "せきにんじんびきん",
+    "romaji": "sekinin junbikin",
+    "translation": "legal reserve; policy reserve",
+    "definitionJa": "将来の保険金の支払に充てるため、保険者が積み立てる金銭。平準保険料方式で過大に徴収した保険料に対応して積み立てられる。",
+    "explanationEn": "The reserve an insurer holds to meet future benefit obligations. Under a level-premium design, premiums collected in excess of current risk are set aside as 責任準備金; part of this becomes 解約返戻金 on surrender. Useful background vocabulary for reading insurer documents.",
+    "category": "life-benefits",
+    "subcategory": "Insurer finance",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "責任準備金は、将来の保険金の支払に備えて積み立てられます。",
+      "kana": "せきにんじんびきんは、しょうらいのほけんきんのしはらにそなえてつみたてられます。",
+      "romaji": "Sekinin junbikin wa, shōrai no hokenkin no shiharai ni sonaete tsumitate raremasu.",
+      "translation": "The legal reserve is set aside to meet future benefit payments."
+    },
+    "context": "Insurer financial documents, actuarial discussions, and surrender-value logic.",
+    "confusedTerms": [
+      {
+        "term": "解約返戻金",
+        "reading": "かいやくへんれいきん",
+        "termId": "kaiyaku-henrenkin",
+        "distinction": "責任準備金 is held by the insurer; 解約返戻金 is what is actually paid to the customer on surrender."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E4%BF%9D%E9%99%BA",
+    "verification": "verified",
+    "verificationNote": "The cited article explains 責任準備金 as the funds retained in advance under a level-premium design.",
+    "tags": [
+      "finance",
+      "life",
+      "actuarial"
+    ]
+  },
+  {
+    "id": "nenkin-genchin",
+    "term": "年金原金",
+    "kana": "ねんきんげんきん",
+    "romaji": "nenkin genkin",
+    "translation": "annuity principal; annuity base amount",
+    "definitionJa": "年金の支払計算の基礎となる金額。一時金を年金原金として運用し年金を受け取る形もある。",
+    "explanationEn": "The principal amount from which annuity payments are calculated. Some products let the customer leave a maturity or death amount as 年金原金 and draw an annuity from it, so the same money can appear either as 一時金 or as an annuity base.",
+    "category": "life-benefits",
+    "subcategory": "Payment form",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "年金原金を据え置く場合、年金の支払開始日を指定します。",
+      "kana": "ねんきんげんきんをすえおくばあい、ねんきんのしはらかしびをしていします。",
+      "romaji": "Nenkin genkin o sueo ku baai, nenkin no shiharai kaishi-bi o shitei shimasu.",
+      "translation": "If the annuity principal is left on deposit, you specify the annuity payment start date."
+    },
+    "context": "Annuity setup screens, 支払開始日 scheduling, and annuity calculation rules.",
+    "confusedTerms": [
+      {
+        "term": "一時金",
+        "reading": "いちじきん",
+        "termId": "ichijikin",
+        "distinction": "一時金 is taken as a single payment; 年金原金 is the base retained to generate periodic payments."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Product structures vary; confirm the exact mechanism in the relevant product documents.",
+    "tags": [
+      "annuity",
+      "life",
+      "calculation"
+    ]
+  },
+  {
+    "id": "baitoukin",
+    "term": "配当金",
+    "kana": "ばいとうきん",
+    "romaji": "baitōkin",
+    "translation": "policy dividend; surplus distribution",
+    "definitionJa": "予定していた死亡率・利率・事業費の実績が好調だった場合に、契約者に分配される金銭。",
+    "explanationEn": "A distribution to policyholders when mortality, investment or expense experience is more favourable than the assumptions used to price the product. Not guaranteed, and whether it is paid, and how, depends on the product type.",
+    "category": "life-benefits",
+    "subcategory": "Insurer finance",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "配当金は、契約の仕組みによっては支払われない場合があります。",
+      "kana": "ばいとうきんは、けいやくのしくみによってはしはらわれないばあいがります。",
+      "romaji": "Baitōkin wa, keiyaku no shikumi ni yotte wa harawarenai baai ga arimasu.",
+      "translation": "Depending on the design of the contract, dividends may not be paid."
+    },
+    "context": "Dividend calculation and allocation logic, contract-type driven rules, and customer notices.",
+    "confusedTerms": [
+      {
+        "term": "解約返戻金",
+        "reading": "かいやくへんれいきん",
+        "termId": "kaiyaku-henrenkin",
+        "distinction": "配当金 is a share of favourable experience; 解約返戻金 is the refund on cancellation."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E4%BF%9D%E9%99%BA",
+    "verification": "industry-standard",
+    "verificationNote": "The cited article discusses dividend distribution in life insurance; payment rules are product-specific.",
+    "tags": [
+      "finance",
+      "life",
+      "dividend"
+    ]
+  }
+]

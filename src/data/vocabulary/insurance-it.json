@@ -1,0 +1,1626 @@
+[
+  {
+    "id": "gyomu-flow",
+    "term": "業務フロー",
+    "kana": "ぎょうむふろー",
+    "romaji": "gyōmu furō",
+    "translation": "business workflow",
+    "definitionJa": "業務がどの順序で、誰によって行われるかを表した流れ。",
+    "explanationEn": "The end-to-end flow of a business process, usually drawn as a diagram with swim lanes. In insurance projects it is the starting point of requirement discussion, and the words 業務フロー変更 mean a change to the process itself, not to the software.",
+    "category": "insurance-it",
+    "subcategory": "Requirements",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "業務フローを変更する場合は、関連する画面への影響も確認します。",
+      "kana": "ぎょうむふろーをへんこうするばあいは、かんれんするがめんへのえいきょうもかくにんします。",
+      "romaji": "Gyōmu furō o henkō suru baai wa, kanren suru gamen e no eikyō mo kakunin shimasu.",
+      "translation": "When the business workflow is changed, the impact on related screens is also checked."
+    },
+    "context": "Requirement definition, process redesign projects, and test scenario design.",
+    "confusedTerms": [
+      {
+        "term": "画面遷移",
+        "reading": "がめんてんい",
+        "termId": "gamen-ten-i",
+        "distinction": "画面遷移 describes navigation between screens; 業務フロー describes the business process, which may span several systems and manual steps."
+      },
+      {
+        "term": "業務要件",
+        "reading": "ぎょうむようけん",
+        "termId": "gyomu-yoken",
+        "distinction": "業務フロー shows how work flows; 業務要件 states what the system must satisfy."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "requirements",
+      "process",
+      "core"
+    ]
+  },
+  {
+    "id": "gyomu-yoken",
+    "term": "業務要件",
+    "kana": "ぎょうむようけん",
+    "romaji": "gyōmu yōken",
+    "translation": "business requirements",
+    "definitionJa": "システムが満たすべき、業務上の目的や条件。",
+    "explanationEn": "What the business needs the system to achieve, expressed independently of how it will be built. In insurance projects these are usually phrased as rules about contracts, payments and deadlines, and they are the traceability anchor for test specifications.",
+    "category": "insurance-it",
+    "subcategory": "Requirements",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "業務要件を定義せずに画面設計を始めると、手戻りが発生します。",
+      "kana": "ぎょうむようけんをていぎせずにがめんせっけいをはじめると、てもどりがはっせいします。",
+      "romaji": "Gyōmu yōken o teigi sezu ni gamen sekkei o hajimeru to, temodoriga hassei shimasu.",
+      "translation": "If screen design starts without defining business requirements, rework follows."
+    },
+    "context": "Requirement definition workshops, traceability matrices, and change control.",
+    "confusedTerms": [
+      {
+        "term": "要件定義書",
+        "reading": "ようけんていぎしょ",
+        "termId": "youken-teigi-sho",
+        "distinction": "業務要件 are the needs themselves; 要件定義書 is the document that records them."
+      },
+      {
+        "term": "業務ルール",
+        "reading": "ぎょうむるーる",
+        "termId": "gyomu-rule",
+        "distinction": "業務ルール is a specific rule the system enforces; 業務要件 is the broader need it serves."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "requirements",
+      "core",
+      "traceability"
+    ]
+  },
+  {
+    "id": "youken-teigi-sho",
+    "term": "要件定義書",
+    "kana": "ようけんていぎしょ",
+    "romaji": "yōken teigi-sho",
+    "translation": "requirements definition document",
+    "definitionJa": "業務要件と、システムに求める機能を定義してまとめた文書。",
+    "explanationEn": "The document that fixes what will be built. In Japanese projects it is a formal deliverable with review and approval steps, and later documents (design, test specifications) are expected to trace back to it.",
+    "category": "insurance-it",
+    "subcategory": "Documentation",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "要件定義書の記載内容が、後工程のテスト仕様書の根拠になります。",
+      "kana": "ようけんていぎしょのきさいないようが、こうていかくのてすとしようしょのこんきょになります。",
+      "romaji": "Yōken teigi-sho no kisai naiyō ga, kō-teikaku no tesuto shiyōsho no konkyo ni narimasu.",
+      "translation": "The content of the requirements document becomes the basis for test specifications in later phases."
+    },
+    "context": "Deliverable lists, review meetings, and change control after approval.",
+    "confusedTerms": [
+      {
+        "term": "テスト仕様書",
+        "reading": "てすとしようしょ",
+        "termId": "test-shiyousho",
+        "distinction": "要件定義書 says what to build; テスト仕様書 says how to prove it works."
+      },
+      {
+        "term": "業務要件",
+        "reading": "ぎょうむようけん",
+        "termId": "gyomu-yoken",
+        "distinction": "業務要件 are the needs; the document is the agreed written form of them."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "documentation",
+      "deliverable",
+      "core"
+    ]
+  },
+  {
+    "id": "gamen-komoku",
+    "term": "画面項目",
+    "kana": "がめんこうもく",
+    "romaji": "gamen moku moku",
+    "translation": "screen field",
+    "definitionJa": "画面に表示されるデータの項目。入力・表示・計算などの区分で整理される。",
+    "explanationEn": "Any data element shown on a screen. Screen-field tables (画面項目定義書) are the heart of Japanese insurance system specifications: each row defines the field name, type, length, source, default, edit rules and error messages.",
+    "category": "insurance-it",
+    "subcategory": "Screen design",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "画面項目の一覧は、入力・表示・計算の区分で整理します。",
+      "kana": "がめんこうもくのいちらんは、にゅうりょく・ひょうじ・けいさんのくぶんせいりします。",
+      "romaji": "Gamen moku moku no ichiran wa, nyūryoku, hyōji, keisan no kubun de seiri shimasu.",
+      "translation": "The list of screen fields is organised into input, display and calculated categories."
+    },
+    "context": "Screen definition documents, field-level change impact analysis, and test case generation.",
+    "confusedTerms": [
+      {
+        "term": "入力項目",
+        "reading": "にゅうりょくこうもく",
+        "termId": "nyuryoku-komoku",
+        "distinction": "入力項目 are only the fields the user types into; 画面項目 covers everything shown."
+      },
+      {
+        "term": "必須項目",
+        "reading": "ひっすこうもく",
+        "termId": "hissu-komoku",
+        "distinction": "必須項目 is a property of a field, not a kind of field."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "screen",
+      "specification",
+      "core"
+    ]
+  },
+  {
+    "id": "nyuryoku-komoku",
+    "term": "入力項目",
+    "kana": "にゅうりょくこうもく",
+    "romaji": "nyūryoku moku moku",
+    "translation": "input field",
+    "definitionJa": "利用者が入力する項目。文字種・桁数・必須かなどが定義される。",
+    "explanationEn": "A field the user fills in. Specifications define character type (全角/半角), length, allowed codes and validation. Insurance forms are dense with conditional input fields, which is where most field-level defects are found.",
+    "category": "insurance-it",
+    "subcategory": "Screen design",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "入力項目には、文字種と桁数の制限を定義します。",
+      "kana": "にゅうりょくこうもくには、もじしとけたすうのせいげんをていぎします。",
+      "romaji": "Nyūryoku moku moku ni wa, moji-shu to keta-sū no seigen o teigi shimasu.",
+      "translation": "For input fields, the character type and length limits are defined."
+    },
+    "context": "Screen definitions, validation rules, and accessibility of forms.",
+    "confusedTerms": [
+      {
+        "term": "画面項目",
+        "reading": "がめんこうもく",
+        "termId": "gamen-komoku",
+        "distinction": "画面項目 is the superset; 入力項目 are only the writable fields."
+      },
+      {
+        "term": "必須項目",
+        "reading": "ひっすこうもく",
+        "termId": "hissu-komoku",
+        "distinction": "必須項目 describes whether a value is required."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "screen",
+      "input",
+      "validation"
+    ]
+  },
+  {
+    "id": "hissu-komoku",
+    "term": "必須項目",
+    "kana": "ひっすこうもく",
+    "romaji": "hissu moku moku",
+    "translation": "required field",
+    "definitionJa": "入力が無い場合にエラーとなる項目。",
+    "explanationEn": "A field that must be filled in. 必須 is also used productively (必須条件, 必須チェック), so the word appears well beyond field definitions. Conditional requiredness — required only for certain product types — is a common requirement and a common defect source.",
+    "category": "insurance-it",
+    "subcategory": "Screen design",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "必須項目が未入力の場合、登録ボタンを押すことができません。",
+      "kana": "ひっすこうもくがみにゅうりょくのばあい、とうろくぼたんをおすことができません。",
+      "romaji": "Hissu moku moku ga mi-nyūryoku no baai, tōroku botan o susu koto ga dekimasen.",
+      "translation": "If a required field is empty, the register button cannot be pressed."
+    },
+    "context": "Validation rules, error messages, and button enable/disable behaviour.",
+    "confusedTerms": [
+      {
+        "term": "任意項目",
+        "reading": "にんいこうもく",
+        "termId": "nin-i-komoku",
+        "distinction": "任意項目 may be left empty without an error."
+      },
+      {
+        "term": "入力チェック",
+        "reading": "にゅうりょくちぇっく",
+        "termId": "nyuryoku-check",
+        "distinction": "入力チェック is the check itself; 必須項目 is the field it applies to."
+      },
+      {
+        "term": "バリデーション",
+        "reading": "ばりでーしょん",
+        "termId": "barideshon",
+        "distinction": "The loanword for the same rule-checking activity; 必須項目 is a property of a field, バリデーション is the check that enforces it."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "screen",
+      "validation",
+      "core"
+    ]
+  },
+  {
+    "id": "nin-i-komoku",
+    "term": "任意項目",
+    "kana": "にんいこうもく",
+    "romaji": "nin'i moku moku",
+    "translation": "optional field",
+    "definitionJa": "入力が無くても処理を進められる項目。",
+    "explanationEn": "A field that may be left empty. Note that optional does not mean unvalidated: if a value is entered it may still have to satisfy format and code rules. Specifications should say so explicitly.",
+    "category": "insurance-it",
+    "subcategory": "Screen design",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "任意項目は、空のままでも登録できます。",
+      "kana": "にんいこうもくは、からのままでもとうろくできます。",
+      "romaji": "Nin'i moku moku wa, kara no mama demo tōroku dekimasu.",
+      "translation": "Optional fields can be registered while left empty."
+    },
+    "context": "Screen definitions and validation rules that apply only when a value is present.",
+    "confusedTerms": [
+      {
+        "term": "必須項目",
+        "reading": "ひっすこうもく",
+        "termId": "hissu-komoku",
+        "distinction": "Direct opposites in requiredness."
+      },
+      {
+        "term": "入力チェック",
+        "reading": "にゅうりょくちぇっく",
+        "termId": "nyuryoku-check",
+        "distinction": "Optional fields can still be subject to format checks when filled."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "screen",
+      "validation"
+    ]
+  },
+  {
+    "id": "hyoji-joken",
+    "term": "表示条件",
+    "kana": "ひょうじじょうけん",
+    "romaji": "hyōji jōken",
+    "translation": "display condition",
+    "definitionJa": "項目やボタン、領域をいつ表示しいつ非表示にするかを定める条件。",
+    "explanationEn": "The rule deciding whether a field, section or button is shown. In insurance screens these conditions depend on 保険種類, 契約状態 or the value of another field, and combinations multiply quickly — a major driver of test case counts.",
+    "category": "insurance-it",
+    "subcategory": "Screen behaviour",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "表示条件が複雑な場合、テストケースの数が急増します。",
+      "kana": "ひょうじじょうけんがふくざつなばあい、てすとけーすのかずがきゅうぞうします。",
+      "romaji": "Hyōji jōken ga fukuzatsu na baai, tesuto kēsu no kazu ga kyūzō shimasu.",
+      "translation": "When display conditions are complex, the number of test cases grows sharply."
+    },
+    "context": "Screen specifications, conditional UI logic, and combinatorial test design.",
+    "confusedTerms": [
+      {
+        "term": "活性・非活性",
+        "reading": "かっせい・ひかっせい",
+        "termId": "kassei-hikassei",
+        "distinction": "表示条件 controls whether something appears at all; 活性・非活性 controls whether a visible control can be used."
+      },
+      {
+        "term": "遷移条件",
+        "reading": "てんいじょうけん",
+        "termId": "ten-i-joken",
+        "distinction": "遷移条件 governs moving to another screen or state, not showing a field."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "screen",
+      "rules",
+      "testing"
+    ]
+  },
+  {
+    "id": "kassei-hikassei",
+    "term": "活性・非活性",
+    "kana": "かっせい・ひかっせい",
+    "romaji": "kassei / hikassei",
+    "translation": "enabled / disabled (UI state)",
+    "definitionJa": "操作できる状態と、表示されているが操作できない状態。ボタンや入力欄に用いる表記。",
+    "explanationEn": "The standard Japanese UI vocabulary for enabled versus greyed-out. 活性 means active/enabled, 非活性 the negation. It is distinct from 有効/無効 (valid/invalid) and from showing or hiding a control, and the three are frequently confused in specifications.",
+    "category": "insurance-it",
+    "subcategory": "Screen behaviour",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "blankVariants": [
+      "活性"
+    ],
+    "example": {
+      "ja": "必須項目が入力されると、登録ボタンが活性の状態になります。",
+      "kana": "ひっすこうもくがにゅうりょくされると、とうろくぼたんがかっせいのじょうたいになります。",
+      "romaji": "Hissu moku moku ga nyūryoku sareru to, tōroku botan ga kassei no jōtai ni narimasu.",
+      "translation": "Once the required fields are filled in, the register button becomes enabled."
+    },
+    "context": "Screen behaviour specifications, accessibility (focus and aria-disabled), and test expectations.",
+    "confusedTerms": [
+      {
+        "term": "表示条件",
+        "reading": "ひょうじじょうけん",
+        "termId": "hyoji-joken",
+        "distinction": "表示条件 decides visibility; 活性・非活性 decides usability of a visible control."
+      },
+      {
+        "term": "無効",
+        "reading": "むこう",
+        "termId": "mukou",
+        "distinction": "無効 describes invalidity or a retired record, not a temporarily unusable control."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "screen",
+      "ui-state",
+      "accessibility"
+    ]
+  },
+  {
+    "id": "ten-i-joken",
+    "term": "遷移条件",
+    "kana": "てんいじょうけん",
+    "romaji": "ten'i jōken",
+    "translation": "transition or navigation condition",
+    "definitionJa": "ある画面や状態から別のものであるに移るために満たすべき条件。",
+    "explanationEn": "The condition for moving from one screen or one contract state to another. The same word covers UI navigation and state machines, so always check which one a specification is talking about.",
+    "category": "insurance-it",
+    "subcategory": "Screen behaviour",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "遷移条件を満たさない場合は、同じ画面にとどまります。",
+      "kana": "てんいじょうけんをみたさないばあいは、おなじがめんにとどまります。",
+      "romaji": "Ten'i jōken o mitasanai baai wa, onaji gamen ni todomarimasu.",
+      "translation": "If the transition condition is not met, the user stays on the same screen."
+    },
+    "context": "Screen flow specifications, contract status state machines, and workflow engines.",
+    "confusedTerms": [
+      {
+        "term": "画面遷移",
+        "reading": "がめんてんい",
+        "termId": "gamen-ten-i",
+        "distinction": "画面遷移 is the navigation itself; 遷移条件 is the rule that permits it."
+      },
+      {
+        "term": "表示条件",
+        "reading": "ひょうじじょうけん",
+        "termId": "hyoji-joken",
+        "distinction": "表示条件 governs visibility within a screen."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "screen",
+      "state-machine",
+      "rules"
+    ]
+  },
+  {
+    "id": "gamen-ten-i",
+    "term": "画面遷移",
+    "kana": "がめんてんい",
+    "romaji": "gamen ten'i",
+    "translation": "screen transition",
+    "definitionJa": "ある画面から別の画面へ移る仕組み・流れ。",
+    "explanationEn": "Navigation between screens, usually documented with a 画面遷移図. Test paths are derived from it, and deep multi-step insurance forms make the graph a central design object.",
+    "category": "insurance-it",
+    "subcategory": "Screen behaviour",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "画面遷移図を作成して、テストの経路を洗い出します。",
+      "kana": "がめんてんいずをさくせいして、てすとのけいろをあらいだします。",
+      "romaji": "Gamen ten'i-zu o sakusei shite, tesuto no keiro o araidashimasu.",
+      "translation": "A screen transition diagram is produced in order to identify the test paths."
+    },
+    "context": "Screen design documents, navigation testing, and back-button/duplicate-submission handling.",
+    "confusedTerms": [
+      {
+        "term": "遷移条件",
+        "reading": "てんいじょうけん",
+        "termId": "ten-i-joken",
+        "distinction": "遷移条件 is the rule; 画面遷移 is the navigation flow."
+      },
+      {
+        "term": "業務フロー",
+        "reading": "ぎょうむふろー",
+        "termId": "gyomu-flow",
+        "distinction": "業務フロー covers the business process, including manual steps outside the system."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "screen",
+      "navigation",
+      "testing"
+    ]
+  },
+  {
+    "id": "nyuryoku-check",
+    "term": "入力チェック",
+    "kana": "にゅうりょくちぇっく",
+    "romaji": "nyūryoku chekku",
+    "translation": "input validation",
+    "definitionJa": "入力された値が条件を満たしているかを確認する処理。",
+    "explanationEn": "Checking entered values: required fields, format, code validity, ranges, and business consistency (for example 保険事故日 within 保険期間). Specifications normally separate field-level checks from cross-field and database-dependent checks, because the error handling differs.",
+    "category": "insurance-it",
+    "subcategory": "Validation",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "入力チェックに失敗した場合、エラーメッセージを項目の近くに表示します。",
+      "kana": "にゅうりょくちぇっくにしっぱいしたばあい、えらーめっせーじをこうもくのちかくにひょうじします。",
+      "romaji": "Nyūryoku chekku ni shippai shita baai, erā mēse-ji o kōmoku no chikaku ni hyōji shimasu.",
+      "translation": "If an input check fails, the error message is shown near the field."
+    },
+    "context": "Validation rule tables, error message definitions, and accessibility of error reporting.",
+    "confusedTerms": [
+      {
+        "term": "バリデーション",
+        "reading": "ばりでーしょん",
+        "termId": "barideshon",
+        "distinction": "Same idea; 入力チェック is the native term used in specifications, バリデーション the loanword often used for framework-level checks."
+      },
+      {
+        "term": "不備",
+        "reading": "びび",
+        "termId": "fubi",
+        "distinction": "不備 is the state of the data; 入力チェック is the check that detects it."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "validation",
+      "screen",
+      "core"
+    ]
+  },
+  {
+    "id": "barideshon",
+    "term": "バリデーション",
+    "kana": "ばりでーしょん",
+    "romaji": "baridēshon",
+    "translation": "validation",
+    "definitionJa": "データや入力が定義された条件を満たすことを確認する処理。",
+    "explanationEn": "The katakana loanword for validation. In practice it is used almost interchangeably with 入力チェック, but many teams reserve バリデーション for framework or service-level checks and 入力チェック for screen-level checks. Read the surrounding document to know which layer is meant.",
+    "category": "insurance-it",
+    "subcategory": "Validation",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "バリデーションのルールは、業務上のチェックと技術的なチェックに分けて整理します。",
+      "kana": "ばりでーしょんのるーるは、ぎょうむじょうのちぇっくとぎじゅつてきなちぇっくにわけてせいりします。",
+      "romaji": "Baridēshon no rūru wa, gyōmu-jō no chekku to gijutsu-teki na chekku ni wakete seiri shimasu.",
+      "translation": "Validation rules are organised separately into business checks and technical checks."
+    },
+    "context": "Architecture discussions, framework configuration, and separation of screen vs service validation.",
+    "confusedTerms": [
+      {
+        "term": "入力チェック",
+        "reading": "にゅうりょくちぇっく",
+        "termId": "nyuryoku-check",
+        "distinction": "Same concept; the native term is more common in screen specifications, the loanword in technical design."
+      },
+      {
+        "term": "必須項目",
+        "reading": "ひっすこうもく",
+        "termId": "hissu-komoku",
+        "distinction": "必須項目 names a field that has to be filled in; バリデーション is the check that decides whether input is acceptable — including whether a required field was filled."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "validation",
+      "loanword",
+      "technical"
+    ]
+  },
+  {
+    "id": "data-renkei",
+    "term": "データ連携",
+    "kana": "でーたれんけい",
+    "romaji": "dēta renkei",
+    "translation": "data integration; data hand-off",
+    "definitionJa": "システムの間でデータを受け渡し、同じ内容を保つこと。",
+    "explanationEn": "Moving data between systems — files, interfaces or messaging. Insurance estates are large and heterogeneous, so 連携 specifications are dominated by item definitions, key definitions, timing (real-time vs batch) and error handling for partial failure.",
+    "category": "insurance-it",
+    "subcategory": "Integration",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "データ連携の仕様は、項目定義とキーの定義、異常時の扱いが中心になります。",
+      "kana": "でーたれんけいのしようは、こうもくていぎときっーのていぎ、いじょうときのあつかいがちゅうしんになります。",
+      "romaji": "Dēta renkei no shiyō wa, kōmoku teigi to kī no teigi, ijō-ki no atsukai ga chūshin ni narimasu.",
+      "translation": "An integration specification centres on item definitions, key definitions and handling of abnormal cases."
+    },
+    "context": "Interface specifications, mapping tables between company code sets, and failure recovery design.",
+    "confusedTerms": [
+      {
+        "term": "突合",
+        "reading": "つごう",
+        "termId": "tsugo",
+        "distinction": "連携 moves the data; 突合 afterwards checks that both sides agree."
+      },
+      {
+        "term": "登録処理",
+        "reading": "とうろくしょり",
+        "termId": "touroku-shori",
+        "distinction": "登録処理 writes data into one system; データ連携 is the transfer between systems."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "integration",
+      "core",
+      "specification"
+    ]
+  },
+  {
+    "id": "tsugo",
+    "term": "突合",
+    "kana": "つごう",
+    "romaji": "tsugō",
+    "translation": "reconciliation; cross-checking of two data sets",
+    "definitionJa": "二つのデータの集合を突き合わせて、一致しているか差異があるかを確認する作業。",
+    "explanationEn": "Matching two data sets — for example payments made by the policy system against postings in accounting — and listing the differences (差異, 過不足). It is a routine control activity in insurance operations and a standard feature in systems (突合処理, 突合結果レポート).",
+    "category": "insurance-it",
+    "subcategory": "Operations",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "it",
+      "general"
+    ],
+    "example": {
+      "ja": "支払データと会計データを突合して、差異のある件だけを抽出します。",
+      "kana": "しはらデータとかいけいデータをつごうして、さのあるけんだけをしゅつしゅつします。",
+      "romaji": "Shiharai dēta to kaikei dēta o tsugō shite, sa no aru kengi dake o shutsushutsu shimasu.",
+      "translation": "The payment data and accounting data are reconciled, and only the mismatched cases are extracted."
+    },
+    "context": "End-of-day controls, 過誤払 detection, and migration verification between old and new systems.",
+    "confusedTerms": [
+      {
+        "term": "照合",
+        "reading": "しょうごう",
+        "termId": "shogou",
+        "distinction": "照合 checks one item against an authority; 突合 compares two data sets to find differences."
+      },
+      {
+        "term": "データ連携",
+        "reading": "でーたれんけい",
+        "termId": "data-renkei",
+        "distinction": "連携 transfers data; 突合 verifies it afterwards."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "operations",
+      "control",
+      "core"
+    ]
+  },
+  {
+    "id": "shogou",
+    "term": "照合",
+    "kana": "しょうごう",
+    "romaji": "shōgō",
+    "translation": "verification against a source",
+    "definitionJa": "データや書類が正しい出典と一致するかを確認すること。",
+    "explanationEn": "Checking one thing against an authoritative source: verifying a customer's identity documents, checking a submitted figure against the contract, or matching a code against the master. Unlike 突合 it is one-to-one verification rather than set comparison.",
+    "category": "insurance-it",
+    "subcategory": "Operations",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it",
+      "general"
+    ],
+    "example": {
+      "ja": "届出の内容と契約データを照合してから、変更を確定します。",
+      "kana": "とどけのないようとけいやくデータをしょうごうしてから、へんこうをかくていします。",
+      "romaji": "Todoke no naiyō to keiyaku dēta o shōgō shite kara, henkō o kakutei shimasu.",
+      "translation": "The notification content is verified against the contract data before the change is confirmed."
+    },
+    "context": "Manual review steps, identity verification, and automated consistency checks.",
+    "confusedTerms": [
+      {
+        "term": "突合",
+        "reading": "つごう",
+        "termId": "tsugo",
+        "distinction": "突合 compares two data sets in bulk; 照合 checks an item against a source of truth."
+      },
+      {
+        "term": "契約内容照会",
+        "reading": "けいやくないようしょうかい",
+        "termId": "keiyaku-naiyou-shoukai",
+        "distinction": "照会 is looking data up; 照合 is comparing it for correctness."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "operations",
+      "control"
+    ]
+  },
+  {
+    "id": "koyose",
+    "term": "名寄せ",
+    "kana": "こよせ",
+    "romaji": "koyose",
+    "translation": "record matching; entity resolution",
+    "definitionJa": "表記が異なる複数のデータを、同じ人物・対象としてまとめる処理。",
+    "explanationEn": "Resolving records that refer to the same real-world entity despite differences in name spelling, address notation or old/new values. Insurance estates accumulate duplicates across systems and over decades, so 名寄せ is a standard part of customer master cleansing and of migration projects.",
+    "category": "insurance-it",
+    "subcategory": "Data management",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "顧客マスタの名寄せを行い、重複している契約者を統合します。",
+      "kana": "こきゃくますたのこよせをおこない、じゅうふくしているけいやくしゃをとうごうします。",
+      "romaji": "Kokyaku masuta no koyose o okonai, jūfuku shite iru keiyakusha o gōtō shimasu.",
+      "translation": "Customer master records are matched and duplicated policyholders are merged."
+    },
+    "context": "Master data cleansing, migration projects, and duplicate detection rules.",
+    "confusedTerms": [
+      {
+        "term": "突合",
+        "reading": "つごう",
+        "termId": "tsugo",
+        "distinction": "突合 compares two data sets for differences; 名寄せ decides which records are the same entity."
+      },
+      {
+        "term": "マスタデータ",
+        "reading": "ますたでーた",
+        "termId": "master-data",
+        "distinction": "マスタデータ is the data being cleaned; 名寄せ is the process applied to it."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "data",
+      "master-data",
+      "migration"
+    ]
+  },
+  {
+    "id": "touroku-shori",
+    "term": "登録処理",
+    "kana": "とうろくしょり",
+    "romaji": "tōroku shori",
+    "translation": "registration process; create operation",
+    "definitionJa": "データや伝票をシステムに新規に登録する処理。",
+    "explanationEn": "The create operation. In insurance systems 登録 is the standard word for recording a new contract, claim or transaction, and 取消し is its counterpart. Specifications define commit points, duplicate registration prevention and what happens on failure.",
+    "category": "insurance-it",
+    "subcategory": "Processing",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "登録処理が正常に完了すると、契約データが確定します。",
+      "kana": "とうろくしょりがせいじょうにかんりょうすると、けいやくデータがかくていします。",
+      "romaji": "Tōroku shori ga sejō ni kanryō suru to, keiyaku dēta ga kakutei shimasu.",
+      "translation": "When the registration process completes normally, the contract data becomes final."
+    },
+    "context": "Transaction design, double-submission prevention, and audit logging.",
+    "confusedTerms": [
+      {
+        "term": "更新処理",
+        "reading": "こうしんしょり",
+        "termId": "koushin-shori",
+        "distinction": "登録 creates a record; 更新 changes an existing one."
+      },
+      {
+        "term": "照会処理",
+        "reading": "しょうかいしょり",
+        "termId": "shoukai-shori",
+        "distinction": "照会処理 reads without writing."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "processing",
+      "transaction",
+      "core"
+    ]
+  },
+  {
+    "id": "koushin-shori",
+    "term": "更新処理",
+    "kana": "こうしんしょり",
+    "romaji": "kōshin shori",
+    "translation": "update process",
+    "definitionJa": "既存のデータを変更する処理。",
+    "explanationEn": "The update operation. Note the trap: 更新 by itself means update in IT, but 契約更新 means renewal of a policy. The same two kanji therefore mean different things depending on whether the subject is data or a contract — one of the most confusing pairs for learners working on insurance systems.",
+    "category": "insurance-it",
+    "subcategory": "Processing",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "更新処理では、変更前と変更後の値の両方を保存します。",
+      "kana": "こうしんしょりでは、へんこうまえとへんこうあとのあたいのどちらをほぞんします。",
+      "romaji": "Kōshin shori dewa, henkō-mae to henkō-ato no a-tai no ryo-hō o hozon shimasu.",
+      "translation": "The update process stores both the before and after values."
+    },
+    "context": "History/audit design, optimistic locking, and change screens for contracts.",
+    "confusedTerms": [
+      {
+        "term": "契約更新",
+        "reading": "けいやくこうしん",
+        "termId": "keiyaku-koshin",
+        "distinction": "契約更新 is renewal of a policy; 更新処理 is a technical update of a data record."
+      },
+      {
+        "term": "登録処理",
+        "reading": "とうろくしょり",
+        "termId": "touroku-shori",
+        "distinction": "登録 creates; 更新 modifies."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "processing",
+      "homograph",
+      "core"
+    ]
+  },
+  {
+    "id": "shoukai-shori",
+    "term": "照会処理",
+    "kana": "しょうかいしょり",
+    "romaji": "shōkai shori",
+    "translation": "inquiry process; retrieval operation",
+    "definitionJa": "データを検索して表示する処理。データは変更しない。",
+    "explanationEn": "The read/query operation. 照会 is one of the highest-frequency words in Japanese IT documents and has nothing to do with the business sense of asking the insurer a question. Because it does not write, it never needs rollback — a point often made in design documents.",
+    "category": "insurance-it",
+    "subcategory": "Processing",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "照会処理はデータを変更しないため、取消しの処理は不要です。",
+      "kana": "しょうかいしょりはデータをはんこうしないため、とりけしのしょりはふようです。",
+      "romaji": "Shōkai shori wa dēta o henkō shinai tame, torikeshi no shori wa fuyō desu.",
+      "translation": "Because the inquiry process does not change data, no reversal is needed."
+    },
+    "context": "Read paths, performance requirements, and permission checks for viewing data.",
+    "confusedTerms": [
+      {
+        "term": "契約内容照会",
+        "reading": "けいやくないようしょうかい",
+        "termId": "keiyaku-naiyou-shoukai",
+        "distinction": "契約内容照会 is the business function; 照会処理 is the technical read operation implementing it."
+      },
+      {
+        "term": "登録処理",
+        "reading": "とうろくしょり",
+        "termId": "touroku-shori",
+        "distinction": "登録処理 writes; 照会処理 only reads."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "processing",
+      "read",
+      "core"
+    ]
+  },
+  {
+    "id": "ikkatsu-shori",
+    "term": "一括処理",
+    "kana": "いっかつしょり",
+    "romaji": "ikkatsu shori",
+    "translation": "batch processing",
+    "definitionJa": "多数のデータをまとめて一度に処理すること。夜間処理が典型。",
+    "explanationEn": "Running large volumes of processing in one go — typically overnight (夜間バッチ). Insurance operations depend on it: maturity processing, premium collection files, statistics. Design questions include restartability, partial failure handling and whether the business day is advanced.",
+    "category": "insurance-it",
+    "subcategory": "Processing",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "一括処理は夜間に実行し、翌朝の業務に間に合わせます。",
+      "kana": "いっかつしょりはやかんにじっこうし、よくちょうのぎょうむにまにあわせます。",
+      "romaji": "Ikkatsu shori wa yakkan ni jikkō shi, yoku-chō no gyōmu ni ma ni awasemasu.",
+      "translation": "The batch is run overnight so that it is ready for the next morning's business."
+    },
+    "context": "Nightly runs, cut-over of the business day, restart and re-run procedures.",
+    "confusedTerms": [
+      {
+        "term": "更新処理",
+        "reading": "こうしんしょり",
+        "termId": "koushin-shori",
+        "distinction": "更新処理 is one kind of operation; 一括処理 describes running many of them together as a job."
+      },
+      {
+        "term": "障害対応",
+        "reading": "しょうがいたいおう",
+        "termId": "shogai-taiou",
+        "distinction": "A failed batch is one of the most common incident types in insurance operations."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "processing",
+      "batch",
+      "core"
+    ]
+  },
+  {
+    "id": "hata-seigyo",
+    "term": "排他制御",
+    "kana": "はたせいぎょ",
+    "romaji": "hata seigyo",
+    "translation": "concurrency control; mutual exclusion",
+    "definitionJa": "複数の処理が同じデータを同時に操作して不整合が起きないように制御すること。",
+    "explanationEn": "Preventing two processes from updating the same record at the same time. In insurance systems the classic scenario is two staff members changing one contract simultaneously; the second gets a lock error. 排他 literally means mutually exclusive.",
+    "category": "insurance-it",
+    "subcategory": "Technical design",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "同じ契約を同時に更新すると、排他制御により片方の処理がエラーになります。",
+      "kana": "おなじけいやくをどうじにこうしんすると、はたせいぎょによりかたのしょりがえらーになります。",
+      "romaji": "Onaji keiyaku o dōji ni kōshin suru to, hata seigyo ni yotte kata no shori ga erā ni narimasu.",
+      "translation": "If the same contract is updated at the same time, concurrency control causes one of the processes to fail with an error."
+    },
+    "context": "Screen locking, batch versus online conflicts, and error handling for lock timeouts.",
+    "confusedTerms": [
+      {
+        "term": "エラー処理",
+        "reading": "えらーしょり",
+        "termId": "error-shori",
+        "distinction": "排他制御 prevents inconsistency; エラー処理 decides what to do when an error still occurs."
+      },
+      {
+        "term": "例外処理",
+        "reading": "れいがいしょり",
+        "termId": "reigai-shori",
+        "distinction": "例外処理 is the handling path; the lock failure is one of the cases it must cover."
+      }
+    ],
+    "components": [
+      {
+        "element": "排",
+        "reading": "は",
+        "meaning": "exclude, expel"
+      },
+      {
+        "element": "他",
+        "reading": "た",
+        "meaning": "other"
+      },
+      {
+        "element": "制",
+        "reading": "せい",
+        "meaning": "control"
+      },
+      {
+        "element": "御",
+        "reading": "ぎょ",
+        "meaning": "govern"
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "technical",
+      "concurrency",
+      "core"
+    ]
+  },
+  {
+    "id": "error-shori",
+    "term": "エラー処理",
+    "kana": "えらーしょり",
+    "romaji": "ēra shori",
+    "translation": "error handling",
+    "definitionJa": "処理が失敗したときに、システムがどう振る舞うかを定める処理・設計。",
+    "explanationEn": "What the system does when something fails: the message shown, whether the transaction is rolled back, whether the user can retry, and what is logged. In insurance systems the specification must also say whether a partially completed business operation is valid.",
+    "category": "insurance-it",
+    "subcategory": "Technical design",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "エラー処理では、メッセージの内容と後続の処理への影響を定義します。",
+      "kana": "えらーしょりでは、めっせーじのないようあとぞくのしょりへのえいきょうをていぎします。",
+      "romaji": "Erā shori dewa, mēse-ji no naiyō to gozoku no shori e no eikyō o teigi shimasu.",
+      "translation": "Error handling defines the message content and the effect on subsequent processing."
+    },
+    "context": "Design documents, error message catalogues, and incident triage.",
+    "confusedTerms": [
+      {
+        "term": "例外処理",
+        "reading": "れいがいしょり",
+        "termId": "reigai-shori",
+        "distinction": "例外処理 is the programming construct or the handling of unusual business cases; エラー処理 is the general treatment of failures."
+      },
+      {
+        "term": "排他制御",
+        "reading": "はたせいぎょ",
+        "termId": "hata-seigyo",
+        "distinction": "排他制御 prevents a class of errors; エラー処理 handles what reaches the user."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "technical",
+      "errors",
+      "core"
+    ]
+  },
+  {
+    "id": "gyomu-rule",
+    "term": "業務ルール",
+    "kana": "ぎょうむるーる",
+    "romaji": "gyōmu rūru",
+    "translation": "business rule",
+    "definitionJa": "業務の進め方・判断の基準として定められたルール。",
+    "explanationEn": "The rules by which the business operates and decides: who may accept a change, which cases need approval, how a payment limit is applied. In system projects they are collected into rule tables, and the distinction between contractual rules (from 約款) and operational rules (internal practice) matters when requirements are challenged.",
+    "category": "insurance-it",
+    "subcategory": "Requirements",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it",
+      "general"
+    ],
+    "example": {
+      "ja": "業務ルールは、画面の制御とデータ処理の両方に影響します。",
+      "kana": "ぎょうむるーるは、がめんのせいぎょとでーたしょりのどちらにもえいきょうします。",
+      "romaji": "Gyōmu rūru wa, gamen no seigyo to dēta shori no ryo-hō ni eikyō shimasu.",
+      "translation": "Business rules affect both screen behaviour and data processing."
+    },
+    "context": "Rule tables, approval workflows, and requirement clarification sessions.",
+    "confusedTerms": [
+      {
+        "term": "所定要件",
+        "reading": "しょてんようけん",
+        "termId": "shojo-yoken",
+        "distinction": "所定要件 are conditions defined in the contract; 業務ルール is how the organisation operationalises them."
+      },
+      {
+        "term": "例外処理",
+        "reading": "れいがいしょり",
+        "termId": "reigai-shori",
+        "distinction": "例外処理 covers the cases the normal rule does not."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "requirements",
+      "rules",
+      "core"
+    ]
+  },
+  {
+    "id": "reigai-shori",
+    "term": "例外処理",
+    "kana": "れいがいしょり",
+    "romaji": "reigai shori",
+    "translation": "exception handling",
+    "definitionJa": "正常な流れから外れたケースや、プログラム上の例外に対する処理。",
+    "explanationEn": "Two related senses: in programming it is handling thrown exceptions; in business documents it means dealing with cases that fall outside the normal rule (a customer who cannot provide the standard documents, for example). Which sense applies is clear only from context.",
+    "category": "insurance-it",
+    "subcategory": "Technical design",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "例外処理では、ログを残したうえで再試行できる場合を定義します。",
+      "kana": "れいがいしょりでは、ろぐをのこしたうえでさいしこうできるばあいをていぎします。",
+      "romaji": "Reigai shori dewa, rogu o nokoshita ue de sai-shikō dekiru baai o teigi shimasu.",
+      "translation": "Exception handling defines the cases where a retry is possible after logging."
+    },
+    "context": "Design documents, operational procedures for unusual cases, and retry logic in interfaces.",
+    "confusedTerms": [
+      {
+        "term": "エラー処理",
+        "reading": "えらーしょり",
+        "termId": "error-shori",
+        "distinction": "エラー処理 deals with failures; 例外処理 deals with cases outside the normal path, which may not be failures."
+      },
+      {
+        "term": "業務ルール",
+        "reading": "ぎょうむるーる",
+        "termId": "gyomu-rule",
+        "distinction": "業務ルール is the normal rule; 例外処理 is what happens when it does not fit."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "technical",
+      "exceptions",
+      "context-dependent"
+    ]
+  },
+  {
+    "id": "test-shiyousho",
+    "term": "テスト仕様書",
+    "kana": "てすとしようしょ",
+    "romaji": "tesuto shiyōsho",
+    "translation": "test specification",
+    "definitionJa": "テストの手順・入力・期待結果を記載した文書。",
+    "explanationEn": "The document that makes testing repeatable: preconditions, test data, steps, expected results and actual results. In Japanese projects it is a formal deliverable, often written per screen or per interface, and traced back to the requirements document.",
+    "category": "insurance-it",
+    "subcategory": "Testing",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "テスト仕様書には、入力データと期待結果を具体的に記載します。",
+      "kana": "てすとしようしょには、にゅうりょくデータときたいけっかをぐたいてきにきさいします。",
+      "romaji": "Tesuto shiyōsho ni wa, nyūryoku dēta to kitai kekka o gutaiteki ni kisai shimasu.",
+      "translation": "Test specifications record the input data and the expected results concretely."
+    },
+    "context": "Test design, review of test coverage, and evidence for acceptance.",
+    "confusedTerms": [
+      {
+        "term": "要件定義書",
+        "reading": "ようけんていぎしょ",
+        "termId": "youken-teigi-sho",
+        "distinction": "The requirements document states what to build; the test specification states how to prove it."
+      },
+      {
+        "term": "受入テスト",
+        "reading": "うけいれてすと",
+        "termId": "ukeire-test",
+        "distinction": "受入テスト is a phase; テスト仕様書 is the document used in any phase."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "testing",
+      "documentation",
+      "core"
+    ]
+  },
+  {
+    "id": "ukeire-test",
+    "term": "受入テスト",
+    "kana": "うけいれてすと",
+    "romaji": "ukeire tesuto",
+    "translation": "acceptance testing",
+    "definitionJa": "業務担当者などが、実際の業務の流れでシステムが受け入れ可能かを確かめるテスト。",
+    "explanationEn": "Testing by or for the business side to decide whether the system can be accepted. It is usually run with realistic data and full business scenarios rather than individual functions, and its results gate the go-live decision.",
+    "category": "insurance-it",
+    "subcategory": "Testing",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "受入テストは、業務部門が実際の業務の流れで実施します。",
+      "kana": "うけいれてすとは、ぎょうむぶもんがじっさいのぎょうむのながれでじっしします。",
+      "romaji": "Ukeire tesuto wa, gyōmu-bumon ga jissai no gyōmu no nagare de jisshi shimasu.",
+      "translation": "Acceptance testing is carried out by the business department using real business flows."
+    },
+    "context": "User acceptance cycles, defect triage before go-live, and sign-off criteria.",
+    "confusedTerms": [
+      {
+        "term": "総合テスト",
+        "reading": "そうごうてすと",
+        "termId": "sogo-test",
+        "distinction": "総合テスト is a technical integration phase run by the project team; 受入テスト is the business decision phase."
+      },
+      {
+        "term": "テスト仕様書",
+        "reading": "てすとしようしょ",
+        "termId": "test-shiyousho",
+        "distinction": "The specification is the artefact; 受入テスト is the activity."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "testing",
+      "acceptance",
+      "core"
+    ]
+  },
+  {
+    "id": "sogo-test",
+    "term": "総合テスト",
+    "kana": "そうごうてすと",
+    "romaji": "sōgō tesuto",
+    "translation": "system integration testing (project-dependent)",
+    "definitionJa": "複数の機能やシステムを組み合わせ、業務の流れどおりに動作を確認するテスト。",
+    "explanationEn": "End-to-end testing across functions and systems. The exact meaning of 総合テスト varies between projects and vendors — in some it is the phase after 結合テスト, in others it is close to acceptance testing. Always read the project's own test phase definitions.",
+    "category": "insurance-it",
+    "subcategory": "Testing",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "総合テストでは、複数のシステムをまたぐ業務の流れを確認します。",
+      "kana": "そうごうてすとでは、ふくすうのシステムをまたぐぎょうむのながれをかくにんします。",
+      "romaji": "Sōgō tesuto dewa, fuku-sū no shisutemu o matagu gyōmu no nagare o kakunin shimasu.",
+      "translation": "System integration testing verifies business flows that span multiple systems."
+    },
+    "context": "Test phase planning, environment preparation, and cross-system defect management.",
+    "confusedTerms": [
+      {
+        "term": "結合テスト",
+        "reading": "けつごうてすと",
+        "termId": "ketsugo-test",
+        "distinction": "結合テスト checks that components connect correctly; 総合テスト checks whole business flows."
+      },
+      {
+        "term": "受入テスト",
+        "reading": "うけいれてすと",
+        "termId": "ukeire-test",
+        "distinction": "受入テスト is performed to decide acceptance, usually by the business side."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Test phase names differ between projects and vendors; confirm the local definitions.",
+    "tags": [
+      "testing",
+      "integration",
+      "ambiguous"
+    ]
+  },
+  {
+    "id": "ketsugo-test",
+    "term": "結合テスト",
+    "kana": "けつごうてすと",
+    "romaji": "ketsugō tesuto",
+    "translation": "integration testing",
+    "definitionJa": "個々の機能を組み合わせて、接続やデータの流れが正しく動くかを確認するテスト。",
+    "explanationEn": "Testing the seams: interfaces, screen-to-service calls, file hand-offs. Most insurance defects that reach production are seam defects — mapping errors, code mismatches, timing — so this phase gets disproportionate attention in plans.",
+    "category": "insurance-it",
+    "subcategory": "Testing",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "結合テストでは、システム間のインターフェースの接続を確認します。",
+      "kana": "けつごうてすとでは、しすてむかんのいんたーふぇーすのせつぞくをかくにんします。",
+      "romaji": "Ketsugō tesuto dewa, shisutemu-kan no intāfē-su no setsuzoku o kakunin shimasu.",
+      "translation": "Integration testing verifies the interfaces between systems."
+    },
+    "context": "Interface test cases, stub and mock strategies, and mapping validation.",
+    "confusedTerms": [
+      {
+        "term": "総合テスト",
+        "reading": "そうごうてすと",
+        "termId": "sogo-test",
+        "distinction": "総合テスト is broader and flow-oriented; 結合テスト focuses on the connections themselves."
+      },
+      {
+        "term": "単体テスト",
+        "reading": "たんたいてすと",
+        "termId": "tantai-test",
+        "distinction": "単体テスト checks one module on its own; 結合テスト only starts once modules are put together and checks that they work across the seams."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Phase naming and scope vary by project; confirm the local test strategy.",
+    "tags": [
+      "testing",
+      "integration"
+    ]
+  },
+  {
+    "id": "kaishu",
+    "term": "改修",
+    "kana": "かいしゅう",
+    "romaji": "kaishū",
+    "translation": "modification; enhancement (of a system)",
+    "definitionJa": "既存のシステムや機能を修正・拡張すること。",
+    "explanationEn": "Changing an existing system: fixing behaviour, adding a field, adapting to a legal or product change. 改修 projects dominate insurance IT work because systems live for decades. Note the contrast with 契約変更, which changes a customer's contract, not the software.",
+    "category": "insurance-it",
+    "subcategory": "Change management",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "改修の影響範囲を調査してから、設計を変更します。",
+      "kana": "かいしんのえいきょうはんいをちょうさしてから、せっけいをへんこうします。",
+      "romaji": "Kaishū no eikyō han'i o chōsa shite kara, sekkei o henkō shimasu.",
+      "translation": "The impact scope of the modification is investigated before the design is changed."
+    },
+    "context": "Change requests, impact analysis, regression testing scope decisions.",
+    "confusedTerms": [
+      {
+        "term": "契約変更",
+        "reading": "けいやくへんこう",
+        "termId": "keiyaku-henko",
+        "distinction": "契約変更 modifies a customer's contract; 改修 modifies the system."
+      },
+      {
+        "term": "障害対応",
+        "reading": "しょうがいたいおう",
+        "termId": "shogai-taiou",
+        "distinction": "障害対応 fixes something that is broken; 改修 changes something that works."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "change",
+      "core",
+      "maintenance"
+    ]
+  },
+  {
+    "id": "shogai-taiou",
+    "term": "障害対応",
+    "kana": "しょうがいたいおう",
+    "romaji": "shōgai taiō",
+    "translation": "incident or defect handling",
+    "definitionJa": "システムや業務で起きた障害に対応し、復旧・原因調査・恒久対策を行うこと。",
+    "explanationEn": "The whole response to something going wrong: containment, recovery, cause investigation and permanent fix. In insurance operations it also covers business incidents such as a failed batch or a wrong payment, not only technical faults.",
+    "category": "insurance-it",
+    "subcategory": "Operations",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "障害対応では、一次対応と恒久対策を分けて記録します。",
+      "kana": "しょうがいたいおうでは、いちじたいおうとこうきゅうそくたいをわけてきろくします。",
+      "romaji": "Shōgai taiō dewa, ichiji taiō to kōkyūそくたい o wakete kiroku shimasu.",
+      "translation": "In incident handling, the immediate response and the permanent countermeasure are recorded separately."
+    },
+    "context": "Incident tickets, severity levels, and post-incident review.",
+    "confusedTerms": [
+      {
+        "term": "不具合",
+        "reading": "ふぐあい",
+        "termId": "fuguai",
+        "distinction": "不具合 is the fault itself; 障害対応 is the response process."
+      },
+      {
+        "term": "改修",
+        "reading": "かいしゅう",
+        "termId": "kaishu",
+        "distinction": "A permanent fix may become a 改修 project, but 障害対応 is the incident process."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "operations",
+      "incident",
+      "core"
+    ]
+  },
+  {
+    "id": "fuguai",
+    "term": "不具合",
+    "kana": "ふぐあい",
+    "romaji": "fuguai",
+    "translation": "defect; bug",
+    "definitionJa": "仕様や期待どおりに動作していない状態。",
+    "explanationEn": "The everyday Japanese word for a software defect. It is softer and broader than 障害 (which implies an outage or serious incident), and it is the normal word used in test results and defect reports.",
+    "category": "insurance-it",
+    "subcategory": "Operations",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "再現手順を記載して、開発側に不具合を報告します。",
+      "kana": "さいげんてじゅんをきさいして、かいはつがわにふぐあいをほうこくします。",
+      "romaji": "Sai-gen tejun o kisai shite, kaihatsu-gawa ni fuguai o hōkoku shimasu.",
+      "translation": "The reproduction steps are written out and the defect is reported to the development side."
+    },
+    "context": "Defect reporting, triage meetings, and release quality gates.",
+    "confusedTerms": [
+      {
+        "term": "障害対応",
+        "reading": "しょうがいたいおう",
+        "termId": "shogai-taiou",
+        "distinction": "障害 implies an operational failure affecting service; 不具合 is any deviation from expected behaviour."
+      },
+      {
+        "term": "差戻し",
+        "reading": "さもどし",
+        "termId": "sashi-modoshi",
+        "distinction": "差戻し is returning work; a 不具合 is what the returned work reveals."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "operations",
+      "defect",
+      "core"
+    ]
+  },
+  {
+    "id": "saienshijun",
+    "term": "再現手順",
+    "kana": "さいげんてじゅん",
+    "romaji": "sai-gen tejun",
+    "translation": "reproduction steps",
+    "definitionJa": "不具合や障害が再び発生させるための操作の手順。",
+    "explanationEn": "The steps needed to make a defect happen again. Short-hand for 再現手順; you will also see 再現条件 or 再現環境. Without them, triage stalls — this is the single most valuable field in a defect report.",
+    "category": "insurance-it",
+    "subcategory": "Operations",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "再現手順が不明な場合、原因の切り分けに時間がかかります。",
+      "kana": "さいげんてじゅんがふめいなばあい、げんいんのきりわけにじかんがかかります。",
+      "romaji": "Sai-gen tejun ga fumei na baai, gen-in no kiriwake ni jikan ga kakarimasu.",
+      "translation": "If the reproduction steps are unknown, isolating the cause takes a long time."
+    },
+    "context": "Defect reports, triage, and verification of fixes.",
+    "confusedTerms": [
+      {
+        "term": "不具合",
+        "reading": "ふぐあい",
+        "termId": "fuguai",
+        "distinction": "不具合 is the defect; 再現手順 is the evidence that makes it diagnosable."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "operations",
+      "defect",
+      "practice"
+    ]
+  },
+  {
+    "id": "eikyo-hani",
+    "term": "影響範囲",
+    "kana": "えいきょうはんい",
+    "romaji": "eikyō han'i",
+    "translation": "impact scope (of a change)",
+    "definitionJa": "変更や障害が及ぶ対象の範囲。",
+    "explanationEn": "Everything a change or incident touches: screens, interfaces, jobs, reports, contracts. Determining it is the core of impact analysis, and underestimating it is the most common cause of regression failures in long-lived insurance systems.",
+    "category": "insurance-it",
+    "subcategory": "Change management",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "改修の影響範囲を特定するために、関連する処理を洗い出します。",
+      "kana": "かいしんのえいきょうはんいをとくていするために、かんれんするしょりをあらいだします。",
+      "romaji": "Kaishū no eikyō han'i o tokutei suru tame ni, kanren suru shori o araidashimasu.",
+      "translation": "To identify the impact scope of the change, the related processes are listed out."
+    },
+    "context": "Impact analysis, regression test scoping, and incident assessment.",
+    "confusedTerms": [
+      {
+        "term": "保障範囲",
+        "reading": "ほしょうはんい",
+        "termId": "hosho-hani",
+        "distinction": "保障範囲 is the scope of insurance cover; 影響範囲 is the scope of a change in a system."
+      },
+      {
+        "term": "改修",
+        "reading": "かいしゅう",
+        "termId": "kaishu",
+        "distinction": "改修 is the change; 影響範囲 is what it touches."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "change",
+      "analysis",
+      "core"
+    ]
+  },
+  {
+    "id": "chouhyou",
+    "term": "帳票",
+    "kana": "ちょうひょう",
+    "romaji": "chōhyō",
+    "translation": "report; printed form",
+    "definitionJa": "印刷または電子交付で出力される書類。通知書、一覧表など。",
+    "explanationEn": "The collective term for system-generated documents: notices, certificates, lists and statements. Insurance systems produce a very large number of them, and 帳票設計 (layout, items, print or e-delivery) is a workstream of its own in most projects.",
+    "category": "insurance-it",
+    "subcategory": "Output",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "支払通知書の帳票は、印刷と電子交付の両方に対応しています。",
+      "kana": "しはらつうちしょのちょうひょうは、いんさつとでんしこうふのどちらにもたいおうしています。",
+      "romaji": "Shiharai tsūchisho no chōhyō wa, insatsu to denshi kōfu no ryo-hō ni taiō shite imasu.",
+      "translation": "The payment notice form supports both printing and electronic delivery."
+    },
+    "context": "Output design, print/e-delivery choices, and archiving requirements.",
+    "confusedTerms": [
+      {
+        "term": "保険証券",
+        "reading": "ほけんしょうけん",
+        "termId": "hoken-shoken",
+        "distinction": "保険証券 is one specific customer document; 帳票 is the general category of system output documents."
+      },
+      {
+        "term": "請求書類",
+        "reading": "せいきゅうしょるい",
+        "termId": "seikyuu-shorui",
+        "distinction": "請求書類 are documents received from the customer; 帳票 are documents the system produces."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "output",
+      "documents",
+      "core"
+    ]
+  },
+  {
+    "id": "master-data",
+    "term": "マスタデータ",
+    "kana": "ますたでーた",
+    "romaji": "masuta dēta",
+    "translation": "master data",
+    "definitionJa": "業務処理の基礎として繰り返し参照されるデータ。コード、商品情報、利率など。",
+    "explanationEn": "Reference data used by many processes: code tables, product definitions, interest rates, benefit type definitions. Changing a master can silently change the behaviour of existing contracts, so effective dates and versioning are essential design concerns.",
+    "category": "insurance-it",
+    "subcategory": "Data management",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "マスタデータを変更すると、既存の契約の表示に影響する場合があります。",
+      "kana": "ますたでーたをへんこうすると、きぞんのけいやくのひょうじにえいきょうするばあいがります。",
+      "romaji": "Masuta dēta o henkō suru to, kizon no keiyaku no hyōji ni eikyō suru baai ga arimasu.",
+      "translation": "Changing master data can affect how existing contracts are displayed."
+    },
+    "context": "Master maintenance screens, effective dating, and impact analysis for master changes.",
+    "confusedTerms": [
+      {
+        "term": "保険種類",
+        "reading": "ほけんしゅるい",
+        "termId": "hoken-shurui",
+        "distinction": "保険種類 is one example of something modelled as master data."
+      },
+      {
+        "term": "名寄せ",
+        "reading": "こよせ",
+        "termId": "koyose",
+        "distinction": "名寄せ cleans duplicate records; マスタデータ is the reference data itself."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "data",
+      "reference",
+      "core"
+    ]
+  },
+  {
+    "id": "kihyou",
+    "term": "起票",
+    "kana": "きひょう",
+    "romaji": "kihyō",
+    "translation": "raising a ticket; initiating a document",
+    "definitionJa": "チケットや申請などの文書を作成し、処理の流れに乗せること。",
+    "explanationEn": "Creating the ticket or application form that starts a workflow: 障害チケットを起票する, 変更申請を起票する. The word comes from the practice of issuing numbered documents, and it survives in modern ticketing tools.",
+    "category": "insurance-it",
+    "subcategory": "Workflow",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it"
+    ],
+    "example": {
+      "ja": "障害のチケットを起票して、担当者を割り当てます。",
+      "kana": "しょうがいのちけっとをきひょうして、たんとうしゃをわりあてます。",
+      "romaji": "Shōgai no chiketto o kihyō shite, tantō-sha o wariate masu.",
+      "translation": "An incident ticket is raised and an owner is assigned."
+    },
+    "context": "Ticketing tools, change request intake, and workflow start events.",
+    "confusedTerms": [
+      {
+        "term": "障害対応",
+        "reading": "しょうがいたいおう",
+        "termId": "shogai-taiou",
+        "distinction": "起票 opens the record; 障害対応 is the work that follows."
+      },
+      {
+        "term": "承認",
+        "reading": "しょうにん",
+        "termId": "shonin",
+        "distinction": "承認 happens later in the same workflow."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "workflow",
+      "tickets",
+      "practice"
+    ]
+  },
+  {
+    "id": "shonin",
+    "term": "承認",
+    "kana": "しょうにん",
+    "romaji": "shōnin",
+    "translation": "approval (internal workflow)",
+    "definitionJa": "申請に対して、上位者や権限を持つ者が異議がないことを示す手続き。",
+    "explanationEn": "Internal approval within a workflow: who may approve a change, a payment above a threshold, or a release. Approval hierarchies and delegation (代理承認) are common requirements. Do not confuse it with 承諾, which is the insurer  decision to accept an application.",
+    "category": "insurance-it",
+    "subcategory": "Workflow",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "it",
+      "general"
+    ],
+    "example": {
+      "ja": "承認が下りるまで、変更は本番のデータに反映されません。",
+      "kana": "しょうにんがおりるまで、へんこうはほんばんのデータにはんえいされません。",
+      "romaji": "Shōnin ga oriru made, henkō wa honban no dēta ni han'ei saremasen.",
+      "translation": "Until approval is given, the change is not reflected in production data."
+    },
+    "context": "Approval workflows, authority limits, and audit trails of who approved what.",
+    "confusedTerms": [
+      {
+        "term": "承諾",
+        "reading": "しょうだく",
+        "termId": "shodaku",
+        "distinction": "承諾 is the insurer  accepting an application; 承認 is internal approval of a request."
+      },
+      {
+        "term": "差戻し",
+        "reading": "さもどし",
+        "termId": "sashi-modoshi",
+        "distinction": "差戻し is the negative outcome of an approval step."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "workflow",
+      "approval",
+      "core"
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ほけんご (Hokengo): offline-capable trainer for Japanese insurance and insurance-IT specialist vocabulary, written for JLPT N3-N2 learners. No account required."
+    />
+    <title>ほけんご | 保険・IT 用語トレーナー — Japanese Insurance &amp; IT Terminology Trainer</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#1f5fbf" />
+    <meta name="application-name" content="ほけんご" />
+    <meta name="apple-mobile-web-app-title" content="ほけんご" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash of the wrong theme.
+      try {
+        var stored = localStorage.getItem("jivt:theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var dark = stored === "dark" || ((!stored || stored === "system") && prefersDark);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      } catch (e) {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      このアプリは動作するためにJavaScriptが必要です。 / This application requires JavaScript to run.
+    </noscript>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

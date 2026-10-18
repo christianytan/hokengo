@@ -1,0 +1,935 @@
+[
+  {
+    "id": "iryo-hoken",
+    "term": "医療保険",
+    "kana": "いりょうほけん",
+    "romaji": "iryō hoken",
+    "translation": "medical insurance (private health policy)",
+    "definitionJa": "入院や手術などの医療行為に備える保険。入院給付金・手術給付金などを支払う。",
+    "explanationEn": "A private medical policy paying fixed benefits for hospitalisation and surgery. Do not confuse it with the public 健康保険 / 医療保険 (statutory health insurance) — in Japanese documents the same words can mean either, and the surrounding text decides which.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "domainNote": "In public-policy contexts 医療保険 can refer to statutory medical insurance (後期高齢者医療制度など). Check the context.",
+    "example": {
+      "ja": "医療保険の契約では、入院1日あたりの金額を設定します。",
+      "kana": "いりょうほけんのけいやくでは、にゅういん1にちあたりのきんがくをせっていします。",
+      "romaji": "Iryō hoken no keiyaku dewa, nyūin ichi-nichi atari no kingaku o settei shimasu.",
+      "translation": "In a medical insurance contract you set the amount per hospitalised day."
+    },
+    "context": "Product configuration, benefit calculation rules, and claim processing for medical products.",
+    "confusedTerms": [
+      {
+        "term": "がん保険",
+        "reading": "がんほけん",
+        "termId": "gan-hoken",
+        "distinction": "がん保険 covers only cancer-related events, usually with broader per-event amounts."
+      },
+      {
+        "term": "給付金",
+        "reading": "きゅうふきん",
+        "termId": "kyufukin",
+        "distinction": "給付金 is the money paid; 医療保険 is the product that pays it."
+      }
+    ],
+    "relatedTerms": [
+      "nyu-in-kyufukin",
+      "shujutsu-kyufukin",
+      "taiki-kikan"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "product",
+      "medical",
+      "core"
+    ]
+  },
+  {
+    "id": "gan-hoken",
+    "term": "がん保険",
+    "kana": "がんほけん",
+    "romaji": "gan hoken",
+    "translation": "cancer insurance",
+    "definitionJa": "がんと診断されたことなどを支払事由とする保険。",
+    "explanationEn": "A cancer-specific policy, typically paying a lump sum on diagnosis plus daily benefits for cancer hospitalisation. Because it targets one disease, its rules use 待機期間 and diagnosis-based triggers heavily.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "がん保険では、がんと診断確定した日に診断給付金が支払われます。",
+      "kana": "がんほけんでは、がんとしんだんかくていしたひにしんだんきゅうふきんがしはらわれます。",
+      "romaji": "Gan hoken dewa, gan to shindan kakutei shita hi ni shindan kyūfukin ga harawaremasu.",
+      "translation": "In cancer insurance, the diagnosis benefit is paid on the date cancer is definitively diagnosed."
+    },
+    "context": "Diagnosis-date driven rules, 待機期間 checks, and 支払事由 code design.",
+    "confusedTerms": [
+      {
+        "term": "医療保険",
+        "reading": "いりょうほけん",
+        "termId": "iryo-hoken",
+        "distinction": "医療保険 covers medical treatment generally; がん保険 is limited to cancer."
+      },
+      {
+        "term": "三大疾病保険",
+        "reading": "さんだいしっぺいほけん",
+        "termId": "sandai-shippo-hoken",
+        "distinction": "三大疾病保険 covers cancer plus heart attack and stroke."
+      }
+    ],
+    "relatedTerms": [
+      "taiki-kikan",
+      "shojo-yoken"
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "The trigger (診断確定日) and benefit structure are product-specific.",
+    "tags": [
+      "product",
+      "cancer",
+      "medical"
+    ]
+  },
+  {
+    "id": "teiki-hoken",
+    "term": "定期保険",
+    "kana": "ていきほけん",
+    "romaji": "teiki hoken",
+    "translation": "term life insurance",
+    "definitionJa": "一定期間の死亡に備える保険。満期保険金がないため保険料は比較的低い。",
+    "explanationEn": "Pure death cover for a fixed term. There is normally no maturity benefit and little or no surrender value, so premiums are lower than for savings-type products. Many products are 更新型, so renewal logic applies.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "定期保険は保険期間が確定しているため、保障が永久に続くわけではありません。",
+      "kana": "ていきほけんはほけんきかんがかくていしているため、ほしょうがえいきゅうにつづくわけではありません。",
+      "romaji": "Teiki hoken wa hoken kikan ga kakutei shite iru tame, hoshō ga eikyū ni tsuzuku no dewa arimasen.",
+      "translation": "Term insurance has a fixed coverage period, so cover does not continue indefinitely."
+    },
+    "context": "Product comparison tables, 保険期間・更新型 configuration, and 解約返戻金 = 0 handling.",
+    "confusedTerms": [
+      {
+        "term": "終身保険",
+        "reading": "しゅうしんほけん",
+        "termId": "shushin-hoken",
+        "distinction": "終身保険 covers death for the whole of life and normally builds surrender value."
+      },
+      {
+        "term": "養老保険",
+        "reading": "ようろうほけん",
+        "termId": "yoro-hoken",
+        "distinction": "養老保険 pays on death and also at maturity; 定期保険 pays only on death."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E4%BF%9D%E9%99%BA",
+    "verification": "verified",
+    "verificationNote": "The cited article notes that 定期保険 has no maturity benefit and that reserves fall to zero at maturity.",
+    "tags": [
+      "product",
+      "life",
+      "term"
+    ]
+  },
+  {
+    "id": "shushin-hoken",
+    "term": "終身保険",
+    "kana": "しゅうしんほけん",
+    "romaji": "shūshin hoken",
+    "translation": "whole life insurance",
+    "definitionJa": "死亡を保険事故とし、保険期間が終身続く保険。解約返戻金が積み上がる。",
+    "explanationEn": "Death cover for life, with a savings element: premiums are level and a 解約返戻金 builds up, which is why 契約者貸付 is often available. The theoretical maturity is at the end of the life table rather than a fixed date.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "終身保険は保険期間に満期がないため、解約しない限り保障が続きます。",
+      "kana": "しゅうしんほけんはほけんきかんにまんきがないため、かいやくしないかぎりほしょうがつづきます。",
+      "romaji": "Shūshin hoken wa hoken kikan ni manki ga nai tame, kaiyaku shinai kagiri hoshō ga tsuzukimasu.",
+      "translation": "Whole life insurance has no maturity date, so cover continues unless the contract is cancelled."
+    },
+    "context": "Savings-type product configuration, surrender value schedules, and loan eligibility.",
+    "confusedTerms": [
+      {
+        "term": "定期保険",
+        "reading": "ていきほけん",
+        "termId": "teiki-hoken",
+        "distinction": "定期保険 covers a fixed term with no maturity benefit."
+      },
+      {
+        "term": "養老保険",
+        "reading": "ようろうほけん",
+        "termId": "yoro-hoken",
+        "distinction": "養老保険 has a fixed term and pays the same amount on death or at maturity."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E4%BF%9D%E9%99%BA",
+    "verification": "verified",
+    "verificationNote": "The cited article describes 終身保険 as an endowment contract extended to the end of the life table.",
+    "tags": [
+      "product",
+      "life",
+      "whole-life"
+    ]
+  },
+  {
+    "id": "yoro-hoken",
+    "term": "養老保険",
+    "kana": "ようろうほけん",
+    "romaji": "yōrō hoken",
+    "translation": "endowment insurance",
+    "definitionJa": "保険期間中に死亡した場合と、満期時に生存している場合の双方に同額の保険金を支払う保険。",
+    "explanationEn": "A combined death and survival contract: the same sum is paid either on death during the term or at maturity. It is the classic example of a contract that does have a 満期保険金, which makes it useful for contrasting with 定期保険.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "養老保険では、死亡時と満期時に同額の保険金が支払われます。",
+      "kana": "ようろうほけんでは、しぼうじとまんきじにおうがくのほけんきんがしはらわれます。",
+      "romaji": "Yōrō hoken dewa, shibō-ji to manki-ji ni ō-gaku no hokenkin ga harawaremasu.",
+      "translation": "Endowment insurance pays the same benefit amount on death or at maturity."
+    },
+    "context": "Product comparison, maturity processing, and savings-type reserve logic.",
+    "confusedTerms": [
+      {
+        "term": "終身保険",
+        "reading": "しゅうしんほけん",
+        "termId": "shushin-hoken",
+        "distinction": "終身保険 has no fixed maturity; 養老保険 does."
+      },
+      {
+        "term": "定期保険",
+        "reading": "ていきほけん",
+        "termId": "teiki-hoken",
+        "distinction": "定期保険 pays nothing at maturity."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E4%BF%9D%E9%99%BA",
+    "verification": "verified",
+    "verificationNote": "The cited article describes 養老保険 as blending death and survival cover one-to-one.",
+    "tags": [
+      "product",
+      "life",
+      "endowment"
+    ]
+  },
+  {
+    "id": "shunyuu-hosho-hoken",
+    "term": "収入保障保険",
+    "kana": "しゅうにゅうほしょうほけん",
+    "romaji": "shūnyū hoshō hoken",
+    "translation": "income protection insurance (family income benefit)",
+    "definitionJa": "被保険者に万一があった場合、残された家族に年金のように給付が続く保険。",
+    "explanationEn": "Pays a benefit in periodic instalments (often monthly) to the surviving family instead of a single lump sum, so the total amount decreases over time. The 年金形式 payment design makes 年金原金 style logic relevant.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "収入保障保険の受取方法は、月額と年額のいずれかを選択します。",
+      "kana": "しゅうにゅうほしょうほけんのうけとりほうほうは、げつがくとねんがくのいずれかをせんたくします。",
+      "romaji": "Shūnyū hoshō hoken no uketori hōhō wa, gettsu-gaku to nen-gaku no izure ka o sentaku shimasu.",
+      "translation": "For income protection cover you choose a monthly or annual benefit amount."
+    },
+    "context": "Benefit form configuration, 受取方法 options, and decreasing benefit calculations.",
+    "confusedTerms": [
+      {
+        "term": "一時金",
+        "reading": "いちじきん",
+        "termId": "ichijikin",
+        "distinction": "一時金 is a single lump sum; 収入保障保険 pays periodically."
+      },
+      {
+        "term": "終身保険",
+        "reading": "しゅうしんほけん",
+        "termId": "shushin-hoken",
+        "distinction": "終身保険 pays a fixed sum insured, not an income stream."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "product",
+      "life",
+      "annuity-form"
+    ]
+  },
+  {
+    "id": "sandai-shippo-hoken",
+    "term": "三大疾病保険",
+    "kana": "さんだいしっぺいほけん",
+    "romaji": "sandai shippō hoken",
+    "translation": "three-major-diseases insurance",
+    "definitionJa": "がん・急性心筋梗塞・脳卒中など、三大疾病に該当した場合に給付される保険。",
+    "explanationEn": "Cover aimed at the three conditions that most often lead to long treatment or care — cancer, acute myocardial infarction and stroke. The definition of the qualifying state (for example a specified duration of symptoms or a specified level of functional impairment) is a textbook example of 所定要件.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "三大疾病保険では、所定の状態が一定期間継続したことを確認して給付します。",
+      "kana": "さんだいしっぺいほけんでは、しょてんのじょうたいがいったんきかんつづづいたことをかくにんしてきゅうふします。",
+      "romaji": "Sandai shippō hoken dewa, shōten no jōtai ga icchi-teki-kan tsuzuita koto o kakunin shite kyūfu shimasu.",
+      "translation": "Three-major-diseases cover pays once the specified state has continued for a defined period."
+    },
+    "context": "Assessment of long-duration states, evidence requirements, and 所定要件 rule specifications.",
+    "confusedTerms": [
+      {
+        "term": "がん保険",
+        "reading": "がんほけん",
+        "termId": "gan-hoken",
+        "distinction": "がん保険 is limited to cancer; 三大疾病保険 also covers heart and stroke conditions."
+      },
+      {
+        "term": "医療保険",
+        "reading": "いりょうほけん",
+        "termId": "iryo-hoken",
+        "distinction": "医療保険 pays for treatment generally, not for a defined disease state."
+      }
+    ],
+    "relatedTerms": [
+      "shojo-yoken",
+      "shindansho"
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The named diseases and the qualifying states differ by product; confirm against the 約款.",
+    "tags": [
+      "product",
+      "medical",
+      "definition-of-conditions"
+    ]
+  },
+  {
+    "id": "hengaku-hoken",
+    "term": "変額保険",
+    "kana": "へんがくほけん",
+    "romaji": "hengaku hoken",
+    "translation": "variable insurance (variable universal life)",
+    "definitionJa": "保険金の額や解約返戻金が、特別勘定で運用する資産の価値の変動に応じて増減する保険。",
+    "explanationEn": "A product whose benefit and surrender value vary with the performance of separately invested assets. The minimum guarantees and the 特別勘定 mechanism are the interesting parts for system design, because values must be recalculated periodically.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "変額保険では、運用実績によって保険金額が増減します。",
+      "kana": "へんがくほけんでは、うんゆいっせきによってほけんがくがくがぞうげんします。",
+      "romaji": "Hengaku hoken dewa, unyū jisseki ni yotte hoken gakaku ga zōgen shimasu.",
+      "translation": "In variable insurance, the benefit amount rises or falls with investment performance."
+    },
+    "context": "Periodic recalculation jobs, 特別勘定 valuation interfaces, and disclosure requirements.",
+    "confusedTerms": [
+      {
+        "term": "終身保険",
+        "reading": "しゅうしんほけん",
+        "termId": "shushin-hoken",
+        "distinction": "A conventional whole life contract has a fixed sum insured; in 変額保険 it varies with assets."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E4%BF%9D%E9%99%BA",
+    "verification": "industry-standard",
+    "verificationNote": "The cited article lists 変額保険 among insurance products; product details vary by insurer.",
+    "tags": [
+      "product",
+      "life",
+      "investment"
+    ]
+  },
+  {
+    "id": "dai-san-bunya",
+    "term": "第三分野",
+    "kana": "だいさんぶんや",
+    "romaji": "dai-san bun'ya",
+    "translation": "the third sector (accident and health products sold by non-life insurers)",
+    "definitionJa": "損害保険の分野と生命保険の分野の中間に当たる商品分野。医療・傷害などを扱う。",
+    "explanationEn": "Industry shorthand for products that sit between life and non-life business — medical, cancer and accident cover historically sold by non-life insurers. You will meet it in industry news, regulation discussions and product portfolio documents rather than on customer screens.",
+    "category": "products-coverage",
+    "subcategory": "Industry structure",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "第三分野の商品は、損害保険会社でも販売されています。",
+      "kana": "だいさんぶんやのしょうひんは、そんぽがいしゃでもはんばいされています。",
+      "romaji": "Dai-san bun'ya no shōhin wa, sonpo gaisha demo hanbai sarete imasu.",
+      "translation": "Third-sector products are also sold by non-life insurance companies."
+    },
+    "context": "Portfolio classification, regulatory discussion, and terminology that explains why medical products appear in non-life systems.",
+    "confusedTerms": [
+      {
+        "term": "医療保険",
+        "reading": "いりょうほけん",
+        "termId": "iryo-hoken",
+        "distinction": "医療保険 is a product; 第三分野 is the industry classification it may belong to."
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "The regulatory boundary between life and non-life business has changed over time; do not treat the classification as fixed.",
+    "tags": [
+      "industry",
+      "classification",
+      "regulatory"
+    ]
+  },
+  {
+    "id": "dantai-hoken",
+    "term": "団体保険",
+    "kana": "だんたいほけん",
+    "romaji": "dantai hoken",
+    "translation": "group insurance",
+    "definitionJa": "企業や団体などを契約者として、構成員を被保険者とする一つの契約として引き受ける保険。",
+    "explanationEn": "A single contract taken out by an organisation covering its members. The data model is different from individual business: 契約者 is the company, members are 加入者 records, and enrolment changes (異動) happen continuously. Group underwriting rules differ from individual underwriting.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "団体保険では、従業員の入退社に応じて加入者データの異動処理を行います。",
+      "kana": "だんたいほけんでは、じゅうぎょういんのゆうたいしゃにおうじてかにゅうしゃデータのいどうしょりをおこないます。",
+      "romaji": "Dantai hoken dewa, jūgyō-in no yūtaisha ni ōjite kanyūsha dēta no idō shori o okonai masu.",
+      "translation": "In group insurance, member data is updated as employees join and leave."
+    },
+    "context": "Group administration screens, enrolment change (異動) files from HR systems, and 団体扱 discounts.",
+    "confusedTerms": [
+      {
+        "term": "団体信用生命保険",
+        "reading": "だんたいしんようせいめいほけん",
+        "termId": "dantai-shinyo-seimei-hoken",
+        "distinction": "団体信用生命保険 is one specific group product tied to loans; 団体保険 is the general arrangement."
+      },
+      {
+        "term": "新規契約",
+        "reading": "しんけいやく",
+        "termId": "shinki-keiyaku",
+        "distinction": "Individual new business is underwritten per person; group business is underwritten at contract level."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "product",
+      "group",
+      "data-model"
+    ]
+  },
+  {
+    "id": "dantai-shinyo-seimei-hoken",
+    "term": "団体信用生命保険",
+    "kana": "だんたいしんようせいめいほけん",
+    "romaji": "dantai shinyō seimei hoken",
+    "translation": "group credit life insurance",
+    "definitionJa": "住宅ローンなどの債務者を被保険者とし、死亡時にローン残高に相当する保険金が支払われる団体保険。",
+    "explanationEn": "Credit life cover attached to loans: if the borrower dies, the outstanding loan is repaid by the insurance benefit. Often abbreviated ダンシネ in industry shorthand. It is a common real-world example of 保険金受取人 being the financial institution rather than the family.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "団体信用生命保険に加入していると、死亡時はローン残高が保険金で弁済されます。",
+      "kana": "だんたいしんようせいめいほけんにかにゅうしていると、しぼうじはろーんざんだかがほけんきんでべんさいされます。",
+      "romaji": "Dantai shinyō seimei hoken ni kanyū shite iru to, shibō-ji wa rōn zandaka ga hokenkin de bensai saremasu.",
+      "translation": "With group credit life cover, the loan balance is repaid by the insurance benefit on death."
+    },
+    "context": "Bank and insurer interfaces, 弁済 logic, and beneficiary determination where the lender is the payee.",
+    "confusedTerms": [
+      {
+        "term": "団体保険",
+        "reading": "だんたいほけん",
+        "termId": "dantai-hoken",
+        "distinction": "団体保険 is the general group arrangement; this is a specific credit-life product."
+      },
+      {
+        "term": "死亡保険金",
+        "reading": "しぼうほけんきん",
+        "termId": "shibo-hokenkin",
+        "distinction": "The benefit type is a death benefit; the distinguishing feature is that it settles a debt."
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "The abbreviation ダンシネ is industry slang; verify before using it in formal documents.",
+    "tags": [
+      "product",
+      "group",
+      "credit-life"
+    ]
+  },
+  {
+    "id": "jishin-hoken",
+    "term": "地震保険",
+    "kana": "じしんほけん",
+    "romaji": "jishin hoken",
+    "translation": "earthquake insurance",
+    "definitionJa": "地震・噴火・津波による損害に備える保険。火災保険と併せて契約する仕組みが一般的。",
+    "explanationEn": "Cover for earthquake, volcanic eruption and tsunami damage, normally taken alongside a fire policy rather than on its own, with its own limit expressed as a percentage of the fire 保険金額. A good example of a rider-like structure that is nevertheless a separate contract.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "地震保険は、火災保険の保険金額の一定割合を上限として契約できます。",
+      "kana": "じしんほけんは、かさいほけんのほけんがくがくのいちてんわりょうをじょうげんとしてけいやくできます。",
+      "romaji": "Jishin hoken wa, kasai hoken no hoken gakaku no icchi-ten wariō o jōgen to shite keiyaku dekimasu.",
+      "translation": "Earthquake insurance may be contracted up to a fixed proportion of the fire policy sum insured."
+    },
+    "context": "Combined fire and earthquake configuration, limit ratio validation, and joint assessment of property damage.",
+    "confusedTerms": [
+      {
+        "term": "火災保険",
+        "reading": "かさいほけん",
+        "termId": "kasai-hoken",
+        "distinction": "火災保険 generally excludes earthquake damage, which is why 地震保険 exists as a separate layer."
+      },
+      {
+        "term": "特約",
+        "reading": "とくやく",
+        "termId": "tokuyaku",
+        "distinction": "A rider attaches to the base contract; 地震保険 is a separate contract priced and settled on its own terms."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The limit ratio and the joint-contract requirement are set by the scheme rules; confirm current figures before use.",
+    "tags": [
+      "product",
+      "non-life",
+      "property"
+    ]
+  },
+  {
+    "id": "kasai-hoken",
+    "term": "火災保険",
+    "kana": "かさいほけん",
+    "romaji": "kasai hoken",
+    "translation": "fire and property insurance",
+    "definitionJa": "火災や落雷・風災などの損害に備える損害保険。建物や家財が対象となる。",
+    "explanationEn": "Despite the name, it covers a wide range of perils affecting buildings and household goods, not only fire. It is the standard example of indemnity (実損てん補) logic: the payment is based on the actual loss, capped by 保険金額, and it interacts with 免責金額 and 地震保険.",
+    "category": "products-coverage",
+    "subcategory": "Product types",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "火災保険では、損害額に基づいて保険金を計算します。",
+      "kana": "かさいほけんでは、そんがいがくにもとづいてほけんきんをけいさんします。",
+      "romaji": "Kasai hoken dewa, songai gaku ni motozuite hokenkin o keisan shimasu.",
+      "translation": "In fire insurance the benefit is calculated on the basis of the loss amount."
+    },
+    "context": "Property valuation, 保険価額 vs 保険金額 checks, and combined peril assessment.",
+    "confusedTerms": [
+      {
+        "term": "地震保険",
+        "reading": "じしんほけん",
+        "termId": "jishin-hoken",
+        "distinction": "Earthquake damage is generally excluded from 火災保険 and needs a separate 地震保険 contract."
+      },
+      {
+        "term": "損害額",
+        "reading": "そんがいがく",
+        "termId": "songaigaku",
+        "distinction": "損害額 is the measured loss used in the calculation; 保険金額 is the contractual maximum."
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "Covered perils differ widely between products; the example is generic and must be checked against a specific policy.",
+    "tags": [
+      "product",
+      "non-life",
+      "property"
+    ]
+  },
+  {
+    "id": "hoken-shurui",
+    "term": "保険種類",
+    "kana": "ほけんしゅるい",
+    "romaji": "hoken shurui",
+    "translation": "insurance product type (classification code)",
+    "definitionJa": "契約がどの商品・分類に属するかを示す区分。システムではコードで管理される。",
+    "explanationEn": "The classification of a contract by product type. In systems it is a code table (保険種類コード) that drives which rules, screens and documents apply. Different companies use different hierarchies, so mapping between systems is a recurring integration task.",
+    "category": "products-coverage",
+    "subcategory": "Classification",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "it",
+      "both"
+    ],
+    "example": {
+      "ja": "保険種類コードによって、適用される画面項目と業務ルールが変わります。",
+      "kana": "ほけんしゅるいこーどによって、てきようされるがめんこうもくとぎょうむるーるがかわります。",
+      "romaji": "Hoken shurui kōdo ni yotte, tekiyō sareru gamen moku moku to gyōmu rūru ga kawarimasu.",
+      "translation": "The product type code determines which screen fields and business rules apply."
+    },
+    "context": "Screen routing, rule selection, code mapping between systems, and statistical grouping.",
+    "confusedTerms": [
+      {
+        "term": "主契約",
+        "reading": "しゅけいやく",
+        "termId": "shukeiyaku",
+        "distinction": "主契約 is the base contract structure; 保険種類 is the classification code of the product."
+      },
+      {
+        "term": "マスタデータ",
+        "reading": "ますたでーた",
+        "termId": "master-data",
+        "distinction": "The code list itself is master data; 保険種類 is the concept being coded."
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "There is no single industry-wide code set; each company defines its own hierarchy.",
+    "tags": [
+      "classification",
+      "code-table",
+      "integration"
+    ]
+  },
+  {
+    "id": "hosho-naiyo",
+    "term": "保障内容",
+    "kana": "ほしょうないよう",
+    "romaji": "hoshō naiyō",
+    "translation": "coverage details",
+    "definitionJa": "契約でどのような事故・状態に対していくら支払われるかの内容。",
+    "explanationEn": "What a contract actually covers: the benefit types, amounts and conditions. On screens this is usually a structured table (保障内容一覧) generated from the product definition, and it is the most-read part of any inquiry screen.",
+    "category": "products-coverage",
+    "subcategory": "Coverage",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保障内容一覧は、主契約と特約をまとめて表示します。",
+      "kana": "ほしょうないよういちらんは、しゅけいやくととくやくをまとめてひょうじします。",
+      "romaji": "Hoshō naiyō ichiran wa, shukeiyaku to tokuyaku o matomete hyōji shimasu.",
+      "translation": "The coverage summary displays the base contract and riders together."
+    },
+    "context": "Inquiry screens, comparison documents, and change procedures that alter coverage.",
+    "confusedTerms": [
+      {
+        "term": "保障範囲",
+        "reading": "ほしょうはんい",
+        "termId": "hosho-hani",
+        "distinction": "保障内容 is what is covered and how much; 保障範囲 is the boundary of what is included at all."
+      },
+      {
+        "term": "補償",
+        "reading": "ほしょう",
+        "termId": "hosho",
+        "distinction": "補償 is the non-life/indemnity wording; 保障 is the general word for the coverage promised."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "coverage",
+      "screen",
+      "core"
+    ]
+  },
+  {
+    "id": "hosho-hani",
+    "term": "保障範囲",
+    "kana": "ほしょうはんい",
+    "romaji": "hoshō han'i",
+    "translation": "scope of coverage",
+    "definitionJa": "保障が及ぶ対象の範囲。対象となる事故・場所・期間などの切り分け。",
+    "explanationEn": "The boundary of cover — which events, places, people and periods are inside it. Questions of 保障範囲 are usually answered with 対象 / 対象外 lists and 免責事項, and they drive the structure of rule engines.",
+    "category": "products-coverage",
+    "subcategory": "Coverage",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保障範囲外の状態は、支払対象外となります。",
+      "kana": "ほしょうはんいがいのじょうたいは、しはらたいしょうがいとなります。",
+      "romaji": "Hoshō han'i-gai no jōtai wa, shiharai taishō-gai to narimasu.",
+      "translation": "Conditions outside the scope of coverage are not eligible for payment."
+    },
+    "context": "Eligibility rules, 支払対象外 handling, and requirement discussions about edge cases.",
+    "confusedTerms": [
+      {
+        "term": "保障内容",
+        "reading": "ほしょうないよう",
+        "termId": "hosho-naiyo",
+        "distinction": "保障内容 describes the benefits themselves; 保障範囲 describes where they stop."
+      },
+      {
+        "term": "影響範囲",
+        "reading": "えいきょうはんい",
+        "termId": "eikyo-hani",
+        "distinction": "影響範囲 is the blast radius of a software change, not insurance cover."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "coverage",
+      "rules",
+      "boundary"
+    ]
+  },
+  {
+    "id": "menshaku-jiko",
+    "term": "免責事項",
+    "kana": "めんしゃくじこう",
+    "romaji": "menshaku jikō",
+    "translation": "exclusions (as presented to the customer)",
+    "definitionJa": "保険金が支払われない場合として約款やパンフレットに示された事項。",
+    "explanationEn": "The exclusions as listed for the customer — in the 約款, on the 重要事項説明書, or in product material. Compare 免責事由, which is the specific ground used when a decision is made, and 免責金額, which is a deductible.",
+    "category": "products-coverage",
+    "subcategory": "Exclusions",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "免責事項は、契約の締結前に説明することが約款で求められています。",
+      "kana": "めんしゃくじこうは、けいやくのけいかつまえにせつめいすることがいかんもとめられています。",
+      "romaji": "Menshaku jikō wa, keiyaku no keikatsu-mae ni setsumei suru koto ga ikan de motomerarete imasu.",
+      "translation": "The exclusions must be explained before the contract is concluded."
+    },
+    "context": "Disclosure and explanation flows, document generation, and customer-facing screens.",
+    "confusedTerms": [
+      {
+        "term": "免責事由",
+        "reading": "めんしゃくじゆう",
+        "termId": "menshaku-jiyu",
+        "distinction": "免責事由 is the ground applied in a decision; 免責事項 is the published list."
+      },
+      {
+        "term": "免責金額",
+        "reading": "めんしゃくきんがく",
+        "termId": "menshaku-kingaku",
+        "distinction": "免責金額 reduces the payment; 免責事項 prevent it."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The requirement to explain before conclusion is a general practice; the exact legal basis should be confirmed.",
+    "tags": [
+      "coverage",
+      "disclosure",
+      "documents"
+    ]
+  },
+  {
+    "id": "taiki-kikan",
+    "term": "待機期間",
+    "kana": "たいききかん",
+    "romaji": "taiki kikan",
+    "translation": "waiting period",
+    "definitionJa": "契約の効力発生から、特定の保障が始まるまでの期間。",
+    "explanationEn": "A period after the start of cover during which certain causes (classically cancer or specified diseases) are not covered. It is a date-based eligibility rule and a frequent source of 支払対象外 decisions, so it must be evaluated against the 支払事由 date, not the claim date.",
+    "category": "products-coverage",
+    "subcategory": "Coverage",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "待機期間内に診断された疾病は、支払対象外となります。",
+      "kana": "たいききかんないにしんだんされたしっぺいは、しはらたいしょうがいとなります。",
+      "romaji": "Taiki kikan-nai ni shindan sareta shippei wa, shiharai taishō-gai to narimasu.",
+      "translation": "Diseases diagnosed during the waiting period are not eligible for payment."
+    },
+    "context": "Eligibility rule engines, date comparison logic, and 支払事由 date capture on claim screens.",
+    "confusedTerms": [
+      {
+        "term": "払込猶予期間",
+        "reading": "はらこみゆうよきかん",
+        "termId": "harakomi-yuuyo-kikan",
+        "distinction": "The grace period protects a contract after a missed premium; 待機期間 restricts cover at the beginning."
+      },
+      {
+        "term": "免責事由",
+        "reading": "めんしゃくじゆう",
+        "termId": "menshaku-jiyu",
+        "distinction": "A waiting period is time-based; 免責事由 are grounds unrelated to timing."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The length and the covered causes differ by product; confirm in the 約款.",
+    "tags": [
+      "coverage",
+      "dates",
+      "rules"
+    ]
+  },
+  {
+    "id": "menshaku",
+    "term": "免責",
+    "kana": "めんしゃく",
+    "romaji": "menshaku",
+    "translation": "exclusion; deductible (context-dependent)",
+    "alternativeTranslations": [
+      "exemption from liability",
+      "retained amount"
+    ],
+    "definitionJa": "保険者の支払責任を負わないこと。また、契約者が負担する金額。文脈で意味が変わる。",
+    "explanationEn": "A context-dependent word. In 免責事由 and 免責事項 it means exclusion (no payment at all); in 免責金額 and 免責割合 it means a deductible or co-insurance (a reduced payment). In IT documents it can also appear as a flag name whose meaning must be read from the field definition.",
+    "category": "products-coverage",
+    "subcategory": "Exclusions",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "免責の扱いは商品によって異なり、金額で定める場合と事由で定める場合があります。",
+      "kana": "めんしゃくのあつかいはしょうひんによってことなり、きんがくでさだめるばあいとじゆうでさだめるばあいがります。",
+      "romaji": "Menshaku no atsukai wa shōhin ni yotte kotonari, kingaku de sadameru baai to jiyū de sadameru baai ga arimasu.",
+      "translation": "The treatment of exclusions and deductibles differs by product: some are defined by amount, others by cause."
+    },
+    "context": "Rule configuration (免責フラグ, 免責割合), claim assessment, and reading product condition sheets.",
+    "confusedTerms": [
+      {
+        "term": "免責金額",
+        "reading": "めんしゃくきんがく",
+        "termId": "menshaku-kingaku",
+        "distinction": "The amount form of 免責 — a deductible that reduces payment."
+      },
+      {
+        "term": "免責事由",
+        "reading": "めんしゃくじゆう",
+        "termId": "menshaku-jiyu",
+        "distinction": "The cause form of 免責 — grounds that prevent payment entirely."
+      }
+    ],
+    "components": [
+      {
+        "element": "免",
+        "reading": "めん",
+        "meaning": "escape, exempt"
+      },
+      {
+        "element": "責",
+        "reading": "せき",
+        "meaning": "responsibility, liability"
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "Both senses are standard; which one applies is decided by the compound or the surrounding text.",
+    "tags": [
+      "coverage",
+      "context-dependent",
+      "core"
+    ]
+  },
+  {
+    "id": "hosho",
+    "term": "補償",
+    "kana": "ほしょう",
+    "romaji": "hoshō",
+    "translation": "indemnity; compensation (non-life usage)",
+    "definitionJa": "損害に対して金銭などによって穴埋めをすること。損害保険で用いられる表記。",
+    "explanationEn": "Written with 補 (supplement, make up for) and used for indemnifying an actual loss — the language of non-life contracts (補償範囲, 補償対象). 保障 (same reading, hoshō) is the broader word for the coverage a contract promises and is the normal spelling in life and medical contexts. Because the two are homophones, the distinction is visible only in writing — which is exactly why it trips up learners and OCR pipelines.",
+    "category": "products-coverage",
+    "subcategory": "Coverage",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "domainNote": "Usage is conventional rather than legal: non-life documents prefer 補償, life and medical documents prefer 保障.",
+    "example": {
+      "ja": "自動車保険の補償範囲を確認したうえで、契約内容を変更します。",
+      "kana": "じどうしゃほけんのほしょうはんいをかくにんしたうえで、けいやくないようをへんこうします。",
+      "romaji": "Jidōsha hoken no hoshō han'i o kakunin shita ue de, keiyaku naiyō o henkō shimasu.",
+      "translation": "After checking the scope of motor insurance cover, the policy details are changed."
+    },
+    "context": "Non-life product documents, comparison tables, and search features that must handle both spellings.",
+    "confusedTerms": [
+      {
+        "term": "保障範囲",
+        "reading": "ほしょうはんい",
+        "termId": "hosho-hani",
+        "distinction": "Same reading; 保障 is the general coverage term, 補償 is the indemnity term used in non-life."
+      },
+      {
+        "term": "損害額",
+        "reading": "そんがいがく",
+        "termId": "songaigaku",
+        "distinction": "損害額 is the loss measured; 補償 is the making-good of that loss."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The 補償/保障 split is a strong convention, not a codified rule; some insurers use them interchangeably.",
+    "tags": [
+      "coverage",
+      "homophone",
+      "non-life"
+    ]
+  },
+  {
+    "id": "shojo-yoken",
+    "term": "所定要件",
+    "kana": "しょてんようけん",
+    "romaji": "shōten yōken",
+    "translation": "specified requirements",
+    "definitionJa": "約款や契約で定められた、給付などのために満たすべき条件。",
+    "explanationEn": "The boilerplate phrase 所定の要件を満たす when… appears throughout 約款 and claim rules. 所定 means 'as specified/provided' — it points to conditions defined elsewhere rather than stating them, so the actual test always lives in another document or rule table.",
+    "category": "products-coverage",
+    "subcategory": "Rules",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "所定要件を満たすと確認された場合に、給付金をお支払いします。",
+      "kana": "しょてんようけんをみたすとかくにんされたばあいに、きゅうふきんをおしはらいします。",
+      "romaji": "Shōten yōken o mitasu to kakunin sareta baai ni, kyūfukin o o-shiharai shimasu.",
+      "translation": "The benefit is paid when it is confirmed that the specified requirements are met."
+    },
+    "context": "Reading 約款 and assessment rules, and translating them into rule-engine conditions.",
+    "confusedTerms": [
+      {
+        "term": "業務ルール",
+        "reading": "ぎょうむるーる",
+        "termId": "gyomu-rule",
+        "distinction": "所定要件 is the contractual condition; 業務ルール is how the organisation implements and enforces it."
+      },
+      {
+        "term": "支払事由",
+        "reading": "しはらじゆう",
+        "termId": "shiharai-jiyu",
+        "distinction": "支払事由 is the triggering event; 所定要件 are the conditions that event must satisfy."
+      }
+    ],
+    "components": [
+      {
+        "element": "所",
+        "reading": "しょ",
+        "meaning": "place, that which"
+      },
+      {
+        "element": "定",
+        "reading": "てい",
+        "meaning": "defined, fixed"
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "rules",
+      "legal-language",
+      "core"
+    ]
+  }
+]

@@ -1,0 +1,738 @@
+[
+  {
+    "id": "hokenkin-seikyuu",
+    "term": "保険金請求",
+    "kana": "ほけんきんせいきゅう",
+    "romaji": "hokenkin seikyū",
+    "translation": "insurance benefit claim",
+    "definitionJa": "保険金の支払を受けるために、保険者に請求すること。また、その手続き。",
+    "explanationEn": "The act of claiming a benefit after an insured event. The claim process spans intake, document handling, assessment and payment, and it is one of the most workflow-heavy areas of an insurance system.",
+    "category": "claims-payment",
+    "subcategory": "Claim intake",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険金請求は、所定の請求書類の提出により受け付けます。",
+      "kana": "ほけんきんせいきゅうは、しょてんのせいきゅうしょるいのしゅつだによりうけつけます。",
+      "romaji": "Hokenkin seikyū wa, shōten no seikyū shorui no shutsudai ni yori uketsukemasu.",
+      "translation": "Benefit claims are accepted on submission of the prescribed claim documents."
+    },
+    "context": "Claim intake screens, document upload, and claim status management.",
+    "confusedTerms": [
+      {
+        "term": "給付金請求",
+        "reading": "きゅうふきんせいきゅう",
+        "termId": "kyufukin-seikyuu",
+        "distinction": "Which wording is used depends on the product; the underlying process is the same."
+      },
+      {
+        "term": "支払事由",
+        "reading": "しはらじゆう",
+        "termId": "shiharai-jiyu",
+        "distinction": "請求 is the customer action; 支払事由 is the contractual trigger being claimed for."
+      }
+    ],
+    "relatedTerms": [
+      "seikyuu-shorui",
+      "shiharai-saten"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "workflow",
+      "core"
+    ]
+  },
+  {
+    "id": "kyufukin-seikyuu",
+    "term": "給付金請求",
+    "kana": "きゅうふきんせいきゅう",
+    "romaji": "kyūfukin seikyū",
+    "translation": "claim for benefit payments",
+    "definitionJa": "医療・傷害などの給付金について、保険者に支払を請求すること。",
+    "explanationEn": "Used for medical and accident-type fixed benefits. In practice it denotes the same kind of workflow as 保険金請求; the wording follows the product's own naming, so a single system often has both terms in different screens.",
+    "category": "claims-payment",
+    "subcategory": "Claim intake",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "給付金請求は、ウェブ手続きでも受け付けることができます。",
+      "kana": "きゅうふきんせいきゅうは、ウェブてつづきでもうけつけることができます。",
+      "romaji": "Kyūfukin seikyū wa, webu tetsuzuki demo uketsukeru koto ga dekimasu.",
+      "translation": "Benefit claims can also be submitted through the online procedure."
+    },
+    "context": "Self-service claim submission, document upload, and status display for customers.",
+    "confusedTerms": [
+      {
+        "term": "保険金請求",
+        "reading": "ほけんきんせいきゅう",
+        "termId": "hokenkin-seikyuu",
+        "distinction": "The naming follows the product; both describe claiming money from the insurer."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Which term a company uses is product- and company-specific.",
+    "tags": [
+      "claims",
+      "medical",
+      "self-service"
+    ]
+  },
+  {
+    "id": "shiharai-saten",
+    "term": "支払査定",
+    "kana": "しはらさてん",
+    "romaji": "shiharai saten",
+    "translation": "claims assessment",
+    "definitionJa": "請求について、支払の可否や金額を審査・算定すること。",
+    "explanationEn": "Assessment after a claim: does the event meet the conditions, and how much is payable? It combines rule evaluation (支払事由, 免責, 特別条件, 支払限度額) with manual judgement, and produces an 査定結果.",
+    "category": "claims-payment",
+    "subcategory": "Assessment",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "支払査定では、支払事由に該当するかを確認します。",
+      "kana": "しはらさてんでは、しはらじゆうにがとうするかをかくにんします。",
+      "romaji": "Shiharai saten dewa, shiharai jiyū ni gatō suru ka o kakunin shimasu.",
+      "translation": "In claims assessment, the reviewer checks whether the event falls under a ground for payment."
+    },
+    "context": "Assessment work queues, automatic assessment rules, and audit of assessment decisions.",
+    "confusedTerms": [
+      {
+        "term": "引受査定",
+        "reading": "ひきうけさてん",
+        "termId": "hikuke-saten",
+        "distinction": "支払査定 happens after a claim on an existing contract; 引受査定 happens before the contract exists."
+      },
+      {
+        "term": "査定結果",
+        "reading": "さてんけっか",
+        "termId": "satei-kekka",
+        "distinction": "支払査定 is the activity; 査定結果 is the recorded outcome."
+      }
+    ],
+    "components": [
+      {
+        "element": "支",
+        "reading": "し",
+        "meaning": "pay, support"
+      },
+      {
+        "element": "払",
+        "reading": "はら",
+        "meaning": "pay"
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "workflow",
+      "rules"
+    ]
+  },
+  {
+    "id": "shiharai-jiyu",
+    "term": "支払事由",
+    "kana": "しはらじゆう",
+    "romaji": "shiharai jiyū",
+    "translation": "event or condition triggering payment",
+    "definitionJa": "保険金や給付金の支払を行う契機となる事由。",
+    "explanationEn": "The contractual trigger for payment. Broader than 保険事故, because some triggers are not accidents at all (survival to maturity, reaching a specified state). Rule engines are usually organised around 支払事由 codes.",
+    "category": "claims-payment",
+    "subcategory": "Rules",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "支払事由に該当しない場合、保険金は支払われません。",
+      "kana": "しはらじゆうにがとうしないばあい、ほけんきんはしはらわれません。",
+      "romaji": "Shiharai jiyū ni gatō shinai baai, hokenkin wa harawaremasen.",
+      "translation": "If the event does not fall under a ground for payment, no benefit is paid."
+    },
+    "context": "Payment rule tables, 支払事由コード classification, and denial reason handling.",
+    "confusedTerms": [
+      {
+        "term": "保険事故",
+        "reading": "ほけんじこ",
+        "termId": "hoken-jiko",
+        "distinction": "保険事故 implies an accidental event; 支払事由 covers any contractual trigger, including non-accidental ones."
+      },
+      {
+        "term": "免責事由",
+        "reading": "めんしゃくじゆう",
+        "termId": "menshaku-jiyu",
+        "distinction": "支払事由 opens the right to payment; 免責事由 removes it again."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "rules",
+      "codes"
+    ]
+  },
+  {
+    "id": "shiharai-taisho",
+    "term": "支払対象",
+    "kana": "しはらたいしょう",
+    "romaji": "shiharai taishō",
+    "translation": "eligible for payment",
+    "definitionJa": "約款や業務ルールにより、保険金などの支払が行われる対象であること。",
+    "explanationEn": "Something is 支払対象 when it satisfies the payment conditions. On screens this often appears as a flag or as a section heading listing payable items; it is a status determined by assessment, not a property of the claim itself.",
+    "category": "claims-payment",
+    "subcategory": "Rules",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "支払対象となるかは、約款に定められた条件で判断します。",
+      "kana": "しはらたいしょうとなるかは、いかんにさだめられたじょうけんで判断します。",
+      "romaji": "Shiharai taishō to naru ka wa, ikan ni sadamerareta jōken de handan shimasu.",
+      "translation": "Whether something is payable is decided by the conditions set out in the policy conditions."
+    },
+    "context": "Assessment screens, eligibility flags, and 支払対象一覧 output.",
+    "confusedTerms": [
+      {
+        "term": "支払対象外",
+        "reading": "しはらたいしょうがい",
+        "termId": "shiharai-taishougai",
+        "distinction": "Direct opposites; the negative form is written as one compound."
+      },
+      {
+        "term": "不備",
+        "reading": "びび",
+        "termId": "fubi",
+        "distinction": "不備 means the paperwork is deficient — it says nothing about eligibility."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "rules",
+      "status"
+    ]
+  },
+  {
+    "id": "shiharai-taishougai",
+    "term": "支払対象外",
+    "kana": "しはらたいしょうがい",
+    "romaji": "shiharai taishō-gai",
+    "translation": "not eligible for payment",
+    "definitionJa": "約款や業務ルールにより、保険金などの支払が行われない対象であること。",
+    "explanationEn": "Not payable: the event may be excluded, outside the coverage period, or below a deductible. Note the compact Japanese pattern 名詞 + 外 = out of scope; the same pattern appears in 適用外, 対象外, 補償外.",
+    "category": "claims-payment",
+    "subcategory": "Rules",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "待機期間中の入院は、支払対象外となります。",
+      "kana": "たいききかんちゅうのにゅういんは、しはらたいしょうがいとなります。",
+      "romaji": "Taiki kikan-chū no nyūin wa, shiharai taishō-gai to narimasu.",
+      "translation": "Hospitalisation during the waiting period is not eligible for payment."
+    },
+    "context": "Denial handling, exclusion messages on customer screens, and 支払対象外 reason codes.",
+    "confusedTerms": [
+      {
+        "term": "支払対象",
+        "reading": "しはらたいしょう",
+        "termId": "shiharai-taisho",
+        "distinction": "Opposite outcomes."
+      },
+      {
+        "term": "免責事由",
+        "reading": "めんしゃくじゆう",
+        "termId": "menshaku-jiyu",
+        "distinction": "免責事由 are the grounds; 支払対象外 is the resulting status of the item."
+      }
+    ],
+    "relatedTerms": [
+      "taiki-kikan",
+      "menshaku-jiyu"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "rules",
+      "status"
+    ]
+  },
+  {
+    "id": "seikyuu-shorui",
+    "term": "請求書類",
+    "kana": "せいきゅうしょるい",
+    "romaji": "seikyū shorui",
+    "translation": "claim documents",
+    "definitionJa": "保険金や給付金の請求に際して提出を求める書類。",
+    "explanationEn": "The documents required to support a claim — for example a death certificate, a medical certificate or an investigation report. Which documents are required depends on the 支払事由 and the amount, and that conditional document list is a typical rule-driven specification.",
+    "category": "claims-payment",
+    "subcategory": "Documents",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "請求書類に不備がある場合は、お客様に連絡のうえ差戻しとします。",
+      "kana": "せいきゅうしょるいにびびがあるばあいは、おきゃくにんにれんらくのうえさもどしとします。",
+      "romaji": "Seikyū shorui ni fubi ga aru baai wa, okyaku-nin ni renraku no ue sashi modoshi to shimasu.",
+      "translation": "If the claim documents have a deficiency, we contact the customer and return the case."
+    },
+    "context": "Document checklists, upload and OCR processing, and completeness validation before assessment.",
+    "confusedTerms": [
+      {
+        "term": "診断書",
+        "reading": "しんだんしょ",
+        "termId": "shindansho",
+        "distinction": "診断書 is one specific kind of claim document issued by a physician."
+      },
+      {
+        "term": "告知書",
+        "reading": "こくちしょ",
+        "termId": "kokuchisho",
+        "distinction": "告知書 belongs to the application stage, not to a claim."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "documents",
+      "checklist"
+    ]
+  },
+  {
+    "id": "satei-kekka",
+    "term": "査定結果",
+    "kana": "さてんけっか",
+    "romaji": "satei kekka",
+    "translation": "assessment result",
+    "definitionJa": "支払査定や引受査定の結果として記録される判定。",
+    "explanationEn": "The recorded outcome of an assessment. For claims this is typically a set of statuses (payable, not payable, on hold, returned); for underwriting it is accept / conditional accept / decline. Status dictionaries differ between companies, so always read the local definitions.",
+    "category": "claims-payment",
+    "subcategory": "Outcomes",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "査定結果は、支払・支払対象外・差戻しの区分で記録します。",
+      "kana": "さてんけっかは、しはら・しはらたいしょうがい・さもどしのくぶんできろくします。",
+      "romaji": "Satei kekka wa, shiharai, shiharai taishō-gai, sashi modoshi no kubun de kiroku shimasu.",
+      "translation": "Assessment results are recorded under the categories payable, not payable, or returned."
+    },
+    "context": "Status dictionaries, work queue routing, and management information reporting.",
+    "confusedTerms": [
+      {
+        "term": "支払査定",
+        "reading": "しはらさてん",
+        "termId": "shiharai-saten",
+        "distinction": "支払査定 is the activity; 査定結果 is what it writes down."
+      },
+      {
+        "term": "支払保留",
+        "reading": "しはらほりゅう",
+        "termId": "shiharai-horyuu",
+        "distinction": "保留 is an intermediate state, not a final assessment result."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "status",
+      "reporting"
+    ]
+  },
+  {
+    "id": "fubi",
+    "term": "不備",
+    "kana": "びび",
+    "romaji": "fubi",
+    "translation": "deficiency; missing or inadequate information",
+    "definitionJa": "書類や入力内容に不足や誤りがあり、そのままでは処理を進められない状態。",
+    "explanationEn": "A deficiency in documents or data entry — a missing signature, an incomplete date, an invalid code. In IT usage it is the everyday word for validation failures: 入力に不備があります is the standard error phrasing. It is not a judgement about eligibility.",
+    "category": "claims-payment",
+    "subcategory": "Rework",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "general",
+      "it"
+    ],
+    "example": {
+      "ja": "請求内容に不備がある場合、そのままでは処理を進められません。",
+      "kana": "せいきゅうないようにびびがあるばあい、そのままではしょりをすすめられません。",
+      "romaji": "Seikyū naiyō ni fubi ga aru baai, sono mama dewa shori o susumeraremasen.",
+      "translation": "If the claim details have a deficiency, processing cannot continue as they stand."
+    },
+    "context": "Validation messages, completeness checks, and the 差戻し rework loop.",
+    "confusedTerms": [
+      {
+        "term": "差戻し",
+        "reading": "さもどし",
+        "termId": "sashi-modoshi",
+        "distinction": "不備 is the defect; 差戻し is the action of sending the case back because of it."
+      },
+      {
+        "term": "支払対象外",
+        "reading": "しはらたいしょうがい",
+        "termId": "shiharai-taishougai",
+        "distinction": "支払対象外 is an eligibility outcome; 不備 is a data or document problem."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "validation",
+      "rework"
+    ]
+  },
+  {
+    "id": "sashi-modoshi",
+    "term": "差戻し",
+    "kana": "さもどし",
+    "romaji": "sashi modoshi",
+    "translation": "return for correction; send back",
+    "definitionJa": "不備や追加の確認がある場合に、申請や処理を提出元に戻すこと。",
+    "explanationEn": "Sending a case back to the submitter or to an earlier step in the workflow — for example returning a claim intake to the branch, or returning a test result to the developer. It is a workflow transition, not a cancellation, and the case keeps its history.",
+    "category": "claims-payment",
+    "subcategory": "Rework",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "general",
+      "it"
+    ],
+    "example": {
+      "ja": "不備のある申請は、担当者に差戻しを行います。",
+      "kana": "びびのあるしんせいには、たんとうしゃにさもどしをおこないます。",
+      "romaji": "Fubi no aru shinsei wa, tantō-sha ni sashi modoshi o okonai masu.",
+      "translation": "Applications with a deficiency are returned to the person in charge."
+    },
+    "context": "Approval workflows, claim intake rework, and test management (returning a failed test case).",
+    "confusedTerms": [
+      {
+        "term": "不備",
+        "reading": "びび",
+        "termId": "fubi",
+        "distinction": "不備 is the problem found; 差戻し is the workflow action taken in response."
+      },
+      {
+        "term": "取消し",
+        "reading": "とりけし",
+        "termId": "torikeshi",
+        "distinction": "取消し removes the transaction; 差戻し keeps it and sends it back for correction."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "workflow",
+      "rework",
+      "approval"
+    ]
+  },
+  {
+    "id": "shiharai-horyuu",
+    "term": "支払保留",
+    "kana": "しはらほりゅう",
+    "romaji": "shiharai horyū",
+    "translation": "payment on hold",
+    "definitionJa": "追加の確認や調査が必要なため、支払の判断を一時的に止めている状態。",
+    "explanationEn": "A deliberate pause: more information or investigation is needed before a decision. It is an intermediate status distinct from 支払対象外, and systems usually track the hold reason and the follow-up deadline.",
+    "category": "claims-payment",
+    "subcategory": "Status",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "追加の調査が必要なため、支払保留とします。",
+      "kana": "ついかのちょうさがひつようなため、しはらほりゅうとします。",
+      "romaji": "Tsuika no chōsa ga hitsuyō na tame, shiharai horyū to shimasu.",
+      "translation": "Because further investigation is needed, the payment is placed on hold."
+    },
+    "context": "Work queue ageing, hold reason codes, and follow-up deadline monitoring.",
+    "confusedTerms": [
+      {
+        "term": "支払対象外",
+        "reading": "しはらたいしょうがい",
+        "termId": "shiharai-taishougai",
+        "distinction": "支払対象外 is a decision that nothing is payable; 支払保留 is a temporary pause."
+      },
+      {
+        "term": "査定結果",
+        "reading": "さてんけっか",
+        "termId": "satei-kekka",
+        "distinction": "保留 is an intermediate state rather than a final result."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "status",
+      "workflow"
+    ]
+  },
+  {
+    "id": "shiharai-gendogaku",
+    "term": "支払限度額",
+    "kana": "しはらげんどがく",
+    "romaji": "shiharai gendōgaku",
+    "translation": "benefit payment limit",
+    "alternativeTranslations": [
+      "payment limit (amount or days)"
+    ],
+    "definitionJa": "一定期間または一回の請求について支払われる最大の金額・日数などの限度。",
+    "explanationEn": "The cap applied to benefits — a maximum amount per year, a maximum number of hospitalisation days, or a limit that resets on a defined anniversary. The interaction of multiple limits (per claim, per year, lifetime) is one of the hardest rule areas to specify and test.",
+    "category": "claims-payment",
+    "subcategory": "Limits",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "支払限度額を超える日数については、給付金は支払われません。",
+      "kana": "しはらげんどがくをこえるにんすうについては、きゅうふきんはしはらわれません。",
+      "romaji": "Shiharai gendōgaku o koeru nissū ni tsuite wa, kyūfukin wa harawaremasen.",
+      "translation": "No benefit is paid for days beyond the payment limit."
+    },
+    "context": "Benefit calculation engines, cumulative counters per contract year, and limit-exceeded messages.",
+    "confusedTerms": [
+      {
+        "term": "保険金額",
+        "reading": "ほけんがくがく",
+        "termId": "hoken-gakaku",
+        "distinction": "保険金額 is the amount configured in the contract; 支払限度額 is the cap applied when paying benefits."
+      },
+      {
+        "term": "免責金額",
+        "reading": "めんしゃくきんがく",
+        "termId": "menshaku-kingaku",
+        "distinction": "免責金額 is subtracted from the payable amount; 支払限度額 caps it from above."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "calculation",
+      "limits"
+    ]
+  },
+  {
+    "id": "kago-harai",
+    "term": "過誤払",
+    "kana": "かごはらい",
+    "romaji": "kago harai",
+    "translation": "overpayment; erroneous payment",
+    "definitionJa": "本来の金額より多く支払った、または支払うべきでない相手に支払った誤り。",
+    "explanationEn": "An industry term for a payment error: too much paid, or paid to the wrong recipient. It triggers a recovery process (返戻・回収) and is a standard control point in payment operations and in reconciliation between systems.",
+    "category": "claims-payment",
+    "subcategory": "Errors",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "過誤払が判明した場合は、相手方に連絡して返戻手続きを行います。",
+      "kana": "かごはらいがはんめいしたばあいは、あいがたにれんらくしてへんれいてつづきをおこないます。",
+      "romaji": "Kago harai ga hanmei shita baai wa, aigata ni renraku shite henrei tetsuzuki o okonai masu.",
+      "translation": "When an overpayment is discovered, we contact the recipient and run a recovery procedure."
+    },
+    "context": "Payment reconciliation, 突合 between accounting and payment systems, and correction workflows.",
+    "confusedTerms": [
+      {
+        "term": "支払対象外",
+        "reading": "しはらたいしょうがい",
+        "termId": "shiharai-taishougai",
+        "distinction": "支払対象外 is a decision about eligibility; 過誤払 is an error that has already been paid and must be recovered."
+      },
+      {
+        "term": "差戻し",
+        "reading": "さもどし",
+        "termId": "sashi-modoshi",
+        "distinction": "差戻し returns work for correction; 過誤払 concerns money already paid out."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "errors",
+      "reconciliation"
+    ]
+  },
+  {
+    "id": "shindansho",
+    "term": "診断書",
+    "kana": "しんだんしょ",
+    "romaji": "shindansho",
+    "translation": "medical certificate; physician statement",
+    "definitionJa": "医師が、傷病の状態や治療内容などを記載する書類。",
+    "explanationEn": "A physician's statement used as evidence in medical and cancer claims. Because it is issued by a third party, systems treat it as an external document with its own intake, OCR and manual-check steps.",
+    "category": "claims-payment",
+    "subcategory": "Documents",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "入院給付金の請求には、医師による診断書の提出が必要です。",
+      "kana": "にゅういんきゅうふきんのせいきゅうには、いしによるしんだんしょのしゅつだがひつようです。",
+      "romaji": "Nyūin kyūfukin no seikyū ni wa, ishi ni yoru shindansho no shutsudai ga hitsuyō desu.",
+      "translation": "A hospitalisation claim requires a medical certificate issued by a physician."
+    },
+    "context": "Claim document checklists, document intake and OCR, and 所定要件 verification.",
+    "confusedTerms": [
+      {
+        "term": "請求書類",
+        "reading": "せいきゅうしょるい",
+        "termId": "seikyuu-shorui",
+        "distinction": "請求書類 is the collective term; 診断書 is one specific document type."
+      },
+      {
+        "term": "告知書",
+        "reading": "こくちしょ",
+        "termId": "kokuchisho",
+        "distinction": "告知書 is completed by the applicant at underwriting; 診断書 is written by a doctor for a claim."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "documents",
+      "medical"
+    ]
+  },
+  {
+    "id": "jidan",
+    "term": "示談",
+    "kana": "じだん",
+    "romaji": "jidan",
+    "translation": "settlement (of a liability claim)",
+    "definitionJa": "損害賠償について、当事者間の合意により事件を解決すること。",
+    "explanationEn": "A settlement of a liability claim reached between the parties, typically in motor and liability insurance. Insurer systems record 示談成立日, 示談金額 and the settlement document, and payment follows the agreed terms rather than a court judgement.",
+    "category": "claims-payment",
+    "subcategory": "Liability",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "示談が成立すると、その合意書に基づいて保険金を支払います。",
+      "kana": "しだんがせいりつすると、そのごいしょにもとづいてほけんきんをしはらいます。",
+      "romaji": "Jidan ga seiritsu suru to, sono goisho ni motozuite hokenkin o haraimasu.",
+      "translation": "Once a settlement is reached, the benefit is paid on the basis of that settlement agreement."
+    },
+    "context": "Liability claim workflows, settlement amount fields, and payment authorisation.",
+    "confusedTerms": [
+      {
+        "term": "損害額",
+        "reading": "そんがいがく",
+        "termId": "songaigaku",
+        "distinction": "損害額 is the assessed damage; 示談 is the agreed resolution, which may differ from it."
+      },
+      {
+        "term": "支払査定",
+        "reading": "しはらさてん",
+        "termId": "shiharai-saten",
+        "distinction": "支払査定 is the insurer  assessment; 示談 is an agreement between the parties."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "liability",
+      "non-life"
+    ]
+  },
+  {
+    "id": "songaigaku",
+    "term": "損害額",
+    "kana": "そんがいがく",
+    "romaji": "songai gaku",
+    "translation": "amount of damage; loss amount",
+    "definitionJa": "保険事故によって生じた損害の金額。",
+    "explanationEn": "The measured loss in a non-life contract. The amount actually paid is usually 損害額 minus 免責金額, capped by 保険金額 — the three amounts must not be confused, and the calculation order matters in specifications.",
+    "category": "claims-payment",
+    "subcategory": "Calculation",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "損害額を算定したうえで、免責金額を差し引いて保険金を計算します。",
+      "kana": "そんがいがくをさんていしたうえで、めんしゃくきんをさしいれてほけんきんをけいさんします。",
+      "romaji": "Songai gaku o tantei shita ue de, menshaku kingaku o sashihiite hokenkin o keisan shimasu.",
+      "translation": "After assessing the loss amount, the benefit is calculated by deducting the deductible."
+    },
+    "context": "Non-life claim calculation, 現地調査 results, and reconciliation with repair estimates.",
+    "confusedTerms": [
+      {
+        "term": "保険金額",
+        "reading": "ほけんがくがく",
+        "termId": "hoken-gakaku",
+        "distinction": "保険金額 is the contractual maximum; 損害額 is the actual measured loss."
+      },
+      {
+        "term": "免責金額",
+        "reading": "めんしゃくきんがく",
+        "termId": "menshaku-kingaku",
+        "distinction": "免責金額 is the customer-retained portion subtracted from the loss."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "claims",
+      "calculation",
+      "non-life"
+    ]
+  },
+  {
+    "id": "menshaku-kingaku",
+    "term": "免責金額",
+    "kana": "めんしゃくきんがく",
+    "romaji": "menshaku kingaku",
+    "translation": "deductible; excess",
+    "definitionJa": "保険金の支払計算において、契約者が負担する金額。損害額から差し引かれる。",
+    "explanationEn": "The amount retained by the policyholder, subtracted from the loss before payment. Note the two different senses of 免責: in 免責金額 it is a deductible, in 免責事由 it is an exclusion. Which one applies is decided entirely by the compound.",
+    "category": "claims-payment",
+    "subcategory": "Calculation",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "domainNote": "Some products call the same idea 自己負担額 or 免責割合 (percentage-based).",
+    "example": {
+      "ja": "免責金額を超える損害についてのみ保険金が支払われます。",
+      "kana": "めんしゃくきんをこえるそんがいについてのみほけんきんがしはらわれます。",
+      "romaji": "Menshaku kingaku o koeru songai ni tsuite no mi hokenkin ga harawaremasu.",
+      "translation": "Only loss exceeding the deductible is paid."
+    },
+    "context": "Non-life premium rating, claim calculation rules, and contract configuration screens.",
+    "confusedTerms": [
+      {
+        "term": "免責事由",
+        "reading": "めんしゃくじゆう",
+        "termId": "menshaku-jiyu",
+        "distinction": "免責事由 excludes payment entirely; 免責金額 only reduces it."
+      },
+      {
+        "term": "保険金額",
+        "reading": "ほけんがくがく",
+        "termId": "hoken-gakaku",
+        "distinction": "保険金額 is the maximum payable; 免責金額 is the customer-retained part."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Naming and structure (amount vs percentage) vary by product and insurer.",
+    "tags": [
+      "claims",
+      "calculation",
+      "non-life"
+    ]
+  }
+]

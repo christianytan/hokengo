@@ -1,0 +1,796 @@
+[
+  {
+    "id": "shinki-keiyaku",
+    "term": "新規契約",
+    "kana": "しんけいやく",
+    "romaji": "shin keiyaku",
+    "translation": "new policy; new business contract",
+    "alternativeTranslations": [
+      "new business (process area)"
+    ],
+    "definitionJa": "新たに締結される保険契約。また、その受付から引受までの一連の手続き。",
+    "explanationEn": "A newly concluded contract, and also the name of the whole new-business process (申込 → 引受査定 → 承諾 → 証券発行). In project work 新規契約システム or 新契約業務 usually means this end-to-end flow, not just the record.",
+    "category": "contract-lifecycle",
+    "subcategory": "New business",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "新規契約の受付データは、夜間の一括処理で査定システムへ連携します。",
+      "kana": "しんけいやくのうけつけデータは、やかんのいっかつしょりでさてんシステムへれんけいします。",
+      "romaji": "Shin keiyaku no uketsuke dēta wa, yakkan no ikkatsu shori de saten shisutemu e renkei shimasu.",
+      "translation": "New business intake data is sent to the underwriting system in the overnight batch."
+    },
+    "context": "New business workflows, application screens, and interface specifications between intake and underwriting systems.",
+    "confusedTerms": [
+      {
+        "term": "契約更新",
+        "reading": "けいやくこうしん",
+        "termId": "keiyaku-koshin",
+        "distinction": "契約更新 continues an existing contract; 新規契約 creates a new one, even when the customer and product look similar."
+      }
+    ],
+    "relatedTerms": [
+      "hikuke-saten",
+      "shodaku",
+      "hoken-shoken"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "lifecycle",
+      "new-business",
+      "workflow"
+    ]
+  },
+  {
+    "id": "keiyaku-koshin",
+    "term": "契約更新",
+    "kana": "けいやくこうしん",
+    "romaji": "keiyaku kōshin",
+    "translation": "contract renewal",
+    "definitionJa": "保険期間の満了に伴い、契約を継続するために新たな保険期間を設定する手続き。",
+    "explanationEn": "Renewing a contract as its term expires: a new 保険期間 and usually a new premium at the insured's attained age. Renewal windows, non-renewal notices and deadlines are heavily rule-driven and a common source of date-logic defects.",
+    "category": "contract-lifecycle",
+    "subcategory": "Renewal",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "契約更新の手続きは、満了日の60日前から受け付けます。",
+      "kana": "けいやくこうしんのてつづきは、まんりょうびの60にちまえからうけつけます。",
+      "romaji": "Keiyaku kōshin no tetsuzuki wa, manryō-bi no rokujū-nichi mae kara uketsukemasu.",
+      "translation": "Renewal procedures are accepted from 60 days before the expiry date."
+    },
+    "context": "Renewal campaigns, 満了日 driven batch processing, and renewal screens with new premium calculation.",
+    "confusedTerms": [
+      {
+        "term": "更新型",
+        "reading": "こうしんがた",
+        "termId": "koshin-gata",
+        "distinction": "更新型 is the product design that permits renewal; 契約更新 is the actual renewal transaction."
+      },
+      {
+        "term": "失効",
+        "reading": "しっこう",
+        "termId": "shikko",
+        "distinction": "If renewal is not performed the contract ends at expiry; 失効 is lapse of a contract still inside its term."
+      }
+    ],
+    "relatedTerms": [
+      "koshin-gata",
+      "jido-koshin",
+      "hoken-kikan"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "lifecycle",
+      "renewal",
+      "batch"
+    ]
+  },
+  {
+    "id": "koshin-gata",
+    "term": "更新型",
+    "kana": "こうしんがた",
+    "romaji": "kōshin-gata",
+    "translation": "renewable policy structure",
+    "alternativeTranslations": [
+      "renewable type"
+    ],
+    "definitionJa": "保険期間の満了ごとに契約を更新できる商品の設計。非更新型と対比される。",
+    "explanationEn": "A product design in which the contract can be renewed at each expiry, usually with premiums recalculated at the new age. Contrasted with non-renewable or whole-term designs. Product master data carries this flag, and it drives whether renewal processing happens at all.",
+    "category": "contract-lifecycle",
+    "subcategory": "Renewal",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "更新型の契約では、更新時に年齢に応じた保険料が計算されます。",
+      "kana": "こうしんがたのけいやくでは、こうしんじにねんれいにおうじたほけんりょうがけいさんされます。",
+      "romaji": "Kōshin-gata no keiyaku dewa, kōshin-ji ni nenrei ni ōjita hokenryō ga keisan saremasu.",
+      "translation": "For renewable contracts, the premium is recalculated according to age at renewal."
+    },
+    "context": "Product master design, renewal eligibility checks, and 更新年齢 limit fields.",
+    "confusedTerms": [
+      {
+        "term": "契約更新",
+        "reading": "けいやくこうしん",
+        "termId": "keiyaku-koshin",
+        "distinction": "更新型 is the product design; 契約更新 is the transaction performed under that design."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "product",
+      "renewal",
+      "master-data"
+    ]
+  },
+  {
+    "id": "jido-koshin",
+    "term": "自動更新",
+    "kana": "じどうこうしん",
+    "romaji": "jidō kōshin",
+    "translation": "automatic renewal",
+    "definitionJa": "契約者の手続きを待たずに、契約が自動的に更新される仕組み。",
+    "explanationEn": "Renewal carried out without an explicit application, usually after an automatic-renewal option was selected at issue. Systems must generate the renewal notice, the new premium and the effective date, and must handle opt-out deadlines.",
+    "category": "contract-lifecycle",
+    "subcategory": "Renewal",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "自動更新を希望しない場合は、満了日までに手続きが必要です。",
+      "kana": "じどうこうしんをきぼうしないばあいは、まんりょうびまでにてつづきがひつようです。",
+      "romaji": "Jidō kōshin o kibō shinai baai wa, manryō-bi made ni tetsuzuki ga hitsuyō desu.",
+      "translation": "If you do not want automatic renewal, you must take action before the expiry date."
+    },
+    "context": "Renewal batch jobs, opt-out flags on the contract record, and customer notice generation.",
+    "confusedTerms": [
+      {
+        "term": "契約更新",
+        "reading": "けいやくこうしん",
+        "termId": "keiyaku-koshin",
+        "distinction": "契約更新 is the general renewal procedure; 自動更新 is the specific no-action-needed variant."
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "Whether automatic renewal is available at all depends on the product and insurer.",
+    "tags": [
+      "renewal",
+      "batch",
+      "flag"
+    ]
+  },
+  {
+    "id": "shikko",
+    "term": "失効",
+    "kana": "しっこう",
+    "romaji": "shikkō",
+    "translation": "lapse of a policy",
+    "definitionJa": "保険料の未払などのため、有効だった契約がその効力を失うこと。",
+    "explanationEn": "A contract that was in force loses its effect, typically because premiums were not paid after notice and the grace period. It is not the customer's voluntary 解約, and not 無効 (never valid). Many systems keep a 失効日 and allow 復活 within a limited window.",
+    "category": "contract-lifecycle",
+    "subcategory": "Lapse and reinstatement",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "保険料を払わなかったため、契約は失効しています。",
+      "kana": "ほけんりょうをはらわなかったため、けいやくはしっこうしています。",
+      "romaji": "Hokenryō o harawakatta tame, keiyaku wa shikkō shite imasu.",
+      "translation": "Because the premiums were not paid, the policy has lapsed."
+    },
+    "context": "Arrears processing, 失効通知 documents, contract status transitions, and dashboards of lapsed contracts.",
+    "confusedTerms": [
+      {
+        "term": "解約",
+        "reading": "かいやく",
+        "termId": "kaiyaku",
+        "distinction": "解約 is the customer's voluntary cancellation; 失効 happens under the contract terms when premiums are unpaid."
+      },
+      {
+        "term": "復活",
+        "reading": "ふっかつ",
+        "termId": "fukukatsu",
+        "distinction": "復活 restores a lapsed contract; 失効 is the state before that."
+      },
+      {
+        "term": "無効",
+        "reading": "むこう",
+        "termId": "mukou",
+        "distinction": "無効 means no effect ever arose; 失効 presupposes a valid contract that later lost effect."
+      }
+    ],
+    "relatedTerms": [
+      "fukukatsu",
+      "sotoku",
+      "harakomi-yuuyo-kikan"
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "The timing of lapse and the reinstatement window are set by the 約款 and vary by product.",
+    "tags": [
+      "lifecycle",
+      "status",
+      "premium"
+    ]
+  },
+  {
+    "id": "fukukatsu",
+    "term": "復活",
+    "kana": "ふっかつ",
+    "romaji": "fukukatsu",
+    "translation": "reinstatement of a lapsed policy",
+    "definitionJa": "失効した契約を、所定の手続きにより元どおり有効に戻すこと。",
+    "explanationEn": "Restoring a lapsed contract, usually within a limited window and subject to conditions such as paying overdue premiums and re-declaring health status. Cover during the lapsed period is normally not restored — a frequent point of confusion in requirement discussions.",
+    "category": "contract-lifecycle",
+    "subcategory": "Lapse and reinstatement",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "失効後3年以内であれば、所定の手続きにより契約を復活できます。",
+      "kana": "しっこうご3ねんいないであれば、しょてんのてつづきによりけいやくをふっかつできます。",
+      "romaji": "Shikkō-go san-nen inai de areba, shōten no tetsuzuki ni yori keiyaku o fukukatsu dekimasu.",
+      "translation": "Within three years after lapse, the contract can be reinstated through the prescribed procedure."
+    },
+    "context": "Reinstatement screens with health re-declaration, overdue premium calculation, and reinstatement condition checks.",
+    "confusedTerms": [
+      {
+        "term": "失効",
+        "reading": "しっこう",
+        "termId": "shikko",
+        "distinction": "失効 is losing effect; 復活 is restoring it afterwards."
+      },
+      {
+        "term": "新規契約",
+        "reading": "しんけいやく",
+        "termId": "shinki-keiyaku",
+        "distinction": "Outside the reinstatement window the customer must apply for a 新規契約 instead, with fresh underwriting."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E4%BF%9D%E9%99%BA",
+    "verification": "review-needed",
+    "verificationNote": "The three-year window in the example is a common pattern, not a universal rule; the period and conditions are set by each product's 約款.",
+    "tags": [
+      "lifecycle",
+      "status",
+      "reinstatement"
+    ]
+  },
+  {
+    "id": "kaiyaku",
+    "term": "解約",
+    "kana": "かいやく",
+    "romaji": "kaiyaku",
+    "translation": "cancellation; surrender of a policy",
+    "alternativeTranslations": [
+      "termination (by the policyholder)"
+    ],
+    "definitionJa": "契約者の申し出により、有効な契約を将来に向かって終了させること。",
+    "explanationEn": "Voluntary termination going forward. Depending on context it is best translated as cancellation or as surrender — surrender emphasises giving up a savings-type policy and receiving 解約返戻金. It is not 失効 (involuntary lapse) and not 取消し (a correction reversing the registration).",
+    "category": "contract-lifecycle",
+    "subcategory": "Termination",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "解約を申し出る場合は、その日付と返戻金の金額を事前に確認します。",
+      "kana": "かいやくをもうしでるばあいは、そのひづけとへんれいきんのきんがくをじぜんにかくにんします。",
+      "romaji": "Kaiyaku o mōshideru baai wa, sono hizuke to henreikin no kingaku o jizen ni kakunin shimasu.",
+      "translation": "When applying to cancel a policy, confirm the effective date and the surrender value in advance."
+    },
+    "context": "Cancellation screens with surrender-value simulation, effective-date rules, and status transitions.",
+    "confusedTerms": [
+      {
+        "term": "失効",
+        "reading": "しっこう",
+        "termId": "shikko",
+        "distinction": "解約 is voluntary; 失効 happens automatically when premiums are unpaid."
+      },
+      {
+        "term": "解除",
+        "reading": "かいじょ",
+        "termId": "kaijo",
+        "distinction": "解除 is cancellation exercised as a right by the insurer; 解約 is the customer-initiated termination."
+      },
+      {
+        "term": "取消し",
+        "reading": "とりけし",
+        "termId": "torikeshi",
+        "distinction": "取消し reverses a registration as if it never happened; 解約 ends a valid contract from the cancellation date."
+      }
+    ],
+    "components": [
+      {
+        "element": "解",
+        "reading": "かい",
+        "meaning": "undo, dissolve"
+      },
+      {
+        "element": "約",
+        "reading": "やく",
+        "meaning": "bond, agreement"
+      }
+    ],
+    "relatedTerms": [
+      "kaiyaku-henrenkin",
+      "tenkan"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "lifecycle",
+      "status",
+      "core"
+    ]
+  },
+  {
+    "id": "meigi-henko",
+    "term": "名義変更",
+    "kana": "めいぎへんこう",
+    "romaji": "meigi henkō",
+    "translation": "change of registered name or ownership",
+    "alternativeTranslations": [
+      "transfer of title (context-dependent)"
+    ],
+    "definitionJa": "契約上の名義を変更する手続き。氏名の変更を指す場合と、契約の帰属先の変更を指す場合がある。",
+    "explanationEn": "Context-dependent: in some systems it means changing a party's name (for example after marriage), in others it means transferring who the contract belongs to. Always confirm which meaning a given screen or specification uses before implementing it.",
+    "category": "contract-lifecycle",
+    "subcategory": "Change procedures",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "general"
+    ],
+    "domainNote": "Meaning differs between companies and systems; some use 名義変更 for name changes and 契約者変更 for ownership transfer.",
+    "example": {
+      "ja": "名義変更の手続きでは、新しい名義人の本人確認書類が必要です。",
+      "kana": "めいぎへんこうのてつづきでは、あたらしいめいぎにんのにんじんかくにんしょるいがひつようです。",
+      "romaji": "Meigi henkō no tetsuzuki dewa, atarashii mei-gi-nin no nin'in kakunin shorui ga hitsuyō desu.",
+      "translation": "The name-change procedure requires identity documents for the new named person."
+    },
+    "context": "Customer master maintenance, identity verification requirements, and audit records.",
+    "confusedTerms": [
+      {
+        "term": "契約者変更",
+        "reading": "けいやくしゃへんこう",
+        "termId": "keiyakusha-henko",
+        "distinction": "契約者変更 unambiguously transfers the contracting position; 名義変更 is ambiguous and must be read in context."
+      },
+      {
+        "term": "住所変更",
+        "reading": "じゅうしょへんこう",
+        "termId": "juusho-henko",
+        "distinction": "住所変更 changes contact details only, not the identity or ownership of a party."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The scope of 名義変更 is company-specific; confirm in the target system's definitions.",
+    "tags": [
+      "change-procedure",
+      "ambiguous",
+      "master-data"
+    ]
+  },
+  {
+    "id": "keiyakusha-henko",
+    "term": "契約者変更",
+    "kana": "けいやくしゃへんこう",
+    "romaji": "keiyakusha henkō",
+    "translation": "change of policyholder",
+    "definitionJa": "保険契約者を他の人物に変更する手続き。",
+    "explanationEn": "Transfer of the contracting position, for example from parent to child. Consent of both the outgoing and incoming policyholder is normally required, and premium payment responsibility moves with it.",
+    "category": "contract-lifecycle",
+    "subcategory": "Change procedures",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "契約者変更は、現在の契約者と新しい契約者の両方の同意が必要です。",
+      "kana": "けいやくしゃへんこうは、げんざいのけいやくしゃとあたらしいけいやくしゃのどちらのどういもひつようです。",
+      "romaji": "Keiyakusha henkō wa, genzai no keiyakusha to atarashii keiyakusha no ryo-hō no dōi ga hitsuyō desu.",
+      "translation": "Changing the policyholder requires the consent of both the current and the new policyholder."
+    },
+    "context": "Consent capture on screen, identity verification for two parties, and downstream billing changes.",
+    "confusedTerms": [
+      {
+        "term": "名義変更",
+        "reading": "めいぎへんこう",
+        "termId": "meigi-henko",
+        "distinction": "契約者変更 is specific to the policyholder role; 名義変更 may mean something else depending on the system."
+      },
+      {
+        "term": "被保険者",
+        "reading": "ひほけんしゃ",
+        "termId": "hikosha",
+        "distinction": "Changing the policyholder does not change the insured person, and vice versa."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "change-procedure",
+      "parties"
+    ]
+  },
+  {
+    "id": "juusho-henko",
+    "term": "住所変更",
+    "kana": "じゅうしょへんこう",
+    "romaji": "jūsho henkō",
+    "translation": "address change",
+    "definitionJa": "契約者などの住所を変更する手続き。",
+    "explanationEn": "The simplest change procedure, but it teaches an important pattern: several parties each have their own address, and changing one does not change the others. It also drives postal delivery of documents and, in some non-life products, rate recalculation.",
+    "category": "contract-lifecycle",
+    "subcategory": "Change procedures",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "general"
+    ],
+    "example": {
+      "ja": "住所変更の届出は、ウェブ手続きで受け付けています。",
+      "kana": "じゅうしょへんこうのとどけは、ウェブてつづきでうけつけています。",
+      "romaji": "Jūsho henkō no todoke wa, webu tetsuzuki de uketsukete imasu.",
+      "translation": "Address change notifications are accepted through the online procedure."
+    },
+    "context": "Self-service portals, address validation (郵便番号 → 住所自動補完), and document delivery addresses.",
+    "confusedTerms": [
+      {
+        "term": "名義変更",
+        "reading": "めいぎへんこう",
+        "termId": "meigi-henko",
+        "distinction": "住所変更 changes contact details only; it never changes who a party is."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "change-procedure",
+      "screen",
+      "self-service"
+    ]
+  },
+  {
+    "id": "harakomi-houhou",
+    "term": "払込方法",
+    "kana": "はらこみほうほう",
+    "romaji": "harakomi hōhō",
+    "translation": "premium payment method",
+    "definitionJa": "保険料をどの方法で支払うかの設定。口座振替、クレジットカード、払込用紙など。",
+    "explanationEn": "The payment-method configuration of a contract. Changing it is a standard maintenance procedure with its own effective-date and cut-over rules, and it interacts with 督促 and 失効 logic when a collection fails.",
+    "category": "contract-lifecycle",
+    "subcategory": "Premium handling",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "払込方法を口座振替からクレジットカードへ変更できます。",
+      "kana": "はらこみほうほうをこうさふりかえからくれじっとかーどへへんこうできます。",
+      "romaji": "Harakomi hōhō o kōza furikae kara kurijetto-kādo e henkō dekimasu.",
+      "translation": "The premium payment method can be changed from direct debit to credit card."
+    },
+    "context": "Payment method screens, collection channel interfaces, and failure handling for declined collections.",
+    "confusedTerms": [
+      {
+        "term": "口座振替",
+        "reading": "こうさふりかえ",
+        "termId": "kouza-furikae",
+        "distinction": "口座振替 is one specific payment method; 払込方法 is the setting that selects among methods."
+      }
+    ],
+    "relatedTerms": [
+      "kouza-furikae",
+      "sotoku"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "premium",
+      "screen",
+      "payment"
+    ],
+    "domainNote": "共済では同じ語を「はらいこみ」と読む。JA共済用語集は払込方法を はらいこみほうほう の読みで記載しており、保険会社側の「はらこみ」と読みが異なる。画面の読み上げや音声入力、読み分けのテストでは両方を確認する。",
+    "verificationNote": "読みは保険業側で一般的な「はらこみ」を採っている。JA共済用語集の払込方法（はらいこみほうほう）とは読みが異なる。"
+  },
+  {
+    "id": "kouza-furikae",
+    "term": "口座振替",
+    "kana": "こうさふりかえ",
+    "romaji": "kōza furikae",
+    "translation": "direct debit (bank account collection)",
+    "definitionJa": "金融機関の口座から自動的に保険料を引き落とす支払方法。",
+    "explanationEn": "Direct debit from a bank account. The registration form (口座振替依頼書), the debit date (振替日) and handling of failed debits (振替不能) are standard system features. Note 振替 (debit/transfer within an account relationship) vs 振込 (a remittance you initiate).",
+    "category": "contract-lifecycle",
+    "subcategory": "Premium handling",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "口座振替が不能な場合、契約者あてに払込のお願いを送付します。",
+      "kana": "こうさふりかえがふみなばあい、けいやくしゃあてにはらこみのおねがいをおくりびします。",
+      "romaji": "Kōza furikae ga fumi na baai, keiyakusha-ate ni harakomi no onegai o okuribimasu.",
+      "translation": "When the direct debit fails, we send a payment request to the policyholder."
+    },
+    "context": "Bank file interfaces, 振替日 scheduling, failure/retry processing and 督促 triggers.",
+    "confusedTerms": [
+      {
+        "term": "払込方法",
+        "reading": "はらこみほうほう",
+        "termId": "harakomi-houhou",
+        "distinction": "払込方法 is the general setting; 口座振替 is one specific method value."
+      },
+      {
+        "term": "督促",
+        "reading": "そくとく",
+        "termId": "sotoku",
+        "distinction": "督促 is the reminder process triggered after a collection failure."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "premium",
+      "interface",
+      "batch"
+    ]
+  },
+  {
+    "id": "sotoku",
+    "term": "督促",
+    "kana": "そくとく",
+    "romaji": "sotoku",
+    "translation": "payment reminder; dunning",
+    "definitionJa": "保険料が払込まれていない契約者に対し、支払を促す手続き。",
+    "explanationEn": "The dunning workflow that runs between a missed premium and lapse: escalating reminders, deadlines and channels. Systems expose 督促状, 督促回数 and 督促日 fields, and the sequence is a typical batch-driven state machine.",
+    "category": "contract-lifecycle",
+    "subcategory": "Premium handling",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "督促を3回行っても払込がない場合、失効処理を行います。",
+      "kana": "そくとくを3かいおこなってもはらこみがないばあい、しっこうしょりををおこないます。",
+      "romaji": "Sotoku o san-kai okonatte mo harakomi ga nai baai, shikkō shori o okonai masu.",
+      "translation": "If there is still no payment after three reminders, the lapse process is run."
+    },
+    "context": "Arrears dashboards, reminder document generation, and lapse state machines.",
+    "confusedTerms": [
+      {
+        "term": "失効",
+        "reading": "しっこう",
+        "termId": "shikko",
+        "distinction": "督促 is the reminder process; 失効 is the result if payment never arrives."
+      },
+      {
+        "term": "払込猶予期間",
+        "reading": "はらこみゆうよきかん",
+        "termId": "harakomi-yuuyo-kikan",
+        "distinction": "The grace period is the time window; 督促 is the action taken during it."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "premium",
+      "workflow",
+      "batch"
+    ]
+  },
+  {
+    "id": "harakomi-yuuyo-kikan",
+    "term": "払込猶予期間",
+    "kana": "はらこみゆうよきかん",
+    "romaji": "harakomi yūyo kikan",
+    "translation": "grace period for premium payment",
+    "definitionJa": "保険料の払込期日を過ぎても、契約が失効しないために設けられる期間。",
+    "explanationEn": "The period after the due date during which the contract has not yet lapsed. Its length and exact mechanics are defined in the 約款 and differ between products, so never hard-code a number without checking.",
+    "category": "contract-lifecycle",
+    "subcategory": "Premium handling",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "払込猶予期間内に保険料が払込まれない場合、契約は失効します。",
+      "kana": "はらこみゆうよきかんないにほけんりょうがはらこまれないばあい、けいやくはしっこうします。",
+      "romaji": "Harakomi yūyo kikan-nai ni hokenryō ga harakomarenai baai, keiyaku wa shikkō shimasu.",
+      "translation": "If the premium is not paid within the grace period, the policy lapses."
+    },
+    "context": "Date-driven batch logic, 督促 scheduling, and lapse effective-date calculation.",
+    "confusedTerms": [
+      {
+        "term": "待機期間",
+        "reading": "たいききかん",
+        "termId": "taiki-kikan",
+        "distinction": "待機期間 is a waiting period before cover starts; 払込猶予期間 is a period after a missed premium during which cover still stands."
+      },
+      {
+        "term": "督促",
+        "reading": "そくとく",
+        "termId": "sotoku",
+        "distinction": "督促 is the reminder activity; the grace period is the window in which it happens."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Length and mechanics are set by each product 約款; confirm before implementing date logic.",
+    "tags": [
+      "premium",
+      "dates",
+      "lifecycle"
+    ]
+  },
+  {
+    "id": "keiyaku-naiyou-shoukai",
+    "term": "契約内容照会",
+    "kana": "けいやくないようしょうかい",
+    "romaji": "keiyaku naiyō shōkai",
+    "translation": "inquiry into contract details",
+    "definitionJa": "契約の締結内容や保障内容を表示する処理・画面。",
+    "explanationEn": "A read-only inquiry function. In IT Japanese 照会 means query/retrieve, whereas in business Japanese it can also mean asking the insurer a question. Inquiry screens usually make up the largest part of an insurance system screen inventory, and they must show 主契約 and 特約 together.",
+    "category": "contract-lifecycle",
+    "subcategory": "Inquiry",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "both",
+      "it"
+    ],
+    "example": {
+      "ja": "契約内容照会画面では、主契約と特約の両方を表示します。",
+      "kana": "けいやくないようしょうかいがめんでは、しゅけいやくととくやくのどちらひょうじします。",
+      "romaji": "Keiyaku naiyō shōkai gamen dewa, shukeiyaku to tokuyaku no ryo-hō o hyōji shimasu.",
+      "translation": "The policy details inquiry screen shows both the base contract and the riders."
+    },
+    "context": "Inquiry screen specifications, access permissions, and read-path performance requirements.",
+    "confusedTerms": [
+      {
+        "term": "照会処理",
+        "reading": "しょうかいしょり",
+        "termId": "shoukai-shori",
+        "distinction": "契約内容照会 is the business function; 照会処理 is the technical retrieval process behind it."
+      },
+      {
+        "term": "契約変更",
+        "reading": "けいやくへんこう",
+        "termId": "keiyaku-henko",
+        "distinction": "照会 is read-only; 契約変更 writes to the contract."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "screen",
+      "inquiry",
+      "read-only"
+    ]
+  },
+  {
+    "id": "tenkan",
+    "term": "転換",
+    "kana": "てんかん",
+    "romaji": "tenkan",
+    "translation": "conversion (of an existing policy)",
+    "definitionJa": "既存の契約を、他の商品や契約設計へ変更すること。",
+    "explanationEn": "Converting an in-force contract into another product, often applying the existing surrender value against the new contract. It sits between 契約変更 (modifying the same contract) and 解約 plus 新規契約 (two separate transactions), and the accounting treatment differs.",
+    "category": "contract-lifecycle",
+    "subcategory": "Termination",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "転換の場合、既存契約の解約返戻金が新しい契約の保険料に充当されます。",
+      "kana": "てんかんばあい、きけんけいやくのかいやくへんれいきんがあたらしいけいやくのほけんりょうにそうとうされます。",
+      "romaji": "Tenkan no baai, kigen keiyaku no kaiyaku henrenkin ga atarashii keiyaku no hokenryō ni sōtō saremasu.",
+      "translation": "In a conversion, the surrender value of the existing contract is applied to the premium of the new one."
+    },
+    "context": "Conversion eligibility rules, value transfer calculations, and 転換 type codes.",
+    "confusedTerms": [
+      {
+        "term": "契約変更",
+        "reading": "けいやくへんこう",
+        "termId": "keiyaku-henko",
+        "distinction": "契約変更 modifies the same contract; 転換 replaces its product or design."
+      },
+      {
+        "term": "解約",
+        "reading": "かいやく",
+        "termId": "kaiyaku",
+        "distinction": "A plain 解約 ends the contract with no continuation into a new one."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Conversion availability and mechanics are product-specific; confirm in the relevant 約款.",
+    "tags": [
+      "lifecycle",
+      "product",
+      "calculation"
+    ]
+  },
+  {
+    "id": "fukugen",
+    "term": "復元",
+    "kana": "ふくげん",
+    "romaji": "fukugen",
+    "translation": "restoration of a cancelled or reversed record",
+    "definitionJa": "取消しや誤登録で無効になった契約・データを、元の状態に戻すこと。会社によって用法が異なる。",
+    "explanationEn": "Used in some systems for undoing a cancellation or reversal, often only within the same business day. This is not a standardised industry term — treat it as system-specific vocabulary and check the local definition.",
+    "category": "contract-lifecycle",
+    "subcategory": "Corrections",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "it",
+      "general"
+    ],
+    "example": {
+      "ja": "誤って解約処理をした契約は、当日中であれば復元できます。",
+      "kana": "誤ってしっこうしょりをしたけいやくは、とうちゅうであればふくげんできます。",
+      "romaji": "Ayamatte kaiyaku shori o shita keiyaku wa, tōchū de areba fukugen dekimasu.",
+      "translation": "A contract cancelled by mistake can be restored if it is still the same business day."
+    },
+    "context": "Correction functions in operations screens, audit trails, and same-day cut-off rules.",
+    "confusedTerms": [
+      {
+        "term": "復活",
+        "reading": "ふっかつ",
+        "termId": "fukukatsu",
+        "distinction": "復活 restores a lapsed contract under the 約款; 復元 here means undoing an incorrect system operation."
+      },
+      {
+        "term": "取消し",
+        "reading": "とりけし",
+        "termId": "torikeshi",
+        "distinction": "取消し removes an operation; 復元 puts it back."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Not a standardised term; the meaning and time limits are defined by each system.",
+    "tags": [
+      "correction",
+      "system-specific",
+      "ambiguous"
+    ]
+  },
+  {
+    "id": "todoke",
+    "term": "届出",
+    "kana": "とどけ",
+    "romaji": "todoke",
+    "translation": "notification; filing",
+    "alternativeTranslations": [
+      "notification form (届出書)"
+    ],
+    "definitionJa": "変更事項を保険者に知らせる手続き。変更届、異動届などの形で行われる。",
+    "explanationEn": "The formal notification a customer or staff member submits when something changes. 届出書 forms and 届出期限 rules are common requirements. Note that 届出 also has a legal/administrative sense (filing with a government authority) in compliance documents.",
+    "category": "contract-lifecycle",
+    "subcategory": "Change procedures",
+    "difficulty": "n3-bridge",
+    "domains": [
+      "general"
+    ],
+    "example": {
+      "ja": "住所変更の届出は、変更の日から14日以内に提出してください。",
+      "kana": "じゅうしょへんこうのとどけは、へんこうのひから14にちいないにしゅつだしてください。",
+      "romaji": "Jūsho henkō no todoke wa, henkō no hi kara jūyo-nichi inai ni shutsudashi shite kudasai.",
+      "translation": "Submit the address change notification within 14 days of the change."
+    },
+    "context": "Form generation, deadline validation, and the distinction between 届出 (customer notifies) and 変更処理 (system updates).",
+    "confusedTerms": [
+      {
+        "term": "契約変更",
+        "reading": "けいやくへんこう",
+        "termId": "keiyaku-henko",
+        "distinction": "届出 is the notification of a fact; 契約変更 is the resulting processing in the system."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "procedure",
+      "form",
+      "deadline"
+    ]
+  }
+]

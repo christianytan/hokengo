@@ -1,0 +1,1095 @@
+[
+  {
+    "id": "kyosai-kakekin",
+    "term": "共済掛金",
+    "kana": "きょうさいかけきん",
+    "romaji": "kyōsai kakekin",
+    "translation": "contribution paid under a kyosai mutual-aid contract",
+    "definitionJa": "共済契約の保障に対して、契約者が払い込むお金。共済種類によって、保障部分だけの掛金と、貯蓄部分（共済掛金積立金）を含む掛金がある。",
+    "explanationEn": "JA共済 and other 共済 organisations use 掛金 rather than 保険料 for the money a customer pays. 掛 comes from 掛ける and is read か(け). In a system that handles both contract types the same column is labelled 保険料 for insurance and 掛金 for kyosai, so interface mappings and screen labels must switch on the contract type. Note also that JA reads 払込 as はらいこみ, where insurance companies say はらこみ.",
+    "category": "kyosai",
+    "subcategory": "Premium and money",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "共済掛金は毎月末日に口座から引き落としされます。",
+      "kana": "きょうさいかけきんはまいつきまつびにこうさからひきおとしされます。",
+      "romaji": "Kyōsai kakekin wa maitsuki matsubi ni kōsa kara hikiotoshi saremasu.",
+      "translation": "The kyosai contribution is debited from the bank account at the end of every month."
+    },
+    "context": "Kyosai premium master data, direct-debit data creation, and screen labels that must differ between insurance and kyosai contracts.",
+    "confusedTerms": [
+      {
+        "term": "保険料",
+        "reading": "ほけんりょう",
+        "termId": "hokenryou",
+        "distinction": "保険料 is the word insurers use; 共済掛金 is the same money under a 共済 contract. Field names and printed forms must follow the contract type."
+      },
+      {
+        "term": "共済契約",
+        "reading": "きょうさいけいやく",
+        "termId": "kyosai-keiyaku",
+        "distinction": "共済契約 is the contract itself; 共済掛金 is the money paid under it."
+      }
+    ],
+    "components": [
+      {
+        "element": "掛",
+        "reading": "かけ",
+        "meaning": "hang, put up, cover"
+      },
+      {
+        "element": "金",
+        "reading": "きん",
+        "meaning": "money"
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-keiyaku",
+      "hokenryou",
+      "harakomi-houhou",
+      "harakomi-kikan"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ka/1850.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 共済掛金 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "premium",
+      "payment",
+      "core"
+    ]
+  },
+  {
+    "id": "kyosai-kingaku",
+    "term": "共済金額",
+    "kana": "きょうさいきんがく",
+    "romaji": "kyōsai kingaku",
+    "translation": "amount of cover written on a kyosai certificate",
+    "definitionJa": "共済事故が起きた場合に保障するため、共済証書に記載された金額。共済種類により、この金額を定額で支払う契約と、上限として実際の損害額を支払う契約がある。",
+    "explanationEn": "The kyosai counterpart of 保険金額. JA's definition makes the two settlement styles explicit - a fixed benefit (定額) or a ceiling on actual loss (実損てん補) - which is exactly the branch a payment-calculation module has to implement. Systems that serve insurers and 共済 together need a mapping 共済金額 ↔ 保険金額; the field is usually shared and renamed per contract type.",
+    "category": "kyosai",
+    "subcategory": "Premium and money",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "共済金額は契約データにも保持され、継続の画面で参照できます。",
+      "kana": "きょうさいきんがくはけいやくデータにもほぞうされ、けいぞくのがめんでさんしょうできます。",
+      "romaji": "Kyōsai kingaku wa keiyaku dēta ni mo hozō sare, keizoku no gamen de sanshō dekimasu.",
+      "translation": "The kyosai cover amount is also held in the contract data and can be viewed on the renewal screen."
+    },
+    "context": "Kyosai contract records, renewal screens, and benefit calculation that branches on fixed-amount versus actual-loss products.",
+    "confusedTerms": [
+      {
+        "term": "保険金額",
+        "reading": "ほけんがく",
+        "termId": "hoken-gakaku",
+        "distinction": "Same role, different industry: 保険金額 is the insurance wording, 共済金額 the kyosai wording."
+      },
+      {
+        "term": "共済金",
+        "reading": "きょうさいきん",
+        "termId": "kyosai-kin",
+        "distinction": "共済金額 is the cover agreed in advance and printed on the certificate; 共済金 is the money actually paid when an event happens."
+      }
+    ],
+    "components": [
+      {
+        "element": "額",
+        "reading": "がく",
+        "meaning": "amount, sum"
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-kin",
+      "kyosai-shoesho",
+      "hoken-gakaku"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ka/1883.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 共済金額 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "sum insured",
+      "certificate",
+      "core"
+    ]
+  },
+  {
+    "id": "kyosai-kin",
+    "term": "共済金",
+    "kana": "きょうさいきん",
+    "romaji": "kyōsai kin",
+    "translation": "benefit paid out under a kyosai contract",
+    "definitionJa": "共済事故が起きたときに、共済契約に基づいて契約者や受取人に支払われるお金。共済種類により死亡共済金、入院共済金、火災共済金、介護共済金などの名称に分かれる。",
+    "explanationEn": "The kyosai form of 保険金. Benefit names follow the same pattern as insurance (死亡共済金, 入院共済金, 満期共済金), so knowing one set lets you read the other. In code the two are usually the same entity with a different label, but 帳票 and customer-facing letters print the contract-type wording, so the label has to be derived from the contract, not hardcoded.",
+    "category": "kyosai",
+    "subcategory": "Premium and money",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "共済金の支払査定は、請求書類の受付完了後に開始されます。",
+      "kana": "きょうさいきんのしはらさてんは、せいきゅうしょるいのうけつけかんりょうごにかいさくされます。",
+      "romaji": "Kyōsai kin no shiharai saten wa, seikyū shorui no uketsuke kanryō go ni kaisaku saremasu.",
+      "translation": "Assessment of the kyosai benefit starts after the claim documents have been accepted."
+    },
+    "context": "Claims intake and payment screens, benefit naming by product, and printed payout notices for kyosai contracts.",
+    "confusedTerms": [
+      {
+        "term": "保険金",
+        "reading": "ほけんきん",
+        "termId": "hokenkin",
+        "distinction": "Same payout concept, insurance wording. A kyosai contract never pays 保険金 - the notice would be wrong."
+      },
+      {
+        "term": "給付金",
+        "reading": "きゅうふきん",
+        "termId": "kyufukin",
+        "distinction": "給付金 is used by public schemes (健康保険, 年金) and in some product names; 共済金 is the payout under a 共済 contract."
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-kingaku",
+      "hokenkin",
+      "hokenkin-seikyuu",
+      "shiharai-saten"
+    ],
+    "verification": "industry-standard",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/index.html",
+    "verificationNote": "The JA共済用語集 lists compound benefit headwords (火災共済金, 介護共済金, 満期共済金 …) rather than a bare 共済金 entry; the general word is used throughout JA共済 materials and 約款.",
+    "tags": [
+      "kyosai",
+      "benefit",
+      "payment",
+      "core"
+    ]
+  },
+  {
+    "id": "manki-kyosai-kin",
+    "term": "満期共済金",
+    "kana": "まんききょうさいきん",
+    "romaji": "manki kyōsai kin",
+    "translation": "maturity benefit under a kyosai contract",
+    "definitionJa": "共済期間の満了時に支払われる共済金。生命共済では被共済者が生存している場合、建物更生共済では共済の対象が残っている場合に、満期共済金受取人へ支払う。",
+    "explanationEn": "Direct kyosai counterpart of 満期保険金. JA's wording states the two qualifying conditions plainly: for life-type 共済 the insured must be alive at maturity, for property 共済 the insured object must still exist. Maturity processing in both industries is date-driven (満期日 → 支払事由), so the same batch design appears on either side of the mapping.",
+    "category": "kyosai",
+    "subcategory": "Premium and money",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "満期共済金の支払日は、契約データ内の共済期間満了日から算出します。",
+      "kana": "まんききょうさいきんのしはらびは、けいやくデータないのきょうさいきかんまんりょうびからさんしゅつします。",
+      "romaji": "Manki kyōsai kin no shiharai-bi wa, keiyaku dēta nai no kyōsai kikan manryō-bi kara sanshutsu shimasu.",
+      "translation": "The payment date of the maturity benefit is derived from the maturity date of the term held in the contract data."
+    },
+    "context": "Maturity batches, benefit-payee records, and the date rules that turn a maturing contract into a payment.",
+    "confusedTerms": [
+      {
+        "term": "満期保険金",
+        "reading": "まんきほけんきん",
+        "termId": "manki-hokenkin",
+        "distinction": "Insurance wording for the same benefit; 満期共済金 is what a kyosai contract pays."
+      },
+      {
+        "term": "共済金額",
+        "reading": "きょうさいきんがく",
+        "termId": "kyosai-kingaku",
+        "distinction": "共済金額 is the cover recorded on the certificate; 満期共済金 is the amount paid out when the term matures."
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-kin",
+      "manki-hokenkin",
+      "kyosai-kingaku"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ma/2233.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 満期共済金 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "maturity",
+      "benefit"
+    ]
+  },
+  {
+    "id": "haraimodoshikin",
+    "term": "払いもどし金",
+    "kana": "はらいもどしきん",
+    "romaji": "haraimodoshikin",
+    "translation": "refund paid back to the customer when a kyosai contract ends",
+    "definitionJa": "契約を解約した場合などに、契約者に払い戻すお金。保険でいう解約返戻金に相当する額を、JA共済はこの呼び方で案内している。",
+    "explanationEn": "Plain Japanese 払いもどし金 (\"money paid back\") where the insurance industry uses the Sino-Japanese 解約返戻金. The verb 払い戻す is the transferable part - you also meet 払戻し in tax and public-gambling contexts. In kyosai systems the internal field is often named 返戻金 while screens print 払いもどし金, a naming mismatch that shows up in mapping documents and in 帳票 specifications.",
+    "category": "kyosai",
+    "subcategory": "Premium and money",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "払いもどし金の額は、解約の届出を受理した翌日から計算します。",
+      "kana": "はらいもどしきんのがくは、かいやくのとどけをじゅりしたよくじつからけいさんします。",
+      "romaji": "Haraimodoshikin no gaku wa, kaiyaku no todoke o juri shita yokujitsu kara keisan shimasu.",
+      "translation": "The refund amount is calculated from the day after the cancellation notice has been accepted."
+    },
+    "context": "Cancellation processing, surrender-value calculation, and customer-facing notices that must not use insurance jargon.",
+    "confusedTerms": [
+      {
+        "term": "解約返戻金",
+        "reading": "かいやくへんれいきん",
+        "termId": "kaiyaku-henrenkin",
+        "distinction": "解約返戻金 is the industry word for the same amount; 払いもどし金 is the wording JA共済 uses with customers."
+      },
+      {
+        "term": "返れい金",
+        "reading": "へんれいきん",
+        "termId": "kaereikin",
+        "distinction": "Both are refunds in kyosai, but 返れい金 is the specific word used in 生命共済 and 建物更生共済 約款, and it can be zero for a short-term cancellation."
+      }
+    ],
+    "components": [
+      {
+        "element": "戻",
+        "reading": "もど",
+        "meaning": "return, send back"
+      }
+    ],
+    "relatedTerms": [
+      "kaiyaku",
+      "kaiyaku-henrenkin",
+      "kaereikin"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ha/2508.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 払いもどし金 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "surrender",
+      "refund"
+    ]
+  },
+  {
+    "id": "kaereikin",
+    "term": "返れい金",
+    "kana": "へんれいきん",
+    "romaji": "henreikin",
+    "translation": "surrender money returned under JA life and building kyosai plans",
+    "definitionJa": "生命共済や建物更生共済で、契約を解約した場合などに契約者に払い戻すお金。短期間での解約では、返れい金がないか、あってもごく少ない金額になることがある。",
+    "explanationEn": "The kyosai equivalent of 解約返戻金, written with 返れい (the hiragana れい is the okurigana of 返礼/返礼金). JA keeps this word in 約款 and on the 共済証書. The warning inside the definition - short-term cancellation may return nothing - is why screens must handle a 返れい金 of 0 yen and why test data has to include that case.",
+    "category": "kyosai",
+    "subcategory": "Premium and money",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life",
+      "non-life"
+    ],
+    "example": {
+      "ja": "返れい金はゼロ円の契約もあり得るため、計算結果を必ず画面に表示します。",
+      "kana": "へんれいきんはぜろえんのけいやくもありうるため、けいさんけっかをかならずがめんにひょうじします。",
+      "romaji": "Henreikin wa zero-en no keiyaku mo aru ru tame, keisan kekka o kanarazu gamen ni hyōji shimasu.",
+      "translation": "Because a refund can be 0 yen, the calculated result is always shown on screen."
+    },
+    "context": "Cancellation and surrender calculation, boundary test data, and 約款 wording for life and building kyosai products.",
+    "confusedTerms": [
+      {
+        "term": "払いもどし金",
+        "reading": "はらいもどしきん",
+        "termId": "haraimodoshikin",
+        "distinction": "払いもどし金 is the general refund wording across kyosai products; 返れい金 is the term used in 生命共済 and 建物更生共済 contracts."
+      },
+      {
+        "term": "解約返戻金",
+        "reading": "かいやくへんれいきん",
+        "termId": "kaiyaku-henrenkin",
+        "distinction": "解約返戻金 is the insurance-industry word for surrender value; 返れい金 is the kyosai word for it."
+      }
+    ],
+    "components": [
+      {
+        "element": "返",
+        "reading": "へん",
+        "meaning": "return, send back"
+      },
+      {
+        "element": "れい",
+        "reading": "れい",
+        "meaning": "okurigana reading carried by 返"
+      }
+    ],
+    "relatedTerms": [
+      "kaiyaku",
+      "kaiyaku-henrenkin",
+      "haraimodoshikin"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ha/2182.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 返れい金 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "surrender",
+      "refund",
+      "boundary-case"
+    ]
+  },
+  {
+    "id": "kyosai-haraizumi",
+    "term": "払済",
+    "kana": "はらいずみ",
+    "romaji": "haraizumi",
+    "translation": "paid-up conversion that keeps only the base kyosai contract",
+    "definitionJa": "共済掛金の払い込みが困難になった場合、これまでに積み立てた共済掛金積立金を一時払いの掛金に充てて共済金額を算出し、主契約だけで契約を継続する制度。払済契約では特約は消滅する。",
+    "explanationEn": "払済 (\"payment finished\") is the short form on kyosai screens and in 約款. The mechanism matters for IT: converting to 払済 recalculates 共済金額 from the accumulated 積立金 and drops every rider, so one transaction must both change the base cover and delete rider rows. Forgetting the rider deletion is a classic 改修 defect. Insurance companies describe related but different mechanisms as 払済保険 or 払込免除.",
+    "category": "kyosai",
+    "subcategory": "Premium and money",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "払済への変更を受け付けると、付加されていた特約はすべて消滅します。",
+      "kana": "はらいずみへへんこうをうけつけると、ふかされていたとくやくはすべてしょうめつします。",
+      "romaji": "Haraizumi e no henkō o uketsukeru to, fuka sarete ita tokuyaku wa subete shōmetsu shimasu.",
+      "translation": "Once a paid-up conversion is accepted, all attached riders are terminated."
+    },
+    "context": "Mid-term change procedures, rider termination logic, and recalculation of the cover amount from accumulated value.",
+    "confusedTerms": [
+      {
+        "term": "保険料払込免除",
+        "reading": "ほけんりょうはらこみめんじょ",
+        "termId": "hokenryou-harakomi-menjo",
+        "distinction": "払込免除 stops future payments but keeps the original cover; 払済 spends the accumulated value to buy a reduced cover and ends the riders."
+      },
+      {
+        "term": "主契約",
+        "reading": "しゅけいやく",
+        "termId": "shukeiyaku",
+        "distinction": "主契約 is the base contract; 払済 is the conversion that leaves only that base contract in force."
+      }
+    ],
+    "components": [
+      {
+        "element": "払",
+        "reading": "はらい",
+        "meaning": "pay"
+      },
+      {
+        "element": "済",
+        "reading": "ずみ",
+        "meaning": "finished, completed"
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-kakekin",
+      "shukeiyaku",
+      "tokuyaku",
+      "hokenryou-harakomi-menjo"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ha/2513.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 払済 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "paid-up",
+      "rider",
+      "change-procedure"
+    ]
+  },
+  {
+    "id": "kyosai-keiyakusha",
+    "term": "契約者（共済契約者）",
+    "kana": "けいやくしゃ（きょうさいけいやくしゃ）",
+    "romaji": "keiyakusha (kyōsai keiyakusha)",
+    "translation": "holder of a kyosai contract, who owes the contributions",
+    "definitionJa": "JAと契約を結んだ方で、契約上の権利（契約内容変更の請求権など）と義務（共済掛金の支払義務など）を持つ方。データ上は共済契約者と表記される。",
+    "blankVariants": [
+      "共済契約者"
+    ],
+    "explanationEn": "The kyosai form of 保険契約者. JA publishes the headword as 契約者（共済契約者）because 契約者 alone is the everyday word in their documents, while systems store 共済契約者. The rights-and-obligations framing is the useful part: whoever holds the contract may request changes and must pay - the same role model behind 契約者変更 and 名義変更 screens.",
+    "category": "kyosai",
+    "subcategory": "Contract parties",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "共済契約者の氏名や住所が変わった場合は、名義変更の手続きが必要です。",
+      "kana": "きょうさいけいやくしゃのしめいやじゅうしょがかわったばあいは、めいぎへんこうのとつづきがひつようです。",
+      "romaji": "Kyōsai keiyakusha no shimei ya jūsho ga kawatta baai wa, meigi henkō no tetsuzuki ga hitsuyō desu.",
+      "translation": "If the kyosai contract holder's name or address changes, a change-of-registered-name procedure is required."
+    },
+    "context": "Contract party tables, change procedures, and role-based access to contract information.",
+    "confusedTerms": [
+      {
+        "term": "保険契約者",
+        "reading": "ほけんけいやくしゃ",
+        "termId": "hoken-keiyakusha",
+        "distinction": "保険契約者 is the insurance wording for the same role; 共済契約者 is the kyosai wording."
+      },
+      {
+        "term": "記名被共済者",
+        "reading": "きめいひきょうさいしゃ",
+        "termId": "kimina-hikyosha",
+        "distinction": "The 記名被共済者 is the person named on the certificate as the subject of cover; the 契約者 is the one who holds the contract and pays for it."
+      }
+    ],
+    "relatedTerms": [
+      "hoken-keiyakusha",
+      "keiyakusha-henko",
+      "meigi-henko",
+      "kimina-hikyosha"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ka/1920.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 契約者（共済契約者） (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "parties",
+      "policyholder",
+      "core"
+    ]
+  },
+  {
+    "id": "kimina-hikyosha",
+    "term": "記名被共済者",
+    "kana": "きめいひきょうさいしゃ",
+    "romaji": "kimei hikyōsaisha",
+    "translation": "person named on a kyosai certificate as the subject of cover",
+    "definitionJa": "自動車共済などで、共済証書に記載された被共済者。その車を主に使用・管理する方を設定し、対人・対物賠償などでは記名被共済者の配偶者や同居の親族も被共済者になる。",
+    "explanationEn": "The kyosai twin of 記名被保険者. 記名 (\"write the name\") marks the specific person recorded on the certificate, and the covered group is derived from that person's relationships (spouse, co-resident relatives). That derivation rule lives in rating code and in relationship tables, and it is a common source of 不具合 when household composition changes after the contract is taken.",
+    "category": "kyosai",
+    "subcategory": "Contract parties",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "記名被共済者は、その車を主に使う方へ変更するのが原則です。",
+      "kana": "きめいひきょうさいしゃは、そのくるまをおもにつかうかたへへんこうするのがげんそくです。",
+      "romaji": "Kimei hikyōsaisha wa, sono kuruma o omo ni tsukau kata e henkō suru no ga gensoku desu.",
+      "translation": "As a rule, the named kyosai insured is changed to whoever mainly uses the vehicle."
+    },
+    "context": "Motor kyosai rating, covered-person scope rules, and change procedures triggered by household changes.",
+    "confusedTerms": [
+      {
+        "term": "記名被保険者",
+        "reading": "きめいひほけんしゃ",
+        "termId": "komei-hikosha",
+        "distinction": "記名被保険者 is the insurance wording; 記名被共済者 is the kyosai wording for the same role."
+      },
+      {
+        "term": "被保険者",
+        "reading": "ひほけんしゃ",
+        "termId": "hikosha",
+        "distinction": "被保険者 is the general insured person; the 記名被共済者 is the specific person written on the certificate, from whose relationships the wider covered group is derived."
+      }
+    ],
+    "components": [
+      {
+        "element": "記名",
+        "reading": "きめい",
+        "meaning": "write the name of"
+      },
+      {
+        "element": "被",
+        "reading": "ひ",
+        "meaning": "covered, subjected to"
+      }
+    ],
+    "relatedTerms": [
+      "komei-hikosha",
+      "hikosha",
+      "kyosai-keiyakusha",
+      "kyosai-toukyuu"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ka/1843.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 記名被共済者 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "parties",
+      "motor",
+      "core"
+    ]
+  },
+  {
+    "id": "shoukei-kyosai-keiyakusha",
+    "term": "承継共済契約者",
+    "kana": "しょうけいきょうさいけいやくしゃ",
+    "romaji": "shōkei kyōsai keiyakusha",
+    "translation": "person designated to take over a kyosai contract if the holder dies",
+    "definitionJa": "こども共済などで、契約者が指定した親族の方のうち、契約者が亡くなった場合に契約上の権利と義務を引き継ぐ方。",
+    "explanationEn": "承継 (\"carry on, inherit\") is a formal word also seen in 事業承継 and 承継時効. Insurance has no single widely used word for this - the situation is handled by a 契約者変更 after death - so this is a genuinely kyosai-specific concept: JA's こども共済 lets the successor be named in advance. For systems it means the contract record carries a designated successor and the succession runs automatically when a death notification arrives.",
+    "category": "kyosai",
+    "subcategory": "Contract parties",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "life"
+    ],
+    "example": {
+      "ja": "承継共済契約者は、こども共済の申込書であらかじめ指定します。",
+      "kana": "しょうけいきょうさいけいやくしゃは、こどもきょうさいのもうしこみしょであらかじめしていします。",
+      "romaji": "Shōkei kyōsai keiyakusha wa, kodomo kyōsai no moshikomi-sho de arakajime shitei shimasu.",
+      "translation": "The successor contract holder is designated in advance on the children's kyosai application form."
+    },
+    "context": "Children's kyosai contracts, designated-successor data, and automatic succession on a death notification.",
+    "confusedTerms": [
+      {
+        "term": "契約者（共済契約者）",
+        "reading": "けいやくしゃ（きょうさいけいやくしゃ）",
+        "termId": "kyosai-keiyakusha",
+        "distinction": "The 契約者 is the current holder; the 承継共済契約者 only becomes the holder after the original holder's death."
+      },
+      {
+        "term": "契約者変更",
+        "reading": "けいやくしゃへんこう",
+        "termId": "keiyakusha-henko",
+        "distinction": "契約者変更 is a requested change of policyholder; 承継 happens by prior designation when the holder dies."
+      }
+    ],
+    "components": [
+      {
+        "element": "承",
+        "reading": "しょう",
+        "meaning": "receive, carry on"
+      },
+      {
+        "element": "継",
+        "reading": "けい",
+        "meaning": "succeed, continue"
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-keiyakusha",
+      "keiyakusha-henko"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/sa/2017.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 承継共済契約者 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "parties",
+      "succession"
+    ]
+  },
+  {
+    "id": "kyosai-shoesho",
+    "term": "共済証書",
+    "kana": "きょうさいしょうしょ",
+    "romaji": "kyōsai shōsho",
+    "translation": "certificate recording the contents of a kyosai contract",
+    "definitionJa": "加入した共済金額、共済期間、付加された特約など、契約内容を具体的に記載した書面。申込をJAが承諾した場合に契約者へ渡される。",
+    "explanationEn": "The kyosai counterpart of 保険証券. 証書 (\"document that proves\") and 証券 are functional equivalents in the two industries. Note that JA ties issuance to 承諾 (acceptance): in both industries the certificate is produced after acceptance, which is why certificate printing is a downstream batch job rather than part of the intake screen.",
+    "category": "kyosai",
+    "subcategory": "Contract documents",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "共済証書は承諾後に印刷され、契約者宛に郵送する流れになっています。",
+      "kana": "きょうさいしょうしょはしょうだくごにいんさつされ、けいやくしゃあんにゆうそうするながれになっています。",
+      "romaji": "Kyōsai shōsho wa shōdaku go ni insatsu sare, keiyakusha-an ni yūsō suru nagare ni natte imasu.",
+      "translation": "The kyosai certificate is printed after acceptance and mailed to the contract holder."
+    },
+    "context": "Post-acceptance document generation, certificate layout specifications, and reissue procedures.",
+    "confusedTerms": [
+      {
+        "term": "保険証券",
+        "reading": "ほけんしょうけん",
+        "termId": "hoken-shoken",
+        "distinction": "保険証券 is the insurance document; 共済証書 is the kyosai equivalent."
+      },
+      {
+        "term": "共済金額",
+        "reading": "きょうさいきんがく",
+        "termId": "kyosai-kingaku",
+        "distinction": "The 共済金額 is one figure printed on the certificate; the 共済証書 is the whole document."
+      }
+    ],
+    "components": [
+      {
+        "element": "証",
+        "reading": "しょう",
+        "meaning": "proof, evidence"
+      },
+      {
+        "element": "書",
+        "reading": "しょ",
+        "meaning": "document, writing"
+      }
+    ],
+    "relatedTerms": [
+      "hoken-shoken",
+      "kyosai-kingaku",
+      "shodaku",
+      "kyosai-tokusoku"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ka/1899.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 共済証書 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "documents",
+      "core"
+    ]
+  },
+  {
+    "id": "kyosai-tokusoku",
+    "term": "特則",
+    "kana": "とくそく",
+    "romaji": "tokusoku",
+    "translation": "bundled provision attached to a kyosai base contract",
+    "definitionJa": "主契約とは別に、一定の保障を組み合わせることを目的とした取り決め。例外はあるが、契約の途中で特則の有無は変更できないため、契約時にタイプとして選ぶことになる。",
+    "explanationEn": "JA共済 splits supplementary provisions into 特約 (riders that can be added or dropped at renewal) and 特則 (provisions bundled into the product design that normally cannot be changed mid-term). Insurers use 特約 and rarely 特則, so the two kyosai words must not be treated as synonyms: the difference decides whether a change procedure exists at all, and it is modelled differently - 特約 rows are changeable, 特則 is part of the product code.",
+    "category": "kyosai",
+    "subcategory": "Contract documents",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "特則は契約時に選ぶため、継続の画面では変更できない項目になっています。",
+      "kana": "とくそくはけいやくじにえらぶため、けいぞくのがめんではへんこうできないこうもくになっています。",
+      "romaji": "Tokusoku wa keiyaku-ji ni erabu tame, keizoku no gamen de wa henkō dekinai kōmoku ni natte imasu.",
+      "translation": "Because a tokusoku is chosen when the contract is set up, it is a non-changeable item on the renewal screen."
+    },
+    "context": "Product configuration, contract-type codes, and screen behaviour that differs between riders and bundled provisions.",
+    "confusedTerms": [
+      {
+        "term": "特約",
+        "reading": "とくやく",
+        "termId": "tokuyaku",
+        "distinction": "特約 can be added or removed at renewal; 特則 is bundled at contract setup and normally cannot be changed mid-term."
+      },
+      {
+        "term": "主契約",
+        "reading": "しゅけいやく",
+        "termId": "shukeiyaku",
+        "distinction": "The 主契約 is the base contract; a 特則 is a provision attached to it."
+      }
+    ],
+    "components": [
+      {
+        "element": "特",
+        "reading": "とく",
+        "meaning": "special"
+      },
+      {
+        "element": "則",
+        "reading": "そく",
+        "meaning": "rule, provision"
+      }
+    ],
+    "relatedTerms": [
+      "tokuyaku",
+      "shukeiyaku",
+      "kyosai-shoesho"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ta/2381.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 特則 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "product-configuration",
+      "rider"
+    ]
+  },
+  {
+    "id": "kyosai-sekinin-kaishi-bi",
+    "term": "責任開始日",
+    "kana": "せきにんかいしび",
+    "romaji": "sekinin kaishi-bi",
+    "translation": "date from which the payer's liability (cover) begins",
+    "definitionJa": "契約上の保障、つまり責任を開始する日。契約日や始期日と一致しない場合もあり、告知や手続の完了によって決まる。",
+    "explanationEn": "責任 here means the payer's liability to pay benefits, not everyday \"responsibility\". The date is frequently NOT the 契約日 or the 始期日 - a pending health declaration or a waiting period can push it later. Payment logic keys off this date, so confusing it with the contract date is a classic defect in 支払査定 code, and it appears in both insurance and kyosai systems.",
+    "category": "kyosai",
+    "subcategory": "Dates and periods",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "責任開始日前に起きた事故は支払対象にならないため、契約データで日付を確認します。",
+      "kana": "せきにんかいしびまえにおきたじこはしはらたいしょうにならないため、けいやくデータでひづけをかくにんします。",
+      "romaji": "Sekinin kaishi-bi mae ni okita jiko wa shiharai taishō ni naranai tame, keiyaku dēta de hidzuke o kakunin shimasu.",
+      "translation": "An accident before the liability start date is not payable, so the date is checked in the contract data."
+    },
+    "context": "Claims eligibility checks, waiting-period rules, and the date fields carried on a contract record.",
+    "confusedTerms": [
+      {
+        "term": "始期日",
+        "reading": "しきび",
+        "termId": "kyosai-shikibi",
+        "distinction": "始期日 is the first day of the contract period on paper; 責任開始日 is when liability actually starts, which can be later."
+      },
+      {
+        "term": "引受日",
+        "reading": "ひきうけび",
+        "termId": "hikukebi",
+        "distinction": "引受日 is the day the application is accepted; the liability itself may begin after that."
+      }
+    ],
+    "components": [
+      {
+        "element": "責",
+        "reading": "せき",
+        "meaning": "duty, liability"
+      },
+      {
+        "element": "任",
+        "reading": "にん",
+        "meaning": "task, responsibility"
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-shikibi",
+      "hikukebi",
+      "taiki-kikan",
+      "shiharai-jiyu"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/sa/2555.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 責任開始日 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "dates",
+      "eligibility",
+      "core"
+    ]
+  },
+  {
+    "id": "kyosai-shikibi",
+    "term": "始期日",
+    "kana": "しきび",
+    "romaji": "shikibi",
+    "translation": "first day of a contract period (inception date)",
+    "definitionJa": "契約上の保障を開始する日で、共済期間の初日。対になる語は満期日で、継続・更新の処理はこの日付を起点に行われる。",
+    "explanationEn": "始期 is a formal word for the start of a term and its pair is 満期日. Whole renewal cycles are driven by 始期日/満期日, and carry-over of rating factors is evaluated \"as of the 始期日\" - JA's own wording for the accident-factor period says 始期日時点. Getting this date wrong shifts every downstream rating calculation.",
+    "category": "kyosai",
+    "subcategory": "Dates and periods",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "始期日を基準にして、継続契約の割増・割引等級が決定されます。",
+      "kana": "しきびをきじゅんにして、けいぞくけいやくのわりまし・わりびきとうきゅうがけっていされます。",
+      "romaji": "Shikibi o kijun ni shite, keizoku keiyaku no warimashi・waribiki tōkyū ga kettei saremasu.",
+      "translation": "The surcharge or discount class for the renewal contract is decided using the inception date as the reference."
+    },
+    "context": "Renewal batches, rating carry-over, and the period start/end date pair on a contract record.",
+    "confusedTerms": [
+      {
+        "term": "責任開始日",
+        "reading": "せきにんかいしび",
+        "termId": "kyosai-sekinin-kaishi-bi",
+        "distinction": "始期日 is the first day of the period on paper; 責任開始日 is when liability actually begins."
+      },
+      {
+        "term": "契約更新",
+        "reading": "けいやくこうしん",
+        "termId": "keiyaku-koshin",
+        "distinction": "契約更新 is the renewal procedure; the new 始期日 is the date the renewed period begins."
+      }
+    ],
+    "components": [
+      {
+        "element": "始",
+        "reading": "し",
+        "meaning": "begin, start"
+      },
+      {
+        "element": "期",
+        "reading": "き",
+        "meaning": "period, term"
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-sekinin-kaishi-bi",
+      "keiyaku-koshin",
+      "kyosai-toukyuu",
+      "hoken-kikan"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/sa/1602.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 始期日 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "dates",
+      "renewal",
+      "core"
+    ]
+  },
+  {
+    "id": "kyosai-toukyuu",
+    "term": "等級（割増・割引等級）",
+    "kana": "とうきゅう（わりまし・わりびきとうきゅう）",
+    "romaji": "tōkyū (warimashi・waribiki tōkyū)",
+    "translation": "motor rating class that sets the surcharge or discount rate",
+    "definitionJa": "自動車共済で共済掛金を計算する際に適用する等級で、1等級から20等級までの20段階。原則6等級から始まり、事故の有無や件数によって次の契約の等級が上下し、等級が大きいほど割引率が上がる。7等級以上では無事故係数と事故有係数に区分される。",
+    "blankVariants": [
+      "割増・割引等級"
+    ],
+    "explanationEn": "等級 is the no-claims rating band; 割増 means surcharge and 割引 discount. The same 1-20 band system is used by insurers, so the concept transfers directly and only the premium word changes (共済掛金 vs 保険料). For IT the band and its factor are carried across renewal boundaries and must survive 契約者変更 and a transfer in from an insurer - which is where mapping tables and carried-over data quality get tested.",
+    "category": "kyosai",
+    "subcategory": "Motor rating",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "割増・割引等級は、前契約の事故件数を引き継いで計算されます。",
+      "kana": "わりまし・わりびきとうきゅうは、まえけいやくのじこけんすうをひきついでてけいさんされます。",
+      "romaji": "Warimashi・waribiki tōkyū wa, mae-keiyaku no jiko-kensū o hikitsui de keisan saremasu.",
+      "translation": "The surcharge or discount class is calculated by carrying over the accident count from the previous contract."
+    },
+    "context": "Motor kyosai rating, renewal carry-over, and transfer-in from an insurer's no-claims record.",
+    "confusedTerms": [
+      {
+        "term": "事故有期間（事故有係数適用期間）",
+        "reading": "じこありきかん（じこありけいすうてきようきかん）",
+        "termId": "kyosai-jikoari-kikan",
+        "distinction": "The 等級 band sets the rate level; the 事故有係数適用期間 is the number of years the accident factor is applied inside that band."
+      },
+      {
+        "term": "始期日",
+        "reading": "しきび",
+        "termId": "kyosai-shikibi",
+        "distinction": "The band is fixed as of the 始期日 of the new contract."
+      }
+    ],
+    "components": [
+      {
+        "element": "等",
+        "reading": "とう",
+        "meaning": "grade, rank"
+      },
+      {
+        "element": "級",
+        "reading": "きゅう",
+        "meaning": "class, level"
+      },
+      {
+        "element": "割増",
+        "reading": "わりまし",
+        "meaning": "surcharge"
+      },
+      {
+        "element": "割引",
+        "reading": "わりびき",
+        "meaning": "discount"
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-jikoari-kikan",
+      "kyosai-shikibi",
+      "kimina-hikyosha",
+      "kyosai-kakekin"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/ta/2430.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 等級（割増・割引等級） (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "motor",
+      "rating",
+      "renewal"
+    ]
+  },
+  {
+    "id": "kyosai-jikoari-kikan",
+    "term": "事故有期間（事故有係数適用期間）",
+    "kana": "じこありきかん（じこありけいすうてきようきかん）",
+    "romaji": "jiko-ari kikan (jiko-ari keisū tekiyō kikan)",
+    "translation": "years during which the motor accident surcharge factor applies",
+    "definitionJa": "自動車共済で事故有係数を適用する期間で、始期日時点の残り適用年数として保持する。3等級ダウン事故1件につき3年、1等級ダウン事故1件につき1年を加算し、上限は6年。毎年1年ずつ減算する。",
+    "blankVariants": [
+      "事故有係数適用期間"
+    ],
+    "explanationEn": "事故有 (\"has an accident\") + 係数 (\"factor, coefficient\") + 適用期間. This is the mechanism behind the familiar 3等級ダウン事故 / 1等級ダウン事故 rules: the counter is stored as a remaining-years integer, incremented per accident, capped at 6 and decremented at each renewal. It is a good example of a rule that must be implemented exactly - an off-by-one error follows the customer for years.",
+    "category": "kyosai",
+    "subcategory": "Motor rating",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "事故有係数適用期間は契約データに年数で保持し、継続のたびに1年減算します。",
+      "kana": "じこありけいすうてきようきかんはけいやくデータにねんすうでほぞうし、けいぞくのたびにいちねんげんざんします。",
+      "romaji": "Jiko-ari keisū tekiyō kikan wa keiyaku dēta ni nensū de hozō shi, keizoku no tabi ni ichi-nen genzan shimasu.",
+      "translation": "The accident-factor application period is stored in the contract data as a number of years and reduced by one at each renewal."
+    },
+    "context": "Motor rating factors, renewal decrement logic, and the 6-year cap that boundary tests must cover.",
+    "confusedTerms": [
+      {
+        "term": "等級（割増・割引等級）",
+        "reading": "とうきゅう（わりまし・わりびきとうきゅう）",
+        "termId": "kyosai-toukyuu",
+        "distinction": "The 等級 band sets the discount level; this period decides whether the accident factor is applied inside that band."
+      },
+      {
+        "term": "待機期間",
+        "reading": "たいききかん",
+        "termId": "taiki-kikan",
+        "distinction": "待機期間 is a waiting period before medical cover becomes payable; the 事故有係数適用期間 is a surcharge period after an accident."
+      }
+    ],
+    "components": [
+      {
+        "element": "係",
+        "reading": "けい",
+        "meaning": "factor, tie"
+      },
+      {
+        "element": "数",
+        "reading": "すう",
+        "meaning": "number, coefficient"
+      }
+    ],
+    "relatedTerms": [
+      "kyosai-toukyuu",
+      "kyosai-shikibi",
+      "kimina-hikyosha"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/sa/1607.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 事故有期間（事故有係数適用期間） (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "motor",
+      "rating",
+      "boundary-case"
+    ]
+  },
+  {
+    "id": "shika-kyosai-keiyaku",
+    "term": "時価共済契約",
+    "kana": "じかきょうさいけいやく",
+    "romaji": "jika kyōsai keiyaku",
+    "translation": "kyosai building cover settled at current market value",
+    "definitionJa": "建物更生共済で、建物や動産など共済の対象の残存価額の割合が50％未満のご契約。損害を受けた場合の評価は時価額を基準に行われる。",
+    "explanationEn": "時価 (\"market value at the moment\") is paired with 新価 (\"replacement value\"). JA draws the line at a residual value of 50 percent: below it the contract settles at market value, at or above it at replacement cost. Insurers express the same idea through a 新価保険特約 instead of classifying the contract. In a system the 残存価額割合 is a calculated field that decides the settlement basis and is recomputed at every renewal, so contracts can flip between the two classes.",
+    "category": "kyosai",
+    "subcategory": "Property valuation",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "時価共済契約では、残存価額の割合が50％を切った建物を実損で評価します。",
+      "kana": "じかきょうさいけいやくでは、ざんぞんがくのわりあいがごじゅうパーセントをきったたてものをじつそんでひょうかします。",
+      "romaji": "Jika kyōsai keiyaku de wa, zonzon gak-wariai ga go-jū-pāsento o kitta tatemono o jitsuson de hyōka shimasu.",
+      "translation": "Under a market-value kyosai contract, a building whose residual value has fallen below 50 percent is assessed at actual loss."
+    },
+    "context": "Building kyosai settlement logic, residual-value calculation, and boundary data at exactly 50 percent.",
+    "confusedTerms": [
+      {
+        "term": "新価共済契約",
+        "reading": "しんかきょうさいけいやく",
+        "termId": "shinka-kyosai-keiyaku",
+        "distinction": "新価 contracts settle at replacement cost, 時価 contracts at current market value; the dividing line is a residual value of 50 percent."
+      },
+      {
+        "term": "免責金額",
+        "reading": "めんしゃくきんがく",
+        "termId": "menshaku-kingaku",
+        "distinction": "免責金額 is the amount subtracted from each payout; whether a contract is 時価 changes the base the loss is measured against."
+      }
+    ],
+    "components": [
+      {
+        "element": "時価",
+        "reading": "じか",
+        "meaning": "market value at a point in time"
+      },
+      {
+        "element": "残存価額",
+        "reading": "ざんぞんがく",
+        "meaning": "remaining value"
+      }
+    ],
+    "relatedTerms": [
+      "shinka-kyosai-keiyaku",
+      "menshaku-kingaku",
+      "songaigaku"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/sa/1587.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 時価共済契約 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "property",
+      "valuation",
+      "boundary-case"
+    ]
+  },
+  {
+    "id": "shinka-kyosai-keiyaku",
+    "term": "新価共済契約",
+    "kana": "しんかきょうさいけいやく",
+    "romaji": "shinka kyōsai keiyaku",
+    "translation": "replacement-cost basis in a kyosai building contract",
+    "definitionJa": "建物更生共済で、共済の対象の残存価額の割合が50％以上のご契約。損害の評価は時価額ではなく再取得価額を基準に行う。",
+    "explanationEn": "新価 (\"new value\") always appears with its partner word 再取得価額 - the cost of buying the same thing new. This is the kyosai counterpart of the 新価保険特約 that insurers attach to fire policies, except that JA classifies the contract itself from the residual value rather than adding a rider. Testing it needs boundary data at exactly 50 percent, because a recalculation at renewal can move a contract from 時価 to 新価 and change the next period's settlement basis.",
+    "category": "kyosai",
+    "subcategory": "Property valuation",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "non-life"
+    ],
+    "example": {
+      "ja": "新価共済契約では、建物の損害を再取得価額を基準に計算します。",
+      "kana": "しんかきょうさいけいやくでは、たてもののそんがいをさいしゅとかがくをきじゅんにけいさんします。",
+      "romaji": "Shinka kyōsai keiyaku de wa, tatemono no songai o saishutsu gakugaku o kijun ni keisan shimasu.",
+      "translation": "Under a replacement-value kyosai contract, building damage is calculated using the replacement cost."
+    },
+    "context": "Building kyosai settlement, replacement-cost calculation, and rider-versus-classification modelling differences.",
+    "confusedTerms": [
+      {
+        "term": "時価共済契約",
+        "reading": "じかきょうさいけいやく",
+        "termId": "shika-kyosai-keiyaku",
+        "distinction": "Opposite settlement basis; the boundary is a residual value of 50 percent."
+      },
+      {
+        "term": "保障内容",
+        "reading": "ほしょうないよう",
+        "termId": "hosho-naiyo",
+        "distinction": "保障内容 is what a product covers; whether a contract is 新価 changes how a loss is valued, not what is covered."
+      }
+    ],
+    "components": [
+      {
+        "element": "新価",
+        "reading": "しんか",
+        "meaning": "new / replacement value"
+      },
+      {
+        "element": "再取得価額",
+        "reading": "さいしゅとかがく",
+        "meaning": "cost of acquiring it again new"
+      }
+    ],
+    "relatedTerms": [
+      "shika-kyosai-keiyaku",
+      "hosho-naiyo",
+      "songaigaku"
+    ],
+    "verification": "verified",
+    "sourceUrl": "https://www.ja-kyosai.or.jp/words/sa/2034.html",
+    "verificationNote": "Headword, reading and definition checked on the JA共済用語集 page for 新価共済契約 (accessed 2026-10-18).",
+    "tags": [
+      "kyosai",
+      "property",
+      "valuation",
+      "boundary-case"
+    ]
+  }
+]

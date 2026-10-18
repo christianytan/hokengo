@@ -1,0 +1,18 @@
+{
+  "name": "ほけんご — 保険・IT 用語トレーナー",
+  "short_name": "ほけんご",
+  "description": "ほけんご (Hokengo): offline-first trainer for Japanese insurance and insurance-IT specialist terminology, written for JLPT N3-N2 learners. Progress is stored in your browser.",
+  "lang": "ja",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "background_color": "#f5f6f8",
+  "theme_color": "#1f5fbf",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

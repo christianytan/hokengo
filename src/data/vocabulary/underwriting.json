@@ -1,0 +1,578 @@
+[
+  {
+    "id": "hikuke-saten",
+    "term": "引受査定",
+    "kana": "ひきうけさてん",
+    "romaji": "hikuke saten",
+    "translation": "underwriting assessment",
+    "definitionJa": "申込の契約を引き受けるか、どのような条件で引き受けるかを審査すること。",
+    "explanationEn": "Underwriting: deciding whether and on what terms to accept a proposed risk. 引受 means acceptance, 査定 means assessment. The same 査定 appears in 支払査定 (claims assessment), so the stage must be read from the compound.",
+    "category": "underwriting",
+    "subcategory": "Assessment",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "引受査定の結果は、申込データと一緒に査定システムから返却されます。",
+      "kana": "ひきうけさてんのけっかは、もうしこみデータといっしょにさてんシステムからへんさくされます。",
+      "romaji": "Hikuke saten no kekka wa, moshikomi dēta to issho ni saten shisutemu kara hensaku saremasu.",
+      "translation": "The underwriting result is returned from the assessment system together with the application data."
+    },
+    "context": "New business workflow, interfaces between intake and underwriting systems, and manual assessment queues.",
+    "confusedTerms": [
+      {
+        "term": "支払査定",
+        "reading": "しはらさてん",
+        "termId": "shiharai-saten",
+        "distinction": "引受査定 happens before the contract exists; 支払査定 happens after a claim is submitted."
+      },
+      {
+        "term": "引受",
+        "reading": "ひきうけ",
+        "termId": "hikuke",
+        "distinction": "引受 is the acceptance itself; 引受査定 is the assessment that leads to it."
+      }
+    ],
+    "components": [
+      {
+        "element": "引",
+        "reading": "ひき",
+        "meaning": "pull, draw"
+      },
+      {
+        "element": "査",
+        "reading": "さ",
+        "meaning": "examine, investigate"
+      },
+      {
+        "element": "定",
+        "reading": "てん",
+        "meaning": "decide, judge"
+      }
+    ],
+    "relatedTerms": [
+      "kokuchi-gimu",
+      "hikuke-kijun",
+      "kiken-sentaku"
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "underwriting",
+      "workflow",
+      "core"
+    ]
+  },
+  {
+    "id": "hikuke",
+    "term": "引受",
+    "kana": "ひきうけ",
+    "romaji": "hikuke",
+    "translation": "acceptance of the risk; underwriting",
+    "definitionJa": "保険者がリスクを引き受けること。また、その処理やデータ。",
+    "explanationEn": "The act of taking on the risk, and a very common modifier in system vocabulary: 引受日, 引受基準, 引受データ, 引受可否. Distinguish it from 引受査定 (the assessment process) and 承諾 (the recorded outcome).",
+    "category": "underwriting",
+    "subcategory": "Assessment",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "引受データが不完全な場合は、追加の告知を依頼します。",
+      "kana": "ひきうけデータがふかんぜんなばあい、ついかのこくちをいらいします。",
+      "romaji": "Hikuke dēta ga fukanzen na baai, tsuika no kokuchi o irai shimasu.",
+      "translation": "If the underwriting data is incomplete, additional disclosure is requested."
+    },
+    "context": "Interface message names, 引受可否 status fields, and underwriting data models.",
+    "confusedTerms": [
+      {
+        "term": "引受査定",
+        "reading": "ひきうけさてん",
+        "termId": "hikuke-saten",
+        "distinction": "引受 is the acceptance or the data about it; 引受査定 is the assessment activity."
+      },
+      {
+        "term": "承諾",
+        "reading": "しょうだく",
+        "termId": "shodaku",
+        "distinction": "承諾 is the recorded decision; 引受 is the act or the data modifier."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "underwriting",
+      "modifier",
+      "data"
+    ]
+  },
+  {
+    "id": "kokuchi-gimu",
+    "term": "告知義務",
+    "kana": "こくちぎむ",
+    "romaji": "kokuchi gimu",
+    "translation": "duty of disclosure",
+    "definitionJa": "契約者や被保険者が、引受査定に必要な事項を事実どおり申し出る義務。",
+    "explanationEn": "The duty to disclose material facts (health, occupation, and in some products income or existing cover) when applying. Breach can lead to cancellation of the contract (解除) or denial of a claim, which is why 告知 screens carry audit and retention requirements.",
+    "category": "underwriting",
+    "subcategory": "Disclosure",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "告知義務に違反した場合、契約が解除されることがあります。",
+      "kana": "こくちぎむにいはんがあったばあい、けいやくがかいじょされることがあります。",
+      "romaji": "Kokuchi gimu ni ippa ga atta baai, keiyaku ga kaijo saru koto ga arimasu.",
+      "translation": "If the duty of disclosure is breached, the contract may be cancelled."
+    },
+    "context": "Application screens, audit trails of what was asked and answered, and 解除 processing.",
+    "confusedTerms": [
+      {
+        "term": "告知事項",
+        "reading": "こくちじこう",
+        "termId": "kokuchi-jiko",
+        "distinction": "告知事項 are the specific items to disclose; 告知義務 is the duty to disclose them truthfully."
+      },
+      {
+        "term": "解除",
+        "reading": "かいじょ",
+        "termId": "kaijo",
+        "distinction": "解除 is the consequence the insurer may exercise after a breach."
+      }
+    ],
+    "verification": "industry-standard",
+    "verificationNote": "The statutory effects of breach are set out in the Insurance Act; confirm the current provisions before using this in documentation.",
+    "tags": [
+      "underwriting",
+      "legal",
+      "core"
+    ]
+  },
+  {
+    "id": "kokuchi-jiko",
+    "term": "告知事項",
+    "kana": "こくちじこう",
+    "romaji": "kokuchi jikō",
+    "translation": "matters that must be disclosed",
+    "definitionJa": "引受査定のために告知すべき事項。健康状態、既往症、職業など。",
+    "explanationEn": "The specific questions asked at application. They differ by product and by 引受基準, and they change over time, so real systems keep 告知事項 as versioned master data tied to a product version.",
+    "category": "underwriting",
+    "subcategory": "Disclosure",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "告知事項は商品ごとに異なるため、バージョン管理が必要です。",
+      "kana": "こくちじこうはしょうひんごとにくなるため、ばーじょんかんりがひつようです。",
+      "romaji": "Kokuchi jikō wa shōhin goto ni kotonaru tame, bājon kanri ga hitsuyō desu.",
+      "translation": "Because disclosure items differ by product, version control is required."
+    },
+    "context": "Disclosure question masters, product version binding, and e-application (電子告知) screens.",
+    "confusedTerms": [
+      {
+        "term": "告知義務",
+        "reading": "こくちぎむ",
+        "termId": "kokuchi-gimu",
+        "distinction": "告知義務 is the duty; 告知事項 are the items covered by that duty."
+      },
+      {
+        "term": "告知書",
+        "reading": "こくちしょ",
+        "termId": "kokuchisho",
+        "distinction": "告知書 is the form or screen where the answers are recorded."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "underwriting",
+      "master-data",
+      "versioning"
+    ]
+  },
+  {
+    "id": "kokuchisho",
+    "term": "告知書",
+    "kana": "こくちしょ",
+    "romaji": "kokuchisho",
+    "translation": "disclosure form; statement of health",
+    "definitionJa": "告知事項に対する回答を記載する書類、または電子告知の画面。",
+    "explanationEn": "The document or screen where disclosure answers are recorded. Electronic disclosure (電子告知) has largely replaced paper, but the retention and audit requirements are the same: what was asked, what was answered, and when.",
+    "category": "underwriting",
+    "subcategory": "Disclosure",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "電子告知では、告知書の回答内容を後から参照できるように保存します。",
+      "kana": "でんしこくちでは、こくちしょのこたえないようをあとからさんしょうできるようにほぞんします。",
+      "romaji": "Denshi kokuchi dewa, kokuchisho no kotae naiyō o ato kara sanshō dekiru yō ni hozon shimasu.",
+      "translation": "In electronic disclosure, the answers given on the form are stored so they can be referred to later."
+    },
+    "context": "E-application screens, document retention rules, and evidence for later 解除 or claim disputes.",
+    "confusedTerms": [
+      {
+        "term": "告知事項",
+        "reading": "こくちじこう",
+        "termId": "kokuchi-jiko",
+        "distinction": "告知事項 are the questions; 告知書 is the artefact carrying the answers."
+      },
+      {
+        "term": "請求書類",
+        "reading": "せいきゅうしょるい",
+        "termId": "seikyuu-shorui",
+        "distinction": "請求書類 belong to a claim, not to the application stage."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "underwriting",
+      "document",
+      "e-application"
+    ]
+  },
+  {
+    "id": "kiken-sentaku",
+    "term": "危険選択",
+    "kana": "きけんせんたく",
+    "romaji": "kiken sentaku",
+    "translation": "risk selection",
+    "definitionJa": "引受基準などに基づき、引き受けるリスクを取捨選択すること。",
+    "explanationEn": "The insurer's practice of choosing which risks to accept, decline, or accept only with special terms. It is the concept that underlies 引受基準 and 条件付き承諾, and appears in industry and actuarial literature rather than on customer screens.",
+    "category": "underwriting",
+    "subcategory": "Concepts",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "危険選択のため、引受基準を超える告知がある場合は人手の査定を行います。",
+      "kana": "きけんせんたくのため、ひきうけきじゅんをこえるこくちがあるばあいは、ひとでのさてんをおこないます。",
+      "romaji": "Kiken sentaku no tame, hikuke kijun o koeru kokuchi ga aru baai wa, hitode no saten o okonai masu.",
+      "translation": "For risk selection, disclosures beyond the standard criteria are routed to manual assessment."
+    },
+    "context": "Underwriting strategy documents, actuarial discussions, and routing rules between automatic and manual assessment.",
+    "confusedTerms": [
+      {
+        "term": "引受査定",
+        "reading": "ひきうけさてん",
+        "termId": "hikuke-saten",
+        "distinction": "危険選択 is the concept or policy; 引受査定 is the operational assessment performed on one application."
+      },
+      {
+        "term": "引受基準",
+        "reading": "ひきうけきじゅん",
+        "termId": "hikuke-kijun",
+        "distinction": "引受基準 are the written criteria used to carry out risk selection."
+      }
+    ],
+    "sourceUrl": "https://ja.wikipedia.org/wiki/%E7%94%9F%E5%91%BD%E4%BF%9D%E9%99%BA",
+    "verification": "verified",
+    "verificationNote": "The cited article contains a section on 危険選択 in life insurance.",
+    "tags": [
+      "underwriting",
+      "concept",
+      "actuarial"
+    ]
+  },
+  {
+    "id": "hikuke-kijun",
+    "term": "引受基準",
+    "kana": "ひきうけきじゅん",
+    "romaji": "hikuke kijun",
+    "translation": "underwriting criteria",
+    "definitionJa": "引き受けの可否や条件を判断するための基準。年齢、健康状態、引受限度額など。",
+    "explanationEn": "The written rulebook behind underwriting decisions: entry ages, health thresholds, sum-assured limits and occupation classes. In systems these are rule tables bound to a product and version, and they drive automatic versus manual assessment routing.",
+    "category": "underwriting",
+    "subcategory": "Criteria",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "引受基準は商品ごとに設定され、システムではルールテーブルで管理します。",
+      "kana": "ひきうけきじゅんはしょうひんごとせっていされ、システムではるーるてーぶるでかんりします。",
+      "romaji": "Hikuke kijun wa shōhin goto ni settei sare, shisutemu dewa rūru tēburu de kanri shimasu.",
+      "translation": "Underwriting criteria are defined per product and managed in rule tables in the system."
+    },
+    "context": "Rule engine configuration, automatic acceptance logic, and 引受限度額 limit checks.",
+    "confusedTerms": [
+      {
+        "term": "危険選択",
+        "reading": "きけんせんたく",
+        "termId": "kiken-sentaku",
+        "distinction": "危険選択 is the practice of selecting risks; 引受基準 are the criteria used to do it."
+      },
+      {
+        "term": "特別条件",
+        "reading": "とくべつじょうけん",
+        "termId": "tokubetsu-joken",
+        "distinction": "特別条件 are terms attached to an accepted contract; 引受基準 are the criteria used to decide them."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "underwriting",
+      "rules",
+      "master-data"
+    ]
+  },
+  {
+    "id": "hikuke-kijun-kanwa-gata",
+    "term": "引受基準緩和型",
+    "kana": "ひきうけきじゅんかんわがた",
+    "romaji": "hikuke kijun kanwa-gata",
+    "translation": "lenient-underwriting product type",
+    "definitionJa": "通常の引受基準よりも緩い基準で引き受ける商品の類型。",
+    "explanationEn": "A product category with relaxed underwriting, often aimed at people with existing conditions. Premiums are usually higher and the initial benefit may be limited. It is a product-classification term you will see in product lists and marketing material.",
+    "category": "underwriting",
+    "subcategory": "Criteria",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "引受基準緩和型の契約では、加入後一定期間、保障が制限される場合があります。",
+      "kana": "ひきうけきじゅんかんわがたのけいやくでは、かにゅうごいちてきかん、ほしょうがせいげんされるばあいがります。",
+      "romaji": "Hikuke kijun kanwa-gata no keiyaku dewa, kanyū-go icchi-teki-kan, hoshō ga seigen sareru baai ga arimasu.",
+      "translation": "For lenient-underwriting products, cover may be limited for a period after joining."
+    },
+    "context": "Product classification, differentiated underwriting rules, and benefit limitation logic.",
+    "confusedTerms": [
+      {
+        "term": "引受基準",
+        "reading": "ひきうけきじゅん",
+        "termId": "hikuke-kijun",
+        "distinction": "引受基準 are the criteria themselves; 引受基準緩和型 is a product type using relaxed criteria."
+      },
+      {
+        "term": "特別条件",
+        "reading": "とくべつじょうけん",
+        "termId": "tokubetsu-joken",
+        "distinction": "特別条件 are per-contract terms; 引受基準緩和型 is a whole product design."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The label and the initial-benefit rules vary by insurer and product; confirm before use.",
+    "tags": [
+      "underwriting",
+      "product",
+      "classification"
+    ]
+  },
+  {
+    "id": "shodaku",
+    "term": "承諾",
+    "kana": "しょうだく",
+    "romaji": "shōdaku",
+    "translation": "acceptance; approval",
+    "definitionJa": "申込に対して、保険者が契約を引き受けることを決定すること。",
+    "explanationEn": "The formal acceptance of an application. In status models it is one outcome among several (accept, accept with conditions, decline). Note that 承諾 also means plain agreement/consent in general business Japanese, so context decides the translation.",
+    "category": "underwriting",
+    "subcategory": "Outcomes",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "承諾となった契約は、証券発行処理に進みます。",
+      "kana": "しょうだくとったけいやくは、しょうけんはっこうしょりにすすみます。",
+      "romaji": "Shōdaku to tta keiyaku wa, shōken hakkō shori ni susimasu.",
+      "translation": "Contracts that have been accepted proceed to policy issuance processing."
+    },
+    "context": "Underwriting status workflows, queue routing, and downstream issuance triggers.",
+    "confusedTerms": [
+      {
+        "term": "条件付き承諾",
+        "reading": "じょうけんつきしょうだく",
+        "termId": "joken-tsuki-shodaku",
+        "distinction": "条件付き承諾 accepts only with special terms attached."
+      },
+      {
+        "term": "引受不可",
+        "reading": "ひきうけふか",
+        "termId": "hikuke-fuka",
+        "distinction": "引受不可 is the opposite outcome: the risk is not accepted."
+      }
+    ],
+    "verification": "industry-standard",
+    "tags": [
+      "underwriting",
+      "status",
+      "workflow"
+    ]
+  },
+  {
+    "id": "joken-tsuki-shodaku",
+    "term": "条件付き承諾",
+    "kana": "じょうけんつきしょうだく",
+    "romaji": "jōken-tsuki shōdaku",
+    "translation": "conditional acceptance",
+    "definitionJa": "所定の条件を付けることを条件に申込を承諾すること。",
+    "explanationEn": "Accepting an application subject to special terms such as an extra premium, exclusion of a specific condition or body part, or a limited benefit period. The customer must agree to the terms before the contract is concluded, so the workflow includes a consent step.",
+    "category": "underwriting",
+    "subcategory": "Outcomes",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "条件付き承諾の場合は、条件の内容に同意いただいてから契約を締結します。",
+      "kana": "じょうけんつきしょうだくのばあいは、じょうけんのないようにどういいただいてからけいやくをけいかつします。",
+      "romaji": "Jōken-tsuki shōdaku no baai wa, jōken no naiyō ni dōi itadaita kara keiyaku o keikatsu shimasu.",
+      "translation": "In the case of conditional acceptance, the contract is concluded only after the customer agrees to the terms."
+    },
+    "context": "Offer/consent workflows, 特別条件 storage, and downstream claim assessment that must honour those terms.",
+    "confusedTerms": [
+      {
+        "term": "特別条件",
+        "reading": "とくべつじょうけん",
+        "termId": "tokubetsu-joken",
+        "distinction": "条件付き承諾 is the decision; 特別条件 are the actual terms recorded on the contract."
+      },
+      {
+        "term": "承諾",
+        "reading": "しょうだく",
+        "termId": "shodaku",
+        "distinction": "承諾 is unconditional acceptance."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Companies use different labels (条件付引受, 特別条件付引受); confirm the local status vocabulary.",
+    "tags": [
+      "underwriting",
+      "status",
+      "workflow"
+    ]
+  },
+  {
+    "id": "tokubetsu-joken",
+    "term": "特別条件",
+    "kana": "とくべつじょうけん",
+    "romaji": "tokubetsu jōken",
+    "translation": "special underwriting terms",
+    "definitionJa": "引受に際して、特定の疾病や部位などに付される条件。",
+    "explanationEn": "Special terms attached to an individual contract, for example excluding a specific condition or body part, or charging an extra premium. They are stored as codes on the contract and must be honoured later when a claim is assessed.",
+    "category": "underwriting",
+    "subcategory": "Outcomes",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "特別条件が付された契約では、対象部位の疾病は支払対象外となります。",
+      "kana": "とくべつじょうけんがつされたけいやくでは、たいそうぶいのしっぺいはしはらたいしょうがいとなります。",
+      "romaji": "Tokubetsu jōken ga tsusareta keiyaku dewa, taishō-bui no shippei wa shiharai taishō-gai to narimasu.",
+      "translation": "Under a contract with special terms, illness of the excluded body part is not eligible for payment."
+    },
+    "context": "Contract detail screens, 特別条件コード tables, and claim assessment rules that must read them.",
+    "confusedTerms": [
+      {
+        "term": "条件付き承諾",
+        "reading": "じょうけんつきしょうだく",
+        "termId": "joken-tsuki-shodaku",
+        "distinction": "条件付き承諾 is the underwriting decision; 特別条件 is what is stored and applied afterwards."
+      },
+      {
+        "term": "免責事由",
+        "reading": "めんしゃくじゆう",
+        "termId": "menshaku-jiyu",
+        "distinction": "免責事由 come from the standard 約款; 特別条件 are specific to this contract."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Terminology (特別条件/特別条件付/割増保険料) varies by insurer.",
+    "tags": [
+      "underwriting",
+      "contract-data",
+      "claims"
+    ]
+  },
+  {
+    "id": "hikuke-fuka",
+    "term": "引受不可",
+    "kana": "ひきうけふか",
+    "romaji": "hikuke fuka",
+    "translation": "declined; unable to accept the risk",
+    "definitionJa": "申込を契約として引き受けないこと。",
+    "explanationEn": "The decline outcome. Companies use different wording (引受不可, 引受辞退, 不参加), and the reason code matters because it drives whether and when the customer may apply again.",
+    "category": "underwriting",
+    "subcategory": "Outcomes",
+    "difficulty": "n2-bridge",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "引受不可となった場合は、理由コードを記録して申込者へ通知します。",
+      "kana": "ひきうけふかとったばあいは、りゆうこーどをきろくしてもうしこしゃへおうちします。",
+      "romaji": "Hikuke fuka to tta baai wa, ri-yū kōdo o kiroku shite moshikōsha e oshirase shimasu.",
+      "translation": "When an application is declined, a reason code is recorded and the applicant is notified."
+    },
+    "context": "Underwriting status handling, reason code tables, and re-application rules.",
+    "confusedTerms": [
+      {
+        "term": "承諾",
+        "reading": "しょうだく",
+        "termId": "shodaku",
+        "distinction": "承諾 is acceptance; 引受不可 is the negative outcome."
+      },
+      {
+        "term": "条件付き承諾",
+        "reading": "じょうけんつきしょうだく",
+        "termId": "joken-tsuki-shodaku",
+        "distinction": "条件付き承諾 still results in a contract; 引受不可 does not."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "The exact status label differs by company; confirm in the target system's status dictionary.",
+    "tags": [
+      "underwriting",
+      "status",
+      "decline"
+    ]
+  },
+  {
+    "id": "hikukebi",
+    "term": "引受日",
+    "kana": "ひきうけび",
+    "romaji": "hikukebi",
+    "translation": "date of acceptance; inception date",
+    "definitionJa": "保険者の引受が確定し、契約の効力が生じることとされる日。",
+    "explanationEn": "The date on which acceptance is finalised and the contract takes effect. Insurance systems carry several similar dates — 申込日, 締結日, 引受日, 開始日, 証券発行日 — and confusing them is a classic source of reporting and premium-calculation defects.",
+    "category": "underwriting",
+    "subcategory": "Dates",
+    "difficulty": "insurance-specialist",
+    "domains": [
+      "both"
+    ],
+    "example": {
+      "ja": "引受日が当月でない契約は、当月の新契約統計に含めません。",
+      "kana": "ひきうけびがとうげつでないけいやくは、とうげつのしんけいやくとうけいにふくめません。",
+      "romaji": "Hikukebi ga tō-getsu de nai keiyaku wa, tō-getsu no shin-keiyaku tōkei ni fukumemasen.",
+      "translation": "Contracts whose acceptance date is not in the current month are excluded from new-business statistics for that month."
+    },
+    "context": "Statistical aggregation keys, premium effective-date logic, and reconciliation between intake and issuance systems.",
+    "confusedTerms": [
+      {
+        "term": "保険期間",
+        "reading": "ほけんきかん",
+        "termId": "hoken-kikan",
+        "distinction": "保険期間 is the span of cover; 引受日 is the single date on which acceptance becomes effective."
+      },
+      {
+        "term": "新規契約",
+        "reading": "しんけいやく",
+        "termId": "shinki-keiyaku",
+        "distinction": "新規契約 is the process; 引受日 is one of its date fields."
+      }
+    ],
+    "verification": "review-needed",
+    "verificationNote": "Naming (引受日/引受確定日/開始日) and the exact effective-date rule differ by company.",
+    "tags": [
+      "dates",
+      "statistics",
+      "underwriting"
+    ]
+  }
+]
