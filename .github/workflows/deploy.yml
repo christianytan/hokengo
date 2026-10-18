@@ -1,5 +1,7 @@
 # Builds the app and publishes dist/ to GitHub Pages.
-# Repository Settings -> Pages -> Build and deployment: "GitHub Actions".
+# Requires Repository Settings -> Pages -> Build and deployment: Source = "GitHub Actions".
+# With the source left on "Deploy from a branch" the deploy job below fails with
+# "Failed to create deployment (status: 404)"; see README -> "If the deploy step fails".
 name: Deploy to GitHub Pages
 
 on:

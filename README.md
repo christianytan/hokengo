@@ -311,6 +311,7 @@ index.html                     theme bootstrap, noscript notice, manifest + PWA 
 public/favicon.svg
 public/manifest.json           installable-app manifest
 public/sw.js                   offline cache for the app shell (plain JS, no build step)
+public/.nojekyll               shipped into dist/ so Pages never runs Jekyll over the build
 src/
   main.tsx, App.tsx            entry point, tab shell, theme handling, offline banner
   state/store.tsx              React context + reducer; the only writer of app state
@@ -379,8 +380,40 @@ same build works at a site root or under a repository subpath such as
 `https://<user>.github.io/<repo>/`.
 
 1. Push the repository to GitHub (the workflow triggers on `main`).
-2. Repository → Settings → Pages → **Build and deployment: GitHub Actions**.
+2. Repository → Settings → Pages → **Build and deployment: Source → GitHub Actions**.
+   This one setting is what provisions the deployment endpoint that
+   `actions/deploy-pages@v4` posts to; without it the build succeeds, the artifact
+   uploads, and only the last step fails.
 3. `.github/workflows/deploy.yml` runs typecheck, tests and build, then publishes `dist/`.
+   `public/.nojekyll` is copied into `dist/` so Pages never runs Jekyll over the output.
+
+### If the deploy step fails
+
+`Deploy to GitHub Pages` failing with
+
+```
+Error: Failed to create deployment (status: 404) with build version <sha>.
+Ensure GitHub Pages has been enabled: https://github.com/<owner>/<repo>/settings/pages
+```
+
+means step 2 above has not been done — Pages is still on **Deploy from a branch**, so the
+Actions deployment endpoint does not exist yet. Nothing in the app or the workflow is at
+fault. Set the source to **GitHub Actions**, then re-run the job from
+Actions → *Deploy to GitHub Pages* → *Run workflow* (`workflow_dispatch` is enabled).
+
+The same misconfiguration is visible in the browser, because Pages then serves the raw
+repository instead of the build — three symptoms that look like app bugs but are not:
+
+| Symptom in DevTools | Why it happens |
+| --- | --- |
+| `Failed to load module script: … MIME type of "application/octet-stream"` | the raw `index.html` asks for `./src/main.tsx`, and Pages has no MIME type for `.tsx` |
+| `GET /manifest.json 404` | the manifest lives in `public/`, so it only exists at the site root after a build |
+| The page renders the `<noscript>` notice only | no module ever loaded |
+
+After switching the source, allow a couple of minutes for Pages to build the new
+deployment and up to ten minutes for the CDN cache to expire, then hard-reload. The
+service worker's cache name is bumped in `public/sw.js` (`CACHE_VERSION`) whenever a
+release ships, which drops any previously cached broken shell.
 
 To publish somewhere else, just serve `dist/` — it is plain static files.
 
