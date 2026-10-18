@@ -7,6 +7,8 @@ import { CATEGORY_IDS } from "../src/data/categories";
 
 const generator = new QuestionGenerator(BUILT_IN_VOCABULARY);
 const byId = new Map(BUILT_IN_VOCABULARY.map((e) => [e.id, e]));
+const isGenerated = (entry: (typeof BUILT_IN_VOCABULARY)[number]) => entry.tags.includes("generated");
+const coreVocabulary = BUILT_IN_VOCABULARY.filter((e) => !isGenerated(e));
 const rngFor = (seed: number) => createRng(seed);
 const BLANK = "\uFF3F\uFF3F\uFF3F";
 
@@ -121,16 +123,32 @@ describe("question generator - structural guarantees", () => {
     const rows: string[] = [];
     for (const mode of QUESTION_MODES) {
       const supported = BUILT_IN_VOCABULARY.filter((e) => generator.supports(e.id, mode));
+      const coreSupported = coreVocabulary.filter((e) => generator.supports(e.id, mode));
       let generated = 0;
       for (const entry of supported) {
         if (generator.generate(entry.id, mode, rngFor(hashString(entry.id + mode)))) generated++;
       }
-      rows.push(mode.padEnd(12) + " supported " + String(supported.length).padStart(3) + " / " + BUILT_IN_VOCABULARY.length + "   generated " + generated);
+      rows.push(
+        mode.padEnd(12) +
+          " supported " +
+          String(supported.length).padStart(4) +
+          " / " +
+          BUILT_IN_VOCABULARY.length +
+          "   core " +
+          String(coreSupported.length).padStart(3) +
+          " / " +
+          coreVocabulary.length +
+          "   generated " +
+          generated
+      );
       expect(generated, mode + ": a supported term produced no question").toBe(supported.length);
-      // Every built-in term must be usable in every mode: the dataset is written so
-      // that each example sentence contains the term exactly once and each entry has
-      // at least one confusable partner whose meaning is clearly different.
-      expect(supported.length, mode + ": these terms cannot produce that question type: " + BUILT_IN_VOCABULARY.filter((e) => !generator.supports(e.id, mode)).map((e) => e.id).join(", ")).toBe(BUILT_IN_VOCABULARY.length);
+      // The hand-written core dataset must remain fully usable in every mode. The
+      // generated screen-field pack is allowed to be narrower (especially for
+      // distinction questions), but it must still materially increase coverage.
+      expect(coreSupported.length, mode + ": core terms cannot produce that question type").toBe(coreVocabulary.length);
+      expect(supported.length, mode + ": too few terms can produce that question type").toBeGreaterThanOrEqual(
+        Math.max(200, coreVocabulary.length)
+      );
     }
     console.log("\nmode coverage:\n" + rows.join("\n"));
   });

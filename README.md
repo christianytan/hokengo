@@ -38,8 +38,9 @@ and you can export/import them as a plain JSON file.
 | Screen | Japanese | What you get |
 | --- | --- | --- |
 | Dashboard | ダッシュボード | today's progress against your daily goal, streak, due/weak/new counts, per-category coverage, a 14-day activity sparkline, and the terms that need work most |
-| Study | 学習 | session builder (session type + category/domain/difficulty/search filters + mode selection + size), the quiz itself with full keyboard control, 🔊 read-aloud, per-answer feedback with the confusable-term notes, a **self-assessment step** (もう一度 / 難しい / 正しい / 簡単) that drives the schedule, and a session summary with the grade breakdown and "practise the missed terms" |
-| Vocabulary | 用語一覧 | the full dataset with search, filters, sorting, multi-select for a custom session, bookmarks, and a full entry detail view; you can add/edit/delete your own terms here |
+| Study | 学習 | session builder (session type + category/domain/difficulty/search filters + mode selection + size), a short **term introduction card** before the first quiz question for a never-studied term, the quiz itself with full keyboard control, 🔊 read-aloud, per-answer feedback with the confusable-term notes, a **self-assessment step** (もう一度 / 難しい / 正しい / 簡単) that drives the schedule, and a session summary with the grade breakdown and "practise the missed terms" |
+| Kanji | 漢字 | a separate kanji-focused take: each take introduces **two new kanji** first, then quizzes meaning, reading, and example completion with four kanji choices |
+| Vocabulary | 用語一覧 | the full dataset with search, filters, sorting, pagination, multi-select for a custom session, bookmarks, and a full entry detail view; you can add/edit/delete your own terms here |
 | Statistics | 統計 | status distribution, accuracy per question mode, per-category and per-domain breakdowns, 30-day activity, and every term currently flagged as weak |
 | Data & settings | データ・設定 | theme, romaji/kana/translation display, self-grading and read-aloud switches, session size, daily goal, enabled modes, JSON export/import with a **preview before anything is written**, and a reset |
 
@@ -51,7 +52,7 @@ Session types: **mixed** (due + new + weak, interleaved), **due review**, **new 
 ```bash
 npm install       # install dependencies
 npm run dev       # dev server (Vite) — http://localhost:5173
-npm test          # 102 tests (vitest + jsdom + fake-indexeddb)
+npm test          # vitest + jsdom + fake-indexeddb
 npm run typecheck # tsc --noEmit
 npm run build     # production build into dist/
 npm run preview   # serve the built app locally
@@ -59,9 +60,10 @@ npm run preview   # serve the built app locally
 
 Requires Node 18+ (the CI workflow uses Node 20).
 
-## The five question modes
+## Question modes
 
-Every mode produces **four options with exactly one correct answer**.
+The vocabulary quiz has **five question modes**. Every mode produces **four options with
+exactly one correct answer**.
 
 | Mode | 日本語 | Prompt | Correct option |
 | --- | --- | --- | --- |
@@ -70,6 +72,16 @@ Every mode produces **four options with exactly one correct answer**.
 | `context` | 文脈理解 | a real business sentence with the term highlighted | what the term means *in that sentence* |
 | `fill-blank` | 空所補充 | the example sentence with the term removed | the term that completes it |
 | `distinction` | 類似語の区別 | a description that separates two confusable terms | the term that matches, not the similar one |
+
+Before a never-studied term is quizzed in a normal study session, the app shows a compact
+**term introduction card** first: term, reading, translation, definition, example, and
+confusable-term notes. This is controlled by the 用語紹介 toggle in Data & settings.
+
+The separate **Kanji** tab is not one of the five vocabulary modes. It uses
+`src/data/kanji.json` and `src/lib/kanjiSession.ts` to introduce two new kanji per take,
+then asks four-choice kanji recognition questions: meaning → kanji, reading → kanji, and
+example completion. Kanji attempts are stored with `kanji:`-prefixed progress IDs so they
+do not pollute vocabulary term progress.
 
 Distractors are always **real entries from the dataset** — never invented filler. When
 answering, the feedback panel shows the correct answer, the full English explanation, the
@@ -93,10 +105,13 @@ from its seed and the UI can show progress. The generator guarantees:
 - a term that cannot produce a valid four-option question in any enabled mode is reported
   in `session.skipped` instead of being padded with made-up options.
 
-Current coverage of the built-in dataset: **all five modes support 179/179 terms**, and the
-generator can build a question for every entry. Those numbers are printed by
-`tests/questionGenerator.test.ts` on every run, and the same test fails if any mode drops
-below full coverage, so a data change that breaks a question type is visible immediately.
+Current coverage of the built-in dataset: the **179 hand-written core terms support all five
+modes**, and the generated screen-field pack brings the total built-in vocabulary to **1000
+terms**. The generated pack is intentionally marked `review-needed` and is allowed to be
+narrower for 類似語の区別, but it still materially increases coverage for the other modes.
+Those numbers are printed by `tests/questionGenerator.test.ts` on every run, and the test
+fails if the core dataset loses full coverage or if a mode drops below the minimum supported
+term count.
 
 ## Spaced repetition
 
@@ -199,21 +214,25 @@ carries, among others:
 | `relatedTerms[]`, `tags` | cross-links and free labels |
 | `sourceUrl`, `verification`, `verificationNote` | how much trust to put in the wording — see the verification policy below |
 
-The built-in dataset is **179 entries** in nine JSON files under `src/data/vocabulary/`:
+The built-in dataset is **1000 entries**: 179 hand-written core entries in the original JSON
+files under `src/data/vocabulary/`, plus a generated screen-field/operation pack in
+`src/data/vocabulary/extended-generated.json`. The generated pack is produced by
+`scripts/generate_extended_vocabulary.py` from the core entries and is marked
+`review-needed` because exact screen-field wording varies by company.
 
-| Category | 日本語 | entries |
+| Category | 日本語 | entries after expansion |
 | --- | --- | --- |
-| contract-fundamentals | 保険契約の基礎 | 18 |
-| life-benefits | 生命保険と給付 | 18 |
-| contract-lifecycle | 契約ライフサイクルと変更手続き | 18 |
-| underwriting | 引受査定とリスク審査 | 13 |
-| claims-payment | 請求と支払処理 | 17 |
-| products-coverage | 保険商品と保障 | 21 |
-| kyosai | 共済（JA共済）の用語 | 18 |
-| insurance-it | 保険ITと業務オペレーション | 56 (38 + 18 IPSJ-sourced) |
+| contract-fundamentals | 保険契約の基礎 | 125 |
+| life-benefits | 生命保険と給付 | 125 |
+| contract-lifecycle | 契約ライフサイクルと変更手続き | 125 |
+| underwriting | 引受査定とリスク審査 | 125 |
+| claims-payment | 請求と支払処理 | 125 |
+| products-coverage | 保険商品と保障 | 125 |
+| kyosai | 共済（JA共済）の用語 | 125 |
+| insurance-it | 保険ITと業務オペレーション | 125 |
 
-The two `insurance-it` files are kept separate because they come from different sources:
-`insurance-it.json` is written from insurance-IT project practice, while
+The two original `insurance-it` files are kept separate because they come from different
+sources: `insurance-it.json` is written from insurance-IT project practice, while
 `insurance-it-ipsj.json` is the general IT terminology taken from the IPSJ terminology
 list (see `docs/TERMINOLOGY_SOURCES.md`).
 
@@ -320,7 +339,9 @@ src/
     repository.ts              storage facade; normalises everything on load
     schema.ts                  vocabulary validation
     scheduler.ts               spaced repetition, driven by the self-assessment grade
-    questionGenerator.ts       the five modes, distractor selection, guarantees
+    questionGenerator.ts       the five vocabulary modes, distractor selection, guarantees
+    kanjiGenerator.ts          four-choice kanji recognition questions
+    kanjiSession.ts            two-new-kanji-per-take session construction
     session.ts                 session construction, filtering, ordering
     stats.ts                   dashboard/statistics aggregations
     backup.ts                  export, parse, import plan, apply, merge
@@ -330,12 +351,17 @@ src/
     time.ts                    local dates, streaks
   data/
     categories.ts              category/domain/difficulty/mode/grade labels
-    vocabulary/*.json          the 179 built-in entries
-    index.ts                   load + validate + export the typed dataset
+    vocabulary/*.json          179 core entries + generated extended screen-field pack
+    kanji.json                 kanji pack used by the Kanji tab
+    index.ts                   load + validate + export the typed vocabulary dataset
+    kanji.ts                   load + validate + export the kanji dataset
   components/                  ui primitives, QuestionCard, SpeakButton, EntryDetail, EntryEditor
-  pages/                       Dashboard, Study, Browser, Statistics, Data
+  pages/                       Dashboard, Study, Kanji, Browser, Statistics, Data
   styles/app.css               design tokens, light + dark themes, responsive rules
-tests/                         102 tests
+scripts/
+  generate_extended_vocabulary.py  regenerates the 821-entry extended vocabulary pack
+  generate_kanji_dataset.py        regenerates the kanji pack from core components + curated list
+tests/                         unit and app-shell tests
 docs/TERMINOLOGY_SOURCES.md
 .github/workflows/deploy.yml   GitHub Pages deployment
 ```
@@ -344,7 +370,7 @@ docs/TERMINOLOGY_SOURCES.md
 
 ```bash
 npm run dev         # Vite dev server
-npm test            # vitest run — 102 tests
+npm test            # vitest run
 npm run test:watch  # watch mode
 npm run typecheck   # tsc --noEmit (strict, noUnusedLocals)
 npm run build       # typecheck + vite build into dist/
@@ -422,10 +448,11 @@ To publish somewhere else, just serve `dist/` — it is plain static files.
 - **Local-first by design.** Progress does not sync between devices or browsers; use the
   JSON backup to move it. Clearing site data deletes it.
 - **Local dates.** Streaks and daily goals use the device's calendar day, not UTC.
-- **Question coverage is per entry, not per session.** All 179 built-in terms can produce
-  all five question types, but an individual question is still skipped when the terms
-  available in that session cannot supply four distinct distractors; those cases are reported
-  in `session.skipped` rather than padded with made-up options.
+- **Question coverage is per entry, not per session.** The 179 hand-written core terms can
+  produce all five vocabulary question types. The generated extended pack is broader but
+  intentionally narrower for 類似語の区別; an individual question is still skipped when the
+  terms available in that session cannot supply four distinct distractors, and those cases
+  are reported in `session.skipped` rather than padded with made-up options.
 - **Read-aloud depends on installed voices.** Only the speech engines already in the browser
   are used: with no Japanese voice the app falls back to the browser default, and with no
   speech engine at all the 再生 buttons are disabled and say why. Nothing is downloaded and

@@ -14,7 +14,8 @@ export type QuestionMode =
   | "en-to-jp"
   | "context"
   | "fill-blank"
-  | "distinction";
+  | "distinction"
+  | "kanji";
 
 export type CategoryId =
   | "contract-fundamentals"

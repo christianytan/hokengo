@@ -31,7 +31,7 @@ export function emptySnapshot(): TrainerSnapshot {
   return { progress: {}, userVocabulary: [], settings: { ...DEFAULT_SETTINGS, enabledModes: [...DEFAULT_SETTINGS.enabledModes] }, activity: {} };
 }
 
-const MODE_VALUES = ["jp-to-en", "en-to-jp", "context", "fill-blank", "distinction"] as const;
+const MODE_VALUES = ["jp-to-en", "en-to-jp", "context", "fill-blank", "distinction", "kanji"] as const;
 const GRADE_VALUES = ["again", "hard", "good", "easy"] as const;
 
 /**
@@ -62,6 +62,7 @@ export function normalizeSettings(raw: unknown): Settings {
     "showKana",
     "showEnglishExamples",
     "selfGrading",
+    "showTermIntroductions",
     "speechEnabled",
     "speechAuto",
   ] as const) {

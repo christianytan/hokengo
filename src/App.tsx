@@ -3,11 +3,12 @@ import { useStore } from "./state/store";
 import { summarize } from "./lib/stats";
 import DashboardPage from "./pages/DashboardPage";
 import StudyPage from "./pages/StudyPage";
+import KanjiPage from "./pages/KanjiPage";
 import BrowserPage from "./pages/BrowserPage";
 import StatisticsPage from "./pages/StatisticsPage";
 import DataPage from "./pages/DataPage";
 
-export type PageId = "dashboard" | "study" | "browser" | "stats" | "data";
+export type PageId = "dashboard" | "study" | "kanji" | "browser" | "stats" | "data";
 
 export interface NavPayload {
   termIds?: string[];
@@ -22,6 +23,7 @@ export interface Nav {
 const TABS: { id: PageId; ja: string; en: string }[] = [
   { id: "dashboard", ja: "ダッシュボード", en: "Dashboard" },
   { id: "study", ja: "学習", en: "Study" },
+  { id: "kanji", ja: "漢字", en: "Kanji" },
   { id: "browser", ja: "用語一覧", en: "Vocabulary" },
   { id: "stats", ja: "統計", en: "Statistics" },
   { id: "data", ja: "データ・設定", en: "Data & settings" },
@@ -156,6 +158,7 @@ export default function App() {
       <main className="content" id="main" tabIndex={-1}>
         {page === "dashboard" && <DashboardPage store={store} summary={summary} navigate={navigate} />}
         {page === "study" && <StudyPage store={store} payload={payload} navigate={navigate} />}
+        {page === "kanji" && <KanjiPage store={store} />}
         {page === "browser" && <BrowserPage store={store} payload={payload} navigate={navigate} />}
         {page === "stats" && <StatisticsPage store={store} navigate={navigate} />}
         {page === "data" && <DataPage store={store} />}

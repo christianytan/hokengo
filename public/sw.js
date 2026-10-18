@@ -15,7 +15,7 @@
 // v2: the first published shell was the raw repository index.html (it asked the
 // browser for ./src/main.tsx and ./manifest.json, which do not exist on Pages).
 // Bumping the version drops that broken shell from every already-installed client.
-const CACHE_VERSION = "hokengo-v2";
+const CACHE_VERSION = "hokengo-v3";
 const SHELL = ["./", "./index.html", "./manifest.json", "./favicon.svg"];
 
 self.addEventListener("install", (event) => {

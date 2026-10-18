@@ -90,6 +90,7 @@ export default function StudyPage({ store, payload, navigate }: Props) {
   const [pending, setPending] = useState<PendingAnswer | null>(null);
   const [gradedAs, setGradedAs] = useState<AnswerGrade | null>(null);
   const [announcement, setAnnouncement] = useState("");
+  const [introduced, setIntroduced] = useState<Set<string>>(() => new Set());
   const cardRef = useRef<HTMLDivElement>(null);
   /**
    * Bumped whenever the learner moves to another question. Writing an answer to
@@ -113,6 +114,7 @@ export default function StudyPage({ store, payload, navigate }: Props) {
     setPending(null);
     setGradedAs(null);
     setAnnouncement("");
+    setIntroduced(new Set());
     cancelSpeech();
   };
 
@@ -190,6 +192,17 @@ export default function StudyPage({ store, payload, navigate }: Props) {
   const item = session?.items[index];
   const term = item ? store.entryById(item.termId) : undefined;
   const question = item?.question ?? null;
+  const termProgress = term ? store.progressFor(term.id) : undefined;
+  const needsIntro =
+    !!term &&
+    store.settings.showTermIntroductions &&
+    (!termProgress || termProgress.attempts === 0) &&
+    !introduced.has(term.id);
+
+  const startQuizForCurrentTerm = () => {
+    if (!term) return;
+    setIntroduced((prev) => new Set(prev).add(term.id));
+  };
 
   // Keyboard control. 1–4 stay in the question card; navigation and the
   // self-assessment keys live here because they depend on the answer state.
@@ -198,6 +211,17 @@ export default function StudyPage({ store, payload, navigate }: Props) {
     const handler = (event: KeyboardEvent) => {
       const target = event.target as HTMLElement | null;
       if (target && ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName)) return;
+      if (needsIntro) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          startQuizForCurrentTerm();
+        } else if (event.key === "Escape") {
+          event.preventDefault();
+          startQuizForCurrentTerm();
+          next();
+        }
+        return;
+      }
       if (chosen === null) {
         if (event.key === "Escape") {
           event.preventDefault();
@@ -220,14 +244,14 @@ export default function StudyPage({ store, payload, navigate }: Props) {
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [session, ended, chosen, pending, index]);
+  }, [session, ended, chosen, pending, index, needsIntro, startQuizForCurrentTerm]);
 
-  // Move focus to the new question so keyboard and screen-reader users land on
-  // it instead of staying on the button they just pressed.
+  // Move focus to the introduction or the new question so keyboard and
+  // screen-reader users land on the current card.
   useEffect(() => {
-    if (!session || ended || !question) return;
+    if (!session || ended || (!question && !needsIntro)) return;
     cardRef.current?.focus();
-  }, [index, session, ended, question]);
+  }, [index, session, ended, question, needsIntro]);
 
   // Optional read-aloud of the prompt as a question appears.
   useEffect(() => {
@@ -263,21 +287,56 @@ export default function StudyPage({ store, payload, navigate }: Props) {
             {announcement}
           </p>
 
-          <QuestionCard
-            question={item.question!}
-            term={term}
-            settings={store.settings}
-            chosen={chosen}
-            onAnswer={answer}
-            onSkip={next}
-            cardRef={cardRef}
-            position={index + 1}
-            total={session.items.length}
-            bookmarked={!!store.progressFor(term.id)?.bookmarked}
-            onBookmark={() => void store.toggleBookmark(term.id)}
-            status={store.progressFor(term.id)?.status ?? "new"}
-            onOpenTerm={() => setDetail(detail ? null : term.id)}
-          />
+          {needsIntro ? (
+            <div className="introduction-card" ref={cardRef} tabIndex={-1} aria-label={`term introduction for ${term.term}`}>
+              <div className="intro-head">
+                <div>
+                  <span className="qmode">用語紹介 / term introduction</span>
+                  <span className="qmode-en">read this before the quiz</span>
+                </div>
+                <span className="qpos">
+                  {index + 1} / {session.items.length}
+                </span>
+              </div>
+              <EntryDetail
+                entry={term}
+                progress={termProgress}
+                settings={store.settings}
+                onBookmark={() => void store.toggleBookmark(term.id)}
+                compact
+              />
+              <div className="intro-actions">
+                <button className="btn primary" onClick={startQuizForCurrentTerm}>
+                  クイズを始める / quiz me
+                </button>
+                <button
+                  className="ghost"
+                  onClick={() => {
+                    startQuizForCurrentTerm();
+                    next();
+                  }}
+                >
+                  この語をスキップ / skip this term
+                </button>
+              </div>
+            </div>
+          ) : (
+            <QuestionCard
+              question={item.question!}
+              term={term}
+              settings={store.settings}
+              chosen={chosen}
+              onAnswer={answer}
+              onSkip={next}
+              cardRef={cardRef}
+              position={index + 1}
+              total={session.items.length}
+              bookmarked={!!termProgress?.bookmarked}
+              onBookmark={() => void store.toggleBookmark(term.id)}
+              status={termProgress?.status ?? "new"}
+              onOpenTerm={() => setDetail(detail ? null : term.id)}
+            />
+          )}
 
           {chosen !== null && (
             <div className={`feedback ${item.question!.choices[chosen].correct ? "good" : "bad"}`}>

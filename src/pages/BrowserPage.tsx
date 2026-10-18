@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CATEGORIES, DIFFICULTY_LABELS, DOMAIN_LABELS } from "../data/categories";
 import { searchVocabulary } from "../lib/text";
 import { isDue, isNewTerm, isWeakTerm } from "../lib/scheduler";
@@ -31,6 +31,8 @@ const STATUS_FILTERS: { id: StatusFilter; ja: string }[] = [
   { id: "bookmarked", ja: "★" },
 ];
 
+const PAGE_SIZE = 50;
+
 export default function BrowserPage({ store, payload, navigate }: Props) {
   const [search, setSearch] = useState("");
   const [categories, setCategories] = useState<CategoryId[]>([]);
@@ -42,6 +44,7 @@ export default function BrowserPage({ store, payload, navigate }: Props) {
   const [selected, setSelected] = useState<string[]>([]);
   const [openId, setOpenId] = useState<string | null>(payload.termId ?? null);
   const [editing, setEditing] = useState<{ entry: VocabularyEntry | null } | null>(null);
+  const [page, setPage] = useState(0);
 
   const toggle = <T,>(list: T[], value: T): T[] =>
     list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
@@ -82,6 +85,14 @@ export default function BrowserPage({ store, payload, navigate }: Props) {
     });
     return pool;
   }, [store.entries, store.progress, search, categories, domains, difficulties, status, origin, sort]);
+
+  useEffect(() => {
+    setPage(0);
+  }, [search, categories, domains, difficulties, status, origin, sort, store.entries.length]);
+
+  const pageCount = Math.max(1, Math.ceil(rows.length / PAGE_SIZE));
+  const safePage = Math.min(page, pageCount - 1);
+  const pagedRows = rows.slice(safePage * PAGE_SIZE, safePage * PAGE_SIZE + PAGE_SIZE);
 
   const openEntry = openId ? store.entryById(openId) : undefined;
   const editingEntry = editing?.entry ?? null;
@@ -175,8 +186,8 @@ export default function BrowserPage({ store, payload, navigate }: Props) {
             </div>
           </Field>
           <div className="chips">
-            <button className="ghost" onClick={() => setSelected(rows.map((r) => r.id))}>
-              select all shown
+            <button className="ghost" onClick={() => setSelected(pagedRows.map((r) => r.id))}>
+              select this page
             </button>
             <button className="ghost" onClick={() => setSelected([])}>
               clear selection
@@ -217,7 +228,7 @@ export default function BrowserPage({ store, payload, navigate }: Props) {
               </tr>
             </thead>
             <tbody>
-              {rows.map((entry) => {
+              {pagedRows.map((entry) => {
                 const record = store.progress[entry.id];
                 const accuracy = record && record.attempts ? record.correct / record.attempts : null;
                 const dueNow = isDue(record, new Date());
@@ -273,6 +284,24 @@ export default function BrowserPage({ store, payload, navigate }: Props) {
               })}
             </tbody>
           </table>
+        )}
+        {rows.length > PAGE_SIZE && (
+          <div className="pager" role="navigation" aria-label="vocabulary pagination">
+            <button className="ghost" onClick={() => setPage(Math.max(0, safePage - 1))} disabled={safePage === 0}>
+              ← 前へ / previous
+            </button>
+            <span className="muted">
+              page {safePage + 1} / {pageCount} · showing {safePage * PAGE_SIZE + 1}–
+              {Math.min(rows.length, (safePage + 1) * PAGE_SIZE)} of {rows.length}
+            </span>
+            <button
+              className="ghost"
+              onClick={() => setPage(Math.min(pageCount - 1, safePage + 1))}
+              disabled={safePage >= pageCount - 1}
+            >
+              次へ / next →
+            </button>
+          </div>
         )}
       </Card>
 

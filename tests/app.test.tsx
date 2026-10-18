@@ -31,10 +31,13 @@ describe("app shell", () => {
     // The dashboard reports the built-in dataset size.
     expect(screen.getByText(new RegExp(`${BUILT_IN_VOCABULARY.length} terms`))).toBeInTheDocument();
 
-    fireEvent.click(tabs(container)[1]); // 学習 / Study
+    fireEvent.click(screen.getByRole("button", { name: "学習 Study" }));
     await screen.findByText(/セッション設定/);
 
     fireEvent.click(screen.getByRole("button", { name: /はじめる \/ Start/ }));
+
+    await screen.findByText(/用語紹介 \/ term introduction/);
+    fireEvent.click(screen.getByRole("button", { name: /クイズを始める \/ quiz me/ }));
 
     const card = await waitFor(() => {
       const found = container.querySelector(".qcard");
@@ -60,7 +63,7 @@ describe("app shell", () => {
   it("grades a correct answer as 難しい and carries that grade into the summary", async () => {
     const { container } = await boot();
 
-    fireEvent.click(tabs(container)[1]); // 学習 / Study
+    fireEvent.click(screen.getByRole("button", { name: "学習 Study" }));
     await screen.findByText(/セッション設定/);
     // Which option is correct is random and the self-assessment step only appears
     // after a correct answer, so ask for the longest session to get enough attempts.
@@ -69,6 +72,9 @@ describe("app shell", () => {
 
     let graded = false;
     for (let attempt = 0; attempt < 30 && !graded; attempt += 1) {
+      const quizButton = screen.queryByRole("button", { name: /クイズを始める \/ quiz me/ });
+      if (quizButton) fireEvent.click(quizButton);
+
       const card = await waitFor(() => {
         const found = container.querySelector(".qcard");
         if (!found) throw new Error("no question card rendered");
@@ -110,7 +116,7 @@ describe("app shell", () => {
   it("searches the vocabulary browser and opens an entry", async () => {
     const { container } = await boot();
 
-    fireEvent.click(tabs(container)[2]); // 用語一覧 / Vocabulary
+    fireEvent.click(screen.getByRole("button", { name: "用語一覧 Vocabulary" }));
     await screen.findByText(/用語一覧 \/ Vocabulary/);
 
     const search = screen.getByPlaceholderText(/告知 \/ disclosure/) as HTMLInputElement;
@@ -126,7 +132,7 @@ describe("app shell", () => {
   it("opens a kyosai entry with its source and the insurance word it maps to", async () => {
     const { container } = await boot();
 
-    fireEvent.click(tabs(container)[2]); // 用語一覧 / Vocabulary
+    fireEvent.click(screen.getByRole("button", { name: "用語一覧 Vocabulary" }));
     await screen.findByText(/用語一覧 \/ Vocabulary/);
 
     const search = screen.getByPlaceholderText(/告知 \/ disclosure/) as HTMLInputElement;
@@ -145,7 +151,7 @@ describe("app shell", () => {
     const { container } = await boot();
     const term = "簡易審査テスト";
 
-    fireEvent.click(tabs(container)[2]);
+    fireEvent.click(screen.getByRole("button", { name: "用語一覧 Vocabulary" }));
     fireEvent.click(screen.getByRole("button", { name: /add your own term/ }));
 
     fireEvent.change(screen.getByLabelText(/用語 \/ Term/), { target: { value: term } });
@@ -188,7 +194,7 @@ describe("app shell", () => {
   it("shows settings and the backup preview", async () => {
     const { container } = await boot();
 
-    fireEvent.click(tabs(container)[4]); // データ・設定 / Data & settings
+    fireEvent.click(screen.getByRole("button", { name: "データ・設定 Data & settings" }));
     await screen.findByText(/バックアップ/);
 
     fireEvent.click(screen.getByRole("button", { name: /エクスポート \/ export JSON/ }));

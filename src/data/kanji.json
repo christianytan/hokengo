@@ -1,0 +1,1178 @@
+[
+  {
+    "id": "kanji-4e3b",
+    "kanji": "主",
+    "reading": "しゅ",
+    "meaning": "primary, main",
+    "examples": [
+      "主キー"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-4ed6",
+    "kanji": "他",
+    "reading": "た",
+    "meaning": "other",
+    "examples": [
+      "排他制御"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-4efb",
+    "kanji": "任",
+    "reading": "にん",
+    "meaning": "task, responsibility",
+    "examples": [
+      "責任開始日"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-4f53",
+    "kanji": "体",
+    "reading": "たい",
+    "meaning": "body, unit",
+    "examples": [
+      "単体テスト"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-4fc2",
+    "kanji": "係",
+    "reading": "けい",
+    "meaning": "factor, tie",
+    "examples": [
+      "事故有期間（事故有係数適用期間）"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-4fdd",
+    "kanji": "保",
+    "reading": "ほ",
+    "meaning": "keep, preserve",
+    "examples": [
+      "保険契約"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-514d",
+    "kanji": "免",
+    "reading": "めん",
+    "meaning": "escape, exempt",
+    "examples": [
+      "免責"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5168",
+    "kanji": "全",
+    "reading": "ぜん",
+    "meaning": "whole, all",
+    "examples": [
+      "全角"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5236",
+    "kanji": "制",
+    "reading": "せい",
+    "meaning": "control",
+    "examples": [
+      "排他制御"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5247",
+    "kanji": "則",
+    "reading": "そく",
+    "meaning": "rule, provision",
+    "examples": [
+      "特則"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5316",
+    "kanji": "化",
+    "reading": "か",
+    "meaning": "-ise, transform into",
+    "examples": [
+      "暗号化"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-534a",
+    "kanji": "半",
+    "reading": "はん",
+    "meaning": "half",
+    "examples": [
+      "半角"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5358",
+    "kanji": "単",
+    "reading": "たん",
+    "meaning": "single, alone",
+    "examples": [
+      "単体テスト"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-53ef",
+    "kanji": "可",
+    "reading": "か",
+    "meaning": "possible, can be",
+    "examples": [
+      "可用性"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-56de",
+    "kanji": "回",
+    "reading": "かい",
+    "meaning": "round, return",
+    "examples": [
+      "回帰テスト"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5916",
+    "kanji": "外",
+    "reading": "がい",
+    "meaning": "outside, external",
+    "examples": [
+      "外部キー"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5951",
+    "kanji": "契",
+    "reading": "けい",
+    "meaning": "bond, pact",
+    "examples": [
+      "保険契約"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-59cb",
+    "kanji": "始",
+    "reading": "し",
+    "meaning": "begin, start",
+    "examples": [
+      "始期日"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5b9a",
+    "kanji": "定",
+    "reading": "てい",
+    "meaning": "defined, fixed",
+    "examples": [
+      "所定要件",
+      "引受査定"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5e30",
+    "kanji": "帰",
+    "reading": "き",
+    "meaning": "return, go back",
+    "examples": [
+      "回帰テスト"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5f15",
+    "kanji": "引",
+    "reading": "ひき",
+    "meaning": "pull, draw",
+    "examples": [
+      "引受査定"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-5fa1",
+    "kanji": "御",
+    "reading": "ぎょ",
+    "meaning": "govern",
+    "examples": [
+      "排他制御"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-6027",
+    "kanji": "性",
+    "reading": "せい",
+    "meaning": "-ness, property",
+    "examples": [
+      "機密性"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-623b",
+    "kanji": "戻",
+    "reading": "もど",
+    "meaning": "return, send back",
+    "examples": [
+      "払いもどし金"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-6240",
+    "kanji": "所",
+    "reading": "しょ",
+    "meaning": "place, that which",
+    "examples": [
+      "所定要件"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-6255",
+    "kanji": "払",
+    "reading": "はら",
+    "meaning": "pay",
+    "examples": [
+      "支払査定",
+      "払済"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-627f",
+    "kanji": "承",
+    "reading": "しょう",
+    "meaning": "receive, carry on",
+    "examples": [
+      "承継共済契約者"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-6392",
+    "kanji": "排",
+    "reading": "は",
+    "meaning": "exclude, expel",
+    "examples": [
+      "排他制御"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-639b",
+    "kanji": "掛",
+    "reading": "かけ",
+    "meaning": "hang, put up, cover",
+    "examples": [
+      "共済掛金"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-652f",
+    "kanji": "支",
+    "reading": "し",
+    "meaning": "pay, support",
+    "examples": [
+      "支払査定"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-6570",
+    "kanji": "数",
+    "reading": "すう",
+    "meaning": "number, coefficient",
+    "examples": [
+      "事故有期間（事故有係数適用期間）"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-6599",
+    "kanji": "料",
+    "reading": "りょう",
+    "meaning": "fee, charge",
+    "examples": [
+      "保険料"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-66f8",
+    "kanji": "書",
+    "reading": "しょ",
+    "meaning": "document, writing",
+    "examples": [
+      "共済証書"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-671f",
+    "kanji": "期",
+    "reading": "き",
+    "meaning": "period, term",
+    "examples": [
+      "始期日"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-67fb",
+    "kanji": "査",
+    "reading": "さ",
+    "meaning": "examine, investigate",
+    "examples": [
+      "引受査定"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-6e08",
+    "kanji": "済",
+    "reading": "ずみ",
+    "meaning": "finished, completed",
+    "examples": [
+      "払済"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-7279",
+    "kanji": "特",
+    "reading": "とく",
+    "meaning": "special",
+    "examples": [
+      "特約",
+      "特則"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-7b49",
+    "kanji": "等",
+    "reading": "とう",
+    "meaning": "grade, rank",
+    "examples": [
+      "等級（割増・割引等級）"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-7d04",
+    "kanji": "約",
+    "reading": "やく",
+    "meaning": "promise, terms",
+    "examples": [
+      "保険契約",
+      "特約",
+      "解約"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-7d1a",
+    "kanji": "級",
+    "reading": "きゅう",
+    "meaning": "class, level",
+    "examples": [
+      "等級（割増・割引等級）"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-7d99",
+    "kanji": "継",
+    "reading": "けい",
+    "meaning": "succeed, continue",
+    "examples": [
+      "承継共済契約者"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-88ab",
+    "kanji": "被",
+    "reading": "ひ",
+    "meaning": "covered, subjected to",
+    "examples": [
+      "記名被共済者"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-8981",
+    "kanji": "要",
+    "reading": "よう",
+    "meaning": "need, essential",
+    "examples": [
+      "要件定義"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-89d2",
+    "kanji": "角",
+    "reading": "かく",
+    "meaning": "corner, character cell",
+    "examples": [
+      "全角"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-89e3",
+    "kanji": "解",
+    "reading": "かい",
+    "meaning": "undo, dissolve",
+    "examples": [
+      "解約"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-8a3c",
+    "kanji": "証",
+    "reading": "しょう",
+    "meaning": "proof, evidence",
+    "examples": [
+      "認証",
+      "共済証書"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-8a8d",
+    "kanji": "認",
+    "reading": "にん",
+    "meaning": "acknowledge, identify",
+    "examples": [
+      "認証"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-8cac",
+    "kanji": "責",
+    "reading": "せき",
+    "meaning": "duty, liability",
+    "examples": [
+      "責任開始日",
+      "免責"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-8fd4",
+    "kanji": "返",
+    "reading": "へん",
+    "meaning": "return, send back",
+    "examples": [
+      "返れい金"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-91d1",
+    "kanji": "金",
+    "reading": "きん",
+    "meaning": "money",
+    "examples": [
+      "共済掛金"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-967a",
+    "kanji": "険",
+    "reading": "けん",
+    "meaning": "risk, danger",
+    "examples": [
+      "保険契約"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-984d",
+    "kanji": "額",
+    "reading": "がく",
+    "meaning": "amount, sum",
+    "examples": [
+      "共済金額"
+    ],
+    "source": "core-vocabulary-components"
+  },
+  {
+    "id": "kanji-53d7",
+    "kanji": "受",
+    "reading": "じゅ",
+    "meaning": "accept; receive",
+    "examples": [
+      "引受",
+      "保険金受取人"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-7d66",
+    "kanji": "給",
+    "reading": "きゅう",
+    "meaning": "benefit; give; supply",
+    "examples": [
+      "給付金",
+      "入院給付金"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4ed8",
+    "kanji": "付",
+    "reading": "ふ",
+    "meaning": "attach; append; add",
+    "examples": [
+      "付加",
+      "特約付"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-8acb",
+    "kanji": "請",
+    "reading": "せい",
+    "meaning": "request; claim; ask",
+    "examples": [
+      "請求",
+      "保険金請求"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-6c42",
+    "kanji": "求",
+    "reading": "きゅう",
+    "meaning": "seek; demand; request",
+    "examples": [
+      "請求",
+      "要求"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-6545",
+    "kanji": "故",
+    "reading": "こ",
+    "meaning": "cause; reason; circumstance",
+    "examples": [
+      "事故",
+      "故実"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4e8b",
+    "kanji": "事",
+    "reading": "じ",
+    "meaning": "matter; fact; event",
+    "examples": [
+      "事故",
+      "事項"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-6d88",
+    "kanji": "消",
+    "reading": "しょう",
+    "meaning": "erase; cancel; extinguish",
+    "examples": [
+      "消込",
+      "消印"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-5fa9",
+    "kanji": "復",
+    "reading": "ふく",
+    "meaning": "restore; return; recover",
+    "examples": [
+      "復活",
+      "復元"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-7d9a",
+    "kanji": "続",
+    "reading": "ぞく",
+    "meaning": "continue; keep going",
+    "examples": [
+      "継続",
+      "続報"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-66f4",
+    "kanji": "更",
+    "reading": "こう",
+    "meaning": "alter; renew; change",
+    "examples": [
+      "更新",
+      "改更"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-65b0",
+    "kanji": "新",
+    "reading": "しん",
+    "meaning": "new; novel",
+    "examples": [
+      "新規",
+      "新価"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-898f",
+    "kanji": "規",
+    "reading": "き",
+    "meaning": "rule; standard; regulation",
+    "examples": [
+      "規定",
+      "規程"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-540d",
+    "kanji": "名",
+    "reading": "めい",
+    "meaning": "name; title",
+    "examples": [
+      "記名",
+      "名義"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-7fa9",
+    "kanji": "義",
+    "reading": "ぎ",
+    "meaning": "meaning; duty; righteousness",
+    "examples": [
+      "名義",
+      "義務"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4f4f",
+    "kanji": "住",
+    "reading": "じゅう",
+    "meaning": "live; reside; dwell",
+    "examples": [
+      "住所",
+      "居住"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-5e33",
+    "kanji": "帳",
+    "reading": "ちょう",
+    "meaning": "ledger; notebook; account book",
+    "examples": [
+      "帳票",
+      "台帳"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-6238",
+    "kanji": "戸",
+    "reading": "こ",
+    "meaning": "account; household; counter for doors",
+    "examples": [
+      "口座",
+      "戸籍"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-632f",
+    "kanji": "振",
+    "reading": "しん",
+    "meaning": "shake; wave; transfer",
+    "examples": [
+      "振替",
+      "振込"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-66ff",
+    "kanji": "替",
+    "reading": "たい",
+    "meaning": "replace; substitute; change",
+    "examples": [
+      "振替",
+      "買替"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-7763",
+    "kanji": "督",
+    "reading": "とく",
+    "meaning": "urge; supervise; oversee",
+    "examples": [
+      "督促",
+      "監督"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4fc3",
+    "kanji": "促",
+    "reading": "そく",
+    "meaning": "urge; prompt; stimulate",
+    "examples": [
+      "督促",
+      "促進"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-7336",
+    "kanji": "猶",
+    "reading": "ゆう",
+    "meaning": "still; delay; grace",
+    "examples": [
+      "猶予",
+      "猶予期間"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4e88",
+    "kanji": "予",
+    "reading": "よ",
+    "meaning": "beforehand; grant; reserve",
+    "examples": [
+      "予備",
+      "予約"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-8ee2",
+    "kanji": "転",
+    "reading": "てん",
+    "meaning": "turn; shift; transfer",
+    "examples": [
+      "転換",
+      "転記"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-63db",
+    "kanji": "換",
+    "reading": "かん",
+    "meaning": "exchange; swap; convert",
+    "examples": [
+      "転換",
+      "両替"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-5143",
+    "kanji": "元",
+    "reading": "げん",
+    "meaning": "origin; base; restore",
+    "examples": [
+      "復元",
+      "原価"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-5c4a",
+    "kanji": "届",
+    "reading": "かい",
+    "meaning": "notify; report; reach",
+    "examples": [
+      "届出",
+      "届出書"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-51fa",
+    "kanji": "出",
+    "reading": "しゅつ",
+    "meaning": "issue; go out; submit",
+    "examples": [
+      "届出",
+      "出力"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-751f",
+    "kanji": "生",
+    "reading": "せい",
+    "meaning": "life; birth; produce",
+    "examples": [
+      "生命保険",
+      "生保"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-6b7b",
+    "kanji": "死",
+    "reading": "し",
+    "meaning": "death; die",
+    "examples": [
+      "死亡保険金",
+      "死亡"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4ea1",
+    "kanji": "亡",
+    "reading": "ぼう",
+    "meaning": "death; expire; deceased",
+    "examples": [
+      "死亡",
+      "亡くす"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-75c5",
+    "kanji": "病",
+    "reading": "びょう",
+    "meaning": "illness; disease",
+    "examples": [
+      "疾病",
+      "病人"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-9662",
+    "kanji": "院",
+    "reading": "いん",
+    "meaning": "hospital; institute",
+    "examples": [
+      "入院",
+      "病院"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-533b",
+    "kanji": "医",
+    "reading": "い",
+    "meaning": "medicine; doctor",
+    "examples": [
+      "医療",
+      "医師"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-7642",
+    "kanji": "療",
+    "reading": "りょう",
+    "meaning": "heal; treat; therapy",
+    "examples": [
+      "医療",
+      "治療"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-85ac",
+    "kanji": "薬",
+    "reading": "やく",
+    "meaning": "medicine; drug",
+    "examples": [
+      "医薬",
+      "薬品"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-707d",
+    "kanji": "災",
+    "reading": "さい",
+    "meaning": "disaster; calamity",
+    "examples": [
+      "火災",
+      "災害"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-5bb3",
+    "kanji": "害",
+    "reading": "がい",
+    "meaning": "harm; injury; damage",
+    "examples": [
+      "災害",
+      "傷害"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-8ca1",
+    "kanji": "財",
+    "reading": "ざい",
+    "meaning": "property; wealth; assets",
+    "examples": [
+      "財産",
+      "財務"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-7523",
+    "kanji": "産",
+    "reading": "さん",
+    "meaning": "produce; give birth; property",
+    "examples": [
+      "財産",
+      "生産"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-7269",
+    "kanji": "物",
+    "reading": "ぶつ",
+    "meaning": "thing; object; matter",
+    "examples": [
+      "物",
+      "物品"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-8eca",
+    "kanji": "車",
+    "reading": "しゃ",
+    "meaning": "vehicle; car",
+    "examples": [
+      "自動車",
+      "車両"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4e21",
+    "kanji": "両",
+    "reading": "りょう",
+    "meaning": "both; two; counter",
+    "examples": [
+      "両方",
+      "生損両"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-901a",
+    "kanji": "通",
+    "reading": "つう",
+    "meaning": "pass through; communicate",
+    "examples": [
+      "通知",
+      "通信"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4fe1",
+    "kanji": "信",
+    "reading": "しん",
+    "meaning": "trust; truth; faith",
+    "examples": [
+      "信用",
+      "通信"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-7528",
+    "kanji": "用",
+    "reading": "よう",
+    "meaning": "use; employ; funds",
+    "examples": [
+      "費用",
+      "使用"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4f7f",
+    "kanji": "使",
+    "reading": "し",
+    "meaning": "use; envoy; employ",
+    "examples": [
+      "使用",
+      "使者"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4fbf",
+    "kanji": "便",
+    "reading": "べん",
+    "meaning": "convenience; mail; opportunity",
+    "examples": [
+      "郵便",
+      "便宜"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-914d",
+    "kanji": "配",
+    "reading": "はい",
+    "meaning": "distribute; arrange;配当",
+    "examples": [
+      "配当金",
+      "配布"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-5f53",
+    "kanji": "当",
+    "reading": "とう",
+    "meaning": "hit; correct; correspond",
+    "examples": [
+      "該当",
+      "当座"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-6b8b",
+    "kanji": "残",
+    "reading": "ざん",
+    "meaning": "remain; leftover",
+    "examples": [
+      "残存",
+      "残高"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-5b58",
+    "kanji": "存",
+    "reading": "ぞん",
+    "meaning": "exist; suppose; retain",
+    "examples": [
+      "残存",
+      "存在"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-4fa1",
+    "kanji": "価",
+    "reading": "か",
+    "meaning": "value; price",
+    "examples": [
+      "価額",
+      "時価"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-5e02",
+    "kanji": "市",
+    "reading": "し",
+    "meaning": "market; city",
+    "examples": [
+      "市場",
+      "市価"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-5834",
+    "kanji": "場",
+    "reading": "じょう",
+    "meaning": "place; field; occasion",
+    "examples": [
+      "場所",
+      "場合"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-624b",
+    "kanji": "手",
+    "reading": "しゅ",
+    "meaning": "hand; means; procedure",
+    "examples": [
+      "手续",
+      "手続"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-843d",
+    "kanji": "落",
+    "reading": "らく",
+    "meaning": "fall; drop; settle",
+    "examples": [
+      "落札",
+      "落地"
+    ],
+    "source": "curated-insurance-kanji"
+  },
+  {
+    "id": "kanji-672d",
+    "kanji": "札",
+    "reading": "さつ",
+    "meaning": "tag; certificate; bill",
+    "examples": [
+      "札入",
+      "証券札"
+    ],
+    "source": "curated-insurance-kanji"
+  }
+]

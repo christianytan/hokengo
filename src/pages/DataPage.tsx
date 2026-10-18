@@ -140,6 +140,12 @@ export default function DataPage({ store }: Props) {
             hint="off: a correct option is always recorded as 正しい, so the schedule cannot tell hard from easy"
           />
           <Toggle
+            checked={settings.showTermIntroductions}
+            onChange={(v) => void store.updateSettings({ showTermIntroductions: v })}
+            label="用語紹介 / introduce a term before quizzing it"
+            hint="shows a compact teaching card the first time a never-studied term appears in a session"
+          />
+          <Toggle
             checked={settings.speechEnabled}
             onChange={(v) => void store.updateSettings({ speechEnabled: v })}
             label="🔊 再生 / read Japanese aloud"

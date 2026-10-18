@@ -130,6 +130,11 @@ export const MODE_LABELS: Record<QuestionMode, { ja: string; en: string; hint: s
     en: "Term distinction",
     hint: "Distinguish commonly confused terms.",
   },
+  kanji: {
+    ja: "漢字 focused",
+    en: "Kanji focused",
+    hint: "Introduce two kanji, then choose the correct kanji from four options.",
+  },
 };
 
 /** Display order of the self-assessment buttons shown after an answer. */

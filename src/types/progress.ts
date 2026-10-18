@@ -58,6 +58,8 @@ export interface Settings {
   dailyGoal: number;
   /** Ask for a self-assessment (もう一度 / 難しい / 正しい / 簡単) after each answer. */
   selfGrading: boolean;
+  /** Show a short teaching card before the first quiz question for a never-studied term. */
+  showTermIntroductions: boolean;
   /** Show the 再生 / read-aloud buttons, using the browser's own Japanese voice. */
   speechEnabled: boolean;
   /** Read the prompt aloud as soon as a question appears. */
@@ -73,6 +75,7 @@ export const DEFAULT_SETTINGS: Settings = {
   enabledModes: ["jp-to-en", "en-to-jp", "context", "fill-blank", "distinction"],
   dailyGoal: 20,
   selfGrading: true,
+  showTermIntroductions: true,
   speechEnabled: true,
   speechAuto: false,
 };

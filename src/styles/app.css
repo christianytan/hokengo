@@ -1623,3 +1623,143 @@ textarea.tall {
     gap: 0.4rem;
   }
 }
+
+/* ---------- term introduction before first quiz ---- */
+
+.introduction-card {
+  padding: 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.introduction-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.intro-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+
+/* ---------- vocabulary pagination ---------- */
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border);
+}
+
+  border-top: 1px solid var(--border);
+}
+
+
+
+/* ---------- kanji focused mode ---------- */
+
+.kanji-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+.kanji-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 0.85rem;
+  padding: 0.85rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.kanji-glyph {
+  display: grid;
+  place-items: center;
+  min-height: 112px;
+  font-family: var(--font-jp);
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.kanji-meta h3 {
+  margin: 0 0 0.25rem;
+  font-family: var(--font-jp);
+  font-size: 1.25rem;
+}
+
+.kanji-qcard {
+  padding: 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.kanji-qcard:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.kanji-qcard.is-correct {
+  border-color: var(--good);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--good) 18%, transparent);
+}
+
+.kanji-qcard.is-wrong {
+  border-color: var(--bad);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--bad) 18%, transparent);
+}
+
+.kanji-choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.55rem;
+}
+
+.kanji-choice {
+  min-height: 112px;
+  padding: 0.65rem;
+}
+
+.kanji-choice-body {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.kanji-choice-glyph {
+  font-family: var(--font-jp);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.kanji-choice .choice-sub {
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
