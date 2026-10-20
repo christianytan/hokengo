@@ -161,7 +161,12 @@ export class QuestionGenerator {
     return [sameCategory, category, sameDomain, rest];
   }
 
-  private eligible(target: VocabularyEntry, mode: QuestionMode, surface: string | null): (entry: VocabularyEntry) => boolean {
+  private eligible(
+    target: VocabularyEntry,
+    mode: QuestionMode,
+    surface: string | null,
+    partnerIds: ReadonlySet<string> = new Set()
+  ): (entry: VocabularyEntry) => boolean {
     const blocked = new Set<string>([target.id, ...(target.fillBlankExclude ?? [])]);
     const confusable = this.confusableIds(target);
     const sentence = target.example.ja;
@@ -177,7 +182,15 @@ export class QuestionGenerator {
 
       if (JAPANESE_ANSWER_MODES.includes(mode)) {
         if (normalizeForSearch(candidate.term) === normalizeForSearch(target.term)) return false;
-        if (normalizeForSearch(candidate.kana) === normalizeForSearch(target.kana)) return false;
+        // In distinction mode, same-reading different-kanji pairs such as 保障/補償
+        // are valid confusable partners. For other Japanese-answer modes, keep the
+        // reading distinct so the multiple-choice item is not needlessly ambiguous.
+        if (
+          normalizeForSearch(candidate.kana) === normalizeForSearch(target.kana) &&
+          !(mode === "distinction" && partnerIds.has(candidate.id))
+        ) {
+          return false;
+        }
       }
 
       if (mode === "fill-blank" && surface) {
@@ -208,10 +221,10 @@ export class QuestionGenerator {
 
     const partners = isDistinction ? this.distinctionPartners(target) : [];
     if (isDistinction && partners.length === 0) return null; // needs a real confusable pair
+    const partnerIds = new Set(partners.map((p) => p.id));
 
     const pools = this.pools(target);
-    const filter = this.eligible(target, mode, surface);
-    const partnerIds = new Set(partners.map((p) => p.id));
+    const filter = this.eligible(target, mode, surface, partnerIds);
     const ordered: VocabularyEntry[] = [];
 
     if (isDistinction) {

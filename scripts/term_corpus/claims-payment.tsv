@@ -1,0 +1,145 @@
+# 請求と支払処理 / claims and payment processing
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note
+請求	せいきゅう	claim; request for payment	保険金や給付金の支払を求めること。	claims-payment	Claim intake	n3-bridge	both	支払
+請求書	せいきゅうしょ	claim form	請求に使う書類。	claims-payment	Claim intake	n3-bridge	both	請求
+請求権	せいきゅうけん	right to claim	保険金を請求できる権利。	claims-payment	Claim intake	n2-bridge	both	請求
+請求者	せいきゅうしゃ	claimant	請求を行う者。	claims-payment	Claim intake	n3-bridge	both	請求
+請求受付	せいきゅう うけつけ	claim intake	請求を受け付けること。	claims-payment	Claim intake	n3-bridge	it	請求
+請求受付日	せいきゅう うけつけび	date of claim intake	請求を受け付けた日。	claims-payment	Claim intake	n3-bridge	it	受付日
+請求内容	せいきゅう ないよう	claim details	請求の内容。	claims-payment	Claim intake	n3-bridge	it	請求
+請求履歴	せいきゅう りれき	claim history	請求の履歴。	claims-payment	Claim intake	n3-bridge	it	請求
+請求取消	せいきゅう とりけし	withdrawal of a claim	請求を取り下げること。	claims-payment	Claim intake	n2-bridge	it	請求取下げ
+請求取下げ	せいきゅう とりさげ	withdrawal of a claim	請求を自ら下げること。	claims-payment	Claim intake	insurance-specialist	it	請求取消
+請求権の時効	せいきゅうけんの じこう	prescription of the right to claim	請求できる権利が消滅すること。	claims-payment	Claim intake	insurance-specialist	both	時効
+事故受付	じこ うけつけ	accident intake	事故の連絡を受け付けること。	claims-payment	Claim intake	n3-bridge	both	請求受付
+事故通知	じこ つうち	accident notification	事故について連絡すること。	claims-payment	Claim intake	n3-bridge	both	届出
+事故報告	じこ ほうこく	accident report	事故の内容を報告すること。	claims-payment	Claim intake	n3-bridge	both	事故通知
+初動対応	しょどう たいおう	initial response	事故直後に行う対応。	claims-payment	Claim intake	n2-bridge	non-life	事故受付
+見舞	みまい	sympathy visit	事故や病気の見舞いをすること。	claims-payment	Claim intake	n3-bridge	general	見舞金
+見舞金	みまいきん	sympathy payment	見舞いとして支払われる金銭。	claims-payment	Claim intake	n2-bridge	both	見舞
+示談交渉	しだん こうしょう	negotiation of a settlement	当事者間で和解の話合いをすること。	claims-payment	Negotiation	n2-bridge	non-life	示談
+示談成立	しだん せいりつ	settlement reached	示談がまとまること。	claims-payment	Negotiation	insurance-specialist	non-life	示談
+示談金	しだんきん	settlement money	示談によって支払われる金銭。	claims-payment	Negotiation	n2-bridge	non-life	示談
+示談代行者	しだん だいこうしゃ	settlement agent	示談交渉を代行する者。	claims-payment	Negotiation	insurance-specialist	non-life	示談交渉
+交渉権	こうしょうけん	right to negotiate	交渉を行う権限。	claims-payment	Negotiation	insurance-specialist	non-life	示談代行者
+求償	きゅうしょう	subrogation claim	支払った保険金を加害者に求めること。	claims-payment	Negotiation	insurance-specialist	non-life	求償権
+求償権	きゅうしょうけん	right of subrogation	支払った保険金を加害者に求める権利。	claims-payment	Negotiation	insurance-specialist	non-life	求償
+代位	たいい	subrogation	他の者の地位に代わって権利を得ること。	claims-payment	Negotiation	insurance-specialist	non-life	求償
+代位取得	たいい しゅとく	acquiring rights by subrogation	保険者が契約者の権利を代わって得ること。	claims-payment	Negotiation	insurance-specialist	non-life	代位
+求償交渉	きゅうしょう こうしょう	subrogation negotiation	求償についての話合い。	claims-payment	Negotiation	insurance-specialist	non-life	求償
+過失	かしつ	negligence	注意を怠ったこと。	claims-payment	Negligence	n2-bridge	non-life	過失相殺
+過失相殺	かしつ そうさい	comparative negligence	過失の割合に応じて損害額を調整すること。	claims-payment	Negligence	insurance-specialist	non-life	過失
+過失割合	かしつ わりあい	negligence ratio	当事者それぞれの過失の割合。	claims-payment	Negligence	insurance-specialist	non-life	過失相殺
+重過失	じゅうかしつ	gross negligence	著しい注意不足。	claims-payment	Negligence	insurance-specialist	non-life	軽過失
+軽過失	けいかしつ	minor negligence	軽い注意不足。	claims-payment	Negligence	insurance-specialist	non-life	重過失
+故意	こい	intent	あえてそうすること。	claims-payment	Negligence	n2-bridge	both	過失
+重過失免責	じゅうかしつ めんしゃ	exclusion for gross negligence	重い過失について支払わないこと。	claims-payment	Negligence	insurance-specialist	non-life	免責
+損害調査	そんがい ちょうさ	loss adjustment	損害の内容と額を調べること。	claims-payment	Loss	n2-bridge	non-life	鑑定
+損害鑑定人	そんがい かんていにん	loss adjuster	損害の額を鑑定する者。	claims-payment	Loss	insurance-specialist	non-life	損害調査
+鑑定	かんてい	appraisal	専門的な判断で価値や額を決めること。	claims-payment	Loss	n2-bridge	non-life	損害鑑定人
+鑑定費用	かんてい ひょう	appraisal cost	鑑定にかかる費用。	claims-payment	Loss	insurance-specialist	non-life	鑑定
+損害確認	そんがい かくにん	loss verification	損害の有無と額を確認すること。	claims-payment	Loss	n2-bridge	non-life	損害調査
+損害位置	そんがい いち	location of damage	損害の場所。	claims-payment	Loss	n3-bridge	it	損害箇所
+損害箇所	そんがい かし	location of damage	損害のある場所。	claims-payment	Loss	n3-bridge	it	損害位置
+損害範囲	そんがい はんい	extent of damage	損害の及ぶ範囲。	claims-payment	Loss	n3-bridge	it	損害額
+損害原因	そんがい げんいん	cause of loss	損害が生じた原因。	claims-payment	Loss	n2-bridge	non-life	近因
+近因	きんい	proximate cause	損害に直接作用した原因。	claims-payment	Loss	insurance-specialist	non-life	損害原因
+原因不明	げんいん ふめい	unknown cause	原因が特定できないこと。	claims-payment	Loss	n2-bridge	non-life	近因
+修理	しゅうり	repair	壊れた物を直して使えるようにすること。	claims-payment	Loss	n3-bridge	non-life	交換
+交換	こうかん	replacement	壊れた物を新しい物に替えること。	claims-payment	Loss	n3-bridge	non-life	修理
+修理費用	しゅうり ひょう	repair cost	修理にかかる費用。	claims-payment	Loss	n3-bridge	non-life	修理
+修理不能	しゅうり ふのう	beyond repair	直せないこと。	claims-payment	Loss	n2-bridge	non-life	全損
+全損	ぜんそん	total loss	全部を失ったこと。	claims-payment	Loss	insurance-specialist	non-life	半損
+半損	はんそん	partial total loss	半分を失ったこと。	claims-payment	Loss	insurance-specialist	non-life	全損
+推定全損	すいてい ぜんそん	deemed total loss	修理不能とみなして全損と扱うこと。	claims-payment	Loss	insurance-specialist	non-life	全損
+別損	べつそん	separate loss	別々に生じた損害。	claims-payment	Loss	insurance-specialist	non-life	全損
+損害額算定	そんがくがく さんてい	assessment of the loss	損害の額を決めること。	claims-payment	Assessment	n2-bridge	non-life	支払査定
+算定	さんてい	assessment	金額を決める計算をすること。	claims-payment	Assessment	n2-bridge	it	計算
+算出基礎	さんしゅつ きそ	basis of calculation	計算に用いた前提。	claims-payment	Assessment	insurance-specialist	it	計算根拠
+計算根拠	けいさん こんきょ	basis of calculation	計算の根拠となった事情。	claims-payment	Assessment	n2-bridge	it	算定
+支払	しはらい	payment	保険金や給付金を渡すこと。	claims-payment	Payment	n3-bridge	both	請求
+支払基準	しはらい きじゅん	payment standard	支払う額の決め方。	claims-payment	Assessment	n2-bridge	both	支払限度額
+支払決定	しはらい けってい	payment decision	支払うことを決めること。	claims-payment	Assessment	n2-bridge	it	支払
+支払可否	しはらい かひ	whether payment is due	支払うかどうか。	claims-payment	Assessment	n2-bridge	it	支払決定
+不支払	ふしはらい	no payment	支払わないこと。	claims-payment	Assessment	insurance-specialist	both	支払
+支払拒否	しはらい きょひ	refusal to pay	支払を拒むこと。	claims-payment	Assessment	n2-bridge	both	不支払
+支払拒絶通知	しはらい きょぜつ つうち	notice of declination	支払わないことを知らせる通知。	claims-payment	Assessment	insurance-specialist	both	支払拒否
+支払理由	しはらい りゆう	reason for payment	支払う理由。	claims-payment	Assessment	n2-bridge	it	支払事由
+支払事由発生	しはらい じゆう はっせい	occurrence of an insured event	支払の原因となる事由が起こること。	claims-payment	Assessment	n2-bridge	both	支払事由
+保険事故発生	ほけんじこ はっせい	occurrence of an insured event	保険事故が起こること。	claims-payment	Assessment	n2-bridge	both	支払事由発生
+支払日	しはらいび	date of payment	保険金を支払う日。	claims-payment	Payment	n3-bridge	both	支払
+支払完了	しはらい かんりょう	payment completed	支払が終わった状態。	claims-payment	Payment	n3-bridge	it	支払
+支払方法	しはらい ほうほう	payment method	保険金の支払い方。	claims-payment	Payment	n3-bridge	both	振込
+支払口座	しはらい こうざ	payment account	保険金を受け取る口座。	claims-payment	Payment	n3-bridge	it	振込
+振込	ふりこみ	bank transfer	銀行口座へ金を送ること。	claims-payment	Payment	n3-bridge	both	支払
+振込先	ふりこみ さき	transfer destination	送金先の口座。	claims-payment	Payment	n3-bridge	it	振込
+振込依頼	ふりこみ いらい	transfer request	送金を依頼すること。	claims-payment	Payment	n3-bridge	it	振込
+振込手数料	ふりこみ すうりょうてん	bank transfer fee	送金にかかる手数料。	claims-payment	Payment	n3-bridge	both	手数料
+支払期限	しはらい きげん	payment deadline	支払うべき期限。	claims-payment	Payment	n3-bridge	both	支払
+支払遅延	しはらい ちえん	delay in payment	支払が遅れること。	claims-payment	Payment	n2-bridge	both	支払期限
+支払停止	しはらい ていし	suspension of payment	支払を止めること。	claims-payment	Payment	n2-bridge	it	支払取消
+支払取消	しはらい とりけし	payment cancelled	支払を取り消すこと。	claims-payment	Payment	n2-bridge	it	支払停止
+支払限度	しはらい げんど	payment limit	支払える上限。	claims-payment	Limits	n3-bridge	both	支払限度額
+限度額	げんどがく	limit	上限となる金額。	claims-payment	Limits	n3-bridge	it	支払限度額
+限度額超過	げんどがく ちょうか	exceeding the limit	上限を超えること。	claims-payment	Limits	n2-bridge	it	限度額
+限度内	げんど ない	within the limit	上限の範囲内であること。	claims-payment	Limits	n3-bridge	it	限度額
+免責金額	めんしゃ きんがく	deductible	自己負担として差し引かれる金額。	claims-payment	Deductibles	n2-bridge	non-life	免責
+免責期間	めんしゃ きかん	deductible period	支払の対象にならない期間。	claims-payment	Deductibles	insurance-specialist	both	免責
+免責日数	めんしゃ にっすう	deductible days	支払の対象にならない日数。	claims-payment	Deductibles	insurance-specialist	both	免責期間
+フランチャイズ方式	ふらんちゃいず ほうしき	franchise deductible	一定額を超えた場合に全額を補償する方式。	claims-payment	Deductibles	insurance-specialist	non-life	免責金額
+過誤	かご	error in payment	支払の誤り。	claims-payment	Errors	n2-bridge	both	誤払
+過誤処理	かご しょり	correction of a payment error	支払の誤りを正す処理。	claims-payment	Errors	insurance-specialist	it	過誤
+過不足処理	かふそく しょり	settlement of a shortfall or excess	不足や超過を精算する処理。	claims-payment	Errors	insurance-specialist	it	過誤処理
+不足払	ふそくばらい	underpayment	足りない額を後に払うこと。	claims-payment	Errors	insurance-specialist	both	過誤
+追納	ついのう	additional payment	足りない分を後に払うこと。	claims-payment	Errors	insurance-specialist	both	不足払
+返還請求	へんかん せいきゅう	request to return money	払い過ぎた分の返還を求めること。	claims-payment	Errors	n2-bridge	both	過誤
+遅延利息	ちえん りそく	default interest	支払が遅れたことに対する利息。	claims-payment	Errors	insurance-specialist	both	利息
+手数料	てすうりょう	service charge	事務の手続きに対して取られる費用。	claims-payment	Errors	n3-bridge	both	費用
+費用	ひよう	expense	事務を行うのにかかる金銭。	claims-payment	Errors	n3-bridge	it	手数料
+書類不備	しょるい ふび	incomplete documents	書類に足りない点があること。	claims-payment	Documents	n3-bridge	both	不備
+補正	ほせい	correction	書類やデータの足りない点を直すこと。	claims-payment	Documents	n2-bridge	it	不備
+補正依頼	ほせい いらい	request to correct	足りない点を直すよう依頼すること。	claims-payment	Documents	n2-bridge	it	書類不備
+追加書類	ついか しょるい	additional documents	追加で必要な書類。	claims-payment	Documents	n3-bridge	both	請求書類
+原本返却	げんぽん へんきゃく	return of the original document	原本を差し主に返すこと。	claims-payment	Documents	n2-bridge	it	原本
+受理	じゅり	acceptance	請求や届出を受け入れること。	claims-payment	Documents	n2-bridge	it	受付
+受理番号	じゅり ばんごう	acceptance number	受理ごとに付される番号。	claims-payment	Documents	n2-bridge	it	受付番号
+受理日	じゅりび	date of acceptance	受理した日。	claims-payment	Documents	n2-bridge	it	受理
+審査	しんさ	review	要件を満たすかどうか調べること。	claims-payment	Assessment	n3-bridge	both	査定
+審査結果	しんさ けっか	review result	審査の結果。	claims-payment	Assessment	n3-bridge	it	査定結果
+審査保留	しんさ りゅうりょう	review on hold	審査を一時止めること。	claims-payment	Assessment	n2-bridge	it	審査
+審査完了	しんさ かんりょう	review completed	審査が終わった状態。	claims-payment	Assessment	n3-bridge	it	審査
+再審査	さい しんさ	re-review	もう一度審査すること。	claims-payment	Assessment	n2-bridge	it	審査
+審査基準	しんさ きじゅん	review criteria	審査の判断基準。	claims-payment	Assessment	n2-bridge	it	審査基準
+査定基準	さてん きじゅん	assessment criteria	査定の判断基準。	claims-payment	Assessment	n2-bridge	it	審査基準
+査定日	さてんび	date of assessment	査定を行った日。	claims-payment	Assessment	n3-bridge	it	支払査定
+査定取消	さてん とりけし	cancelling an assessment	査定を取り消すこと。	claims-payment	Assessment	n2-bridge	it	再査定
+再査定	さい さてん	re-assessment	もう一度査定すること。	claims-payment	Assessment	n2-bridge	it	査定取消
+調査	ちょうさ	investigation	事実を調べること。	claims-payment	Investigation	n3-bridge	both	損害調査
+調査結果	ちょうさ けっか	investigation result	調査の結果。	claims-payment	Investigation	n3-bridge	it	調査
+現地調査	げんじ ちょうさ	on-site investigation	現場に行って調べること。	claims-payment	Investigation	insurance-specialist	non-life	調査
+調査委託	ちょうさ いたしゃ	commissioning an investigation	調査を他者に頼むこと。	claims-payment	Investigation	insurance-specialist	it	調査
+調査会社	ちょうさ がいしゃ	investigation firm	調査を行う会社。	claims-payment	Investigation	insurance-specialist	non-life	調査委託
+調査費	ちょうさひ	investigation cost	調査にかかる費用。	claims-payment	Investigation	n2-bridge	it	調査
+詐欺	さぎ	fraud	嘘をついて利益を得ること。	claims-payment	Fraud	n3-bridge	both	不正請求
+不正請求	ふせい せいきゅう	improper claim	正しくない請求。	claims-payment	Fraud	n2-bridge	both	詐欺
+不正受給	ふせい じゅきゅう	improper receipt of benefits	正しくない給付の受け取り。	claims-payment	Fraud	n2-bridge	general	不正請求
+不正支払	ふせい しはらい	improper payment	正しくない支払。	claims-payment	Fraud	n2-bridge	it	不正請求
+不正利用	ふせい りよう	improper use	正しくない使い方。	claims-payment	Fraud	n3-bridge	it	不正請求
+不正検知	ふせい けんち	fraud detection	不正を見つけること。	claims-payment	Fraud	insurance-specialist	it	不正請求
+不正防止	ふせい ぼうし	fraud prevention	不正が起こらないようにすること。	claims-payment	Fraud	n2-bridge	it	不正検知
+不正防止機能	ふせい ぼうし のう	anti-fraud function	不正を防ぐための仕組み。	claims-payment	Fraud	insurance-specialist	it	不正防止
+不正利用検知	ふせい りよう けんち	misuse detection	正しくない使い方を見つけること。	claims-payment	Fraud	insurance-specialist	it	不正検知
+不正利用防止	ふせい りよう ぼうし	misuse prevention	正しくない使い方を防ぐこと。	claims-payment	Fraud	insurance-specialist	it	不正利用
+不正アクセス	ふせい あくせす	unauthorised access	正しくないアクセス。	claims-payment	Fraud	n3-bridge	it	アクセス
+不正アクセス検知	ふせい あくせす けんち	intrusion detection	正しくないアクセスを見つけること。	claims-payment	Fraud	insurance-specialist	it	不正アクセス
+不正アクセス防止	ふせい あくせす ぼうし	intrusion prevention	正しくないアクセスを防ぐこと。	claims-payment	Fraud	insurance-specialist	it	不正アクセス検知
+接続	せつぞく	connection	システムや機器をつなぐこと。	claims-payment	Fraud	n3-bridge	it	アクセス
+アクセス	あくせす	access	データやシステムに接すること。	claims-payment	Fraud	n3-bridge	it	接続
+
+免責金額方式	めんしゃ きんがく ほうしき	deductible method	損害額から免責金額を差し引いて補償する方式。	claims-payment	Deductibles	insurance-specialist	non-life	フランチャイズ方式
+自己負担額	じこ ふたんがく	deductible paid by the insured	自分で負担する金額。	claims-payment	Deductibles	n2-bridge	both	免責金額
+控除	こくじょ	deduction	金額を差し引くこと。	claims-payment	Deductibles	n2-bridge	it	控除額
+控除額	こくじょがく	deducted amount	差し引かれる金額。	claims-payment	Deductibles	n2-bridge	it	控除
+比例按分	わりり あんぶん	proportional allocation	割合に応じて金額を分けること。	claims-payment	Calculation	insurance-specialist	non-life	按分
+
+故意免責	こい めんしゃ	exclusion for intentional acts	故意による事故について支払わないこと。	claims-payment	Negligence	insurance-specialist	non-life	免責

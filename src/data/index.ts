@@ -11,6 +11,7 @@ import kyosai from "./vocabulary/kyosai.json";
 import insuranceIt from "./vocabulary/insurance-it.json";
 import insuranceItIpsj from "./vocabulary/insurance-it-ipsj.json";
 import extendedGenerated from "./vocabulary/extended-generated.json";
+import corpusGenerated from "./vocabulary/corpus-generated.json";
 
 /**
  * Built-in vocabulary loader.
@@ -30,6 +31,7 @@ const DATA_FILES: { file: string; data: unknown }[] = [
   { file: "insurance-it.json", data: insuranceIt },
   { file: "insurance-it-ipsj.json", data: insuranceItIpsj },
   { file: "extended-generated.json", data: extendedGenerated },
+  { file: "corpus-generated.json", data: corpusGenerated },
 ];
 
 function loadBuiltIn(): VocabularyEntry[] {

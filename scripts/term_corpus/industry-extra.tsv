@@ -1,0 +1,62 @@
+# Industry-extra insurance terminology / 一般的な保険実務用語の追加パック
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note	sourceUrl	verification
+車両保険	しゃりょう ほけん	vehicle insurance	自動車の損害を補償する保険。	products-coverage	Automobile	n2-bridge	non-life	自動車保険	一般的な損害保険実務用語。		industry-standard
+対人賠償責任保険	たいじん ばいしょう せきにん ほけん	bodily injury liability insurance	自動車の事故で他人を死傷させたときの賠償責任を補償する保険。	products-coverage	Automobile	n2-bridge	non-life	対物賠償責任保険	一般的な損害保険実務用語。		industry-standard
+対物賠償責任保険	たいぶつ ばいしょう せきにん ほけん	property damage liability insurance	自動車の事故で他人の物や車を壊したときの賠償責任を補償する保険。	products-coverage	Automobile	n2-bridge	non-life	対人賠償責任保険	一般的な損害保険実務用語。		industry-standard
+無保険車傷害保険	むほけんしゃ しょうがい ほけん	uninsured motorist coverage	相手が無保険車だった場合に被害者を救済する保険。	products-coverage	Automobile	insurance-specialist	non-life	人身傷害保険	一般的な損害保険実務用語。		industry-standard
+搭乗者傷害保険	とうじょうしゃ しょうがい ほけん	personal accident coverage	車に乗っていた人の死傷を補償する保険。	products-coverage	Automobile	n2-bridge	non-life	人身傷害保険	一般的な損害保険実務用語。		industry-standard
+自損事故保険	じそん じこ ほけん	self-accident coverage	他人の賠償責任が成立しない単独事故の死傷を補償する保険。	products-coverage	Automobile	insurance-specialist	non-life	人身傷害保険	一般的な損害保険実務用語。		industry-standard
+人身傷害保険	にんしん しょうがい ほけん	personal injury coverage	過失割合にかかわらず被害者の損害を補償する保険。	products-coverage	Automobile	n2-bridge	non-life	搭乗者傷害保険	一般的な損害保険実務用語。		industry-standard
+等級	とうきゅう	rating class	保険料を計算するためのリスク段階。	underwriting	Rating	n2-bridge	non-life	料率クラス	一般的な損害保険実務用語。		industry-standard
+ノンフリート等級	のんふりーと とうきゅう	non-fleet rating class	個人契約などに適用される自動車保険の等級。	underwriting	Rating	insurance-specialist	non-life	フリート等級	一般的な損害保険実務用語。		industry-standard
+フリート等級	ふりーと とうきゅう	fleet rating class	契約者単位でまとめて適用される自動車保険の等級。	underwriting	Rating	insurance-specialist	non-life	ノンフリート等級	一般的な損害保険実務用語。		industry-standard
+事故有係数	じこゆう けいすう	accident factor	事故歴によって保険料を割り増す係数。	underwriting	Rating	insurance-specialist	non-life	等級	一般的な損害保険実務用語。		industry-standard
+事故有係数適用期間	じこゆう けいすう てきよう きかん	accident factor application period	事故有係数が適用される期間。	underwriting	Rating	insurance-specialist	non-life	事故有係数	一般的な損害保険実務用語。		industry-standard
+等級戻し	とうきゅう もどし	rating class restoration	事故後も等級を元に戻す扱い。	contract-lifecycle	Rating	insurance-specialist	non-life	等級降格	一般的な損害保険実務用語。		industry-standard
+等級進行	とうきゅう しんこう	rating class progression	無事故で等級が上がること。	underwriting	Rating	insurance-specialist	non-life	等級降格	一般的な損害保険実務用語。		industry-standard
+等級降格	とうきゅう こうかく	rating class downgrade	事故などにより等級が下がること。	underwriting	Rating	insurance-specialist	non-life	等級進行	一般的な損害保険実務用語。		industry-standard
+車両入替	しゃりょう いれかえ	vehicle substitution	契約車両を別の車両に替える手続き。	contract-lifecycle	Changes	n2-bridge	non-life	変更	一般的な損害保険実務用語。		industry-standard
+全損	ぜんそん	total loss	修理不能または修理費用が車両価値を超える損害。	claims-payment	Loss assessment	insurance-specialist	non-life	半損	一般的な損害保険実務用語。		industry-standard
+半損	はんそん	partial loss	全損に至らない部分的な損害。	claims-payment	Loss assessment	insurance-specialist	non-life	全損	一般的な損害保険実務用語。		industry-standard
+免責金額	めんせき きんがく	deductible	保険金の計算で差し引かれる自己負担額。	claims-payment	Limits	n2-bridge	non-life	限度額	一般的な損害保険実務用語。		industry-standard
+免責割合	めんせき わりあい	deductible rate	保険金の計算で差し引かれる割合。	claims-payment	Limits	insurance-specialist	non-life	免責金額	一般的な損害保険実務用語。		industry-standard
+地震保険	じしん ほけん	earthquake insurance	地震・噴火・津波による損害を補償する保険。	products-coverage	Natural disasters	n3-bridge	non-life	火災保険	一般的な損害保険実務用語。		industry-standard
+地震保険料控除	じしん ほけんりょう こうじょ	earthquake insurance premium deduction	地震保険料に対して受けられる所得控除。	contract-fundamentals	Tax	n2-bridge	general	生命保険料控除	一般的な実務用語。		industry-standard
+火災保険	かさい ほけん	fire insurance	火災・落雷・破裂などの損害を補償する保険。	products-coverage	Property	n3-bridge	non-life	地震保険	一般的な損害保険実務用語。		industry-standard
+家財保険	かざい ほけん	household contents insurance	家財道具の損害を補償する保険。	products-coverage	Property	n3-bridge	non-life	火災保険	一般的な損害保険実務用語。		industry-standard
+水災	すいさい	flood damage	洪水・高潮・土砂崩れなどによる損害。	products-coverage	Perils	n2-bridge	non-life	風災	一般的な損害保険実務用語。		industry-standard
+風災	ふうさい	wind damage	台風・旋風などによる損害。	products-coverage	Perils	n2-bridge	non-life	水災	一般的な損害保険実務用語。		industry-standard
+雹災	ひょうさい	hail damage	ひょうによる損害。	products-coverage	Perils	insurance-specialist	non-life	風災	一般的な損害保険実務用語。		industry-standard
+雪災	せつさい	snow damage	雪の重みなどによる損害。	products-coverage	Perils	insurance-specialist	non-life	水災	一般的な損害保険実務用語。		industry-standard
+盗難	とうなん	theft	物が盗まれることによる損害。	products-coverage	Perils	n3-bridge	non-life	紛失	一般的な損害保険実務用語。		industry-standard
+個人賠償責任保険	こじん ばいしょう せきにん ほけん	personal liability insurance	日常生活の賠償責任を補償する保険。	products-coverage	Liability	n2-bridge	both	賠償責任保険	一般的な損害保険実務用語。		industry-standard
+がん保険	がん ほけん	cancer insurance	がんの治療に関する給付を支払う保険。	products-coverage	Medical	n3-bridge	life	医療保険	一般的な生命保険実務用語。		industry-standard
+三大疾病保険	さんだい しっぺい ほけん	three major diseases insurance	がん・急性心筋梗塞・脳卒中に関する保険。	products-coverage	Medical	n2-bridge	life	七大疾病保険	一般的な生命保険実務用語。		industry-standard
+七大疾病保険	しちだい しっぺい ほけん	seven major diseases insurance	七大疾病に関する保険。	products-coverage	Medical	insurance-specialist	life	三大疾病保険	一般的な生命保険実務用語。		industry-standard
+入院給付金	にゅういん きゅうふきん	hospitalization benefit	入院したときに支払われる給付金。	life-benefits	Medical benefits	n3-bridge	life	手術給付金	一般的な生命保険実務用語。		industry-standard
+手術給付金	しゅじゅつ きゅうふきん	surgery benefit	手術したときに支払われる給付金。	life-benefits	Medical benefits	n3-bridge	life	入院給付金	一般的な生命保険実務用語。		industry-standard
+通院給付金	つういん きゅうふきん	outpatient benefit	通院治療に対して支払われる給付金。	life-benefits	Medical benefits	n2-bridge	life	入院給付金	一般的な生命保険実務用語。		industry-standard
+診断給付金	しんだん きゅうふきん	diagnosis benefit	所定の疾病と診断されたときに支払われる給付金。	life-benefits	Medical benefits	n2-bridge	life	入院給付金	一般的な生命保険実務用語。		industry-standard
+先進医療特約	せんしん いりょう とくやく	advanced medical care rider	先進医療の治療技術に対する費用を補償する特約。	products-coverage	Medical riders	insurance-specialist	life	先進医療	一般的な生命保険実務用語。		industry-standard
+先進医療	せんしん いりょう	advanced medical care	厚生労働大臣が定める先進的な医療技術。	underwriting	Medical	insurance-specialist	general	自由診療	一般的な医療保険実務用語。		industry-standard
+自由診療	じゆう しんりょう	non-insured medical care	公的医療保険が適用されない診療。	underwriting	Medical	n2-bridge	general	公的医療保険	一般的な医療保険実務用語。		industry-standard
+入院日数	にゅういん にっすう	hospitalization days	入院した日数。	claims-payment	Medical assessment	n3-bridge	life	支払限度日数	一般的な生命保険実務用語。		industry-standard
+支払限度日数	しはらい げんど にっすう	maximum payable days	給付金の計算で上限となる日数。	claims-payment	Limits	n2-bridge	life	入院日数	一般的な生命保険実務用語。		industry-standard
+通算	つうさん	cumulative count	複数の入院や通院を通算して計算すること。	claims-payment	Medical assessment	insurance-specialist	life	通算	一般的な生命保険実務用語。		industry-standard
+待機期間	たいき きかん	waiting period	契約後一定期間、所定の給付が支払われない期間。	contract-lifecycle	Coverage	n2-bridge	life	免責期間	一般的な生命保険実務用語。		industry-standard
+免責期間	めんせき きかん	exclusion period	所定の事由による給付が支払われない期間。	contract-lifecycle	Coverage	n2-bridge	life	待機期間	一般的な生命保険実務用語。		industry-standard
+終身保険	しゅうしん ほけん	whole life insurance	死亡保険金が支払われる終身の保険。	products-coverage	Life products	n3-bridge	life	定期保険	一般的な生命保険実務用語。		industry-standard
+定期保険	ていき ほけん	term life insurance	一定期間だけ死亡保障が続く保険。	products-coverage	Life products	n3-bridge	life	終身保険	一般的な生命保険実務用語。		industry-standard
+個人年金保険	こじん ねんきん ほけん	personal annuity insurance	個人が老後に年金を受け取るための保険。	products-coverage	Annuities	n3-bridge	life	個人年金	一般的な生命保険実務用語。		industry-standard
+変額保険	へんがく ほけん	variable insurance	運用実績により給付額が変動する保険。	products-coverage	Investment-linked	insurance-specialist	life	定額保険	一般的な生命保険実務用語。		industry-standard
+外貨建て保険	いか だて ほけん	foreign-currency-denominated insurance	外貨で保険金額や保険料が設定される保険。	products-coverage	Investment-linked	insurance-specialist	life	円建て保険	一般的な生命保険実務用語。		industry-standard
+円建て保険	えん だて ほけん	yen-denominated insurance	円で保険金額や保険料が設定される保険。	products-coverage	Investment-linked	insurance-specialist	life	外貨建て保険	一般的な生命保険実務用語。		industry-standard
+為替リスク	かわせ りすく	currency risk	為替変動による損失の可能性。	underwriting	Risk concepts	insurance-specialist	general	金利リスク	一般的な金融実務用語。		industry-standard
+特別勘定	とくべつ かんじょう	separate account	個別の資産を区分して運用する勘定。	contract-fundamentals	Financial metrics	insurance-specialist	life	一般勘定	一般的な生保実務用語。		industry-standard
+責任準備金	せきにん じんびきん	policy reserves	将来の保険金支払に備えて積み立てる金。	contract-fundamentals	Financial metrics	insurance-specialist	life	積立金	一般的な保険会計用語。		industry-standard
+解約返戻金	かいやく へんれいきん	surrender value	解約時に契約者に返される金。	life-benefits	Policy values	n2-bridge	life	満期保険金	一般的な生命保険実務用語。		industry-standard
+満期保険金	まんき ほけんきん	maturity benefit	保険期間満了時に支払われる保険金。	life-benefits	Benefits	n3-bridge	life	解約返戻金	一般的な生命保険実務用語。		industry-standard
+死亡保険金	しぼう ほけんきん	death benefit	被保険者の死亡により支払われる保険金。	life-benefits	Benefits	n3-bridge	life	生存保険金	一般的な生命保険実務用語。		industry-standard
+生存保険金	せいぞん ほけんきん	survival benefit	被保険者が生存している場合に支払われる保険金。	life-benefits	Benefits	n2-bridge	life	死亡保険金	一般的な生命保険実務用語。		industry-standard
+年金原資	ねんきん げんし	annuity principal	年金を支払うための資金。	life-benefits	Annuities	insurance-specialist	life	年金	一般的な生命保険実務用語。		industry-standard
+年金支払開始日	ねんきん しはらい かしぶ び	annuity payment start date	年金の支払が始まる日。	contract-lifecycle	Annuities	n2-bridge	life	年金開始日	一般的な生命保険実務用語。		industry-standard

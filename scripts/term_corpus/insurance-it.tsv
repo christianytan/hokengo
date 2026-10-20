@@ -1,0 +1,250 @@
+# 保険ITと業務オペレーション / insurance IT and business operations
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note
+基本設計	きほん せっけい	basic design	システムの全体の方針と仕組みを決める設計。	insurance-it	Design	n2-bridge	it	詳細設計
+詳細設計	しょうさい せっけい	detailed design	基本設計を受けて細部を決める設計。	insurance-it	Design	n2-bridge	it	基本設計
+外部設計	がいぶ せっけい	exterior design	画面や入出力など外から見える形を決める設計。	insurance-it	Design	n2-bridge	it	内部設計
+内部設計	ないぶ せっけい	interior design	内部の作りを決める設計。	insurance-it	Design	n2-bridge	it	外部設計
+設計	せっけい	design	仕組みを決めること。	insurance-it	Design	n3-bridge	it	設計書
+設計書	せっけいしょ	design document	設計の内容を記した文書。	insurance-it	Design	n3-bridge	it	設計
+画面設計	がめん せっけい	screen design	画面の作りを決めること。	insurance-it	Design	n3-bridge	it	画面設計書
+画面設計書	がめん せっけいしょ	screen design document	画面の作りを記した文書。	insurance-it	Design	n3-bridge	it	画面項目
+帳票設計	ちょうひょう せっけい	form design	帳票の作りを決めること。	insurance-it	Design	n3-bridge	it	帳票
+処理設計	しょり せっけい	processing design	処理の仕組みを決めること。	insurance-it	Design	n2-bridge	it	処理
+物理設計	ぶつり せっけい	physical design	データや装置の実際の形を決める設計。	insurance-it	Design	insurance-specialist	it	論理設計
+論理設計	ろんり せっけい	logical design	データの論理的な形を決める設計。	insurance-it	Design	insurance-specialist	it	物理設計
+データモデル	でーた もでる	data model	データの構造を表した模型。	insurance-it	Data	insurance-specialist	it	論理設計
+論理モデル	ろんり もでる	logical model	データの論理構造を表したもの。	insurance-it	Data	insurance-specialist	it	物理モデル
+物理モデル	ぶつり もでる	physical model	データの物理的な形を表したもの。	insurance-it	Data	insurance-specialist	it	論理モデル
+定義書	ていぎしょ	definition document	項目や値の意味を定めた文書。	insurance-it	Definitions	n3-bridge	it	定義
+定義	ていぎ	definition	意味や範囲を決めること。	insurance-it	Definitions	n3-bridge	it	定義書
+項目定義	もくこう ていぎ	field definition	項目の意味と形を決めること。	insurance-it	Definitions	n3-bridge	it	項目定義書
+項目定義書	もくこう ていぎしょ	field definition document	項目定義をまとめた文書。	insurance-it	Definitions	n3-bridge	it	項目定義
+コード定義	こーど ていぎ	code definition	符号の意味と使い方を決めること。	insurance-it	Definitions	n3-bridge	it	コード体系
+コード体系	こーど たいけい	code scheme	符号の集まりとそのルール。	insurance-it	Definitions	n2-bridge	it	コード定義
+コード表	こーど ひょう	code table	符号と意味を対応させた表。	insurance-it	Definitions	n3-bridge	it	コード定義
+コード変換	こーど へんかん	code conversion	ある符号を別の符号に置き換えること。	insurance-it	Definitions	n3-bridge	it	コード定義
+コードマッピング	こーど まっぴんぐ	code mapping	システム間で符号を対応させること。	insurance-it	Definitions	insurance-specialist	it	コード変換
+値域	ちいき	value range	入力してよい値の範囲。	insurance-it	Definitions	n2-bridge	it	値域チェック
+桁数	けたすう	field length	数字の桁の数。	insurance-it	Definitions	n3-bridge	it	文字数
+文字数	もじすう	number of characters	文字の数量。	insurance-it	Definitions	n3-bridge	it	桁数
+既定値	きていち	default value	あらかじめ決めてある標準の値。	insurance-it	Definitions	n2-bridge	it	初期値
+初期値	しょきち	initial value	最初に設定されている値。	insurance-it	Definitions	n2-bridge	it	既定値
+デフォルト値	でふぉると ち	default value	指定がない場合に使う値。	insurance-it	Definitions	n3-bridge	it	既定値
+入力支援	にゅうりょく しえん	input assistance	入力を助ける仕組み。	insurance-it	Screens	n2-bridge	it	入力項目
+自動補完	じどう ほかん	automatic completion	入力をもとに自動的に埋めること。	insurance-it	Screens	n2-bridge	it	入力支援
+導出項目	しゅつしゅつ もくこう	derived field	他の値から求める項目。	insurance-it	Definitions	insurance-specialist	it	入力項目
+導出値	しゅつしゅつ ち	derived value	他の値から求めた値。	insurance-it	Definitions	insurance-specialist	it	導出項目
+導出処理	しゅつしゅつ しょり	derivation	他の値から値を求める処理。	insurance-it	Processing	insurance-specialist	it	計算処理
+チェックロジック	ちぇっく ろじっく	check logic	検査の考え方。	insurance-it	Validation	n2-bridge	it	入力チェック
+判定ロジック	はんてい ろじっく	decision logic	判定の考え方。	insurance-it	Validation	n2-bridge	it	チェックロジック
+条件分岐	じょうけん ぶんき	branching	条件によって処理を分けること。	insurance-it	Processing	n2-bridge	it	分岐
+分岐	ぶんき	branch	処理が分かれること。	insurance-it	Processing	n2-bridge	it	条件分岐
+処理フロー	しょり ふろー	processing flow	処理の流れ。	insurance-it	Processing	n3-bridge	it	業務フロー
+処理手順	しょり てじゅん	processing steps	処理の順番。	insurance-it	Processing	n3-bridge	it	手順
+手順書	てじゅんしょ	procedure document	手順を記した文書。	insurance-it	Operations	n3-bridge	it	手順
+操作手順書	そうさ てじゅんしょ	operation manual	操作の手順を記した文書。	insurance-it	Operations	n2-bridge	it	運用手順書
+運用手順書	うんよう てじゅんしょ	operations manual	運用の手順を記した文書。	insurance-it	Operations	n2-bridge	it	操作手順書
+運用設計	うんよう せっけい	operations design	運用の仕組みを決めること。	insurance-it	Operations	n2-bridge	it	運用
+運用テスト	うんよう てすと	operations test	運用が始まる前に確かめるテスト。	insurance-it	Testing	n2-bridge	it	受入テスト
+移行	いこう	migration	システムやデータを新しいものに替えること。	insurance-it	Migration	n2-bridge	it	本番移行
+本番移行	ほんばん いこう	go-live migration	本番のシステムに切り替えること。	insurance-it	Migration	n2-bridge	it	移行
+リハーサル	りはーさる	rehearsal	本番前に手順を試すこと。	insurance-it	Migration	n2-bridge	it	本番移行
+移行テスト	いこう てすと	migration test	移行が正しくできるかを確かめるテスト。	insurance-it	Migration	n2-bridge	it	移行
+データ移行	でーた いこう	data migration	データを新しい形へ移すこと。	insurance-it	Migration	n2-bridge	it	移行
+移行データ	いこう でーた	migration data	移行のために使うデータ。	insurance-it	Migration	n3-bridge	it	データ移行
+本番データ	ほんばん でーた	production data	本番で使われているデータ。	insurance-it	Data	n2-bridge	it	テストデータ
+テストデータ	てすと でーた	test data	テストに使うデータ。	insurance-it	Data	n3-bridge	it	本番データ
+ダミーデータ	だみー でーた	dummy data	試験のために作った見せかけのデータ。	insurance-it	Data	n2-bridge	it	テストデータ
+テストケース	てすと けーす	test case	テストのケース。	insurance-it	Testing	n3-bridge	it	テスト仕様書
+テストパターン	てすと パターン	test pattern	テストの組み合わせ。	insurance-it	Testing	n2-bridge	it	テストケース
+テスト項目	てすと もくこう	test item	テストで確かめる項目。	insurance-it	Testing	n3-bridge	it	テストケース
+テスト結果	てすと けっか	test result	テストの結果。	insurance-it	Testing	n3-bridge	it	テストケース
+テスト実施	てすと じっし	test execution	テストを行うこと。	insurance-it	Testing	n3-bridge	it	テスト
+テスト管理	てすと かんり	test management	テストの進み具合を管理すること。	insurance-it	Testing	n2-bridge	it	テスト
+テスト計画	てすと けいかく	test plan	テストの方針と計画。	insurance-it	Testing	n2-bridge	it	テスト仕様書
+テスト計画書	てすと けいかくしょ	test plan document	テスト計画を記した文書。	insurance-it	Testing	n2-bridge	it	テスト計画
+テスト報告書	てすと ほうこくしょ	test report document	テストの結果をまとめた文書。	insurance-it	Testing	n2-bridge	it	テスト結果
+エビデンス	えびでんす	test evidence	テストの証拠として残す記録。	insurance-it	Testing	insurance-specialist	it	テスト結果
+スクリーンショット	すくりーんしょっと	screenshot	画面の写し。	insurance-it	Testing	n3-bridge	it	エビデンス
+不具合報告	ふぐ ほうこく	defect report	不具合を報告すること。	insurance-it	Defects	n3-bridge	it	不具合
+不具合報告書	ふぐ ほうこくしょ	defect report document	不具合を報告する文書。	insurance-it	Defects	n2-bridge	it	不具合報告
+欠陥	けっかん	defect	作り込みの不足による不備。	insurance-it	Defects	insurance-specialist	it	不具合
+修正	しゅうせい	fix	直して正しくすること。	insurance-it	Defects	n3-bridge	it	改修
+修正対応	しゅうせい たいおう	fixing	不具合を直すこと。	insurance-it	Defects	n3-bridge	it	障害対応
+修正箇所	しゅうせい かしこ	fixed part	直した部分。	insurance-it	Defects	n3-bridge	it	改修箇所
+改修箇所	かいしゅう かしこ	modified part	改修した部分。	insurance-it	Defects	n3-bridge	it	修正箇所
+影響調査	えいきょう ちょうさ	impact investigation	影響の有無を調べること。	insurance-it	Defects	n2-bridge	it	影響範囲
+影響分析	えいきょう ぶんせき	impact analysis	影響を分析すること。	insurance-it	Defects	n2-bridge	it	影響調査
+切り分け	きりわけ	isolating the cause	原因の範囲を絞ること。	insurance-it	Defects	n2-bridge	it	原因究明
+原因究明	げんいん きゅうめい	finding the cause	原因をはっきりさせること。	insurance-it	Defects	n2-bridge	it	切り分け
+原因分析	げんいん ぶんせき	cause analysis	原因を分析すること。	insurance-it	Defects	n2-bridge	it	原因究明
+再発防止	さいはつ ぼうし	preventing recurrence	同じことが起きないよう防ぐこと。	insurance-it	Defects	n2-bridge	it	原因究明
+再発防止策	さいはつ ぼうし さく	recurrence prevention measure	再発を防ぐための対策。	insurance-it	Defects	n2-bridge	it	再発防止
+恒久対策	こうきゅう そたい	permanent measure	根本的に防ぐための対策。	insurance-it	Defects	insurance-specialist	it	暫定対策
+暫定対策	ざんてい そたい	interim measure	当面しのぐための対策。	insurance-it	Defects	insurance-specialist	it	恒久対策
+応急対応	おうきゅう たいおう	first response	とりあえずの対応。	insurance-it	Incidents	n2-bridge	it	障害対応
+障害報告	しょうがい ほうこく	incident report	障害を報告すること。	insurance-it	Incidents	n3-bridge	it	障害対応
+障害報告書	しょうがい ほうこくしょ	incident report document	障害の内容を記した文書。	insurance-it	Incidents	n2-bridge	it	障害報告
+障害レベル	しょうがい レベル	incident severity	障害の重さの段階。	insurance-it	Incidents	n2-bridge	it	重大障害
+重大障害	じゅうだい しょうがい	major incident	影響の大きい障害。	insurance-it	Incidents	n2-bridge	it	軽微な障害
+軽微な障害	けいび な しょうがい	minor incident	影響の小さい障害。	insurance-it	Incidents	n2-bridge	it	重大障害
+エスカレーション	えすかれーしょん	escalation	上位や他部署へ引き上げること。	insurance-it	Incidents	n2-bridge	it	障害対応
+障害連絡	しょうがい れんらく	incident notification	障害を連絡すること。	insurance-it	Incidents	n3-bridge	it	障害報告
+障害復旧	しょうがい ふっきゅう	incident recovery	障害から回復させること。	insurance-it	Incidents	n2-bridge	it	障害対応
+復旧	ふっきゅう	recovery	元の状態に戻ること。	insurance-it	Incidents	n2-bridge	it	障害復旧
+復旧作業	ふっきゅう さぎょう	recovery work	元に戻すための作業。	insurance-it	Incidents	n2-bridge	it	復旧
+切り戻し	きりもどし	rollback	前の状態に戻すこと。	insurance-it	Release	n2-bridge	it	ロールバック
+差し替え	さしかえ	replacing a file	ファイルを別のものに替えること。	insurance-it	Release	n2-bridge	it	リリース
+リリース	りりーす	release	新しい版を動くようにすること。	insurance-it	Release	n2-bridge	it	本番移行
+リリース手順	りりーす てじゅん	release procedure	リリースの手順。	insurance-it	Release	n2-bridge	it	リリース
+本番環境	ほんばん かんきょう	production environment	実際の業務で使う仕組みの動く場。	insurance-it	Environment	n2-bridge	it	開発環境
+開発環境	かっぱつ かんきょう	development environment	開発で使う仕組みの動く場。	insurance-it	Environment	n2-bridge	it	本番環境
+テスト環境	てすと かんきょう	test environment	テストで使う仕組みの動く場。	insurance-it	Environment	n2-bridge	it	本番環境
+検証環境	けんしょう かんきょう	verification environment	検証で使う仕組みの動く場。	insurance-it	Environment	n2-bridge	it	テスト環境
+運用環境	うんよう かんきょう	operations environment	運用で使う仕組みの動く場。	insurance-it	Environment	n2-bridge	it	開発環境
+環境	かんきょう	environment	プログラムが動く場の区別。	insurance-it	Environment	n3-bridge	it	本番環境
+環境構築	かんきょう こうちく	setting up an environment	動く場を作ること。	insurance-it	Environment	n2-bridge	it	環境
+移行日	いこうび	migration date	移行する日。	insurance-it	Migration	n3-bridge	it	本番移行
+停止時間	ていし じかん	downtime window	システムを止める時間。	insurance-it	Operations	n2-bridge	it	ダウンタイム
+ダウンタイム	だうんたいむ	downtime	システムが止まっている時間。	insurance-it	Operations	n2-bridge	it	停止時間
+バッチ	ばっち	batch	まとめて動かす処理。	insurance-it	Processing	n3-bridge	it	バッチ処理
+バッチ処理	ばっち しょり	batch processing	まとめて行う処理。	insurance-it	Processing	n3-bridge	it	一括処理
+夜間バッチ	やかん ばっち	nightly batch	夜間に動かすまとまった処理。	insurance-it	Processing	n2-bridge	it	バッチ処理
+定期処理	ていき しょり	scheduled job	決まった時期に動かす処理。	insurance-it	Processing	n2-bridge	it	バッチ処理
+定期実行	ていき じっこう	scheduled execution	決まった時期に実行すること。	insurance-it	Processing	n2-bridge	it	定期処理
+実行管理	じっこう かんり	job scheduling control	処理の実行を管理すること。	insurance-it	Operations	n2-bridge	it	スケジュール
+監視	かんし	monitoring	動きを見守ること。	insurance-it	Operations	n3-bridge	it	運用監視
+運用監視	うんよう かんし	operations monitoring	運用の状況を見守ること。	insurance-it	Operations	n2-bridge	it	監視
+異常終了	いじょう しゅうりょう	abnormal end	異常なまま終わること。	insurance-it	Operations	n3-bridge	it	正常終了
+正常終了	せいじょう しゅうりょう	normal end	異常なく終わること。	insurance-it	Operations	n3-bridge	it	異常終了
+処理待ち	しょり まち	pending processing	処理がまだ行われていない状態。	insurance-it	Processing	n3-bridge	it	未処理
+未処理	みしょり	unprocessed	処理がされていないこと。	insurance-it	Processing	n3-bridge	it	処理済み
+処理済み	しょりずみ	processed	処理が終わっていること。	insurance-it	Processing	n3-bridge	it	未処理
+訂正	ていせい	correction	誤りを直して書き換えること。	insurance-it	Processing	n2-bridge	it	修正
+訂正処理	ていせい しょり	correction processing	訂正を行う処理。	insurance-it	Processing	n2-bridge	it	訂正
+補正処理	ほせい しょり	adjustment processing	補正を行う処理。	insurance-it	Processing	insurance-specialist	it	補正
+証跡	しょうせき	audit trail	いつ誰が何をしたかの記録。	insurance-it	Security	n2-bridge	it	監査ログ
+監査ログ	かんさ ろぐ	audit log	監査のために残す記録。	insurance-it	Security	n2-bridge	it	証跡
+監査	かんさ	audit	手続きや記録が正しく行われているか確かめること。	insurance-it	Security	n2-bridge	it	監査ログ
+監査対応	かんさ たいおう	audit support	監査を受けるための対応。	insurance-it	Security	n2-bridge	it	監査
+アクセス権	あくせす けん	access right	データや機能を使える権利。	insurance-it	Security	n2-bridge	it	権限
+権限	けんげん	authority	できることの範囲を示す力。	insurance-it	Security	n3-bridge	it	アクセス権
+権限設定	けんげん せってい	setting authority	できる範囲を設定すること。	insurance-it	Security	n3-bridge	it	権限
+権限管理	けんげん かんり	authority management	できる範囲を管理すること。	insurance-it	Security	n2-bridge	it	権限
+認可	にんか	authorisation	権限があることを認めること。	insurance-it	Security	insurance-specialist	it	認証
+ログイン	ろぐいん	log in	使用者として入ること。	insurance-it	Security	n3-bridge	it	認証
+ログアウト	ろぐあうと	log out	使用者から出ること。	insurance-it	Security	n3-bridge	it	ログイン
+セッション	せっしょん	session	接続してから切れるまでの間。	insurance-it	Security	insurance-specialist	it	接続
+タイムアウト	たいむあうと	timeout	時間切れになること。	insurance-it	Security	n3-bridge	it	セッション
+切断	せつだん	disconnection	つながりが切れること。	insurance-it	Security	n3-bridge	it	接続
+通信エラー	つうしん えらー	communication error	通信でのエラー。	insurance-it	Security	n3-bridge	it	接続エラー
+接続エラー	せつぞく えらー	connection error	接続でのエラー。	insurance-it	Security	n3-bridge	it	通信エラー
+エラーメッセージ	えらー めっせーじ	error message	エラーを知らせる表示。	insurance-it	Screens	n3-bridge	it	警告メッセージ
+メッセージ定義	めっせーじ ていぎ	message definition	表示する文章を決めること。	insurance-it	Screens	n2-bridge	it	エラーメッセージ
+
+メッセージ管理	めっせーじ かんり	message management	表示する文章を管理すること。	insurance-it	Screens	n2-bridge	it	メッセージ定義
+警告	けいこく	warning	注意を促す表示。	insurance-it	Screens	n3-bridge	it	エラー
+警告メッセージ	けいこく めっせーじ	warning message	注意を促す表示文。	insurance-it	Screens	n2-bridge	it	エラーメッセージ
+確認ダイアログ	かくにん だいあろぐ	confirmation dialog	確かめるための表示。	insurance-it	Screens	n2-bridge	it	警告メッセージ
+処理中断	しょり ちゅうだん	interrupting a process	処理を途中でやめること。	insurance-it	Processing	n2-bridge	it	処理継続
+処理継続	しょり けいぞく	continuing a process	処理をそのまま続けること。	insurance-it	Processing	n2-bridge	it	処理中断
+打ち切り	うちきり	cutoff	途中でやめること。	insurance-it	Processing	n2-bridge	it	処理中断
+一時停止	いちし ていし	temporary stop	一時的に止めること。	insurance-it	Operations	n2-bridge	it	停止
+再開	さいかい	resumption	止まったものを再び始めること。	insurance-it	Operations	n3-bridge	it	停止
+再実行	さいじっこう	re-execution	もう一度実行すること。	insurance-it	Operations	n3-bridge	it	再処理
+差戻し処理	さもどし しょり	return processing	差し戻す処理を行うこと。	insurance-it	Processing	n3-bridge	it	差戻し
+承認取り消し	しょうにん とりけし	revoking an approval	承認を取り消すこと。	insurance-it	Operations	n2-bridge	it	承認
+決裁	けっさい	executive approval	上の者が決めること。	insurance-it	Operations	n2-bridge	it	承認
+決裁者	けっさいしゃ	approver	決裁を行う者。	insurance-it	Operations	n2-bridge	it	承認者
+承認者	しょうにんしゃ	approver	承認を行う者。	insurance-it	Operations	n3-bridge	it	決裁者
+承認経路	しょうにん けいろ	approval route	承認の通り道。	insurance-it	Operations	n2-bridge	it	承認
+承認履歴	しょうにん りれき	approval history	承認の記録。	insurance-it	Operations	n3-bridge	it	履歴
+電子署名	でんし しょめい	digital signature	電子的な署名。	insurance-it	Security	n2-bridge	it	電子認証
+電子認証	でんし にんしょう	electronic authentication	電子的な本人確認。	insurance-it	Security	n2-bridge	it	電子署名
+電子申請	でんし しんせい	electronic application	電子的に申請すること。	insurance-it	Operations	n2-bridge	it	申請
+電子化	でんしか	digitisation	紙の情報を電子的にすること。	insurance-it	Operations	n2-bridge	it	ペーパーレス
+ペーパーレス	ぺーぱーれす	paperless	紙を使わないこと。	insurance-it	Operations	n2-bridge	it	電子化
+画像保存	がぞう ほぞん	image storage	書類の画像を保存すること。	insurance-it	Operations	n2-bridge	it	画像
+画像	がぞう	image	書類を写した電子的なデータ。	insurance-it	Operations	n3-bridge	it	画像保存
+画像系	がぞう けい	image system	画像を扱う仕組み。	insurance-it	Systems	n2-bridge	it	周辺システム
+文字認識	もじ にんしき	character recognition	文字を読み取ること。	insurance-it	Operations	n2-bridge	it	OCR
+契約管理システム	けいやく かんり しすてむ	policy administration system	契約を管理する仕組み。	insurance-it	Systems	n2-bridge	it	基幹システム
+募集管理システム	ぼしゅう かんり しすてむ	sales management system	募集を管理する仕組み。	insurance-it	Systems	n2-bridge	it	契約管理システム
+支払管理システム	しはらい かんり しすてむ	claims payment system	支払を管理する仕組み。	insurance-it	Systems	n2-bridge	it	契約管理システム
+勘定系	かんじょう けい	accounting system	金銭の計算を扱う仕組み。	insurance-it	Systems	insurance-specialist	it	基幹システム
+基幹システム	きかん しすてむ	core system	業務の中心となる仕組み。	insurance-it	Systems	n2-bridge	it	周辺システム
+周辺システム	しゅうへん しすてむ	peripheral system	中心の周りで動く仕組み。	insurance-it	Systems	n2-bridge	it	基幹システム
+連携基盤	れんけい きばん	integration platform	仕組み同士をつなぐ土台。	insurance-it	Systems	n2-bridge	it	データ連携
+帳票基盤	ちょうひょう きばん	reporting platform	帳票を作るための土台。	insurance-it	Systems	n2-bridge	it	帳票
+印刷基盤	いんさつ きばん	printing platform	印刷を行うための土台。	insurance-it	Systems	n2-bridge	it	印刷
+印刷	いんさつ	printing	紙に文字や絵を写すこと。	insurance-it	Documents	n3-bridge	it	帳票
+印字	いんじ	printing on a form	帳票に文字を打ち出すこと。	insurance-it	Documents	n2-bridge	it	印刷
+印字項目	いんじ もくこう	printed field	帳票に打ち出す項目。	insurance-it	Documents	n2-bridge	it	印字
+封入	ふんにゅう	enclosing	書類を封筒に収めること。	insurance-it	Documents	n2-bridge	it	封緘
+封緘	ふうかん	sealing an envelope	封筒を閉じること。	insurance-it	Documents	insurance-specialist	it	封入
+宛名印刷	あてな いんさつ	address printing	送り先の名前を印刷すること。	insurance-it	Documents	n2-bridge	it	宛名
+宛先不明	あてさき ふめい	unknown addressee	送り先が分からないこと。	insurance-it	Documents	n2-bridge	it	不達
+返送	へんそう	returned mail	送ったものが返ってくること。	insurance-it	Documents	n2-bridge	it	不達
+架電	かてん	making a call	電話をかけること。	insurance-it	Operations	n2-bridge	it	電話
+架電管理	かてん かんり	call management	電話の記録を管理すること。	insurance-it	Operations	n2-bridge	it	架電
+架電履歴	かてん りれき	call history	電話をかけた記録。	insurance-it	Operations	n2-bridge	it	架電
+個人情報保護法	こじん じょうほう ほごほう	Personal Information Protection Act	個人情報の取り扱いを定める法律。	insurance-it	Privacy	n2-bridge	general	個人情報
+個人情報	こじん じょうほう	personal information	生きている個人に関する情報。	insurance-it	Privacy	n3-bridge	general	個人データ
+個人データ	こじん でーた	personal data	個人情報保護法で定められた個人情報。	insurance-it	Privacy	insurance-specialist	it	個人情報
+保有個人データ	ほゆう こじん でーた	personal data held	自社が使う形で持っている個人データ。	insurance-it	Privacy	insurance-specialist	it	個人データ
+利用目的	りよう もくてき	purpose of use	情報を使うために決めた目的。	insurance-it	Privacy	n2-bridge	it	目的外利用
+目的外利用	もくざい つかい	use beyond the purpose	決めた目的以外で使うこと。	insurance-it	Privacy	insurance-specialist	it	利用目的
+第三者提供	だいさんしゃ ていきゅう	disclosure to a third party	他の会社などに情報を渡すこと。	insurance-it	Privacy	n2-bridge	it	委託
+委託	いたく	outsourcing	業務を他の会社に頼むこと。	insurance-it	Operations	n2-bridge	it	再委託
+再委託	さいいたく	subcontracting	頼んだ業務をさらに他の会社へ頼むこと。	insurance-it	Operations	n2-bridge	it	委託
+仮名加工情報	かな かこう じょうほう	pseudonymised information	他の情報と突き合わせないと個人が分からない形にした情報。	insurance-it	Privacy	insurance-specialist	it	匿名加工情報
+匿名加工情報	とめい かこう じょうほう	anonymised information	特定の個人が識別できないようにした情報。	insurance-it	Privacy	insurance-specialist	it	仮名加工情報
+要配慮個人情報	よう へいりょ こじん じょうほう	sensitive personal information	配慮を特に必要とする個人情報。	insurance-it	Privacy	insurance-specialist	it	個人情報
+秘匿情報	ひとく じょうほう	confidential information	隠して扱う情報。	insurance-it	Security	n2-bridge	it	機密情報
+秘匿項目	ひとく もくこう	confidential field	隠して扱う項目。	insurance-it	Security	n2-bridge	it	秘匿情報
+秘匿性	ひとくせい	confidentiality	隠して保たれている性質。	insurance-it	Security	insurance-specialist	it	機密性
+秘匿処理	ひとく しょり	masking	情報を隠して見せる処理。	insurance-it	Security	n2-bridge	it	マスキング
+マスキング	ますきんぐ	masking	値の一部を記号に置き換えること。	insurance-it	Security	n2-bridge	it	秘匿処理
+施錠管理	せいじ かんり	locking control	鍵をかけて管理すること。	insurance-it	Security	n2-bridge	it	入退室管理
+入退室管理	にゅうたいしつ かんり	access control to a room	部屋への出入りを管理すること。	insurance-it	Security	n2-bridge	it	施錠管理
+持出し	もちだし	taking out	外に持ち出すこと。	insurance-it	Security	n3-bridge	it	預かり
+廃棄	はいき	disposal	不要なものを捨てること。	insurance-it	Security	n3-bridge	it	保管
+廃棄証明書	はいき しょうめいしょ	certificate of disposal	捨てたことを証明する書類。	insurance-it	Security	n2-bridge	it	廃棄
+保存期間	ほぞん きかん	retention period	情報を保っておく期間。	insurance-it	Security	n3-bridge	it	保管
+保存期間満了	ほぞん きかん まんりょう	retention period expiry	保っておく期間が終わること。	insurance-it	Security	n2-bridge	it	保存期間
+書庫	しょこ	records store	書類を保管する場所。	insurance-it	Security	n2-bridge	it	保管庫
+保管庫	ほかんこ	storage cabinet	書類や媒体を保管する場所。	insurance-it	Security	n2-bridge	it	書庫
+固定長	こていちょう	fixed length	項目の長さが決まっていること。	insurance-it	Data	n2-bridge	it	可変長
+可変長	かへんちょう	variable length	項目の長さが変わる形。	insurance-it	Data	n2-bridge	it	固定長
+区切り文字	きりぎり もじ	delimiter	項目を分ける文字。	insurance-it	Data	n2-bridge	it	固定長
+ヘッダ	へっだ	header	データの先頭に置く情報。	insurance-it	Data	n3-bridge	it	フッタ
+フッタ	ふった	footer	データの末尾に置く情報。	insurance-it	Data	n3-bridge	it	ヘッダ
+ヘッダレコード	へっだ れこーど	header record	先頭に置く記録。	insurance-it	Data	insurance-specialist	it	フッタレコード
+フッタレコード	ふった れこーど	trailer record	末尾に置く記録。	insurance-it	Data	insurance-specialist	it	ヘッダレコード
+件数チェック	けんすう ちぇっく	record count check	件数が合うかを確かめること。	insurance-it	Validation	n2-bridge	it	突合
+合計値チェック	ごうけいち ちぇっく	control total check	合計が合うかを確かめること。	insurance-it	Validation	n2-bridge	it	件数チェック
+端数処理	はすう しょり	rounding	端数を扱う決まり。	insurance-it	Calculation	n2-bridge	it	丸め
+丸め	まるめ	rounding	下位の桁を切り捨てたり上げたりすること。	insurance-it	Calculation	n2-bridge	it	端数処理
+円未満切捨て	えんみまん きりすて	truncating below one yen	円より下を切り捨てること。	insurance-it	Calculation	insurance-specialist	it	端数処理
+枝番	えだばん	sub-number	本番号に付ける細分化の番号。	insurance-it	Data	insurance-specialist	it	枝番号
+枝番号	えだばんごう	sub-number	本番号に付ける細分化の番号。	insurance-it	Data	insurance-specialist	it	枝番
+履歴管理	りれき かんり	history management	変わり目を残して管理すること。	insurance-it	Data	n2-bridge	it	証跡
+有効期間	ゆうこう きかん	validity period	有効である期間。	insurance-it	Data	n3-bridge	it	有効期間内
+有効期間内	ゆうこう きかん ない	within the validity period	有効な期間に入っていること。	insurance-it	Data	n2-bridge	it	有効期間
+有効期間外	ゆうこう きかん がい	outside the validity period	有効な期間に入っていないこと。	insurance-it	Data	n2-bridge	it	有効期間内
+削除データ	さくじょ でーた	deleted data	削除されたデータ。	insurance-it	Data	n3-bridge	it	失効データ
+失効データ	しっこう でーた	lapsed data	失効したデータの記録。	insurance-it	Data	n2-bridge	it	削除データ
+差分	さぶん	diff	変わった部分。	insurance-it	Data	n2-bridge	it	全件
+全件	ぜんけん	all records	すべてのデータ。	insurance-it	Data	n3-bridge	it	差分
+差分抽出	さぶん ちゅうしゅつ	extracting the changes	変わった部分だけを取り出すこと。	insurance-it	Data	n2-bridge	it	差分
+抽出条件	ちゅうしゅつ じょうけん	extraction criteria	取り出しの条件。	insurance-it	Data	n3-bridge	it	抽出項目
+抽出項目	ちゅうしゅつ もくこう	extracted fields	取り出す項目。	insurance-it	Data	n3-bridge	it	抽出条件
+抽出件数	ちゅうしゅつ けんすう	number of records extracted	取り出した件数。	insurance-it	Data	n3-bridge	it	抽出条件
+ダウンロード	だうんろーど	download	手元の端末に取ること。	insurance-it	Data	n3-bridge	it	アップロード
+アップロード	あっぷろーど	upload	向こう側へ送ること。	insurance-it	Data	n3-bridge	it	ダウンロード
+ファイル	ふぁいる	file	データのまとまり。	insurance-it	Data	n3-bridge	it	帳票
+レイアウト	れいあうと	layout	並びと形。	insurance-it	Screens	n3-bridge	it	画面項目
+レイアウト定義	れいあうと ていぎ	layout definition	並びと形を決めること。	insurance-it	Screens	n2-bridge	it	レイアウト
+
+
+

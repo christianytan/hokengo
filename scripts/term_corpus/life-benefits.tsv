@@ -1,0 +1,188 @@
+# 生命保険と給付 / life insurance and benefits
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note
+死亡	しぼう	death	生命が失われること。	life-benefits	Death benefit	n3-bridge	life	死亡保険金
+死亡診断書	しぼう しんだんしょ	death certificate	死亡を証明する医師の書類。	life-benefits	Death benefit	n3-bridge	life	死因
+死因	しいん	cause of death	死亡した原因。	life-benefits	Death benefit	n2-bridge	life	直接死因
+直接死因	ちょくせつ しいん	direct cause of death	死亡の直接の原因となった事由。	life-benefits	Death benefit	insurance-specialist	life	間接死因
+間接死因	かんせつ しいん	indirect cause of death	死亡の間接的な原因となる事由。	life-benefits	Death benefit	insurance-specialist	life	直接死因
+自殺	じさつ	suicide	自ら命を絶つこと。	life-benefits	Death benefit	n3-bridge	life	傷害死
+傷害死	しょうがい し	death from injury	外来的な傷害が原因の死亡。	life-benefits	Death benefit	insurance-specialist	both	自殺
+病死	びょうし	death from illness	疾病による死亡。	life-benefits	Death benefit	n2-bridge	life	傷害死
+自然死	しぜんし	natural death	外因によらない死亡。	life-benefits	Death benefit	n2-bridge	life	病死
+死亡届	しぼう とどけで	death notification	死亡を市区町村に届出る書類。	life-benefits	Death benefit	n3-bridge	general	死亡診断書
+受取人	うけとりにん	beneficiary; payee	保険金や給付金を受け取る人。	life-benefits	Beneficiaries	n3-bridge	life	保険金受取人
+受取人変更	うけとりにん へんこう	change of beneficiary	保険金受取人を変える手続き。	life-benefits	Beneficiaries	n2-bridge	life	受取人
+受益者	えきしゃ	beneficiary	給付や税の利益を受ける者。	life-benefits	Beneficiaries	n2-bridge	life	受取人
+遺族	いぞく	surviving family	亡くなった人の家族。	life-benefits	Beneficiaries	n3-bridge	life	遺族年金
+生計同一	せいきつ いったい	same household support	同じ生活で支え合っていること。	life-benefits	Beneficiaries	insurance-specialist	general	世帯主
+世帯主	せたいぬし	head of household	世帯の主として届け出られた者。	life-benefits	Beneficiaries	n3-bridge	general	生計同一
+被扶養者	ひふようしゃ	dependent	生計を同じくして扶養されている者。	life-benefits	Beneficiaries	n2-bridge	general	扶養
+扶養	ふよう	support of a dependent	生計を共にして面倒を見ていること。	life-benefits	Beneficiaries	n2-bridge	general	被扶養者
+事実婚	じじつこん	common-law marriage	届出はないが夫婦として生活していること。	life-benefits	Beneficiaries	n2-bridge	life	内縁
+内縁	ないえん	de facto marriage	婚姻届のない事実上の夫婦関係。	life-benefits	Beneficiaries	n2-bridge	life	事実婚
+認知	にんち	acknowledgement of a child	嫡出でない子を自己の子と認めること。	life-benefits	Beneficiaries	insurance-specialist	life	胎児
+胎児	たいじ	unborn child	出生前の胎内の子。	life-benefits	Beneficiaries	n2-bridge	life	認知
+後見人	こうけんにん	guardian	後見によって本人を保護する者。	life-benefits	Beneficiaries	n2-bridge	general	成年後見
+成年後見	せいねん こうけん	guardianship	判断が不十分な成人を法律で保護する制度。	life-benefits	Beneficiaries	insurance-specialist	general	後見人
+任意後見	にんい こうけん	voluntary guardianship	本人が事前に結ぶ後見の契約。	life-benefits	Beneficiaries	insurance-specialist	life	成年後見
+信託	しんたく	trust	財産の管理と処分を他者に委託すること。	life-benefits	Beneficiaries	n2-bridge	life	受託者
+受託者	うたくしゃ	trustee	信託や預かりを引き受ける者。	life-benefits	Beneficiaries	n2-bridge	both	信託
+年金	ねんきん	pension; annuity	定期的に支給される金銭。	life-benefits	Pensions	n3-bridge	general	年金原金
+個人年金保険	こじん ねんきん ほけん	personal pension insurance	自分で老後に備える年金の商品。	life-benefits	Pensions	n2-bridge	life	年金
+確定年金	かくてい ねんきん	annuity certain	一定期間必ず支払われる年金。	life-benefits	Pensions	insurance-specialist	life	終身年金
+終身年金	しゅうしん ねんきん	life annuity	生存している間ずっと支払われる年金。	life-benefits	Pensions	insurance-specialist	life	確定年金
+有期年金	ゆうき ねんきん	temporary annuity	一定期間だけ支払われる年金。	life-benefits	Pensions	insurance-specialist	life	確定年金
+保証期間付終身年金	ほしょう きかんつき しゅうしん ねんきん	life annuity with guaranteed period	保証期間を設けた終身年金。	life-benefits	Pensions	insurance-specialist	life	終身年金
+保証期間	ほしょう きかん	guaranteed period	支払が続くと保証される期間。	life-benefits	Pensions	insurance-specialist	life	保証期間付終身年金
+年金支払期間	ねんきん しはらい きかん	annuity payment period	年金の支払が続く期間。	life-benefits	Pensions	n2-bridge	life	年金原金
+年金開始	ねんきん かいし	annuity commencement	年金の受け取りを始めること。	life-benefits	Pensions	n2-bridge	life	年金移行
+年金移行	ねんきん いこう	switching to an annuity	契約を年金に切り替えること。	life-benefits	Pensions	insurance-specialist	life	年金開始
+年金化	ねんきん か	annuitisation	一時金を年金の形にすること。	life-benefits	Pensions	insurance-specialist	life	年金移行
+企業年金	きぎょう ねんきん	corporate pension	企業が設ける年金制度。	life-benefits	Pensions	n2-bridge	general	厚生年金
+確定拠出年金	かくてい きょしゅつ ねんきん	defined contribution pension	掛金の運用結果で給付が決まる年金。	life-benefits	Pensions	insurance-specialist	general	確定給付企業年金
+確定給付企業年金	かくてい きゅうふ きぎょう ねんきん	defined benefit corporate pension	給付額が定められている企業年金。	life-benefits	Pensions	insurance-specialist	general	確定拠出年金
+厚生年金基金	こうせい ねんきん ききん	employees' pension fund	厚生年金に上乗せする年金基金。	life-benefits	Pensions	insurance-specialist	general	企業年金
+国民年金基金	こくみん ねんきん ききん	national pension fund	自営業者などのための年金基金。	life-benefits	Pensions	insurance-specialist	general	国民年金
+加入期間	かきにん きかん	coverage period	年金制度に加入していた期間。	life-benefits	Pensions	n3-bridge	general	受給資格
+受給資格	じゅきゅう しかく	qualification for benefits	給付を受けられる資格。	life-benefits	Pensions	n2-bridge	general	加入期間
+受給権	じゅきゅうけん	right to benefits	給付を受ける権利。	life-benefits	Pensions	n2-bridge	general	受給資格
+裁定	さいてい	adjudication	年金の給付内容を決定すること。	life-benefits	Pensions	insurance-specialist	general	請求
+年金証書	ねんきん しょうしょ	pension certificate	年金の受給権を証明する書類。	life-benefits	Pensions	n2-bridge	general	共済証書
+年金振込通知書	ねんきん ふりこみ つうちしょ	pension payment notice	年金の支払額を知らせる書類。	life-benefits	Pensions	n2-bridge	general	振込
+標準報酬月額	ひょうじゅん ほうしゅう がつがく	standard monthly remuneration	保険料や給付の計算に使う月収の区分。	life-benefits	Pensions	insurance-specialist	general	標準賞与額
+標準賞与額	ひょうじゅん しょうがくがく	standard bonus amount	賞与から計算される基準額。	life-benefits	Pensions	insurance-specialist	general	標準報酬月額
+賞与	しょうぎょ	bonus	定期的に決まった額以外で支払われる給与。	life-benefits	Pensions	n3-bridge	general	標準賞与額
+遺族年金	いぞく ねんきん	survivors' pension	遺族に支給される年金。	life-benefits	Pensions	n3-bridge	general	障害年金
+障害年金	しょうがい ねんきん	disability pension	障害のある人に支給される年金。	life-benefits	Pensions	n3-bridge	general	遺族年金
+老齢基礎年金	ろうれい きそ ねんきん	basic old-age pension	老齢の世代に支給される基礎年金。	life-benefits	Pensions	n3-bridge	general	厚生年金
+厚生年金	こうせい ねんきん	employees' pension	会社員などが加入する年金制度。	life-benefits	Pensions	n3-bridge	general	国民年金
+国民年金	こくみん ねんきん	national pension	日本に居住する人が加入する年金制度。	life-benefits	Pensions	n3-bridge	general	厚生年金
+未納	みない	non-payment of premiums	保険料を納めていないこと。	life-benefits	Premium payment	n3-bridge	general	滞納
+滞納	たいのう	arrears	期限までに納めないでいること。	life-benefits	Premium payment	n2-bridge	general	未納
+保険料納付	ほけんりょう のうふ	premium payment	公的保険の保険料を納めること。	life-benefits	Premium payment	n2-bridge	general	保険料
+免除	めんじょ	exemption	納付を免除すること。	life-benefits	Premium payment	n3-bridge	general	猶予
+猶予	ゆうよ	deferral	期限を後に延ばすこと。	life-benefits	Premium payment	n3-bridge	general	免除
+合算納付	がっさん のうふ	bundled premium payment	複数の月分をまとめて納めること。	life-benefits	Premium payment	insurance-specialist	general	保険料納付
+入院	にゅういん	hospitalisation	治療のために病院に入ること。	life-benefits	Health benefits	n3-bridge	both	入院給付金
+通院	つういん	outpatient treatment	病院に通って治療を受けること。	life-benefits	Health benefits	n3-bridge	both	通院給付金
+通院給付金	つういん きゅうふきん	outpatient benefit	通院に対して支払われる給付金。	life-benefits	Health benefits	n2-bridge	life	入院給付金
+退院	たいいん	discharge from hospital	入院をやめて病院を出ること。	life-benefits	Health benefits	n3-bridge	both	入院
+入院日数	にゅういん にっすう	days hospitalised	入院した日数。	life-benefits	Health benefits	n3-bridge	both	通院日数
+通院日数	つういん にっすう	days treated as an outpatient	通院した日数。	life-benefits	Health benefits	n3-bridge	both	入院日数
+支払限度日数	しはらい げんど にっすう	maximum payable days	支払われる日数の上限。	life-benefits	Health benefits	insurance-specialist	both	支払限度額
+入院日額	にゅういん にちがく	daily hospitalisation benefit	入院1日あたりの給付額。	life-benefits	Health benefits	n2-bridge	life	通院日額
+通院日額	つういん にちがく	daily outpatient benefit	通院1日あたりの給付額。	life-benefits	Health benefits	n2-bridge	life	入院日額
+手術	しゅじゅつ	surgery	メスなどを使う治療行為。	life-benefits	Health benefits	n3-bridge	both	手術給付金
+所定の手術	しょてん の しゅじゅつ	prescribed surgery	約款で定められた手術。	life-benefits	Health benefits	insurance-specialist	life	手術
+診断	しんだん	diagnosis	医師が疾病を判定すること。	life-benefits	Health benefits	n3-bridge	both	診断給付金
+診断給付金	しんだん きゅうふきん	diagnosis benefit	疾病の診断に対して支払われる給付金。	life-benefits	Health benefits	n2-bridge	life	一時金
+悪性新生物	あくせい しんせいぶつ	malignant neoplasm	がんと呼ばれる悪性の新生物。	life-benefits	Health benefits	insurance-specialist	life	上皮内新生物
+上皮内新生物	じょうひない しんせいぶつ	intraepithelial neoplasm	上皮内にとどまる新生物。	life-benefits	Health benefits	insurance-specialist	life	悪性新生物
+先進医療	せんしん いりょう	advanced medical care	公的医療と併用される先進的な治療。	life-benefits	Health benefits	insurance-specialist	life	先進医療給付金
+先進医療給付金	せんしん いりょう きゅうふきん	advanced medical care benefit	先進医療の治療費に対する給付金。	life-benefits	Health benefits	insurance-specialist	life	先進医療
+公的医療保険	こうてき いりょう ほけん	public medical insurance	国や自治体が運営する医療保険制度。	life-benefits	Health benefits	n2-bridge	general	健康保険
+健康保険	けんこう ほけん	health insurance	会社などが加入する医療保険制度。	life-benefits	Health benefits	n3-bridge	general	国民健康保険
+国民健康保険	こくみん けんこう ほけん	national health insurance	市区町村が運営する医療保険制度。	life-benefits	Health benefits	n3-bridge	general	健康保険
+健康保険組合	けんこう ほけん くみあい	health insurance society	企業が設ける健康保険の運営主体。	life-benefits	Health benefits	n2-bridge	general	健康保険
+健康保険証	けんこうほけんしょう	health insurance card	健康保険の資格を示す証。	life-benefits	Health benefits	n3-bridge	general	保険証
+保険証	ほけんしょう	insurance card	医療保険の資格を証明するカード。	life-benefits	Health benefits	n3-bridge	general	健康保険証
+被保険者証	ひほけんしゃ しょう	insured person's card	被保険者であることを示す証。	life-benefits	Health benefits	n2-bridge	general	保険証
+資格証明書	しかく しょうめいしょ	certificate of qualification	保険の資格を証明する書類。	life-benefits	Health benefits	n2-bridge	general	保険証
+資格喪失	しかく そうしつ	loss of qualification	保険の資格を失うこと。	life-benefits	Health benefits	n2-bridge	general	資格喪失日
+資格喪失日	しかく そうしつび	date of loss of qualification	保険の資格を失った日。	life-benefits	Health benefits	n2-bridge	general	資格喪失
+任意継続	にんい けいぞく	voluntary continuation	退職後も任意で保険を続けること。	life-benefits	Health benefits	insurance-specialist	general	資格喪失
+自己負担	じこ ふたん	out-of-pocket cost	自分が負担する費用。	life-benefits	Health benefits	n3-bridge	general	一部負担金
+一部負担金	いちぶ ふたんきん	copayment	医療費の一部として患者が払う額。	life-benefits	Health benefits	n2-bridge	general	自己負担
+療養費	りょうようひ	medical expenses benefit	医療費について支給される給付。	life-benefits	Health benefits	n2-bridge	general	自己負担
+高額療養費	こうがく りょうようひ	high-cost medical benefit	医療費が高額になった時の給付。	life-benefits	Health benefits	n2-bridge	general	療養費
+限度額適用認定証	げんどがく てきよう にんていしょう	certificate of the medical expense cap	窓口負担の上限を証明する書類。	life-benefits	Health benefits	insurance-specialist	general	高額療養費
+傷病手当金	しょうびょう てあてきん	sickness allowance	病気やけがで働けない時の手当。	life-benefits	Living benefits	n2-bridge	general	休業損害
+出産手当金	しゅっさん てあてきん	maternity allowance	出産のための手当。	life-benefits	Living benefits	n2-bridge	general	傷病手当金
+介護	かいご	care	日常の生活の手助け。	life-benefits	Living benefits	n3-bridge	both	介護保険
+介護保険	かいご ほけん	long-term care insurance	介護を社会で支える保険制度。	life-benefits	Living benefits	n3-bridge	general	介護給付
+介護給付	かいご きゅうふ	care benefits	介護保険から支給される給付。	life-benefits	Living benefits	n2-bridge	general	介護保険
+介護保険料	かいご ほけんりょう	long-term care premium	介護保険に納める保険料。	life-benefits	Living benefits	n3-bridge	general	保険料
+介護認定	かいご にんてい	care certification	介護の必要度を判定すること。	life-benefits	Living benefits	n2-bridge	general	要介護認定
+要介護認定	よう かいご にんてい	care needs certification	介護が必要な状態かどうかの認定。	life-benefits	Living benefits	insurance-specialist	general	介護認定
+要介護	よう かいご	requiring care	介護が必要な状態と認定されたこと。	life-benefits	Living benefits	n2-bridge	general	要支援
+要支援	よう しえん	requiring support	支援が必要な状態と認定されたこと。	life-benefits	Living benefits	n2-bridge	general	要介護
+要介護状態	よう かいご じょうたい	state requiring care	日常の生活に介護が必要な状態。	life-benefits	Living benefits	insurance-specialist	both	要介護
+認知症	にんちしょう	dementia	記憶や判断が衰える状態。	life-benefits	Living benefits	n3-bridge	both	介護状態
+介護状態	かいご じょうたい	state needing care	介護が必要な状態。	life-benefits	Living benefits	n2-bridge	both	要介護状態
+就業不能	しゅうぎょう ふのう	unable to work	働けない状態。	life-benefits	Living benefits	n2-bridge	both	就業不能保険
+就業不能保険	しゅうぎょう ふのう ほけん	work-disability insurance	働けない状態を所得で支える保険。	life-benefits	Living benefits	n2-bridge	both	所得補償保険
+所得補償保険	しょとく ほしょう ほけん	income compensation insurance	収入の減少を補償する保険。	life-benefits	Living benefits	n2-bridge	both	就業不能保険
+三大疾病	さんだい びょうえい	three major diseases	がん・急性心筋梗塞・脳卒中の三つの疾病。	life-benefits	Living benefits	n2-bridge	life	七大疾病
+七大疾病	しちだい びょうえい	seven major diseases	七つの疾病をまとめて呼ぶ呼び方。	life-benefits	Living benefits	insurance-specialist	life	三大疾病
+急性心筋梗塞	きゅうせい しんきんこうそく	acute myocardial infarction	心臓の血管が詰まる急性の疾患。	life-benefits	Living benefits	n2-bridge	both	脳卒中
+脳卒中	のうそっちゅう	stroke	脳の血管の病気。	life-benefits	Living benefits	n2-bridge	both	急性心筋梗塞
+高度障害	こうど しょうがい	severe disability	日常生活に著しい制限がある障害。	life-benefits	Living benefits	insurance-specialist	life	高度障害状態
+高度障害状態	こうど しょうがい じょうたい	state of severe disability	約款で定められた高度な障害の状態。	life-benefits	Living benefits	insurance-specialist	life	高度障害
+身体障害	しんたい しょうがい	physical disability	身体の機能が制されていること。	life-benefits	Living benefits	n3-bridge	general	精神障害
+精神障害	せいしん しょうがい	mental disability	精神の機能が制されていること。	life-benefits	Living benefits	n3-bridge	general	身体障害
+障害	しょうがい	disability	身体や精神の機能が制されている状態。	life-benefits	Living benefits	n3-bridge	both	身体障害
+障害状態	しょうがい じょうたい	disabled state	障害のある状態。	life-benefits	Living benefits	n2-bridge	both	障害
+後遺障害	こうい しょうがい	residual disability	治療後も残った身体や精神の障害。	life-benefits	Living benefits	insurance-specialist	non-life	後遺障害等級
+後遺障害等級	こうい しょうがい とうきゅう	grade of residual disability	後遺障害の程度を示す等級。	life-benefits	Living benefits	insurance-specialist	non-life	後遺障害
+返戻率	へんれいりつ	return rate	払込保険料に対する解約返戻金の割合。	life-benefits	Surrender	insurance-specialist	life	解約返戻金
+現金価値	げんきん かち	cash value	解約時に受け取れる金額。	life-benefits	Surrender	insurance-specialist	life	解約返戻金
+解約日	かいやくび	surrender date	契約を解約した日。	life-benefits	Surrender	n3-bridge	both	解約
+解約控除	かいやく こくじょ	surrender charge	早期の解約時に返戻金から差し引かれる額。	life-benefits	Surrender	insurance-specialist	life	現金価値
+減額返戻金	げんがく へんれいきん	part surrender proceeds	減額によって生じる返戻金。	life-benefits	Surrender	insurance-specialist	life	減額
+払済保険	はらいみ ほけん	paid-up insurance	保険料の払込をやめて保障を続ける契約。	life-benefits	Surrender	insurance-specialist	life	払済
+自動振替貸付	じどう ふるてかえ かしつけ	automatic policy loan	払込が滞った時に契約者貸付で自動的に補う仕組み。	life-benefits	Loans	insurance-specialist	life	契約者貸付
+貸付利率	かしつけ りりつ	policy loan interest rate	契約者貸付にかかる利率。	life-benefits	Loans	insurance-specialist	life	元金
+貸付金	かしつけきん	policy loan	契約者貸付による金銭。	life-benefits	Loans	n2-bridge	life	契約者貸付
+元金	げんきん	principal	貸借の元の金額。	life-benefits	Loans	n3-bridge	general	利息
+利息	りそく	interest	金銭の使用に対する対価。	life-benefits	Loans	n3-bridge	general	元金
+金利	きんり	interest rate	利息の割合。	life-benefits	Loans	n3-bridge	general	利息
+返済	へんさい	repayment	借りた金を返すこと。	life-benefits	Loans	n3-bridge	general	元金
+保証	ほしょう	guarantee	他人の債務を代わりに履行することを約すこと。	life-benefits	Loans	n3-bridge	general	保証人
+保証人	ほしょうにん	guarantor	債務を保証する者。	life-benefits	Loans	n3-bridge	general	保証
+質権	しつけん	pledge	債権の担保として設定される権利。	life-benefits	Loans	insurance-specialist	both	質権設定
+質権設定	しつけん せってい	creation of a pledge	質権を設けること。	life-benefits	Loans	insurance-specialist	both	質権
+質権者	しつけんしゃ	pledgee	質権を持つ者。	life-benefits	Loans	insurance-specialist	both	質権設定
+質入	しつにゅう	pledging	質権の目的とすること。	life-benefits	Loans	insurance-specialist	both	質権設定
+質権実行	しつけん じっこう	foreclosure of a pledge	質権を実現して弁済を受けること。	life-benefits	Loans	insurance-specialist	both	質権
+譲渡	じょうと	assignment	権利を他の者に移転すること。	life-benefits	Loans	n2-bridge	both	質権
+配当	はいとう	dividend	契約者への利益の分配。	life-benefits	Dividends	n3-bridge	life	配当金
+積立配当	つみたて ほうとう	accumulated dividend	契約者に配当せず積立てておく配当。	life-benefits	Dividends	insurance-specialist	life	確定配当
+確定配当	かくてい ほうとう	dividend paid in cash	現金などで確定して支払う配当。	life-benefits	Dividends	insurance-specialist	life	積立配当
+中間配当	ちゅうかん ほうとう	interim dividend	事業年度の途中で支払われる配当。	life-benefits	Dividends	insurance-specialist	life	確定配当
+特別配当	とくべつ ほうとう	special dividend	余剰利益から支払われる配当。	life-benefits	Dividends	insurance-specialist	life	中間配当
+無配当	むはいとう	no dividend	配当がないこと。	life-benefits	Dividends	n2-bridge	life	配当
+余剰利益	よじょう りえき	surplus	予定と実際の差から生じる利益。	life-benefits	Dividends	insurance-specialist	life	配当
+予定利率	よてい りつりつ	assumed interest rate	保険金の計算に使う想定利率。	life-benefits	Pricing	insurance-specialist	life	予定死亡率
+予定死亡率	よてい しぼうりつ	assumed mortality rate	保険料の計算に使う死亡率。	life-benefits	Pricing	insurance-specialist	life	予定利率
+予定事業費率	よてい じぎょうひりつ	assumed expense rate	保険料に組み込む事業費の割合。	life-benefits	Pricing	insurance-specialist	life	予定利率
+生命表	せいめいひょう	life table	年齢別の死亡率をまとめた表。	life-benefits	Pricing	insurance-specialist	life	死亡率
+死亡率	しぼうりつ	mortality rate	ある年齢の人が死亡する割合。	life-benefits	Pricing	insurance-specialist	life	生命表
+平均余命	へいきん よめい	life expectancy	ある年齢からの平均的な生存期間。	life-benefits	Pricing	insurance-specialist	life	生命表
+保険数理	ほけん すうり	actuarial mathematics	保険の計算に使う数学。	life-benefits	Pricing	insurance-specialist	life	アクチュアリー
+アクチュアリー	あくちゅありー	actuary	保険の数理を扱う専門家。	life-benefits	Pricing	n2-bridge	general	保険数理
+新契約費	しん けいやくひ	new business expense	新規契約にかかる費用。	life-benefits	Pricing	insurance-specialist	life	維持費
+維持費	いじひ	maintenance expense	契約を維持するための費用。	life-benefits	Pricing	insurance-specialist	life	新契約費
+決算	けっさん	financial settlement	一定期間の収支をまとめること。	life-benefits	Pricing	n2-bridge	general	経理
+経理	けいり	accounting	会社の財務を計算し報告する業務。	life-benefits	Pricing	n2-bridge	general	決算
+一般勘定	いっぱん かんじょう	general account	標準的な資産を運用する勘定。	life-benefits	Investment	insurance-specialist	life	特別勘定
+特別勘定	とくべつ かんじょう	special account	運用結果が契約者に反映される勘定。	life-benefits	Investment	insurance-specialist	life	一般勘定
+資産運用	しさん うんよう	asset management	保険料や準備金を運用すること。	life-benefits	Investment	n2-bridge	general	特別勘定
+運用益	うんよう えき	investment gains	運用によって得た利益。	life-benefits	Investment	n2-bridge	general	資産運用
+為替レート	かわせ れーと	exchange rate	通貨の交換比率。	life-benefits	Investment	n3-bridge	life	為替差損
+為替差損	かわせ さそん	exchange loss	為替の変動によって生じる損失。	life-benefits	Investment	insurance-specialist	life	為替差益
+為替差益	かわせ さえき	exchange gain	為替の変動によって生じる利益。	life-benefits	Investment	insurance-specialist	life	為替差損
+外貨建て	がいか だて	foreign-currency denominated	外国の通貨で計算されること。	life-benefits	Investment	n2-bridge	life	円建て
+円建て	えんだて	yen-denominated	日本円で計算されること。	life-benefits	Investment	n2-bridge	life	外貨建て
+一時払	いちばらい	single premium	保険料を一度に払うこと。	life-benefits	Premium payment	n2-bridge	life	短期払
+短期払	たんき ばらい	short-term premium payment	払込期間を短く設定すること。	life-benefits	Premium payment	insurance-specialist	life	一時払
+平準	へいじゅん	level	期間を通じて一定であること。	life-benefits	Premium payment	insurance-specialist	life	逓増
+逓増	ていぞう	increasing	段階的に増えていくこと。	life-benefits	Premium payment	insurance-specialist	life	逓減
+逓減	ていげん	decreasing	段階的に減っていくこと。	life-benefits	Premium payment	insurance-specialist	life	逓増
+低解約返戻金型	てい かいやくへんれいきん がた	low surrender value type	解約返戻金を抑えて保険料を割安にした型。	life-benefits	Product features	insurance-specialist	life	解約返戻金
+全期型	ぜんきがた	whole-period type	保険期間の全期間にわたる型。	life-benefits	Product features	insurance-specialist	life	更新型
+無配当型	むはいとう がた	non-participating type	配当のない契約の型。	life-benefits	Product features	insurance-specialist	life	有配当型
+有配当型	ゆうはいとう がた	participating type	配当のある契約の型。	life-benefits	Product features	insurance-specialist	life	無配当型
+
+
+
+報酬	ほうしゅう	remuneration	労働の対価として支払われる金銭。	life-benefits	Pensions	n3-bridge	general	賞与

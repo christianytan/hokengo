@@ -1,0 +1,123 @@
+# 共済（JA共済・生協など）の用語 / kyosai terminology
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note
+共済	きょうさい	kyosai; mutual aid	相互の助け合いで事故に備える制度。	kyosai	Kyosai basics	n3-bridge	general	保険
+共済制度	きょうさい せいど	mutual aid scheme	共済を行うための仕組み。	kyosai	Kyosai basics	n3-bridge	general	共済
+共済用語	きょうさい ようご	kyosai terminology	共済で使う言葉。	kyosai	Kyosai basics	n3-bridge	it	保険用語
+保険用語	ほけん ようご	insurance terminology	保険で使う言葉。	kyosai	Kyosai basics	n3-bridge	it	共済用語
+共済のしおり	きょうさい の しおり	kyosai handbook	共済の内容をまとめた冊子。	kyosai	Kyosai basics	n2-bridge	general	約款
+用語集	ようごしゅう	glossary	用語を集めて意味を載せたもの。	kyosai	Kyosai basics	n3-bridge	it	共済のしおり
+共済金請求	きょうさいきん せいきゅう	kyosai claim	共済金の支払を求めること。	kyosai	Benefits	n3-bridge	general	共済金
+共済金支払	きょうさいきん しはらい	payment of kyosai benefits	共済金を支払うこと。	kyosai	Benefits	n3-bridge	general	共済金請求
+共済金受取人	きょうさいきん うけとりにん	kyosai beneficiary	共済金を受け取る人。	kyosai	Benefits	n2-bridge	general	保険金受取人
+共済金請求権	きょうさいきん せいきゅうけん	right to claim kyosai benefits	共済金を請求できる権利。	kyosai	Benefits	insurance-specialist	general	共済金請求
+入院等見舞金	にゅういん とう みまいきん	hospitalisation benefit	入院などに対して支払われる見舞金。	kyosai	Benefits	insurance-specialist	general	見舞金
+災害見舞金	さいがい みまいきん	disaster benefit	災害に対して支払われる見舞金。	kyosai	Benefits	insurance-specialist	general	見舞金
+入院一時金	にゅういん いちじきん	hospitalisation lump sum	入院に対して支払われる一時金。	kyosai	Benefits	insurance-specialist	general	一時金
+手術一時金	しゅじゅつ いちじきん	surgery lump sum	手術に対して支払われる一時金。	kyosai	Benefits	insurance-specialist	general	一時金
+通院見舞金	つういん みまいきん	outpatient benefit	通院に対して支払われる見舞金。	kyosai	Benefits	insurance-specialist	general	入院等見舞金
+弔慰金	ちょういきん	condolence money	亡くなった時に支払われる金。	kyosai	Benefits	insurance-specialist	general	見舞金
+遺族共済金	いぞく きょうさいきん	survivors' kyosai benefit	遺族に支払われる共済金。	kyosai	Benefits	insurance-specialist	general	共済金
+障害共済金	しょうがい きょうさいきん	disability kyosai benefit	障害に対して支払われる共済金。	kyosai	Benefits	insurance-specialist	general	共済金
+傷害共済	しょうがい きょうさい	accident kyosai	ケガを扱う共済。	kyosai	Products	n3-bridge	general	医療共済
+医療共済	いりょう きょうさい	medical kyosai	疾病を扱う共済。	kyosai	Products	n3-bridge	general	傷害共済
+年金共済	ねんきん きょうさい	pension kyosai	年金の形で行う共済。	kyosai	Products	n2-bridge	general	医療共済
+火災共済	かさい きょうさい	fire kyosai	火災などの損害を扱う共済。	kyosai	Products	n3-bridge	general	火災保険
+自動車共済	じどうしゃ きょうさい	motor kyosai	自動車の事故を扱う共済。	kyosai	Products	n3-bridge	general	自動車保険
+自転車共済	じてんしゃ きょうさい	bicycle kyosai	自転車の事故を扱う共済。	kyosai	Products	n3-bridge	general	自転車保険
+生活災害	せいかつ さいがい	daily-life accident	日常生活で起きる事故。	kyosai	Products	n2-bridge	general	災害
+自然災害	しぜん さいがい	natural disaster	自然の力による災害。	kyosai	Products	n3-bridge	general	生活災害
+盗難見舞金	とうなん みまいきん	theft benefit	盗難に対して支払われる見舞金。	kyosai	Products	insurance-specialist	general	災害見舞金
+水災見舞金	すいさい みまいきん	flood benefit	水災に対して支払われる見舞金。	kyosai	Products	insurance-specialist	general	災害見舞金
+共済掛金控除	きょうさいかけん こうじょ	kyosai premium deduction	共済掛金について認められる所得控除。	kyosai	Premiums	n2-bridge	general	保険料控除
+掛金控除	かけん こうじょ	premium deduction	掛金について認められる控除。	kyosai	Premiums	n2-bridge	general	共済掛金控除
+掛金払込	かけん はらいこみ	paying kyosai premiums	共済掛金を払うこと。	kyosai	Premiums	n3-bridge	general	払込方法
+掛金月額	かけん がつがく	monthly kyosai premium	一か月分の掛金の額。	kyosai	Premiums	n3-bridge	it	掛金
+掛金変更	かけん へんこう	change of kyosai premium	掛金の額を変えること。	kyosai	Premiums	n2-bridge	it	掛金
+掛金返還	かけん へんかん	return of kyosai premiums	掛金を返すこと。	kyosai	Premiums	n2-bridge	both	掛金
+掛金未払	かけん みはらい	unpaid kyosai premium	掛金が払われていないこと。	kyosai	Premiums	n2-bridge	it	掛金
+共済証書交付	きょうさい しょうしょ こうふ	delivering the kyosai certificate	共済証書を渡すこと。	kyosai	Documents	n2-bridge	general	共済証書
+共済証書再交付	きょうさい しょうしょ さいこうふ	reissuing the kyosai certificate	共済証書をもう一度作って渡すこと。	kyosai	Documents	n2-bridge	general	共済証書
+共済証券	きょうさい しょうけん	kyosai policy schedule	共済の内容を記した書類。	kyosai	Documents	n2-bridge	general	共済証書
+共済契約照会	きょうさい けいやく しょうかい	inquiry into a kyosai contract	共済契約の内容を調べること。	kyosai	Screens	n3-bridge	it	契約内容照会
+共済契約照会書	きょうさい けいやく しょうかいしょ	certificate of kyosai contract details	共済契約の内容を知らせる書類。	kyosai	Documents	n2-bridge	general	共済契約照会
+共済契約者変更	きょうさい けいやくしゃ へんこう	change of the kyosai policyholder	共済契約者を変えること。	kyosai	Contract changes	n2-bridge	general	契約者変更
+共済契約承継	きょうさい けいやく しょうけい	succession of a kyosai contract	共済契約を受け継ぐこと。	kyosai	Contract changes	insurance-specialist	general	承継共済契約者
+共済契約失効	きょうさい けいやく しっこう	lapse of a kyosai contract	共済契約が失効すること。	kyosai	Contract changes	n2-bridge	general	失効
+共済契約復活	きょうさい けいやく ふっかつ	reinstatement of a kyosai contract	失効した共済契約を元に戻すこと。	kyosai	Contract changes	n2-bridge	general	復活
+共済契約解約	きょうさい けいやく かいやく	surrender of a kyosai contract	共済契約を解約すること。	kyosai	Contract changes	n2-bridge	general	解約
+共済契約変更	きょうさい けいやく へんこう	change of a kyosai contract	共済契約の内容を変えること。	kyosai	Contract changes	n3-bridge	general	契約変更
+共済契約取消	きょうさい けいやく とりけし	rescission of a kyosai contract	共済契約を取り消すこと。	kyosai	Contract changes	n2-bridge	general	取消し
+共済契約無効	きょうさい けいやく むこう	voidance of a kyosai contract	共済契約が無効になること。	kyosai	Contract changes	n2-bridge	general	無効
+特則	とくそく	special provisions	共済で特約に当たる定め。	kyosai	Kyosai basics	insurance-specialist	general	特約
+特則付加	とくそく ふか	adding special provisions	特則を付け加えること。	kyosai	Kyosai basics	insurance-specialist	it	特約付加
+特則削除	とくそく さくじょ	deleting special provisions	特則をなくすこと。	kyosai	Kyosai basics	insurance-specialist	it	特約削除
+特則内容	とくそく ないよう	content of special provisions	特則の内容。	kyosai	Kyosai basics	n2-bridge	it	特約内容
+記名被共済者変更	きめい ひきょうさいしゃ へんこう	change of the named kyosai participant	記名被共済者を変えること。	kyosai	Contract changes	n2-bridge	general	被保険者変更
+等級	とうきゅう	rating class	共済掛金の割増・割引の段階。	kyosai	Rating	n2-bridge	general	等級制度
+等級制度	とうきゅう せいど	rating class system	等級による割増・割引の仕組み。	kyosai	Rating	insurance-specialist	general	等級
+等級認定	とうきゅう にんてい	determining the rating class	等級を決めること。	kyosai	Rating	insurance-specialist	it	等級
+等級変更	とうきゅう へんこう	change of the rating class	等級を変えること。	kyosai	Rating	insurance-specialist	it	等級
+等級訂正	とうきゅう ていせい	correcting the rating class	等級を正すこと。	kyosai	Rating	insurance-specialist	it	等級変更
+事故有	じこゆう	having an accident record	事故の有無が掛金に影響すること。	kyosai	Rating	insurance-specialist	general	事故有期間
+無事故	むじこ	no accident	事故がないこと。	kyosai	Rating	n2-bridge	general	事故有
+別段額	べつだん がく	agreed value	あらかじめ決めておく保険の対象の価額。	kyosai	Valuation	insurance-specialist	general	保険価額
+別段	べつだん	special agreement	特別に設けた取り決め。	kyosai	Valuation	insurance-specialist	it	別段額
+共済価額	きょうさい がく	kyosai insured value	共済の対象の価額。	kyosai	Valuation	insurance-specialist	general	保険価額
+共済価額明細	きょうさい がく めいさい	details of the kyosai insured value	共済価額の内訳。	kyosai	Valuation	insurance-specialist	it	共済価額
+価額明細	がく めいさい	details of the value	価額の内訳。	kyosai	Valuation	insurance-specialist	it	共済価額明細
+危険拡大届	きけん かくだい とどけで	notice of increasing the hazard	危険拡大を届け出る書類。	kyosai	Notification	insurance-specialist	general	届出
+危険変更届	きけん へんこう とどけで	notice of changing the hazard	危険の変更を届け出る書類。	kyosai	Notification	insurance-specialist	general	危険拡大届
+変更の届出	へんこう の とどけで	notification of change	変更について届出ること。	kyosai	Notification	n3-bridge	general	届出
+届出事項	とどけで じこう	items to be notified	届出るべき事項。	kyosai	Notification	n3-bridge	it	届出
+届出期限	とどけで きげん	notification deadline	届出の期限。	kyosai	Notification	n3-bridge	it	届出
+届出方法	とどけで ほうほう	notification method	届出のやり方。	kyosai	Notification	n3-bridge	it	届出
+共済事業報告	きょうさい じぎょう ほうこく	kyosai business report	共済事業の状況を報告すること。	kyosai	Organisation	n2-bridge	general	決算
+共済掛金率	きょうさいかけんりつ	kyosai premium rate	掛金の計算に使う割合。	kyosai	Rating	insurance-specialist	it	掛金
+共済掛金割増	きょうさいかけん わりまし	surcharge on kyosai premiums	掛金を高くすること。	kyosai	Rating	insurance-specialist	it	掛金
+共済掛金割引	きょうさいかけん わりびき	discount on kyosai premiums	掛金を安くすること。	kyosai	Rating	insurance-specialist	it	掛金
+掛金割増	かけん わりまし	surcharge on premiums	掛金を高くすること。	kyosai	Rating	insurance-specialist	it	割増
+掛金割引	かけん わりびき	discount on premiums	掛金を安くすること。	kyosai	Rating	insurance-specialist	it	割引
+共済金額計算	きょうさいきん けいさん	kyosai benefit calculation	共済金の額を計算すること。	kyosai	Benefits	n3-bridge	it	共済金額
+共済金支払査定	きょうさいきん しはらい さてん	assessment of a kyosai claim	共済金の支払について調べ決めること。	kyosai	Benefits	n2-bridge	it	支払査定
+共済金請求書類	きょうさいきん せいきゅう しょるい	documents for a kyosai claim	共済金の請求に必要な書類。	kyosai	Benefits	n3-bridge	general	請求書類
+共済金不支払	きょうさいきん ふしはらい	no kyosai benefit paid	共済金を支払わないこと。	kyosai	Benefits	n2-bridge	general	共済金
+共済金支払保留	きょうさいきん しはらい ほりゅう	kyosai payment on hold	共済金の支払を一時止めること。	kyosai	Benefits	n2-bridge	it	支払保留
+共済金過誤払	きょうさいきん ごはらい	overpayment of kyosai benefits	共済金を間違えて支払うこと。	kyosai	Benefits	insurance-specialist	it	過誤払
+共済金返戻	きょうさいきん へんれい	return of kyosai benefits	支払った共済金を取り戻すこと。	kyosai	Benefits	insurance-specialist	it	過誤払
+共済金請求権消滅	きょうさいきん せいきゅうけん しょうめつ	lapse of the right to claim	共済金を請求する権利が消えること。	kyosai	Benefits	insurance-specialist	general	消滅時効
+共済組合	きょうさい くみあい	mutual aid association	職域の組合員を救済する組合。	kyosai	Organisation	n2-bridge	general	共済組合連合会
+共済組合連合会	きょうさい くみあい れんごうかい	federation of mutual aid associations	共済組合を束ねる組織。	kyosai	Organisation	insurance-specialist	general	共済組合
+組合長	くみあいちょう	president of the association	組合の長。	kyosai	Organisation	n2-bridge	general	理事長
+組合会	くみあいかい	assembly of the association	組合の議決機関。	kyosai	Organisation	insurance-specialist	general	総会
+組合員証	くみあいん しょう	membership card	組合員であることを示す証。	kyosai	Documents	n2-bridge	general	組合員
+被共済者	ひきょうさいしゃ	kyosai participant	共済契約で保障される人。	kyosai	Kyosai basics	n2-bridge	general	被保険者
+被共済者証	ひきょうさいしゃ しょう	kyosai participant card	被共済者であることを示す証。	kyosai	Documents	n2-bridge	general	被保険者証
+共済給付	きょうさい きゅうふ	kyosai benefits	共済から行われる給付。	kyosai	Benefits	n2-bridge	general	共済金
+疾病手当	しっぺい てあて	sickness allowance	疾病についての手当。	kyosai	Benefits	insurance-specialist	general	傷病手当金
+割戻し	わりもどし	dividend refund	余剰を組合員に返すこと。	kyosai	Organisation	insurance-specialist	general	配当
+出資の割戻し	しゅっし の わりもどし	refund of contributions	出資について余剰を返すこと。	kyosai	Organisation	insurance-specialist	general	割戻し
+利用高割戻し	りようだか わりもどし	dividend on purchases	利用の額に応じて余剰を返すこと。	kyosai	Organisation	insurance-specialist	general	割戻し
+共同購入	きょうどう こうにゅう	group purchasing	まとめて買うこと。	kyosai	Organisation	n2-bridge	general	購買
+購買	こうばい	purchasing	物を買うこと。	kyosai	Organisation	n3-bridge	general	共同購入
+生協	せいきょう	consumer cooperative	生活協同組合の略称。	kyosai	Organisation	n3-bridge	general	生活協同組合
+共済連	きょうされん	kyosai federation	共済事業を行う連合会の略称。	kyosai	Organisation	n2-bridge	general	連合会
+全共連	ぜんされん	national federation of agricultural cooperatives	JA共済の全国組織。	kyosai	Organisation	n2-bridge	general	共済連
+JA共済	ジェイエー きょうさい	JA kyosai	農業協同組合が行う共済。	kyosai	Organisation	n3-bridge	general	共済
+こくみん共済	こくみん きょうさい	national kyosai	全国労働者共済生活協同組合連合会が行う共済。	kyosai	Organisation	n3-bridge	general	全労済
+全労済	ぜんろさい	national kyosai	全国労働者共済生活協同組合連合会の略称。	kyosai	Organisation	n3-bridge	general	こくみん共済
+コープ共済	こーぷ きょうさい	co-op kyosai	生活協同組合が行う共済。	kyosai	Organisation	n3-bridge	general	生協
+共済窓口	きょうさい まどぐち	kyosai counter	共済の手続きを受ける窓口。	kyosai	Screens	n3-bridge	it	窓口
+窓口	まどぐち	counter	手続きを受ける場所や画面。	kyosai	Screens	n3-bridge	it	画面
+共済事務	きょうさい じむ	kyosai administration	共済に関する事務。	kyosai	Operations	n2-bridge	it	事務
+共済事務処理	きょうさい じむ しょり	processing kyosai administration	共済の事務を処理すること。	kyosai	Operations	n2-bridge	it	事務処理
+共済業務	きょうさい ぎょうむ	kyosai operations	共済に関する業務。	kyosai	Operations	n2-bridge	it	業務
+共済システム	きょうさい しすてむ	kyosai system	共済の業務を扱う情報システム。	kyosai	Screens	n2-bridge	it	システム
+共済掛金控除証明書	きょうさいかけん こうじょ しょうめいしょ	certificate of kyosai premium deduction	共済掛金の控除を証明する書類。	kyosai	Documents	n2-bridge	general	控除証明書
+控除証明書	こうじょ しょうめいしょ	certificate of deduction	控除を受けるための証明書類。	kyosai	Documents	n3-bridge	general	控除
+保険料控除証明書	ほけんりょう こうじょ しょうめいしょ	certificate of insurance premium deduction	保険料の控除を証明する書類。	kyosai	Documents	n2-bridge	general	控除証明書
+年末調整	ねんまつ ちょうせい	year-end adjustment	給与の源泉徴収を最後に精算すること。	kyosai	Tax	n2-bridge	general	確定申告
+確定申告	かくてい しんこく	tax return	自分で税額を計算して申告すること。	kyosai	Tax	n3-bridge	general	年末調整
+給与所得者	きゅうよ しょとくしゃ	salary earner	給与を得ている人。	kyosai	Tax	n2-bridge	general	所得者
+所得者	しょとくしゃ	earner	所得を得ている人。	kyosai	Tax	n3-bridge	general	給与所得者
+
+

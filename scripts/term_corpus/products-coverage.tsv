@@ -1,0 +1,295 @@
+# 保険商品と保障 / insurance products and coverage
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note
+商品	しょうひん	insurance product	販売のために作られた保険の仕組み。	products-coverage	Products	n3-bridge	both	保険種類
+新商品	しん しょうひん	new product	新しく作られた保険の商品。	products-coverage	Products	n3-bridge	both	既存商品
+既存商品	きぞん しょうひん	existing product	すでに販売されている保険の商品。	products-coverage	Products	n3-bridge	both	新商品
+販売	はんばい	sale	保険を契約者に渡すこと。	products-coverage	Products	n3-bridge	both	募集
+販売中止	はんばい ちゅうし	suspending a sale	販売を一時的にやめること。	products-coverage	Products	n2-bridge	both	販売終了
+販売終了	はんばい しゅうりょう	end of sale	販売を打ち切ること。	products-coverage	Products	n2-bridge	both	販売中止
+販売単位	はんばい たんい	sales unit	販売する際のまとまり。	products-coverage	Products	n2-bridge	it	契約単位
+契約単位	けいやく たんい	contract unit	契約を数える際のまとまり。	products-coverage	Products	n2-bridge	it	販売単位
+取扱商品	とりあつかい しょうひん	products handled	その窓口や会社が扱う商品。	products-coverage	Products	n3-bridge	both	取扱
+取扱	とりあつかい	handling	業務として取り扱うこと。	products-coverage	Products	n3-bridge	it	取扱商品
+取扱店	とりあつかい みてん	agency handling a product	商品を扱う窓口。	products-coverage	Products	n2-bridge	both	代理店
+取扱開始	とりあつかい かいし	start of handling	その商品の扱いを始めること。	products-coverage	Products	n2-bridge	it	取扱終了
+取扱終了	とりあつかい しゅうりょう	end of handling	その商品の扱いをやめること。	products-coverage	Products	n2-bridge	it	取扱開始
+取扱制限	とりあつかい せいげん	handling restriction	取り扱いに設ける制限。	products-coverage	Products	n2-bridge	it	引受制限
+引受制限	ひきうけ せいげん	underwriting restriction	引き受けに設ける制限。	products-coverage	Products	n2-bridge	both	取扱制限
+引受年齢	ひきうけ ねんれい	entry age	引き受けが認められる年齢。	products-coverage	Products	n2-bridge	both	加入年齢
+加入年齢	かにゅう ねんれい	entry age	契約に加入できる年齢。	products-coverage	Products	n3-bridge	both	引受年齢
+加入可能人数	かにゅう かのう にんずう	number of people who can be covered	契約に加入できる人数。	products-coverage	Products	n2-bridge	both	加入人数
+加入人数	かにゅう にんずう	number covered	契約に加入している人数。	products-coverage	Products	n3-bridge	both	加入可能人数
+加入条件	かにゅう じょうけん	enrolment conditions	加入するために必要な条件。	products-coverage	Products	n3-bridge	both	加入年齢
+加入手続き	かにゅう てつづき	enrolment procedure	加入するための手続き。	products-coverage	Products	n3-bridge	both	加入条件
+加入者	かにゅうしゃ	subscriber; member	制度や契約に加入している者。	products-coverage	Products	n3-bridge	both	契約者
+加入者証	かにゅうしゃ しょう	membership card	加入していることを示す証。	products-coverage	Products	n2-bridge	general	保険証
+団体扱	だんたい あつかい	group scheme	団体をまとめて引き受ける扱い。	products-coverage	Group products	n2-bridge	both	個人扱
+個人扱	こじん あつかい	individual scheme	個人ごとに引き受ける扱い。	products-coverage	Group products	n2-bridge	both	団体扱
+団体扱割引	だんたい あつかい わりびき	group scheme discount	団体扱による割引。	products-coverage	Group products	insurance-specialist	both	団体扱
+組合員	くみあいん	member	組合の構成員。	products-coverage	Group products	n3-bridge	general	加入者
+出資	しゅっし	contribution	組合などに出す資金。	products-coverage	Group products	n2-bridge	general	出資金
+出資金	しゅっしきん	capital contribution	組合に出す資金の額。	products-coverage	Group products	n2-bridge	general	出資
+定款	ていかん	articles of association	組合の決まり事をまとめた文書。	products-coverage	Organisation	n2-bridge	general	規約
+規約	きやく	rules	組合や制度の決まり事。	products-coverage	Organisation	n2-bridge	general	定款
+総会	そうかい	general meeting	構成員全員で開く会議。	products-coverage	Organisation	n2-bridge	general	理事会
+理事会	りじかい	board of directors	業務について決める会議体。	products-coverage	Organisation	n2-bridge	general	総会
+監事	かんじ	auditor	業務の状況を監査する者。	products-coverage	Organisation	n2-bridge	general	理事会
+共済事業	きょうさい じぎょう	kyosai business	組合が行う共済の業務。	products-coverage	Organisation	n2-bridge	general	保険業
+保険業	ほけんぎょう	insurance business	保険を営む業務。	products-coverage	Organisation	n2-bridge	general	共済事業
+相互会社	そうご がいしゃ	mutual insurance company	契約者を株主とする保険会社。	products-coverage	Organisation	n2-bridge	life	株式会社
+株式会社	かぶしき がいしゃ	stock company	株式を持つ会社。	products-coverage	Organisation	n3-bridge	general	相互会社
+相互保険	そうご ほけん	mutual insurance	相互の助け合いによる保険。	products-coverage	Organisation	n2-bridge	both	共済
+企業組合	きぎょう くみあい	business cooperative	事業を行うための協同組合。	products-coverage	Organisation	n2-bridge	general	共済組合
+農業協同組合	のうぎょう きょうどう くみあい	agricultural cooperative	農業に関する協同組合。	products-coverage	Organisation	n2-bridge	general	生活協同組合
+生活協同組合	せいかつ きょうどう くみあい	consumer cooperative	生活のための協同組合。	products-coverage	Organisation	n2-bridge	general	農業協同組合
+協同組合	きょうどう くみあい	cooperative	出資して共に営む組合。	products-coverage	Organisation	n2-bridge	general	組合
+連合会	れんごうかい	federation	組合を束ねる組織。	products-coverage	Organisation	n2-bridge	general	中央会
+保障	ほしょう	coverage	保険がカバーする範囲と内容。	products-coverage	Coverage	n3-bridge	both	補償
+補償	ほしょう	indemnity	損害を埋め合わせること。	products-coverage	Coverage	n3-bridge	both	保障
+保障機能	ほしょう のうきょう	coverage function	契約が果たす保障の働き。	products-coverage	Coverage	n2-bridge	it	保障
+保障金額	ほしょう きんがく	coverage amount	保障の金額。	products-coverage	Coverage	n3-bridge	both	保険金額
+保障対象	ほしょう たいしょう	covered item	保障の対象となる物や人。	products-coverage	Coverage	n3-bridge	both	保障対象外
+保障対象外	ほしょう たいしょうがい	not covered	保障の対象にならないこと。	products-coverage	Coverage	n3-bridge	both	保障対象
+保障開始	ほしょう かいし	start of coverage	保障が始まること。	products-coverage	Coverage	n3-bridge	both	責任開始
+保障終了	ほしょう しゅうりょう	end of coverage	保障が終わること。	products-coverage	Coverage	n3-bridge	both	保障開始
+保障内容変更	ほしょう ないよう へんこう	change of coverage	保障の内容を変えること。	products-coverage	Coverage	n2-bridge	it	保障内容
+保障内容照会	ほしょう ないよう しょうかい	inquiry into the coverage	保障の内容を調べること。	products-coverage	Coverage	n2-bridge	it	保障内容
+保障期間	ほしょう きかん	coverage period	保障が続く期間。	products-coverage	Coverage	n3-bridge	both	保険期間
+保障限度	ほしょう げんど	coverage limit	保障の上限。	products-coverage	Coverage	n2-bridge	both	支払限度額
+保障設計	ほしょう せっけい	coverage design	必要な保障を考え形にすること。	products-coverage	Design	n2-bridge	both	保障
+保障設計書	ほしょう せっけいしょ	coverage design sheet	保障の内容をまとめた書類。	products-coverage	Design	n2-bridge	both	保障設計
+保障見直し	ほしょう みなおし	review of coverage	保障の内容を点検し変えること。	products-coverage	Design	n2-bridge	both	保障設計
+保障の重複	ほしょう の じゅうふく	overlapping coverage	保障が重なっていること。	products-coverage	Design	n2-bridge	both	重複保険
+保障の過不足	ほしょう の かふそく	too much or too little coverage	保障が多すぎたり足りなかったりすること。	products-coverage	Design	n2-bridge	both	保障の重複
+付加	ふか	adding	保障や特約を付け加えること。	products-coverage	Riders	n2-bridge	it	特約
+付加型	ふか がた	rider type	特約を付ける形。	products-coverage	Riders	n2-bridge	it	単独型
+単独型	たんどく がた	stand-alone type	主契約だけで構成する形。	products-coverage	Riders	n2-bridge	it	付加型
+特約付	とくやく つき	with a rider	特約が付いていること。	products-coverage	Riders	n3-bridge	both	特約なし
+特約なし	とくやく なし	without a rider	特約が付いていないこと。	products-coverage	Riders	n3-bridge	both	特約付
+特約内容	とくやく ないよう	rider details	特約の内容。	products-coverage	Riders	n3-bridge	it	特約
+特約保険料	とくやく ほけんりょう	rider premium	特約にかかる保険料。	products-coverage	Riders	n2-bridge	both	保険料
+特約保険金	とくやく ほけんきん	rider benefit	特約によって支払われる保険金。	products-coverage	Riders	n2-bridge	both	保険金
+特約責任	とくやく せきにん	rider liability	特約による保険者の責任。	products-coverage	Riders	n2-bridge	both	特約
+特約更新	とくやく こうしん	renewal of a rider	特約を更新すること。	products-coverage	Riders	n2-bridge	both	特約
+特約付加	とくやく ふか	adding a rider	特約を付け加えること。	products-coverage	Riders	n2-bridge	both	特約削除
+特約削除	とくやく さくじょ	deleting a rider	特約をなくすこと。	products-coverage	Riders	n2-bridge	it	特約付加
+特約削除請求	とくやく さくじょ せいきゅう	request to delete a rider	特約をなくすことを求める手続き。	products-coverage	Riders	n2-bridge	both	特約削除
+主契約なし	ぬし けいやく なし	no main contract	主契約を置かない形。	products-coverage	Contract structure	n2-bridge	it	主契約
+特約のみ	とくやく のみ	rider only	特約だけで構成されていること。	products-coverage	Contract structure	n2-bridge	it	主契約なし
+特約条件	とくやく じょうけん	rider conditions	特約の条件。	products-coverage	Riders	n2-bridge	it	特約
+特約種類	とくやく しゅるい	rider type	特約の種類。	products-coverage	Riders	n3-bridge	it	特約
+特約コード	とくやく こーど	rider code	特約を識別する符号。	products-coverage	Riders	n3-bridge	it	特約種類
+保険種類コード	ほけんしゅるい こーど	product code	保険の種類を識別する符号。	products-coverage	Riders	n3-bridge	it	特約コード
+基本契約	きほん けいやく	base contract	基本となる契約。	products-coverage	Contract structure	n2-bridge	both	主契約
+従契約	じゅう けいやく	subordinate contract	他の契約に従う契約。	products-coverage	Contract structure	insurance-specialist	both	主契約
+別契約	べつ けいやく	separate contract	別の契約として扱うこと。	products-coverage	Contract structure	n2-bridge	it	従契約
+契約口数	けいやく くすう	number of policy units	契約を口で数えた数。	products-coverage	Contract structure	insurance-specialist	it	契約件数
+契約枚数	けいやく まいすう	number of policies	契約を枚で数えた数。	products-coverage	Contract structure	insurance-specialist	it	契約件数
+契約高	けいやく だか	amount of business in force	契約の金額の大きさ。	products-coverage	Contract structure	insurance-specialist	it	契約件数
+保険金額増額	ほけんきん ぞうがく	increase of the sum insured	保険金額を増やすこと。	products-coverage	Coverage	n2-bridge	both	保険金額減額
+増額請求	ぞうがく せいきゅう	request for an increase	金額を増やすことを求めること。	products-coverage	Coverage	n2-bridge	both	減額請求
+減額請求	げんがく せいきゅう	request for a decrease	金額を減らすことを求めること。	products-coverage	Coverage	n2-bridge	both	増額請求
+一部解約	いちぶ かいやく	partial surrender	契約の一部を解約すること。	products-coverage	Coverage	n2-bridge	both	解約
+一部減額	いちぶ げんがく	partial decrease	契約の一部を減らすこと。	products-coverage	Coverage	insurance-specialist	both	一部解約
+一部取消	いちぶ とりけし	partial cancellation	契約の一部を取り消すこと。	products-coverage	Coverage	insurance-specialist	it	一部解約
+一部支払	いちぶ しはらい	partial payment	一部だけを支払うこと。	products-coverage	Coverage	n2-bridge	both	全額支払
+全額支払	ぜんがく しはらい	payment in full	全額を支払うこと。	products-coverage	Coverage	n2-bridge	both	一部支払
+一部損害	いちぶ そんがい	partial loss	一部の損害。	products-coverage	Loss scope	insurance-specialist	non-life	全損
+部分損	ぶぶん そんが	partial loss	一部の範囲についての損害。	products-coverage	Loss scope	insurance-specialist	non-life	全損
+全損扱い	ぜんそん あつかい	treating it as a total loss	すべて失われたものとして扱うこと。	products-coverage	Loss scope	insurance-specialist	non-life	全損
+修理代替	しゅうり たいがえ	replacing instead of repairing	修理の代わりに新しい物に替えること。	products-coverage	Loss scope	insurance-specialist	non-life	修理費用
+現物補償	げんぶつ ほしょう	compensation in kind	金ではなく物や役務で補うこと。	products-coverage	Loss scope	insurance-specialist	non-life	金銭補償
+金銭補償	きんせん ほしょう	monetary compensation	金銭で補償すること。	products-coverage	Loss scope	insurance-specialist	non-life	現物補償
+免責	めんしゃ	deductible; exclusion	保険者の責任から除く事項や金額。	products-coverage	Exclusions	n2-bridge	both	免責事項
+免責事項	めんしゃ じこう	exclusions	保険金が支払われない事由。	products-coverage	Exclusions	n2-bridge	both	免責事由
+免責事由	めんしゃ じゆう	exclusion grounds	免責となる事由。	products-coverage	Exclusions	insurance-specialist	both	免責事項
+免責条項	めんしゃ じょうこう	exclusion clause	免責を定める条項。	products-coverage	Exclusions	insurance-specialist	both	免責事項
+免責時間	めんしゃ じかん	exclusion hours	免責となる時間。	products-coverage	Exclusions	insurance-specialist	non-life	免責期間
+免責回数	めんしゃ かいすう	number of deductibles	免責が適用される回数。	products-coverage	Exclusions	insurance-specialist	non-life	免責金額
+免責適用	めんしゃ てきよう	applying a deductible	免責を適用すること。	products-coverage	Exclusions	n2-bridge	it	免責
+免責非適用	めんしゃ ひてきよう	not applying a deductible	免責を適用しないこと。	products-coverage	Exclusions	n2-bridge	it	免責適用
+免責事項通知	めんしゃ じこう つうち	notice of exclusion	免責となることを知らせること。	products-coverage	Exclusions	n2-bridge	both	免責事項
+支払除外	しはらい じょげん	exclusion from payment	支払の対象から除くこと。	products-coverage	Exclusions	n2-bridge	it	免責
+支払対象外項目	しはらい たいしょうがい もくこう	item that is not payable	支払の対象にならない項目。	products-coverage	Exclusions	n3-bridge	it	支払対象外
+支払われない場合	しはらわれない ばあい	cases where nothing is paid	保険金が支払われない事由のまとまり。	products-coverage	Exclusions	n3-bridge	both	免責事項
+不担保	たんぽ しない	not covered	保険の対象にしないこと。	products-coverage	Exclusions	insurance-specialist	non-life	担保
+担保	たんぽ	coverage	保険の対象とすること。	products-coverage	Exclusions	insurance-specialist	non-life	不担保
+担保条件	たんぽ じょうけん	coverage conditions	対象を担保する条件。	products-coverage	Exclusions	insurance-specialist	non-life	担保
+担保外	たんぽ がい	not covered	担保の対象にしないこと。	products-coverage	Exclusions	insurance-specialist	non-life	担保
+担保責任	たんぽ せきにん	liability to cover	保険者が引き受けた責任。	products-coverage	Exclusions	insurance-specialist	non-life	担保
+危険拡大	きけん かくだい	increasing the hazard	保険の対象や使い道を増やすこと。	products-coverage	Exclusions	insurance-specialist	non-life	通知義務
+通知義務	つうち ぎむ	duty to notify	変更や発生を届け出る義務。	products-coverage	Exclusions	insurance-specialist	non-life	危険拡大
+危険変更	きけん へんこう	change of hazard	保険の対象について危険が変わること。	products-coverage	Exclusions	insurance-specialist	non-life	危険拡大
+危険増加	きけん ぞうか	increasing the hazard	危険が高まること。	products-coverage	Exclusions	insurance-specialist	non-life	危険変更
+危険減少	きけん げんしょう	decreasing the hazard	危険が低まること。	products-coverage	Exclusions	insurance-specialist	non-life	危険変更
+危険負担	きけん ふたん	bearing the risk	リスクを引き受けること。	products-coverage	Exclusions	n2-bridge	both	危険分担
+危険分担	きけん ぶんたん	risk sharing	リスクを分かち合うこと。	products-coverage	Exclusions	n2-bridge	both	危険負担
+
+自動車保険	じどうしゃ ほけん	motor insurance	自動車に関する事故を扱う保険。	products-coverage	Motor	n3-bridge	non-life	自賠責保険
+自賠責保険	じばいせき ほけん	compulsory motor liability insurance	自動車の運行による人身事故を補償する強制の保険。	products-coverage	Motor	n2-bridge	non-life	自動車保険
+任意保険	にんい ほけん	voluntary motor insurance	自動車の任意で契約する保険。	products-coverage	Motor	n3-bridge	non-life	自賠責保険
+対人賠償保険	たいじん ばいしょう ほけん	bodily injury liability insurance	他人のケガや死亡を補償する保険。	products-coverage	Motor	n2-bridge	non-life	対物賠償保険
+対物賠償保険	たいぶつ ばいしょう ほけん	property damage liability insurance	他人の物や車への損害を補償する保険。	products-coverage	Motor	n2-bridge	non-life	対人賠償保険
+対物全損	たいぶつ ぜんそん	total loss of the property	対物の損害が全損と扱われること。	products-coverage	Motor	insurance-specialist	non-life	対物賠償保険
+搭乗者傷害	どうじょうしゃ しょうがい	injury of occupants	乗り合わせた人のケガを補償すること。	products-coverage	Motor	n2-bridge	non-life	人身傷害
+人身傷害保険	じんしん しょうがい ほけん	personal injury insurance	乗り合わせた人の身体障害を補償する保険。	products-coverage	Motor	n2-bridge	non-life	搭乗者傷害
+自損事故傷害	じそん じこ しょうがい	injury in a single-vehicle accident	自分の車の事故で自分が傷ついた場合の補償。	products-coverage	Motor	insurance-specialist	non-life	人身傷害
+無保険車傷害	むほけんしゃ しょうがい	injury caused by an uninsured vehicle	保険のない車による事故についての補償。	products-coverage	Motor	insurance-specialist	non-life	対人賠償保険
+車両保険	しゃりょう ほけん	vehicle insurance	自分の車の損害を補償する保険。	products-coverage	Motor	n3-bridge	non-life	対物賠償保険
+車両保険金額	しゃりょう ほけんきん	vehicle sum insured	車両保険の保険金額。	products-coverage	Motor	n2-bridge	non-life	保険金額
+個人賠償責任保険	こじん ばいしょう せきにん ほけん	personal liability insurance	日常生活の賠償責任を補償する保険。	products-coverage	Liability	n2-bridge	non-life	賠償責任
+賠償責任保険	ばいしょう せきにん ほけん	public liability insurance	法律上の賠償責任を補償する保険。	products-coverage	Liability	n2-bridge	non-life	個人賠償責任保険
+生産物賠償責任保険	せいさんぶつ ばいしょう せきにん ほけん	product liability insurance	作った物による事故の賠償責任を補償する保険。	products-coverage	Liability	insurance-specialist	non-life	賠償責任保険
+施設所有管理者賠償責任保険	しせつ しょゆう かんりしゃ ばいしょう せきにん ほけん	premises liability insurance	施設の利用による賠償責任を補償する保険。	products-coverage	Liability	insurance-specialist	non-life	賠償責任保険
+請負業者賠償責任保険	うけおい ごうしゃ ばいしょう せきにん ほけん	contractor's liability insurance	仕事を行ったことによる賠償責任を補償する保険。	products-coverage	Liability	insurance-specialist	non-life	賠償責任保険
+使用者賠償責任保険	しようしゃ ばいしょう せきにん ほけん	employer's liability insurance	従業員の仕事による賠償責任を補償する保険。	products-coverage	Liability	insurance-specialist	non-life	賠償責任保険
+労働者災害補償保険	ろうどうしゃ さいがい ほしょう ほけん	workers' accident compensation insurance	業務中の災害を補償する公的保険。	products-coverage	Liability	insurance-specialist	general	労災保険
+労災保険	ろうさい ほけん	workers' accident compensation insurance	業務中の災害を補償する公的保険の略称。	products-coverage	Liability	n3-bridge	general	労働者災害補償保険
+雇用保険	こよう ほけん	unemployment insurance	職を失った時の給付を行う公的保険。	products-coverage	Liability	n3-bridge	general	労災保険
+運送保険	うんそう ほけん	transit insurance	輸送中の荷物の損害を補償する保険。	products-coverage	Cargo	insurance-specialist	non-life	貨物保険
+貨物保険	かもつ ほけん	cargo insurance	荷物の輸送中の損害を補償する保険。	products-coverage	Cargo	insurance-specialist	non-life	運送保険
+海上貨物保険	かいじょう かもつ ほけん	marine cargo insurance	海上輸送の荷物の損害を補償する保険。	products-coverage	Cargo	insurance-specialist	non-life	貨物保険
+荷傷み	にきずみ	damage to cargo	荷物が傷むこと。	products-coverage	Cargo	insurance-specialist	non-life	損害
+荷受人	にうけにん	consignee	荷物を受け取る者。	products-coverage	Cargo	insurance-specialist	non-life	荷主
+荷主	にぬし	shipper	荷物を送る者。	products-coverage	Cargo	insurance-specialist	non-life	荷受人
+運送人	うんそうにん	carrier	荷物を運ぶ者。	products-coverage	Cargo	insurance-specialist	non-life	荷主
+盗難	とうなん	theft	物が盗まれること。	products-coverage	Perils	n3-bridge	non-life	紛失
+水濡れ	みずぬれ	water damage	水に濡れて損害が出ること。	products-coverage	Perils	insurance-specialist	non-life	水災
+水災	すいさい	flood damage	洪水などによる損害。	products-coverage	Perils	n2-bridge	non-life	水濡れ
+風災	ふうさい	wind damage	風による損害。	products-coverage	Perils	n2-bridge	non-life	雹災
+雹災	ひょうさい	hail damage	ひょうによる損害。	products-coverage	Perils	insurance-specialist	non-life	風災
+雪災	せつさい	snow damage	雪による損害。	products-coverage	Perils	n2-bridge	non-life	風災
+落雷	らくらい	lightning	かみのおちること。	products-coverage	Perils	n2-bridge	non-life	雷
+爆発	ばくはつ	explosion	急に爆はじけること。	products-coverage	Perils	n3-bridge	non-life	火災
+破裂	はれつ	burst	物が破れて裂けること。	products-coverage	Perils	n2-bridge	non-life	爆発
+飛来・落下	ひらい らっか	falling objects	物が飛んで来たり落ちたりすること。	products-coverage	Perils	insurance-specialist	non-life	外部物体の落下
+外部物体の落下	がいぶ ぶったい の らっか	fall of an external object	外の物が落ちて来ること。	products-coverage	Perils	insurance-specialist	non-life	飛来・落下
+家財	かざい	household goods	生活のための動産。	products-coverage	Fire	insurance-specialist	non-life	家財保険
+家財保険	かざい ほけん	household goods insurance	生活のための動産の損害を補償する保険。	products-coverage	Fire	n2-bridge	non-life	住戸用保険
+住戸用保険	じゅうこよう ほけん	household insurance	住居の建物と家財を補償する保険。	products-coverage	Fire	insurance-specialist	non-life	家財保険
+非住戸用保険	ひじゅうこよう ほけん	non-household fire insurance	店舗や事務所などの火災保険。	products-coverage	Fire	insurance-specialist	non-life	住戸用保険
+長期火災保険	ちょうき かさい ほけん	long-term fire insurance	期間の長い火災保険。	products-coverage	Fire	insurance-specialist	non-life	火災保険
+類焼損害	るいしょう そんがい	damage by spreading fire	火が移って生じた損害。	products-coverage	Fire	insurance-specialist	non-life	類焼損害補償
+類焼損害補償	るいしょう そんがい ほしょう	compensation for damage by spreading fire	火が移った相手への補償。	products-coverage	Fire	insurance-specialist	non-life	類焼損害
+延焼	えんしょう	spreading of fire	火が他の物に移ること。	products-coverage	Fire	insurance-specialist	non-life	類焼
+類焼	るいしょう	fire spreading to others	火が隣の物に移って損害が出ること。	products-coverage	Fire	insurance-specialist	non-life	延焼
+消火活動	しょうか かつどう	fire-fighting	火を消すための活動。	products-coverage	Fire	n2-bridge	non-life	消火費用
+消火費用	しょうか ひよう	cost of fire-fighting	火を消すことにかかる費用。	products-coverage	Fire	insurance-specialist	non-life	消火活動
+残存物取片づけ費用	ざんぞんぶつ とりかたづけ ひよう	cost of clearing the remains	残った物を片付ける費用。	products-coverage	Fire	insurance-specialist	non-life	残存物取片づけ費用特約
+残存物取片づけ費用特約	ざんぞんぶつ とりかたづけ ひよう とくやく	rider for clearing the remains	残った物の片付け費用を補償する特約。	products-coverage	Fire	insurance-specialist	non-life	残存物取片づけ費用
+事故有係数	じこゆう けいすう	accident factor	事故の有無による料率の係数。	products-coverage	Motor	insurance-specialist	non-life	等級
+ノンフリート等級	のんふりーと とうきゅう	individual no-fault rating class	自動車の個人契約の等級。	products-coverage	Motor	insurance-specialist	non-life	フリート契約
+フリート契約	ふりーと けいやく	fleet contract	自動車をまとめて引き受ける契約。	products-coverage	Motor	insurance-specialist	non-life	ノンフリート等級
+等級戻し	とうきゅう もどし	returning to the previous rating class	前の等級に戻すこと。	products-coverage	Motor	insurance-specialist	non-life	等級進行
+等級進行	とうきゅう しんこう	advancing the rating class	等級が上がること。	products-coverage	Motor	insurance-specialist	non-life	等級戻し
+等級降格	とうきゅう こうかく	downgrading the rating class	等級が下がること。	products-coverage	Motor	insurance-specialist	non-life	等級進行
+事故有係数適用期間	じこゆう けいすう てきよう きかん	period of applying the accident factor	事故の有無による係数が適用される期間。	products-coverage	Motor	insurance-specialist	non-life	事故有係数
+割増	わりまし	surcharge	料率を高くすること。	products-coverage	Rating	n2-bridge	non-life	割引
+割増・割引	わりまし わりびき	surcharge and discount	料率を高くしたり安くしたりすること。	products-coverage	Rating	insurance-specialist	non-life	等級
+料率改定	りつりつ かいてい	rate revision	料率を変えること。	products-coverage	Rating	insurance-specialist	non-life	料率
+料率改定日	りつりつ かいていび	date of rate revision	新しい料率が適用される日。	products-coverage	Rating	insurance-specialist	non-life	料率改定
+料率適用	りつりつ てきよう	applying a rate	料率を適用すること。	products-coverage	Rating	insurance-specialist	it	料率
+料率計算	りつりつ けいさん	rate calculation	料率を計算すること。	products-coverage	Rating	insurance-specialist	it	保険料計算
+保険料計算	ほけんりょう けいさん	premium calculation	保険料を計算すること。	products-coverage	Rating	n2-bridge	it	料率計算
+保険料算出	ほけんりょう さんしゅつ	premium rating	保険料を割り出して決めること。	products-coverage	Rating	insurance-specialist	it	保険料計算
+計算式	けいさんしき	formula	計算の式。	products-coverage	Rating	n3-bridge	it	計算方法
+仮計算	かり けいさん	provisional calculation	正式の前に仮で計算すること。	products-coverage	Rating	insurance-specialist	it	再計算
+概算	がいさん	rough estimate	およその計算。	products-coverage	Rating	n3-bridge	both	概算払
+概算払	がいさん ばらい	payment on account	概算の金額を先に支払うこと。	products-coverage	Rating	insurance-specialist	non-life	概算
+精算	せいさん	settlement of accounts	実際の額を計算して決めること。	products-coverage	Rating	n2-bridge	both	概算
+精算返戻金	せいさん へんれいきん	settlement refund	精算によって返される金。	products-coverage	Rating	insurance-specialist	non-life	精算
+精算保険料	せいさん ほけんりょう	settlement premium	精算によって決まる保険料。	products-coverage	Rating	insurance-specialist	non-life	精算
+短期料率	たんき りつりつ	short-term rate	短期の契約に使う料率。	products-coverage	Rating	insurance-specialist	non-life	日数計算
+日数計算	にっすう けいさん	day-count calculation	日数で計算すること。	products-coverage	Rating	insurance-specialist	it	短期料率
+
+
+
+中央会	ちゅうおうかい	central association	組合を指導する組織。	products-coverage	Organisation	n2-bridge	general	連合会
+旅行保険	りょこう ほけん	travel insurance	旅行中の事故や損害を扱う保険。	products-coverage	Travel	n3-bridge	non-life	旅行傷害保険
+旅行傷害保険	りょこう しょうがい ほけん	travel accident insurance	旅行中のケガなどを補償する保険。	products-coverage	Travel	n2-bridge	non-life	旅行保険
+海外旅行保険	かいがい りょこう ほけん	outbound travel insurance	海外の旅行中の事故などを補償する保険。	products-coverage	Travel	n3-bridge	non-life	国内旅行保険
+国内旅行保険	こくない りょこう ほけん	domestic travel insurance	国内の旅行中の事故などを補償する保険。	products-coverage	Travel	n3-bridge	non-life	海外旅行保険
+携行品損害	けいこうひん そんがい	damage to personal belongings	持って行った物の損害。	products-coverage	Travel	insurance-specialist	non-life	携行品損害保険
+携行品損害保険	けいこうひん そんがい ほけん	baggage insurance	持って行った物の損害を補償する保険。	products-coverage	Travel	insurance-specialist	non-life	携行品損害
+救援者費用	けんじょしゃ ひよう	cost of rescue and repatriation	救援や搬送にかかる費用。	products-coverage	Travel	insurance-specialist	non-life	救援者費用保険
+救援者費用保険	けんじょしゃ ひよう ほけん	rescue cost insurance	救援や搬送の費用を補償する保険。	products-coverage	Travel	insurance-specialist	non-life	救援者費用
+旅行変更費用	りょこう へんこう ひよう	cost of changing a trip	旅行を変えることにかかる費用。	products-coverage	Travel	insurance-specialist	non-life	旅行変更費用保険
+旅行変更費用保険	りょこう へんこう ひよう ほけん	trip cancellation insurance	旅行を取りやめることによる費用を補償する保険。	products-coverage	Travel	insurance-specialist	non-life	旅行変更費用
+傷害保険	しょうがい ほけん	accident insurance	ケガを扱う保険。	products-coverage	Accident	n3-bridge	non-life	傷害疾病定額保険
+傷害疾病定額保険	しょうがい しっぺい ていがく ほけん	fixed-sum accident and sickness insurance	ケガや疾病で決まった額が支払われる保険。	products-coverage	Accident	insurance-specialist	both	傷害保険
+傷害疾病入院費用保険	しょうがい しっぺい にゅういん ひよう ほけん	hospitalisation cost insurance	ケガや疾病の入院費用を補償する保険。	products-coverage	Accident	insurance-specialist	both	傷害疾病定額保険
+日常生活傷害保険	にちじょう しょうがい ほけん	daily-life accident insurance	日常生活のケガを補償する保険。	products-coverage	Accident	insurance-specialist	non-life	傷害保険
+自転車保険	じてんしゃ ほけん	bicycle insurance	自転車の事故を扱う保険。	products-coverage	Accident	n3-bridge	non-life	個人賠償責任保険
+レジャー保険	れじゃー ほけん	leisure insurance	余暇の活動中の事故を補償する保険。	products-coverage	Accident	n2-bridge	non-life	スポーツ保険
+スポーツ保険	すぽーつ ほけん	sports insurance	スポーツ中の事故を補償する保険。	products-coverage	Accident	n3-bridge	non-life	レジャー保険
+イベント保険	いべんと ほけん	event insurance	催事の事故や中止による損害を扱う保険。	products-coverage	Accident	n2-bridge	non-life	主催者費用保険
+主催者費用保険	しゅさいしゃ ひよう ほけん	organiser's cost insurance	催事を中止したことによる費用を補償する保険。	products-coverage	Accident	insurance-specialist	non-life	イベント保険
+企業総合保険	きぎょう そうごう ほけん	comprehensive commercial insurance	企業のさまざまな損害をまとめて扱う保険。	products-coverage	Business	n2-bridge	non-life	事業総合保険
+事業総合保険	じぎょう そうごう ほけん	business comprehensive insurance	事業活動の損害をまとめて扱う保険。	products-coverage	Business	insurance-specialist	non-life	企業総合保険
+建設工事保険	けんせつ こうじ ほけん	construction insurance	工事の途中の損害を扱う保険。	products-coverage	Business	insurance-specialist	non-life	組立保険
+組立保険	くみあげ ほけん	erection insurance	設備の組立て中の損害を扱う保険。	products-coverage	Business	insurance-specialist	non-life	建設工事保険
+機械保険	きかい ほけん	machinery insurance	機械の損害を扱う保険。	products-coverage	Business	insurance-specialist	non-life	機械設備保険
+機械設備保険	きかい せつび ほけん	machinery equipment insurance	機械設備の損害を扱う保険。	products-coverage	Business	insurance-specialist	non-life	機械保険
+電子設備機械保険	でんし せつび きかい ほけん	electronic equipment insurance	電子設備の損害を扱う保険。	products-coverage	Business	insurance-specialist	non-life	機械設備保険
+生産設備保険	せいさん せつび ほけん	production equipment insurance	生産設備の損害を扱う保険。	products-coverage	Business	insurance-specialist	non-life	機械設備保険
+営業保証保険	えいぎょう ほしょう ほけん	business interruption insurance	営業の停止による損害を補償する保険。	products-coverage	Business	insurance-specialist	non-life	利益保険
+利益保険	りえき ほけん	profit insurance	得るはずだった利益の損害を補償する保険。	products-coverage	Business	insurance-specialist	non-life	営業保証保険
+費用保険	ひよう ほけん	expense insurance	かかった費用を補償する保険。	products-coverage	Business	insurance-specialist	non-life	利益保険
+信用保険	しんよう ほけん	credit insurance	取引先の支払不能を補償する保険。	products-coverage	Business	insurance-specialist	non-life	保証保険
+保証保険	ほしょう ほけん	guarantee insurance	債務の不履行を補償する保険。	products-coverage	Business	insurance-specialist	non-life	信用保険
+身元保証保険	みもと ほしょう ほけん	fidelity guarantee insurance	従業員の横領などを補償する保険。	products-coverage	Business	insurance-specialist	non-life	保証保険
+輸出保険	ゆしゅつ ほけん	export credit insurance	輸出の代金が回収できないことを補償する保険。	products-coverage	Business	insurance-specialist	non-life	輸入保険
+輸入保険	ゆにゅう ほけん	import credit insurance	輸入取引のリスクを扱う保険。	products-coverage	Business	insurance-specialist	non-life	輸出保険
+農業保険	のうぎょう ほけん	agricultural insurance	農業の災害を扱う保険。	products-coverage	Agriculture	insurance-specialist	non-life	収入保険
+収入保険	しゅうにゅう ほけん	revenue insurance	農業収入の減少を補償する保険。	products-coverage	Agriculture	insurance-specialist	non-life	農業保険
+家畜保険	かちく ほけん	livestock insurance	家畜の死亡や流行病を扱う保険。	products-coverage	Agriculture	insurance-specialist	non-life	農業保険
+果樹保険	かじゅ ほけん	fruit tree insurance	果樹の災害を扱う保険。	products-coverage	Agriculture	insurance-specialist	non-life	農業保険
+漁業保険	ぎょぎょう ほけん	fishery insurance	漁業の損害を扱う保険。	products-coverage	Agriculture	insurance-specialist	non-life	漁船保険
+漁船保険	ぎょせん ほけん	fishing vessel insurance	漁船の損害を扱う保険。	products-coverage	Agriculture	insurance-specialist	non-life	漁業保険
+運航船舶保険	うんこう せんぱく ほけん	hull insurance	船舶の運航中の損害を扱う保険。	products-coverage	Marine	insurance-specialist	non-life	船舶保険
+船舶保険	せんぱく ほけん	marine hull insurance	船舶の損害を扱う保険。	products-coverage	Marine	insurance-specialist	non-life	運航船舶保険
+航空保険	こうくう ほけん	aviation insurance	航空機の事故を扱う保険。	products-coverage	Marine	insurance-specialist	non-life	旅客保険
+旅客保険	りょかく ほけん	aviation liability insurance	旅客の事故を扱う保険。	products-coverage	Marine	insurance-specialist	non-life	航空保険
+再保険	さいほけん	reinsurance	保険者が引き受けたリスクを他の保険者に移す保険。	products-coverage	Reinsurance	n2-bridge	both	原保険
+原保険	げん ほけん	original insurance	直接契約者から引き受けた保険。	products-coverage	Reinsurance	insurance-specialist	both	再保険
+再保険会社	さいほけん がいしゃ	reinsurance company	再保険を引き受ける会社。	products-coverage	Reinsurance	n2-bridge	both	原保険
+分出	ぶんしゅつ	ceding out	再保険にリスクを移すこと。	products-coverage	Reinsurance	insurance-specialist	both	引受再保険
+分出先	ぶんしゅつ さき	reinsurer	再保険を引き受ける側。	products-coverage	Reinsurance	insurance-specialist	both	再保険引受人
+再保険引受人	さいほけん ひきうけにん	reinsurer	再保険を引き受ける者。	products-coverage	Reinsurance	insurance-specialist	both	分出先
+分出人	ぶんしゅつにん	cedant	再保険にリスクを移す者。	products-coverage	Reinsurance	insurance-specialist	both	再保険引受人
+分出会社	ぶんしゅつ がいしゃ	ceding company	再保険にリスクを移す会社。	products-coverage	Reinsurance	insurance-specialist	both	再保険会社
+再保険料	さいほけんりょう	reinsurance premium	再保険にかかる保険料。	products-coverage	Reinsurance	insurance-specialist	both	再保険
+再保険金	さいほけんきん	reinsurance recoveries	再保険から受け取る金額。	products-coverage	Reinsurance	insurance-specialist	both	再保険料
+比例再保険	わりり さいほけん	proportional reinsurance	金額の割合でリスクを分ける再保険。	products-coverage	Reinsurance	insurance-specialist	both	非比例再保険
+非比例再保険	ひわりり さいほけん	non-proportional reinsurance	損害の額でリスクを分ける再保険。	products-coverage	Reinsurance	insurance-specialist	both	比例再保険
+損害割合再保険	そんがい わりり さいほけん	quota share reinsurance	契約ごとに割合で分ける再保険。	products-coverage	Reinsurance	insurance-specialist	both	超過損害再保険
+超過損害再保険	ちょうか そんがい さいほけん	excess of loss reinsurance	一定額を超えた損害を分ける再保険。	products-coverage	Reinsurance	insurance-specialist	both	損害割合再保険
+自己査定	じこ さてん	retaining a risk oneself	自分で引き受けて評価すること。	products-coverage	Reinsurance	insurance-specialist	both	自己負担額
+リスクテーパー	りすく てーぱー	risk taker	リスクを引き受ける者。	products-coverage	Reinsurance	n2-bridge	both	再保険引受人
+併存保険	へいぞん ほけん	concurrent insurance	同じ目的に複数の保険があること。	products-coverage	Reinsurance	insurance-specialist	non-life	重複保険
+裏付	うらづけ	backing	後ろから支えること。	products-coverage	Reinsurance	insurance-specialist	both	再保険
+第三分野保険	だいさんぶんや ほけん	accident and health insurance	生保と損保の中間に当たる保険。	products-coverage	Third sector	insurance-specialist	both	第三分野
+新種保険	しんしゅ ほけん	new line of insurance	新しく扱われる種類の保険。	products-coverage	Third sector	insurance-specialist	both	既存商品
+短期保険	たんき ほけん	short-term insurance	期間の短い保険。	products-coverage	Product terms	insurance-specialist	both	長期保険
+長期保険	ちょうき ほけん	long-term insurance	期間の長い保険。	products-coverage	Product terms	insurance-specialist	both	短期保険
+少額短期保険	がいがく たんき ほけん	minor short-term insurance	少額の短期の保険を扱う業種。	products-coverage	Product terms	insurance-specialist	non-life	短期保険
+一時払終身保険	いちばらい しゅうしん ほけん	single premium whole life insurance	一時払の終身保険。	products-coverage	Product terms	insurance-specialist	life	終身保険
+一時払個人年金保険	いちばらい こじん ねんきん ほけん	single premium personal pension insurance	一時払の個人年金保険。	products-coverage	Product terms	insurance-specialist	life	個人年金保険
+変額個人年金保険	へんがく こじん ねんきん ほけん	variable personal pension insurance	運用結果で受け取り額が変わる個人年金保険。	products-coverage	Product terms	insurance-specialist	life	個人年金保険
+外貨建て個人年金保険	がいかだて こじん ねんきん ほけん	foreign-currency personal pension insurance	外貨で計算される個人年金保険。	products-coverage	Product terms	insurance-specialist	life	変額個人年金保険
+低価格型	ていかかく がた	low-cost type	保険料を抑えた形。	products-coverage	Product terms	insurance-specialist	both	引受基準緩和型
+無選択型	むせんたく がた	no-medical-question type	健康状態の申告を求めない形。	products-coverage	Product terms	insurance-specialist	life	引受基準緩和型
+無配当終身保険	むはいとう しゅうしん ほけん	non-participating whole life insurance	配当のない終身保険。	products-coverage	Product terms	insurance-specialist	life	終身保険
+有配当終身保険	ゆうはいとう しゅうしん ほけん	participating whole life insurance	配当のある終身保険。	products-coverage	Product terms	insurance-specialist	life	終身保険
+学資保険	がくし ほけん	children's endowment insurance	子どもの学費に備える保険。	products-coverage	Product terms	n3-bridge	life	養老保険
+こども保険	こども ほけん	children's insurance	子どものための保険。	products-coverage	Product terms	n3-bridge	life	学資保険
+就業保険	しゅうぎょう ほけん	work compensation insurance	就業不能の期間に給付が出る保険。	products-coverage	Product terms	insurance-specialist	life	収入保障保険
+所得保障保険	しょとく ほしょう ほけん	income protection insurance	所得の減少を補償する保険。	products-coverage	Product terms	insurance-specialist	life	所得補償保険
+特定疾病保険	とくてい びょうえい ほけん	critical illness insurance	決まった疾病を扱う保険。	products-coverage	Product terms	insurance-specialist	life	三大疾病保険
+重要疾病保険	じゅうよう びょうえい ほけん	critical illness insurance	重要な疾病を扱う保険。	products-coverage	Product terms	insurance-specialist	life	特定疾病保険
+診断時一時金	しんだんじ いちじきん	lump sum at diagnosis	診断された時に支払われる一時金。	products-coverage	Product terms	insurance-specialist	life	一時金
+がんと診断された時	がんと しんだん された とき	at the time of a cancer diagnosis	がんと診断された時点。	products-coverage	Product terms	insurance-specialist	life	診断時一時金
+上皮内新がん	じょうひない しんがん	intraepithelial cancer	上皮内にとどまるがん。	products-coverage	Product terms	insurance-specialist	life	悪性新生物
+先進医療特約	せんしん いりょう とくやく	advanced medical care rider	先進医療の治療費を補償する特約。	products-coverage	Product terms	insurance-specialist	life	先進医療給付金
+通院等乗降介助	つういん とう じょうこう かいご	assistance with getting in and out of a vehicle	通院の時の乗り降りの介助。	products-coverage	Product terms	insurance-specialist	general	介護
+通院等見守り	つういん とう みまもり	looking on during an outing	通院などを見守ること。	products-coverage	Product terms	insurance-specialist	general	通院等乗降介助

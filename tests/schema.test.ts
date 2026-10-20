@@ -4,7 +4,7 @@ import { validateVocabularyEntry, validateVocabularyList } from "../src/lib/sche
 import { CATEGORY_IDS } from "../src/data/categories";
 
 describe("built-in vocabulary", () => {
-  it("loads at least 1000 validated entries", () => {
+  it("loads the generated corpus without a fixed 1000-entry cap", () => {
     expect(BUILT_IN_VOCABULARY.length).toBeGreaterThanOrEqual(1000);
     expect(getBuiltInVocabulary()).toBe(BUILT_IN_VOCABULARY);
   });

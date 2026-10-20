@@ -1,0 +1,132 @@
+# 保険契約の基礎 / insurance contract fundamentals
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note
+保険者	ほけん しゃ	insurer; the insurance company that bears the risk	保険を引き受けて保険金を支払う当事者。	contract-fundamentals	Parties	n2-bridge	both	保険契約者
+保険契約者	ほけん けいやく しゃ	policyholder; the contracting party	保険契約を締結し、保険料を払う義務を負う当事者。	contract-fundamentals	Parties	n2-bridge	both	保険者
+記名	きめい	named designation on the policy	証券や証書に氏名を書き入れて特定すること。	contract-fundamentals	Parties	insurance-specialist	non-life	無記名
+無記名	む きめい	un-named; bearer form	氏名の記載がないこと。記名がないと保険金の支払対象が特定できない。	contract-fundamentals	Parties	insurance-specialist	non-life	記名
+記名式	きめい しき	named form	氏名を記載して権利の帰属先を特定する形式。	contract-fundamentals	Parties	insurance-specialist	non-life	無記名式
+無記名式	む きめい しき	bearer form	氏名の記載を設けない形式。	contract-fundamentals	Parties	insurance-specialist	non-life	記名式
+保険証券番号	ほけん しょうけん ばんごう	policy number	保険証券をシステムで特定するための番号。	contract-fundamentals	Policy documents	n3-bridge	both	証券番号
+証券番号	しょうけん ばんごう	policy certificate number	証券や証書に付される識別番号。	contract-fundamentals	Policy documents	n3-bridge	both	保険証券番号
+保険証券	ほけん しょうけん	policy document	契約の内容を証明するために保険者が交付する書類。	contract-fundamentals	Policy documents	n3-bridge	both	共済証書
+約款	やっかん	policy conditions; terms and clauses	保険契約の内容を定める標準的な条項の集まり。	contract-fundamentals	Policy documents	n2-bridge	both	保険約款
+普通保険約款	ふつう ほけん やっかん	standard policy conditions	通常の契約に適用される基本の約款。	contract-fundamentals	Policy documents	insurance-specialist	non-life	特別約款
+特別約款	とくべつ やっかん	special conditions	普通保険約款に付いて内容を補足・変更する約款。	contract-fundamentals	Policy documents	insurance-specialist	non-life	普通保険約款
+基本約款	きほん やっかん	basic conditions	主契約の保障を定める約款の部分。	contract-fundamentals	Policy documents	insurance-specialist	both	特約
+保険業法	ほけんぎょうほう	Insurance Business Act	保険業の適正な運営と契約者保護を定める法律。	contract-fundamentals	Regulation	n2-bridge	general	商法
+商法	しょうほう	Commercial Code	保険契約の基本事項を定める商法の保険編を含む法典。	contract-fundamentals	Regulation	n2-bridge	general	保険業法
+金融庁	きんゆうちょう	Financial Services Agency	保険会社を監督する行政機関。	contract-fundamentals	Regulation	n3-bridge	general	保険業法
+保険代理店	ほけん だいりてん	insurance agency	保険者の委託を受けて保険を募集する業者。	contract-fundamentals	Distribution	n2-bridge	both	保険募集人
+代理店	だいりてん	agency	保険会社と契約者を仲介する販売窓口。	contract-fundamentals	Distribution	n3-bridge	both	保険代理店
+保険募集人	ほけん ぼしゅう にん	insurance solicitor	保険契約の締結を勧誘する者。	contract-fundamentals	Distribution	n2-bridge	both	外交員
+外交員	がいこういん	field agent	生命保険会社の募集担当の従業員。	contract-fundamentals	Distribution	n2-bridge	life	保険募集人
+募集代理店	ぼしゅう だいりてん	soliciting agency	契約の募集を行う代理店。	contract-fundamentals	Distribution	insurance-specialist	both	引受代理店
+引受代理店	ひきうけ だいりてん	underwriting agency	引受を行う権限を持つ代理店。	contract-fundamentals	Distribution	insurance-specialist	non-life	募集代理店
+保険仲立人	ほけん なかつどけいん	insurance intermediary	保険契約の仲立を行う者。	contract-fundamentals	Distribution	insurance-specialist	both	保険代理店
+仲立人	なかつどけいん	intermediary; broker	契約の仲介を業とする者。	contract-fundamentals	Distribution	insurance-specialist	both	保険仲立人
+ブローカー	ぶろーかー	broker	契約者側に立って保険契約を仲介する業者。	contract-fundamentals	Distribution	n3-bridge	non-life	代理店
+乗取り	のりとり	business switching	他社の契約を自社契約に乗り替えること。	contract-fundamentals	Distribution	insurance-specialist	both	乗換え
+乗換え	のりかえ	switching to another insurer	既存契約をやめて他社の契約に替えること。	contract-fundamentals	Distribution	n2-bridge	both	乗取り
+募集	ぼしゅう	solicitation	保険契約の締結を勧誘する活動。	contract-fundamentals	Distribution	n2-bridge	both	引受
+説明義務	せつめい ぎむ	duty to explain	契約内容やリスクを募集人が説明すべき義務。	contract-fundamentals	Sales conduct	n2-bridge	both	告知義務
+適合性原則	てきごうせい げんそく	suitability principle	契約者の属性に合った商品を勧めるという原則。	contract-fundamentals	Sales conduct	insurance-specialist	both	説明義務
+不実告知	ふじつ こくち	misrepresentation in solicitation	事実と違う内容を告げて契約をさせること。	contract-fundamentals	Sales conduct	insurance-specialist	both	告知義務
+告知	こくち	disclosure	契約の引受判断に必要な事項を申し出ること。	contract-fundamentals	Sales conduct	n2-bridge	both	告知義務
+純保険料	じゅん ほけんりょう	pure premium; risk premium	死亡率や発生率に基づいて計算される保険料の部分。	contract-fundamentals	Premium mechanics	insurance-specialist	both	付加保険料
+付加保険料	ふか ほけんりょう	loading; expense premium	事業費や利益に充てられる保険料の部分。	contract-fundamentals	Premium mechanics	insurance-specialist	both	純保険料
+事業費	じぎょうひ	operating expenses	保険会社の業務を行うための費用。	contract-fundamentals	Premium mechanics	n2-bridge	general	付加保険料
+保険料率	ほけんりょうりつ	premium rate	保険金額に対する保険料の割合。	contract-fundamentals	Premium mechanics	n2-bridge	both	料率
+料率	りつりつ	rate	保険料や配当を計算するための割合。	contract-fundamentals	Premium mechanics	n2-bridge	both	保険料率
+料率クラス	りつりつ くらす	rating class	リスクの区分に応じて設定される料率の段階。	contract-fundamentals	Premium mechanics	insurance-specialist	non-life	等級
+保険価額	ほけん がく	insured value	保険の対象となる物の評価額。	contract-fundamentals	Valuation	insurance-specialist	non-life	保険金額
+時価額	しかく	actual cash value	再取得価額から使用による価値の減少を差し引いた額。	contract-fundamentals	Valuation	insurance-specialist	non-life	再取得価額
+再取得価額	さいしゅとく がく	replacement cost	同じ物を新たに取得する場合の価額。	contract-fundamentals	Valuation	insurance-specialist	non-life	時価額
+新価	しんか	replacement value	同等の物を再取得するための価額。	contract-fundamentals	Valuation	insurance-specialist	non-life	時価額
+一部保険	いちぶ ほけん	under-insurance	保険金額が保険価額を下回っている契約。	contract-fundamentals	Valuation	insurance-specialist	non-life	超過保険
+超過保険	ちょうか ほけん	over-insurance	保険金額が保険価額を上回っている契約。	contract-fundamentals	Valuation	insurance-specialist	non-life	一部保険
+比例賠償	わりり ばいしょう	proportional indemnity	保険金額と保険価額の割合に応じて損害を補償すること。	contract-fundamentals	Valuation	insurance-specialist	non-life	一部保険
+重複保険	じゅうふく ほけん	double insurance	同じ保険の目的について複数の契約が成立していること。	contract-fundamentals	Valuation	insurance-specialist	non-life	損害
+損害	そんがい	loss; damage	保険によって填補される経済的な不利益。	contract-fundamentals	Loss concepts	n3-bridge	both	保険事故
+填補	てんぽう	indemnification	損害を経済的に埋め合わせること。	contract-fundamentals	Loss concepts	insurance-specialist	non-life	補償
+危険	きけん	hazard; the risk taken on	保険が取り扱う不確実な事由。	contract-fundamentals	Risk concepts	n2-bridge	both	保険事故
+危険単位	きけん たんい	risk unit	引受や料率計算の単位となる区分。	contract-fundamentals	Risk concepts	insurance-specialist	non-life	危険区分
+危険区分	きけん くぶん	risk classification	リスクを等級やクラスに分けること。	contract-fundamentals	Risk concepts	insurance-specialist	non-life	危険単位
+危険率	きけんりつ	risk rate	リスクの発生割合。	contract-fundamentals	Risk concepts	insurance-specialist	both	発生率
+発生率	はっせいりつ	frequency rate	事故や疾病の発生割合。	contract-fundamentals	Risk concepts	insurance-specialist	both	危険率
+保険の目的	ほけんの もくてき	subject matter insured	保険の対象となる物または利益。	contract-fundamentals	Valuation	insurance-specialist	non-life	保険対象
+保険対象	ほけん たいしょう	insured object	保険の対象とされる物・人・権利。	contract-fundamentals	Valuation	n3-bridge	both	保険対象外
+保険対象外	ほけん たいしょうがい	not covered	保険の対象から除かれる物や事由。	contract-fundamentals	Valuation	n3-bridge	both	保険対象
+実損額賠償	じつそんがく ばいしょう	indemnity of the actual loss	現実に生じた損害の額を補償すること。	contract-fundamentals	Valuation	insurance-specialist	non-life	定額保険
+定額保険	ていがく ほけん	fixed-sum contract	損害の額ではなく定められた金額が支払われる契約。	contract-fundamentals	Valuation	insurance-specialist	both	実損額賠償
+損害率	そんがいりつ	loss ratio	保険料収入に対する支払保険金の割合。	contract-fundamentals	Statistics	insurance-specialist	both	事業費率
+事業費率	じぎょうひりつ	expense ratio	保険料に対する事業費の割合。	contract-fundamentals	Statistics	insurance-specialist	both	損害率
+保有契約件数	ほゆう けいやく けんすう	policies in force	有効に継続している契約の件数。	contract-fundamentals	Statistics	n2-bridge	both	新契約件数
+新契約件数	しん けいやく けんすう	new business count	新たに締結された契約の件数。	contract-fundamentals	Statistics	n2-bridge	both	保有契約件数
+引受件数	ひきうけ けんすう	number accepted	引き受けた契約の件数。	contract-fundamentals	Statistics	n2-bridge	both	新契約件数
+支払件数	しはらい けんすう	number paid	保険金を支払った件数。	contract-fundamentals	Statistics	n2-bridge	both	引受件数
+料率算出	りつりつ さんしゅつ	rate calculation	保険料率を算出して認可や報告をする仕組み。	contract-fundamentals	Regulation	insurance-specialist	non-life	損害保険料率算出機構
+損害保険料率算出機構	そんがいほけんりつりつ さんしゅつきこう	Non-Life Insurance Rating Organization of Japan	損害保険の料率を算出する機関。	contract-fundamentals	Regulation	insurance-specialist	non-life	料率算出
+ソルベンシー・マージン比率	そるべんしー まーじん ひれい	solvency margin ratio	保険会社の支払能力を示す指標。	contract-fundamentals	Regulation	insurance-specialist	general	支払能力
+支払能力	しはらのうりょく	paying ability	保険金を支払える財務的な力。	contract-fundamentals	Regulation	n2-bridge	general	ソルベンシー・マージン比率
+破綻	はたん	failure of an insurer	保険会社が業務を続けられなくなること。	contract-fundamentals	Regulation	n2-bridge	general	契約移転
+契約移転	けいやく いてん	transfer of insurance contracts	破綻した会社の契約を他の会社へ移すこと。	contract-fundamentals	Regulation	insurance-specialist	both	破綻
+保険契約者保護機構	ほけんけいやくしゃ ほほきこう	Policyholders' Protection Fund Corporation	契約者を保護するための機構。	contract-fundamentals	Regulation	insurance-specialist	general	契約移転
+監督官庁	かんとく ちょうちょう	supervisory authority	保険会社を監督する行政機関。	contract-fundamentals	Regulation	n2-bridge	general	金融庁
+締結	けっけつ	conclusion of a contract	契約を成立させること。	contract-fundamentals	Contract formation	n2-bridge	both	申込
+申込	もうしこみ	application	契約を結ぶことを申し込むこと。	contract-fundamentals	Contract formation	n3-bridge	both	締結
+申込日	もうしこみび	application date	申込を受け付けた日。	contract-fundamentals	Contract formation	n3-bridge	both	申込
+申込者	もうしこみしゃ	applicant	契約を申し込んだ者。	contract-fundamentals	Contract formation	n3-bridge	both	契約者
+引受通知	ひきうけ つうち	notice of acceptance	引き受けたことを知らせる通知。	contract-fundamentals	Contract formation	insurance-specialist	both	引受
+責任開始	せきにん かいし	inception of cover	保険者の責任が始まること。	contract-fundamentals	Contract formation	insurance-specialist	both	責任開始日
+保険始期	ほけん しき	inception date	保障が始まる日。	contract-fundamentals	Contract formation	insurance-specialist	both	保険期間
+保険満期	ほけん まんき	expiry of the cover period	保険の期間が終わること。	contract-fundamentals	Contract formation	insurance-specialist	both	満期
+満期	まんき	maturity; expiry	保険期間が終了すること。	contract-fundamentals	Contract formation	n2-bridge	both	保険満期
+効力発生日	こうりょく はっせいび	effective date	契約の効力が生じる日。	contract-fundamentals	Contract formation	n2-bridge	both	適用日
+適用日	てきょうび	effective date of a change	変更の内容が適用される日。	contract-fundamentals	Contract formation	n2-bridge	it	効力発生日
+適用開始日	てきょう かいしび	application start date	設定や料率が適用され始める日。	contract-fundamentals	Contract formation	n2-bridge	it	適用日
+適用終了日	てきょう しゅうりょうび	application end date	適用が終わる日。	contract-fundamentals	Contract formation	n2-bridge	it	適用開始日
+適用除外	てきょう じょげん	exclusion from application	適用の対象から除くこと。	contract-fundamentals	Contract formation	n2-bridge	it	適用対象外
+適用対象外	てきょう たいしょうがい	out of scope	適用の対象にならないこと。	contract-fundamentals	Contract formation	n2-bridge	it	適用除外
+契約日	けいやくび	contract date	契約が成立した日。	contract-fundamentals	Contract formation	n3-bridge	both	申込日
+証憑	しょうほう	voucher; supporting document	取引や処理を証明する書類。	contract-fundamentals	Documents	n2-bridge	it	書類
+書類	しょるい	documents	手続きに必要な紙の資料。	contract-fundamentals	Documents	n3-bridge	both	証憑
+写し	うつし	copy of a document	書類の複写。	contract-fundamentals	Documents	n3-bridge	both	原本
+原本	げんぽん	original document	正本となる元の書類。	contract-fundamentals	Documents	n3-bridge	both	写し
+正本	せいぽん	official original	正式な原本として保管される記録。	contract-fundamentals	Documents	n2-bridge	it	原本
+副本	ふくほん	duplicate copy	正本と同じ内容の控え。	contract-fundamentals	Documents	n2-bridge	it	原本
+印鑑	いんかん	seal	署名の代わりに押す印章。	contract-fundamentals	Formalities	n3-bridge	general	押印
+押印	おういん	sealing	印鑑を押すこと。	contract-fundamentals	Formalities	n2-bridge	general	署名
+署名	しょめい	signature	自らが氏名を書くこと。	contract-fundamentals	Formalities	n3-bridge	general	押印
+記名押印	きめい おういん	signature and seal	氏名を書き印を押すこと。	contract-fundamentals	Formalities	insurance-specialist	general	押印
+実印	じついん	registered seal	自治体に登録された印章。	contract-fundamentals	Formalities	n2-bridge	general	印鑑
+印鑑登録	いんかん とうろく	seal registration	印章を自治体に登録すること。	contract-fundamentals	Formalities	n2-bridge	general	実印
+印鑑登録証明書	いんかん とうろく しょうめいしょ	certificate of registered seal	実印があることを証明する書類。	contract-fundamentals	Formalities	n2-bridge	general	印鑑登録
+戸籍	こせき	family register	出生や身分関係を記録する公簿。	contract-fundamentals	Formalities	n2-bridge	general	戸籍謄本
+戸籍謄本	こせき とうほん	full copy of the family register	戸籍の全部を証明する書類。	contract-fundamentals	Formalities	n2-bridge	general	戸籍抄本
+戸籍抄本	こせき しょうほん	extract of the family register	戸籍の一部を証明する書類。	contract-fundamentals	Formalities	n2-bridge	general	戸籍謄本
+住民票	じゅうみんひょう	certificate of residence	住所などを証明する書類。	contract-fundamentals	Formalities	n3-bridge	general	戸籍
+本人確認	ほんにん かくにん	identity verification	契約者本人であることを確認すること。	contract-fundamentals	Formalities	n3-bridge	both	本人確認書類
+代理人	だいりにん	representative	契約者の代わりに手続きを行う者。	contract-fundamentals	Parties	n3-bridge	both	委任
+委任	いにん	mandate	他の者に手続きを頼むこと。	contract-fundamentals	Parties	n2-bridge	both	委任状
+委任状	いにんじょう	power of attorney	委任を証明する書類。	contract-fundamentals	Parties	n2-bridge	both	委任
+同意	どうい	consent	内容を承知していること。	contract-fundamentals	Formalities	n3-bridge	both	同意書
+同意書	どういしょ	consent form	同意したことを記した書類。	contract-fundamentals	Formalities	n3-bridge	both	同意
+承諾書	しょうだくしょ	letter of consent	承諾したことを記した書類。	contract-fundamentals	Formalities	n2-bridge	both	同意書
+変更届	へんこう とどけで	notice of change	契約内容の変更を届出る書類。	contract-fundamentals	Formalities	n3-bridge	both	届出書
+届出書	とどけでしょ	notification form	届出に使う書類。	contract-fundamentals	Formalities	n3-bridge	both	変更届
+保険料控除	ほけんりょう こうじょ	insurance premium deduction	保険料の支払を所得から差し引く制度。	contract-fundamentals	Tax	n2-bridge	general	生命保険料控除
+生命保険料控除	せいめいほけんりょう こうじょ	life insurance premium deduction	生命保険料について認められる所得控除。	contract-fundamentals	Tax	n2-bridge	life	保険料控除
+地震保険料控除	じしんほけんりょう こうじょ	earthquake insurance premium deduction	地震保険料について認められる所得控除。	contract-fundamentals	Tax	n2-bridge	non-life	保険料控除
+所得税	しょとくぜい	income tax	所得にかかる税金。	contract-fundamentals	Tax	n3-bridge	general	住民税
+住民税	じゅうみんぜい	inhabitant tax	住所地にかかる地方税。	contract-fundamentals	Tax	n3-bridge	general	所得税
+相続税	そうぞくぜい	inheritance tax	財産の承継にかかる税金。	contract-fundamentals	Tax	n3-bridge	general	贈与税
+贈与税	ぞうよぜい	gift tax	無償の贈与にかかる税金。	contract-fundamentals	Tax	n3-bridge	general	相続税
+相続	そうぞく	inheritance	死亡によって財産や地位を受け継ぐこと。	contract-fundamentals	Tax	n3-bridge	general	相続人
+相続人	そうぞくにん	heir	財産を受け継ぐ者。	contract-fundamentals	Tax	n3-bridge	general	相続
+法定相続人	ほうてい そうぞくにん	statutory heir	法律で定められた相続人。	contract-fundamentals	Tax	insurance-specialist	life	相続人
+非課税	ひかぜい	non-taxable	課税されないこと。	contract-fundamentals	Tax	n3-bridge	general	課税
+課税	かぜい	taxable	課税されること。	contract-fundamentals	Tax	n3-bridge	general	非課税
+一時所得	いちじ しょとく	temporary income	一時金などにかかる所得区分。	contract-fundamentals	Tax	insurance-specialist	life	雑所得
+雑所得	ざつ しょとく	miscellaneous income	他の区分に入らない所得。	contract-fundamentals	Tax	insurance-specialist	life	一時所得
+
+

@@ -1,0 +1,66 @@
+# Web-sourced insurance terminology pack / 保険用語集から追加した用語
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note	sourceUrl	verification
+アンダーライティング	あんだーらいてぃんぐ	underwriting	保険会社が、申込みのあった保険契約に関するリスク状況を調査し、契約引受の可否と契約条件・保険料率を決定する契約引受判断全般。	underwriting	Underwriting	insurance-specialist	both	引受査定	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+解除	かいじょ	cancellation by the insurer	契約当事者の一方が、いったん成立した契約の効力を将来に向かって消滅させること。	contract-lifecycle	Termination	n2-bridge	both	解約	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+逆選択	ぎゃくせんたく	adverse selection	危険度の高いリスクに対して保険に加入する傾向が強いこと、または危険度の高い物件だけを選択して契約すること。	underwriting	Risk concepts	insurance-specialist	both	モラルリスク	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+クーリングオフ制度	くーりんぐおふ せいど	cooling-off system	保険契約の申込みをした者または保険契約者が一定の範囲内で申込みの撤回または解除を行うことができる制度。	contract-lifecycle	Application	n2-bridge	both	取消し	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+契約内容変更	けいやく ないよう へんこう	policy alteration	保険期間中に保険契約者等からの申し出に基づき契約内容を変更すること。	contract-lifecycle	Changes	n2-bridge	both	変更	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+公平の原則	こうへい の げんそく	principle of equity	危険度の異なる人々が加入しても不公平が生じないように、保険料は危険度を反映して決める考え方。	contract-fundamentals	Principles	insurance-specialist	both	収支相等の原則	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+収支相等の原則	しゅうしそうとう の げんそく	principle of equivalence	純保険料の総額と保険金の総額とが等しくなるようにして、保険契約全体で収支バランスを保つ考え方。	contract-fundamentals	Principles	insurance-specialist	both	公平の原則	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+傷害疾病定額保険	しょうがい しっぺい ていがく ほけん	fixed-benefit accident and sickness insurance	被保険者の傷害疾病による死亡・後遺障害や入院・通院等の給付事由が発生した場合、契約時に定めた金額が支払われる定額給付の保険。	products-coverage	Accident and health	n2-bridge	life	損害保険	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+ソルベンシーマージン比率	そるべんしーまーじん ひりつ	solvency margin ratio	保険会社の支払余力比率を示す指標。	contract-fundamentals	Regulation	insurance-specialist	general	支払余力	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+損害保険	そんぽ ほけん	non-life insurance	偶然の事故によって生じた損害に対して、実際の損害額に応じて保険金額を限度に保険金が支払われる損害てん補の保険。	products-coverage	Product types	n3-bridge	non-life	生命保険	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+第三者のためにする契約	だいさんしゃ の ため に する けいやく	contract for the benefit of a third party	保険契約において保険契約者と被保険者が異なる契約。	contract-fundamentals	Parties	insurance-specialist	both	被保険者	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+大数の法則	たいすう の ほうそく	law of large numbers	数多くの経験を集めると、一定の法則を見いだすことができるという考え方。	contract-fundamentals	Actuarial concepts	insurance-specialist	general	危険率	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+代理	だいり	agency authority	保険会社を代理して保険会社のために保険契約の締結を行うこと。	contract-fundamentals	Distribution	insurance-specialist	both	媒介	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+代理店委託契約書	だいりてん いたく けいやく しょう	agency agreement	保険会社と代理店との間で締結する契約書。	contract-fundamentals	Distribution	insurance-specialist	both	代理店	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+他の保険契約等	ほか の ほけん けいやく とう	other insurance contracts	同じ保険の対象や同じ被保険者に付けられている当該保険契約以外の保険契約等。	claims-payment	Other insurance	n2-bridge	both	重複保険	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+通知義務	つうち ぎむ	duty to notify	契約締結後に危険の増加等があった場合、遅滞なく保険会社に通知する義務。	contract-lifecycle	Duties	insurance-specialist	both	告知義務	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+特定契約	とくてい けいやく	specified contract	代理店自らと人的または資本的に密接な関係を有する者を保険契約者または被保険者とする保険契約。	contract-fundamentals	Distribution	insurance-specialist	both	自己契約	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+取消し	とりけし	rescission	一定の事由に基づき、契約当事者の一方が、契約の効力を契約時にさかのぼって消滅させること。	contract-lifecycle	Termination	n2-bridge	both	解除	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+頭金	あたまきん	down payment	保険料の払込方法の一つで、契約時にまとまった資金で保障の一部を一時払いしてしまう方法。	life-benefits	Premium payment	n2-bridge	life	一時払い	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+移行	いこう	conversion of coverage	契約後や保険料払込満了後など所定の時期に、生命保険会社が定める範囲内で契約している保障内容を変更できる取り扱い。	contract-lifecycle	Changes	n2-bridge	life	変更	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+一時払い	いちじばらい	single premium	保険期間全体の保険料を1回払いで払い込む契約方法。	contract-lifecycle	Premiums	n2-bridge	life	一括払い	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+一括払い	いっかつばらい	lump-sum payment	保険料をまとめて数回分払う方法。	contract-lifecycle	Premiums	n3-bridge	life	一時払い	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+延長保険	えんちょう ほけん	extended insurance	保険料の払い込みを中止し、その時点での解約返戻金を元に死亡保障のみの定期保険に変更する方法。	contract-lifecycle	Paid-up	n2-bridge	life	払済	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+介護保険	かいご ほけん	long-term care insurance	寝たきりや認知症によって介護が必要な状態となったときに一時金や年金が受け取れる保険。	products-coverage	Care	n3-bridge	life	医療保険	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+買増	かいま	paid-up additions	配当金を一時払の保険料として保険を買い増していく方法。	life-benefits	Dividends	insurance-specialist	life	配当金	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+基礎利益	きそりえき	underlying profit	保険本業の1年間の期間収益を示す指標。	contract-fundamentals	Financial metrics	insurance-specialist	general	経常利益	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+確定年金	かくてい ねんきん	certain annuity	生死に関係なく契約時に定めた一定期間、年金が受け取れる年金。	life-benefits	Annuities	n2-bridge	life	終身年金	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+基本年金	きほん ねんきん	base annuity	年金商品のうち、配当による増額部分を除いた部分。	life-benefits	Annuities	insurance-specialist	life	年金	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+キャッシュレス転換	きゃっしゅれす てんかん	cashless conversion	転換後契約の初回保険料を現金で払い込まず、転換前の契約の下取り価格を活用して保険料に充当する方法。	contract-lifecycle	Conversion	insurance-specialist	life	転換	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+給付金	きゅうふ きん	benefit payment	被保険者が入院したとき、手術をしたときなどに生命保険会社から受取人に支払われるお金。	life-benefits	Benefits	n3-bridge	life	保険金	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+拠出型企業年金	きょしゅつ がた きぎょう ねんきん	contributory corporate pension	在職中に任意に契約して保険料を払い込み、老後に年金を受け取るためのもの。	life-benefits	Pensions	insurance-specialist	life	企業年金	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+契約応当日	けいやく おうとう び	policy anniversary	契約日に応当する年単位、半年単位、月単位の日。	contract-lifecycle	Policy dates	n2-bridge	both	契約日	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+契約者貸付	けいやくしゃ かしつけ	policy loan	契約している生命保険の解約返戻金の一定範囲内で貸し付けを受けること。	life-benefits	Policy loans	n2-bridge	life	自動振替貸付	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+契約日	けいやく び	contract date	保険期間の起算日であり、保険料の払い込みや満期日の基準となる日。	contract-lifecycle	Policy dates	n3-bridge	both	責任開始日	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+健康体割引	けんこうたい わりびき	preferred rate discount	身長・体重・血圧・尿検査等について一定の基準を満たしている場合に通常より安い保険料を適用すること。	underwriting	Rating	insurance-specialist	life	引受基準	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+滅額	めんがく	reduction of coverage	保障額を減らすこと。	contract-lifecycle	Changes	n2-bridge	life	減額	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+限定告知型医療保険	げんてい こくち がた いりょう ほけん	simplified-issue medical insurance	通常の医療保険に加入できなかった場合でも、所定の告知項目に該当しなければ契約できる医療保険。	products-coverage	Medical	n2-bridge	life	医療保険	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+更新	こうしん	renewal	保障期間が終わったときに、引き続き保障を継続することができる制度。	contract-lifecycle	Renewal	n3-bridge	both	更新型	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+更新型	こうしん がた	renewable type	保障期間が年単位の契約期間のもので、保険期間が満了となる都度、更新できる契約。	products-coverage	Contract structure	n2-bridge	life	更新	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+高度障害保険金	こうど しょうがい ほけんきん	disability benefit	被保険者が所定の高度障害状態に該当した場合に、死亡保険金と同額が支払われる保険金。	life-benefits	Disability	n2-bridge	life	後遺障害	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+告知義務違反	こくち ぎむ はん	breach of duty of disclosure	現在の健康状態や過去の病歴、職業などの質問に対して、都合の悪いことを答えなかったり、ウソをつくこと。	contract-fundamentals	Sales conduct	n2-bridge	both	告知義務	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+ご契約のしおり	ご けいやく の しおり	policy summary booklet	契約内容や保険商品についての重要事項が記載されている書類。	contract-fundamentals	Documents	n3-bridge	life	重要事項説明書	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+裁定審査会	さいてい しんさかい	arbitration committee	生命保険に関する苦情・紛争を中立・公正かつ迅速に処理する機関。	contract-fundamentals	Dispute resolution	insurance-specialist	life	生命保険相談所	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+媒介	ばいかい	intermediation	保険会社と保険契約者との間に立って保険契約の締結の仲介を行うこと。	contract-fundamentals	Distribution	insurance-specialist	both	代理	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+被保険利益	ひほけん りえき	insurable interest	保険事故の発生によって被保険者が損害を被るおそれのある経済的な利益。	contract-fundamentals	Risk concepts	insurance-specialist	non-life	保険価額	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+保険金受取人	ほけんきん うけとり にん	beneficiary	傷害疾病定額保険契約において、保険金を受け取るべき者。	life-benefits	Beneficiaries	n2-bridge	life	受取人	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+保険契約申込書	ほけん けいやく もうしこみ しょ	application form	保険契約者が申し込む保険契約の内容を記載し、署名または記名押印のうえ保険会社に提出する書類。	contract-lifecycle	Application	n3-bridge	both	申込書	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+保険料即収の原則	ほけんりょう そくしゅう の げんそく	principle of immediate premium payment	約款で定める場合を除き、契約締結と同時に保険料の全額を領収しなければならない原則。	contract-fundamentals	Premium mechanics	insurance-specialist	non-life	保険料	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+保険料の支払義務	ほけんりょう の しはらい ぎむ	duty to pay premiums	保険契約の補償の対価として、保険会社に対して保険料を支払わなければならない義務。	contract-lifecycle	Premiums	n2-bridge	both	保険料	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+保険料領収証	ほけんりょう りょうしゅう しょう	premium receipt	保険料を現金または小切手で領収するときに発行する書類。	claims-payment	Payment documents	n2-bridge	both	領収証	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+無効	むこう	void contract	一定の事由のある場合、契約の効力が初めから全く生じないこと。	contract-fundamentals	Validity	n2-bridge	both	取消し	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+免責事由	めんせき じゆう	exclusions	保険約款に定められた保険金が支払われない事由。	products-coverage	Exclusions	n2-bridge	both	免責	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+モラルリスク	もらるりすく	moral hazard	保険金目当ての不正な保険金請求など、保険制度が不正な目的に利用されること。	underwriting	Risk concepts	insurance-specialist	both	逆選択	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+自己契約	じこ けいやく	self-contract	代理店が、自己または自己を雇用している者を保険契約者または被保険者とする保険契約。	contract-fundamentals	Distribution	insurance-specialist	both	特定契約	損保協会の用語集で確認。	https://www.sonpo.or.jp/wakaru/word/	verified
+一時投入保険料	いちじとうにゅう ほけんりょう	additional single premium	毎回の保険料とは別に、主契約の第1保険期間中に、ご希望により当社承諾のうえ追加でお払込みいただくお金。	life-benefits	Premium payment	insurance-specialist	life	一時払	明治安田の用語集で確認。	https://www.meijiyasuda.co.jp/words/	verified
+一般勘定	いっぱん かんじょう	general account	保険会社の勘定のうち、個別運用資産と区別される一般的な資産を管理する勘定。	contract-fundamentals	Financial metrics	insurance-specialist	life	特別勘定	損保ジャパンの用語集で確認。	https://faq.sompo-japan.jp/insglossary	verified
+医学的他覚所見	いがく てきかく けん	objective medical findings	医師の診察や検査などによって客観的に確認できる医学的な所見。	underwriting	Medical underwriting	insurance-specialist	life	告知	損保ジャパンの用語集で確認。	https://faq.sompo-japan.jp/insglossary	verified
+逸失利益	しつりつ りえき	lost profits	事故などによって得られなくなった将来の利益。	claims-payment	Damages	insurance-specialist	non-life	損害	損保ジャパンの用語集で確認。	https://faq.sompo-japan.jp/insglossary	verified
+運行供用者	うんこう きょうよう しゃ	operator providing the vehicle	自動車の運行を自己のために支配・利用している者。	products-coverage	Automobile	insurance-specialist	non-life	保有者	損保ジャパンの用語集で確認。	https://faq.sompo-japan.jp/insglossary	verified
+運行供用者責任	うんこう きょうよう しゃ せきにん	operator liability	自動車の運行によって生じた損害について、運行供用者が負う責任。	products-coverage	Automobile	insurance-specialist	non-life	使用者責任	損保ジャパンの用語集で確認。	https://faq.sompo-japan.jp/insglossary	verified
+アーンドベイシス損害率	あーんど べいしす そんがいりつ	earned basis loss ratio	 earned 保険料に対する支払保険金の割合として算出される損害率。	claims-payment	Loss ratios	insurance-specialist	non-life	損害率	損保ジャパンの用語集で確認。	https://faq.sompo-japan.jp/insglossary	verified
+重要事項説明書	じゅうよう じこう せつめい しょ	important matters disclosure statement	契約前に重要な事項を説明するための書類。	contract-fundamentals	Sales conduct	n2-bridge	both	ご契約のしおり	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+生命保険相談所	せいめい ほけん そうだん しょ	life insurance consultation office	生命保険に関する苦情や相談を受け付ける機関。	contract-fundamentals	Dispute resolution	n2-bridge	life	裁定審査会	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified
+転換	てんかん	conversion	既存契約を下取り価格として新しい契約に切り替える手続き。	contract-lifecycle	Conversion	n2-bridge	life	更新	保険ほっとラインの用語集で確認。	https://www.hoholine.com/guide/dictionary/dictionary/	verified

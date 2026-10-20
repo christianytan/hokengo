@@ -1,0 +1,134 @@
+# 引受査定とリスク審査 / underwriting
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note
+引受判断	ひきうけ はんだん	underwriting decision	引き受けるかどうか決めること。	underwriting	Decision	n2-bridge	both	引受査定
+引受可否	ひきうけ かひ	whether a risk is acceptable	引き受けられるかどうか。	underwriting	Decision	n2-bridge	both	引受判断
+引受権限	ひきうけ けんげん	underwriting authority	引き受けを決められる権限。	underwriting	Decision	insurance-specialist	both	決裁権限
+決裁権限	けっさい けんげん	approval authority	決裁を行える権限。	underwriting	Decision	insurance-specialist	it	引受権限
+上申	じょうしん	escalation	上位の判断を求めること。	underwriting	Decision	insurance-specialist	it	決裁
+上申案件	じょうしん あんけん	case escalated	上位判断に付した案件。	underwriting	Decision	insurance-specialist	it	上申
+自動引受	じどう ひきうけ	automatic underwriting	人の判断をせずに引き受けること。	underwriting	Automation	n2-bridge	it	自動査定
+自動査定	じどう さてん	automatic assessment	システムが自動で査定すること。	underwriting	Automation	n2-bridge	it	自動引受
+自動査定基準	じどう さてん きじゅん	automatic underwriting rules	自動査定の判断ルール。	underwriting	Automation	insurance-specialist	it	自動査定
+自動査定除外	じどう さてん じょげん	exclusion from automatic underwriting	自動査定の対象から除くこと。	underwriting	Automation	insurance-specialist	it	自動査定
+手動査定	しゅどう さてん	manual assessment	人が査定すること。	underwriting	Automation	n2-bridge	it	自動査定
+手作業	てさぎょう	manual work	人が行う作業。	underwriting	Automation	n3-bridge	it	自動処理
+査定権限	さてん けんげん	assessment authority	査定を決められる権限。	underwriting	Decision	insurance-specialist	it	決裁権限
+査定保留	さてん りゅうりょう	assessment on hold	査定を一時止めること。	underwriting	Decision	n2-bridge	it	査定
+査定依頼	さてん いらい	request for assessment	査定を頼むこと。	underwriting	Decision	n3-bridge	it	査定
+査定者	さてんしゃ	assessor	査定を行う者。	underwriting	Decision	n3-bridge	it	査定
+査定者コメント	さてんしゃ こめんと	assessor comment	査定の担当者の意見。	underwriting	Decision	n2-bridge	it	査定者
+査定方針	さてん ほうしん	assessment approach	査定の方針。	underwriting	Decision	insurance-specialist	it	査定基準
+査定履歴	さてん りれき	assessment history	査定の履歴。	underwriting	Decision	n3-bridge	it	査定
+査定履歴照会	さてん りれき しょうかい	inquiry into assessment history	査定の履歴を調べること。	underwriting	Decision	n3-bridge	it	査定履歴
+査定結果通知	さてん けっか つうち	notification of the assessment result	査定の結果を知らせること。	underwriting	Decision	n2-bridge	both	査定結果
+引受内諾	ひきうけ ないだく	provisional acceptance	正式の前の引き受けの同意。	underwriting	Decision	insurance-specialist	both	内諾
+引受拒否	ひきうけ きょひ	declining a risk	引き受けないこと。	underwriting	Decision	n2-bridge	both	引受不可
+引受拒絶	ひきうけ きょぜつ	declining a risk	引き受けを拒むこと。	underwriting	Decision	insurance-specialist	both	引受拒否
+引受辞退	ひきうけ じたい	withdrawal by the applicant	申込側が引き受けを取り下げること。	underwriting	Decision	insurance-specialist	both	引受拒否
+引受保留	ひきうけ りゅうりょう	underwriting on hold	引き受けの判断を後に回すこと。	underwriting	Decision	n2-bridge	it	引受拒否
+引受不可	ひきうけ ふか	not acceptable	引き受けられないこと。	underwriting	Decision	n2-bridge	both	引受拒否
+引受可能	ひきうけ かのう	acceptable	引き受けられること。	underwriting	Decision	n2-bridge	both	引受不可
+引受上限	ひきうけ じょうげん	underwriting limit	引き受けられる上限。	underwriting	Limits	n2-bridge	both	引受限度額
+引受限度額	ひきうけ げんどがく	underwriting limit amount	引き受けられる金額の上限。	underwriting	Limits	insurance-specialist	both	引受上限
+引受可能額	ひきうけ かのうがく	maximum acceptable sum	引き受けられる金額。	underwriting	Limits	n2-bridge	both	引受上限
+引受倍率	ひきうけ ばいりつ	acceptance multiple	収入などに対する保険金額の倍数。	underwriting	Limits	insurance-specialist	life	引受可能額
+年齢制限	ねんれい せいげん	age limit	年齢による制限。	underwriting	Limits	n3-bridge	both	引受年齢
+加入可能年齢	かにゅう かのう ねんれい	acceptable entry age	契約できる年齢。	underwriting	Limits	n2-bridge	both	加入年齢
+最高引受年齢	さいこう ひきうけ ねんれい	maximum entry age	引き受けられる最も高い年齢。	underwriting	Limits	insurance-specialist	both	加入年齢
+最低引受年齢	さいてい ひきうけ ねんれい	minimum entry age	引き受けられる最も低い年齢。	underwriting	Limits	insurance-specialist	both	最高引受年齢
+最低保険金額	さいてい ほけんきんがく	minimum sum insured	引き受けられる最も低い金額。	underwriting	Limits	insurance-specialist	both	最高保険金額
+最高保険金額	さいこう ほけんきんがく	maximum sum insured	引き受けられる最も高い金額。	underwriting	Limits	insurance-specialist	both	最低保険金額
+再保険者	さいほけんしゃ	reinsurer	再保険を引き受ける者。	underwriting	Delegation	insurance-specialist	both	原保険者
+原保険者	げんほけんしゃ	ceding company	再保険をかける保険者。	underwriting	Delegation	insurance-specialist	both	再保険者
+再保険手続	さいほけん てつづき	reinsurance arrangement	再保険をかける手続き。	underwriting	Delegation	insurance-specialist	it	再保険
+再保険引受	さいほけん ひきうけ	reinsurance acceptance	再保険を引き受けること。	underwriting	Delegation	insurance-specialist	it	再保険
+再保険委託	さいほけん いたしゃ	ceding reinsurance	再保険を他社に頼むこと。	underwriting	Delegation	insurance-specialist	it	再保険
+レトロセッション	れとろせっしょん	retrocessions	再保険の再保険。	underwriting	Delegation	insurance-specialist	both	再保険
+タンティーン	たんてぃーん	treaty facultative	個別の依頼を前提にしながらも引き受けを約す再保険。	underwriting	Delegation	insurance-specialist	both	ファカルティプ
+ファカルティプ	ふぁかるてぃぷ	facultative reinsurance	個別の案件ごとに引き受ける再保険。	underwriting	Delegation	insurance-specialist	both	タンティーン
+オプショナル	おぷしょなる	optional reinsurance	選択的にかけられる再保険。	underwriting	Delegation	insurance-specialist	both	再保険
+再保険仲介人	さいほけん かいしゅうにん	reinsurance broker	再保険を仲介する者。	underwriting	Delegation	insurance-specialist	both	保険仲立人
+共保険	きょうほけん	co-insurance	複数の保険者が同じ契約を引き受けること。	underwriting	Delegation	insurance-specialist	non-life	再保険
+引受割合	ひきうけ わりあい	share of acceptance	各保険者が引き受ける割合。	underwriting	Delegation	insurance-specialist	non-life	共保険
+主引受	ぬしひきうけ	lead underwriter	中心となって引き受けること。	underwriting	Delegation	insurance-specialist	non-life	共保険
+引受照会	ひきうけ しょうかい	underwriting inquiry	引き受けについて照会すること。	underwriting	Delegation	n2-bridge	it	引受
+引受履歴	ひきうけ りれき	underwriting history	引き受けの履歴。	underwriting	Records	n3-bridge	it	引受
+引受処理	ひきうけ しょり	acceptance processing	引き受けの処理を行うこと。	underwriting	Records	n3-bridge	it	引受
+引受取消	ひきうけ とりけし	cancelling an acceptance	引き受けを取り消すこと。	underwriting	Records	n2-bridge	it	引受処理
+内諾取消	ないだく とりけし	withdrawal of a provisional acceptance	内諾を取り消すこと。	underwriting	Records	insurance-specialist	it	内諾
+内諾日	ないだくび	date of provisional acceptance	内諾を出した日。	underwriting	Records	insurance-specialist	it	内諾
+申込取消	もうしこみ とりけし	withdrawal of an application	申込を取り消すこと。	underwriting	Records	n2-bridge	it	申込
+申込辞退	もうしこみ じたい	withdrawal by the applicant	申込側が取り下げること。	underwriting	Records	n2-bridge	it	申込取消
+申込変更	もうしこみ へんこう	change of an application	申込の内容を変えること。	underwriting	Records	n3-bridge	it	申込
+申込内容	もうしこみ ないよう	application details	申込の内容。	underwriting	Records	n3-bridge	it	申込
+申込情報	もうしこみ じょうほう	application information	申込に関する情報。	underwriting	Records	n3-bridge	it	申込内容
+申込書類	もうしこみ しょるい	application documents	申込に必要な書類。	underwriting	Records	n3-bridge	it	申込書
+申込書	もうしこみしょ	application form	申込に使う書類。	underwriting	Records	n3-bridge	both	申込書類
+告知変更	こくち へんこう	change of disclosure	告知の内容を変えること。	underwriting	Disclosure	n2-bridge	both	告知
+告知内容	こくち ないよう	disclosure details	告知の内容。	underwriting	Disclosure	n3-bridge	it	告知
+告知内容照会	こくち ないよう しょうかい	inquiry into the disclosure	告知の内容を調べること。	underwriting	Disclosure	n2-bridge	it	告知内容
+告知義務違反	こくち ぎむ はん	misconduct of the duty of disclosure	告知義務に反すること。	underwriting	Disclosure	insurance-specialist	both	告知義務
+告知拒否	こくち きょひ	refusal to disclose	告知を拒むこと。	underwriting	Disclosure	n2-bridge	both	告知
+告知不能	こくち ふのう	unable to disclose	告知できないこと。	underwriting	Disclosure	insurance-specialist	both	告知拒否
+告知不要	こくち ふよう	disclosure not required	告知が不要なこと。	underwriting	Disclosure	insurance-specialist	both	告知
+告知事項変更	こくち じこう へんこう	change of disclosed facts	告知事項を変えること。	underwriting	Disclosure	insurance-specialist	it	告知変更
+告知事項照会	こくち じこう しょうかい	inquiry into disclosed facts	告知事項を調べること。	underwriting	Disclosure	insurance-specialist	it	告知事項
+告知事項追加	こくち じこう ついか	adding disclosed facts	告知事項を増やすこと。	underwriting	Disclosure	insurance-specialist	it	告知事項
+告知事項削除	こくち じこう さくじょ	deleting disclosed facts	告知事項を減らすこと。	underwriting	Disclosure	insurance-specialist	it	告知事項
+告知書画像	こくちしょ がぞう	disclosure form image	告知書の画像データ。	underwriting	Documents	n2-bridge	it	告知書
+告知書写像	こくちしょ しゃぞう	image of the disclosure form	告知書の画像。	underwriting	Documents	n2-bridge	it	告知書画像
+検査結果	けんさ けっか	test results	健康診断などの結果。	underwriting	Medical	n2-bridge	life	健康診断
+健康診断	けんこう しんだん	health check-up	健康の状態を調べる検査。	underwriting	Medical	n3-bridge	life	検査結果
+人間ドック	にんげんどっく	comprehensive health screening	総合的な健康診断。	underwriting	Medical	n3-bridge	life	健康診断
+特定健康診査	とくべつ けんこう しんさ	specific health check-up	メタボリックシンドロームを対象とした健診。	underwriting	Medical	insurance-specialist	general	健康診断
+医師の意見書	いしの いけんしょ	physician's statement	医師が健康状態を記した書類。	underwriting	Medical	insurance-specialist	life	診断書
+診断名	しんだんめい	diagnosis name	医師が付けた疾病の名前。	underwriting	Medical	n2-bridge	life	疾病名
+疾病名	しっぺいめい	name of a disease	疾病の名前。	underwriting	Medical	n2-bridge	it	診断名
+合併症	がっぺいしょう	complication	他の病気を伴うこと。	underwriting	Medical	n2-bridge	life	基礎疾患
+基礎疾患	きそ しっかん	underlying disease	もともと持っている病気。	underwriting	Medical	insurance-specialist	life	合併症
+持病	じびゃん	pre-existing condition	普段から持っている病気。	underwriting	Medical	n3-bridge	life	既往症
+発病	びょうはい	onset of an illness	病気が起こること。	underwriting	Medical	n2-bridge	life	発病日
+発病日	びょうはいび	date of onset	病気が起こった日。	underwriting	Medical	insurance-specialist	life	発病
+発症	はっしょう	onset of symptoms	症状が現れること。	underwriting	Medical	n2-bridge	life	発症日
+発症日	はっしょうび	date of onset	症状が現れた日。	underwriting	Medical	n2-bridge	life	発症
+初診	はつしん	first examination	初めて医師の診察を受けること。	underwriting	Medical	insurance-specialist	life	初診日
+初診日	はつしんび	date of first examination	初めて診察を受けた日。	underwriting	Medical	insurance-specialist	life	初診
+治癒	ちゆ	cure	病気が治ること。	underwriting	Medical	n2-bridge	life	治癒日
+治癒日	ちゆび	date of cure	病気が治った日。	underwriting	Medical	insurance-specialist	life	治癒
+完治	かんち	full recovery	完全に治ること。	underwriting	Medical	insurance-specialist	life	治癒
+後遺	こうい	residual effects	治った後に残ること。	underwriting	Medical	n2-bridge	life	後遺障害
+医師の診立て	いしの みたて	doctor's opinion	医師の医学的な判断。	underwriting	Medical	insurance-specialist	life	医師の意見書
+医務審査	いむ しんさ	medical review	医学的な観点からの審査。	underwriting	Medical	insurance-specialist	life	審査
+医務判断	いむ はんだん	medical decision	医学的な判断。	underwriting	Medical	insurance-specialist	life	医務審査
+医務情報	いむ じょうほう	medical information	医学的な情報。	underwriting	Medical	n2-bridge	it	医療情報
+医療情報	いりょう じょうほう	medical information	医療に関する情報。	underwriting	Medical	n2-bridge	it	医務情報
+診療情報	しんりょう じょうほう	clinical information	診療に関する情報。	underwriting	Medical	n2-bridge	it	医療情報
+診療情報提供書	しんりょう じょうほう ていきょうしょ	referral letter	他の医療機関へ情報を提供する書類。	underwriting	Medical	insurance-specialist	life	診断書
+診療報酬	しんりょう ほうしゅう	medical fee	医療行為に対する対価。	underwriting	Medical	insurance-specialist	general	医療費
+診療行為	しんりょう こうい	medical treatment	医療が行う行為。	underwriting	Medical	insurance-specialist	general	診療報酬
+診療科	しんりょうか	medical department	診療の分野。	underwriting	Medical	n2-bridge	general	診療科目
+診療科目	しんりょう もくく	medical specialty	診療の分野の区分。	underwriting	Medical	n2-bridge	it	診療科
+医療機関	いりょう きかん	medical institution	医療を提供する施設。	underwriting	Medical	n3-bridge	general	病院
+医療機関名	いりょう きかん めい	name of a medical institution	医療機関の名前。	underwriting	Medical	n3-bridge	it	医療機関
+医療機関コード	いりょう きかん こーど	medical institution code	医療機関を特定する符号。	underwriting	Medical	insurance-specialist	it	医療機関名
+医療費	いりょうひ	medical cost	医療にかかる費用。	underwriting	Medical	n3-bridge	general	医療費明細
+医療費明細	いりょうひ めいさい	itemised medical costs	医療費の内訳。	underwriting	Medical	n2-bridge	it	医療費
+医師名簿	いし めいぼ	physician list	医師の名簿。	underwriting	Medical	insurance-specialist	it	医師
+医師名	いしめい	physician name	医師の名前。	underwriting	Medical	n3-bridge	it	医師名簿
+医師	いし	physician	病気を診断し治療する者。	underwriting	Medical	n3-bridge	general	医師名簿
+引受医	ひきうけい	examining physician	引受のために診察する医師。	underwriting	Medical	insurance-specialist	life	医師
+引受診査	ひきうけ しんさ	medical examination for underwriting	引き受けのために身体を調べること。	underwriting	Medical	insurance-specialist	life	医務審査
+引受診査結果	ひきうけ しんさ けっか	medical examination result	引き受けのための診察の結果。	underwriting	Medical	insurance-specialist	it	引受診査
+
+健康告知	けんこう こくち	health disclosure	健康状態についての告知。	underwriting	Disclosure	n2-bridge	life	告知
+健康状態	けんこうじょうたい	state of health	健康の状況。	underwriting	Disclosure	n3-bridge	life	健康告知
+既往症	きまじょう	pre-existing condition	以前からある病気。	underwriting	Disclosure	insurance-specialist	life	既往歴
+既往歴	きまれき	medical history	これまでに患った病気の履歴。	underwriting	Disclosure	insurance-specialist	life	既往症
+治療歴	ちりょうれき	treatment history	治療の履歴。	underwriting	Disclosure	n2-bridge	life	既往歴
+服薬歴	ふくやくれき	medication history	薬を飲んでいる履歴。	underwriting	Disclosure	n2-bridge	life	治療歴
+通院歴	つういんれき	hospital visit history	通院の履歴。	underwriting	Disclosure	insurance-specialist	life	治療歴
+入院歴	にゅういんれき	hospitalisation history	入院の履歴。	underwriting	Disclosure	n2-bridge	life	通院歴
+手術歴	しゅじゅつれき	surgery history	手術の履歴。	underwriting	Disclosure	n2-bridge	life	入院歴
+
+引受枚数	ひきうけ まいすう	number of policies accepted	引き受けた契約の枚数。	underwriting	Statistics	n2-bridge	it	引受件数
+引受金額	ひきうけ きんがく	amount accepted	引き受けた金額。	underwriting	Statistics	n2-bridge	it	引受件数

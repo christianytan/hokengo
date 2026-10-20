@@ -1,0 +1,183 @@
+# 契約ライフサイクルと変更手続き / contract lifecycle and changes
+# term	kana	translation	definitionJa	category	subcategory	difficulty	domains	confusable	note
+申込受付	もうしこみ うけつけ	accepting an application	申込を受け付けること。	contract-lifecycle	Application	n3-bridge	both	申込
+受付	うけつけ	reception; acceptance	申込や請求を受け付けること。	contract-lifecycle	Application	n3-bridge	it	申込受付
+受付日	うけつけび	date of acceptance	申込や請求を受け付けた日。	contract-lifecycle	Application	n3-bridge	it	受付
+受付番号	うけつけ ばんごう	acceptance number	受付ごとに付される番号。	contract-lifecycle	Application	n3-bridge	it	管理番号
+管理番号	かんり ばんごう	management number	処理を管理するために付す番号。	contract-lifecycle	Application	n3-bridge	it	受付番号
+引受審査	ひきうけ しんさ	underwriting review	引き受けるかどうかを審査すること。	contract-lifecycle	Application	insurance-specialist	both	引受査定
+内諾	ないだく	provisional acceptance	正式の前に引き受けの意思を示すこと。	contract-lifecycle	Application	insurance-specialist	both	承諾
+契約締結日	けいやく けっけつび	date of contract conclusion	契約が成立した日。	contract-lifecycle	Inception	n2-bridge	both	契約日
+効力発生	こうりょく はっせい	taking effect	契約の内容が効力を持つこと。	contract-lifecycle	Inception	n2-bridge	both	効力発生日
+成立待ち	せいりつ まち	pending conclusion	契約の成立を待っている状態。	contract-lifecycle	Inception	n2-bridge	it	申込受付
+証券交付	しょうけん こうふ	policy delivery	保険証券を契約者に渡すこと。	contract-lifecycle	Inception	insurance-specialist	both	証券発行
+証券発行	しょうけん はっこう	policy issuance	保険証券を作ること。	contract-lifecycle	Inception	insurance-specialist	both	証券交付
+証書交付	しょうしょ こうふ	certificate delivery	証書を契約者に渡すこと。	contract-lifecycle	Inception	insurance-specialist	both	証券交付
+始期	しき	inception	保障が始まる時点。	contract-lifecycle	Inception	insurance-specialist	both	満期
+満期日	まんきび	maturity date	保険期間が終わる日。	contract-lifecycle	Renewal	n2-bridge	both	満期
+更新手続	こうしん てつづき	renewal procedure	契約を更新するための手続き。	contract-lifecycle	Renewal	n3-bridge	both	更新
+更新案内	こうしん あんない	renewal notice	更新について知らせる書類。	contract-lifecycle	Renewal	n2-bridge	both	更新手続
+更新勧誘	こうしん かんゆう	renewal solicitation	更新を勧める活動。	contract-lifecycle	Renewal	insurance-specialist	both	更新案内
+再契約	さいけいやく	re-contracting	終わった契約を改めて結ぶこと。	contract-lifecycle	Renewal	insurance-specialist	both	更新
+継続	けいぞく	continuation	契約を続けること。	contract-lifecycle	Renewal	n3-bridge	both	更新
+継続契約	けいぞく けいやく	continuing contract	そのまま続く契約。	contract-lifecycle	Renewal	n2-bridge	both	継続
+自動継続	じどう けいぞく	automatic renewal	手続きがなくても契約が続くこと。	contract-lifecycle	Renewal	insurance-specialist	both	自動更新
+黙示の継続	もくし の けいぞく	tacit renewal	明示しないまま契約を続けること。	contract-lifecycle	Renewal	insurance-specialist	both	自動継続
+更新拒絶	こうしん きょぜつ	refusal to renew	更新を認めないこと。	contract-lifecycle	Renewal	insurance-specialist	both	更新
+更新料	こうしんりょう	renewal fee	更新に必要な費用。	contract-lifecycle	Renewal	n2-bridge	both	更新手続
+再募集	さいぼしゅう	re-solicitation	既存契約について改めて募集すること。	contract-lifecycle	Renewal	insurance-specialist	both	更新勧誘
+失効通知	しっこう つうち	lapse notice	失効を知らせる通知。	contract-lifecycle	Lapse	n2-bridge	both	失効
+失効日	しっこうび	lapse date	契約が失効した日。	contract-lifecycle	Lapse	n3-bridge	both	失効
+失効後	しっこう ご	after lapse	失効した後の期間。	contract-lifecycle	Lapse	n2-bridge	both	失効日
+復活手続き	ふっかつ てつづき	reinstatement procedure	失効した契約を元に戻す手続き。	contract-lifecycle	Lapse	n2-bridge	both	復活
+蘇生	そせい	revival	終わった契約を再び有効にすること。	contract-lifecycle	Lapse	insurance-specialist	both	復活
+健康状態再告知	けんこうじょうたい さいこくち	re-disclosure of health	復活や転換で健康状態を改めて申告すること。	contract-lifecycle	Lapse	insurance-specialist	life	告知
+失効処理	しっこう しょり	lapse processing	契約を失効させる処理。	contract-lifecycle	Lapse	n3-bridge	it	失効
+転換契約	てんかん けいやく	conversion contract	既存契約を新しい契約に替えること。	contract-lifecycle	Changes	insurance-specialist	life	転換
+契約変更請求	けいやく へんこう せいきゅう	request to change a contract	契約内容の変更を求めること。	contract-lifecycle	Changes	n2-bridge	both	契約変更
+変更請求	へんこう せいきゅう	change request	内容の変更を求める手続き。	contract-lifecycle	Changes	n3-bridge	it	契約変更
+変更処理	へんこう しょり	change processing	変更の内容をシステムで処理すること。	contract-lifecycle	Changes	n3-bridge	it	変更請求
+変更適用	へんこう てきよう	applying a change	変更を有効にすること。	contract-lifecycle	Changes	n2-bridge	it	変更処理
+変更取消	へんこう とりけし	cancelling a change	適用前の変更を取り消すこと。	contract-lifecycle	Changes	n2-bridge	it	変更適用
+承認待ち	しょうにん まち	pending approval	承認が済むまでの状態。	contract-lifecycle	Changes	n3-bridge	it	承認
+承認取消	しょうにん とりけし	withdrawal of approval	承認を取り消すこと。	contract-lifecycle	Changes	n2-bridge	it	承認
+却下	きゃっか	rejection	請求や申請を退けること。	contract-lifecycle	Changes	n2-bridge	it	承認
+保険料変更	ほけんりょう へんこう	premium change	保険料の金額を変えること。	contract-lifecycle	Changes	n3-bridge	both	保険料
+保険金額変更	ほけんきんがく へんこう	change of the sum insured	保険金額を変える手続き。	contract-lifecycle	Changes	n2-bridge	both	保険金額
+保険金額減額	ほけんきんがく げんがく	reduction of the sum insured	保険金額を下げること。	contract-lifecycle	Changes	n2-bridge	both	増額
+増額	ぞうがく	increase	金額を増やすこと。	contract-lifecycle	Changes	n3-bridge	both	減額
+減額	げんがく	reduction	金額を減らすこと。	contract-lifecycle	Changes	n3-bridge	both	増額
+部分払	ぶぶん ばらい	partial withdrawal	契約の一部を取り崩して受け取ること。	contract-lifecycle	Changes	insurance-specialist	life	全部払
+全部払	ぜんぶ ばらい	full withdrawal	契約の全部を取り崩して受け取ること。	contract-lifecycle	Changes	insurance-specialist	life	部分払
+契約者貸付変更	けいやくしゃ かしつけ へんこう	change of a policy loan	契約者貸付の条件を変えること。	contract-lifecycle	Changes	insurance-specialist	life	契約者貸付
+住所変更届	じゅうしょ へんこう とどけで	notice of change of address	住所の変更を届出る書類。	contract-lifecycle	Changes	n3-bridge	both	住所変更
+名義変更届	めいぎ へんこう とどけで	notice of change of the insured party	契約の名義を変える届出。	contract-lifecycle	Changes	n2-bridge	non-life	名義変更
+変更記録	へんこう きろく	change record	変更の内容を記録したもの。	contract-lifecycle	Changes	n3-bridge	it	履歴
+履歴照会	りれき しょうかい	history inquiry	処理の履歴を調べること。	contract-lifecycle	Changes	n3-bridge	it	履歴
+経緯	けいい	circumstances so far	手続きに至るまでの事情。	contract-lifecycle	Changes	n2-bridge	it	履歴
+処理状況	しょり じょうきょう	processing status	手続きがどこまで進んでいるか。	contract-lifecycle	Status	n3-bridge	it	ステータス
+処理ステータス	しょり すてーたす	processing status	処理の進行状態を示す区分。	contract-lifecycle	Status	n3-bridge	it	処理状況
+処理完了	しょり かんりょう	processing complete	処理が終わった状態。	contract-lifecycle	Status	n3-bridge	it	処理状況
+処理取消	しょり とりけし	processing cancelled	処理が取り消された状態。	contract-lifecycle	Status	n3-bridge	it	処理完了
+処理保留	しょり りゅうりょう	processing on hold	処理が一時的に止められている状態。	contract-lifecycle	Status	n3-bridge	it	処理完了
+差止	さしとめ	suspension	処理や支払を一旦止めること。	contract-lifecycle	Status	n2-bridge	it	保留
+差止解除	さしとめ かいじ	lifting a suspension	差止をやめること。	contract-lifecycle	Status	insurance-specialist	it	差止
+保留	りゅうりょう	holding	判断や処理を後に回すこと。	contract-lifecycle	Status	n3-bridge	it	差止
+保留解除	りゅうりょう かいじ	releasing a hold	保留をやめること。	contract-lifecycle	Status	insurance-specialist	it	保留
+完了	かんりょう	completion	処理が終わること。	contract-lifecycle	Status	n3-bridge	it	処理完了
+取消処理	とりけし しょり	cancellation processing	取り消しの処理を行うこと。	contract-lifecycle	Status	n3-bridge	it	取消
+解除処理	かいじょ しょり	cancellation processing	契約を解除する処理。	contract-lifecycle	Status	n3-bridge	it	取消処理
+無効処理	むこう しょり	invalidation processing	契約を無効とする処理。	contract-lifecycle	Status	n3-bridge	it	解除処理
+抹消	まっしょう	deletion	登録済みの情報を消すこと。	contract-lifecycle	Status	n2-bridge	it	削除
+削除	さくじょ	deletion	データを消すこと。	contract-lifecycle	Status	n3-bridge	it	抹消
+更新処理	こうしん しょり	renewal processing	更新をシステムで処理すること。	contract-lifecycle	Status	n3-bridge	it	更新手続
+満期処理	まんき しょり	maturity processing	満期をシステムで処理すること。	contract-lifecycle	Status	n3-bridge	it	更新処理
+督促状	そくこくじょう	dunning notice	払込を求める通知。	contract-lifecycle	Premium collection	n2-bridge	both	督促
+催告	さいこく	formal demand	法律上の効果を発生させるための通知。	contract-lifecycle	Premium collection	insurance-specialist	both	督促
+催告書	さいこくしょ	letter of demand	催告を記した書類。	contract-lifecycle	Premium collection	insurance-specialist	both	督促状
+最終催告	さいしゅう さいこく	final demand	最後の催告。	contract-lifecycle	Premium collection	insurance-specialist	both	催告
+払込停止	はらいこめ ていし	suspension of premium payment	保険料の払込を止めること。	contract-lifecycle	Premium collection	n2-bridge	both	払込
+払込変更	はらいこめ へんこう	change of premium payment	払込の方法や期日を変えること。	contract-lifecycle	Premium collection	n3-bridge	both	払込方法
+口座振替依頼書	こうこ ふりかえ いらいしょ	direct debit application	口座からの引落しを依頼する書類。	contract-lifecycle	Premium collection	n2-bridge	both	口座振替
+口座振替依頼	こうこ ふりかえ いらい	direct debit request	口座からの引落しを依頼すること。	contract-lifecycle	Premium collection	n2-bridge	both	口座振替
+引落し	ひおこし	direct debit	口座から自動的に引き落とすこと。	contract-lifecycle	Premium collection	n3-bridge	both	口座振替
+引落不能	ひおこし ふのう	direct debit failure	口座から引き落とせないこと。	contract-lifecycle	Premium collection	n2-bridge	both	引落し
+再引落し	さい ひおこし	retry of direct debit	引き落としを改めて試すこと。	contract-lifecycle	Premium collection	insurance-specialist	both	引落不能
+払込期日	はらいこめ きじつ	premium due date	保険料の払込期限日。	contract-lifecycle	Premium collection	n2-bridge	both	払込期限
+払込猶予	はらいこめ ゆうよ	premium grace period	払込を待ってもらえる期間。	contract-lifecycle	Premium collection	n2-bridge	both	払込猶予期間
+自動振替	じどう ふるてかえ	automatic premium loan	払込が滞った時に貸付で自動的に補うこと。	contract-lifecycle	Premium collection	insurance-specialist	life	自動振替貸付
+立替	たてかえ	advancing payment	一時的に代わりに払うこと。	contract-lifecycle	Premium collection	n2-bridge	it	自動振替
+
+未収金	みしゅうきん	unreceived money	まだ受け取っていない金銭。	contract-lifecycle	Premium collection	n2-bridge	it	未払金
+未払金	みはらいきん	unpaid money	まだ払っていない金銭。	contract-lifecycle	Premium collection	n2-bridge	it	未収金
+収納	しゅうのう	collection of money	金銭を受け取ること。	contract-lifecycle	Premium collection	n2-bridge	it	支払
+収納代行	しゅうのう だいこう	payment collection service	他の者に代收を頼むこと。	contract-lifecycle	Premium collection	insurance-specialist	it	収納
+代收	だいしゅう	collection on behalf	他の者に代わって金を受け取ること。	contract-lifecycle	Premium collection	insurance-specialist	it	収納
+立替金	たてかえきん	advance	一時的に立て替えた金銭。	contract-lifecycle	Premium collection	n2-bridge	it	代收
+払込	はらいこめ	premium payment	保険料を払うこと。	contract-lifecycle	Premium collection	n3-bridge	both	保険料
+払込期限	はらいこめ きげん	premium payment deadline	保険料を払わなければならない期限。	contract-lifecycle	Premium collection	n3-bridge	both	払込期日
+払込方法変更	はらいこめ ほうほう へんこう	change of premium payment method	保険料の払う方法を変えること。	contract-lifecycle	Premium collection	n3-bridge	it	払込方法
+クレジット払	くれじっと ばらい	payment by credit card	クレジットカードで払う方法。	contract-lifecycle	Premium collection	n3-bridge	both	口座振替
+コンビニ払	こんびに ばらい	convenience-store payment	コンビニで払う方法。	contract-lifecycle	Premium collection	n3-bridge	both	クレジット払
+払込免除	はらいこめ めんじょ	premium waiver	保険料の払込を不要にすること。	contract-lifecycle	Premium collection	n2-bridge	life	保険料払込免除
+返還	へんかん	return of money	受け取った金を返すこと。	contract-lifecycle	Refunds	n2-bridge	both	返金
+返金	へんきん	refund	支払われた金を返すこと。	contract-lifecycle	Refunds	n3-bridge	both	返還
+返戻	へんれい	return of money to the policyholder	契約に組み込まれた金を契約者に返すこと。	contract-lifecycle	Refunds	insurance-specialist	life	返還
+返戻金	へんれいきん	return of premiums	契約者に戻される金銭。	contract-lifecycle	Refunds	n2-bridge	life	返還
+返戻計算	へんれい けいさん	surrender value calculation	返戻金の額を計算すること。	contract-lifecycle	Refunds	insurance-specialist	life	返戻金
+不足額	ふそくがく	shortfall	足りない金額。	contract-lifecycle	Refunds	n2-bridge	it	過不足
+過不足	かふそく	surplus or shortage	多くても少なくてもある状態。	contract-lifecycle	Refunds	n2-bridge	it	不足額
+差額	さがく	difference	引き算で生じた金額。	contract-lifecycle	Refunds	n3-bridge	it	過不足
+按分	あんぶん	proration	期間や割合に応じて金額を配分すること。	contract-lifecycle	Refunds	insurance-specialist	both	日割
+日割	ひわり	daily proration	日数に応じて金額を計算すること。	contract-lifecycle	Refunds	n2-bridge	both	按分
+月割	つきわり	monthly proration	月数に応じて金額を計算すること。	contract-lifecycle	Refunds	n2-bridge	both	日割
+未経過期間	みけいか きかん	unexpired period	まだ経過していない保険期間。	contract-lifecycle	Refunds	insurance-specialist	both	経過期間
+経過期間	けいか きかん	elapsed period	すでに経過した期間。	contract-lifecycle	Refunds	insurance-specialist	both	未経過期間
+未経過保険料	みけいか ほけんりょう	unearned premium	経過していない期間に対応する保険料。	contract-lifecycle	Refunds	insurance-specialist	non-life	経過保険料
+経過保険料	けいか ほけんりょう	earned premium	経過した期間に対応する保険料。	contract-lifecycle	Refunds	insurance-specialist	non-life	未経過保険料
+
+取下げ	とりさげ	withdrawal	申し出た請求を取り下げること。	contract-lifecycle	Changes	n2-bridge	it	却下
+申請	しんせい	filing a request	手続きを求めること。	contract-lifecycle	Changes	n3-bridge	both	請求
+解約返戻金計算	かいやくへんれいきん けいさん	surrender value calculation	解約返戻金の額を計算すること。	contract-lifecycle	Refunds	insurance-specialist	life	解約返戻金
+失効返戻金	しっこう へんれいきん	lapse surrender value	失効時に返される金額。	contract-lifecycle	Refunds	insurance-specialist	life	解約返戻金
+解約手続	かいやく てつづき	surrender procedure	契約を解約するための手続き。	contract-lifecycle	Termination	n3-bridge	both	解約
+解約請求	かいやく せいきゅう	request to surrender	契約の解約を求めること。	contract-lifecycle	Termination	n2-bridge	both	解約
+解約日指定	かいやくび してい	choosing the surrender date	解約の適用日を指定すること。	contract-lifecycle	Termination	insurance-specialist	it	解約日
+解除通知	かいじょ つうち	notice of cancellation	契約を解除したことを知らせる通知。	contract-lifecycle	Termination	n2-bridge	both	解除
+解除権	かいじょけん	right to cancel	契約を解除できる権利。	contract-lifecycle	Termination	insurance-specialist	both	解除
+取消権	とりけしけん	right to rescind	契約を取り消せる権利。	contract-lifecycle	Termination	insurance-specialist	both	解除権
+無効確認	むこう かくにん	confirmation of invalidity	契約が無効であることを確認すること。	contract-lifecycle	Termination	n2-bridge	it	無効
+取消請求	とりけし せいきゅう	request to rescind	契約の取り消しを求めること。	contract-lifecycle	Termination	n2-bridge	both	取消
+解除請求	かいじょ せいきゅう	request to cancel	契約の解除を求めること。	contract-lifecycle	Termination	n2-bridge	both	解除
+抹消登録	まっしょう とうろく	deletion registration	登録を消すこと。	contract-lifecycle	Termination	n2-bridge	it	抹消
+原状回復	げんじょう かいふく	restitution to the original state	処理や契約を元の状態に戻すこと。	contract-lifecycle	Termination	insurance-specialist	it	復元
+巻戻し	まきもどし	rollback	処理を前の状態に戻すこと。	contract-lifecycle	Termination	n2-bridge	it	原状回復
+ロールバック	ろーるばっく	rollback	処理を直前の状態に戻すこと。	contract-lifecycle	Termination	n3-bridge	it	巻戻し
+再起票	さい きひょう	re-raising a ticket	取り消した起票をもう一度作ること。	contract-lifecycle	Termination	n2-bridge	it	起票
+再入力	さい にゅうりょく	re-entry	同じ内容をもう一度入力すること。	contract-lifecycle	Termination	n3-bridge	it	入力
+再処理	さい しょり	reprocessing	処理をもう一度行うこと。	contract-lifecycle	Termination	n3-bridge	it	再計算
+再計算	さい けいさん	recalculation	計算をもう一度行うこと。	contract-lifecycle	Termination	n3-bridge	it	再処理
+再発行	さい はっこう	reissue	書類をもう一度作ること。	contract-lifecycle	Termination	n3-bridge	both	再交付
+再交付	さい こうふ	re-delivery	書類をもう一度交付すること。	contract-lifecycle	Termination	n2-bridge	both	再発行
+紛失	ふんしつ	loss of a document	書類などを見失うこと。	contract-lifecycle	Termination	n3-bridge	general	再発行
+紛失届	ふんしつ とどけで	loss report	紛失したことを届出る書類。	contract-lifecycle	Termination	n2-bridge	general	紛失
+届出遅延	とどけで ちえん	late notification	届出が遅れること。	contract-lifecycle	Timeliness	n2-bridge	both	遅延
+遅延	ちえん	delay	手続きや支払が遅れること。	contract-lifecycle	Timeliness	n3-bridge	it	遅滞
+遅滞	ちたい	late performance	期限までに履行しないこと。	contract-lifecycle	Timeliness	insurance-specialist	it	遅延
+遅延損害金	ちえん そんがいきん	damages for delay	遅れたことによる損害の金銭。	contract-lifecycle	Timeliness	insurance-specialist	both	遅延利息
+時効	じこう	prescription	権利を行使しないまま期間が過ぎて効果が失われること。	contract-lifecycle	Timeliness	insurance-specialist	both	消滅時効
+消滅時効	しょうめつ じこう	extinctive prescription	権利を行使しないまま期間が過ぎ、権利が消えること。	contract-lifecycle	Timeliness	insurance-specialist	both	時効
+時効完成	じこう かんりょう	completion of prescription	時効の期間が満了すること。	contract-lifecycle	Timeliness	insurance-specialist	both	時効
+時効援用	じこう えんよう	invoking prescription	時効を主張して支払を拒むこと。	contract-lifecycle	Timeliness	insurance-specialist	both	時効
+保存行為	ほぞん こうい	act preserving a right	時効の完成を止めるための行為。	contract-lifecycle	Timeliness	insurance-specialist	both	時効中断
+時効中断	じこう ちゅうだん	interruption of prescription	時効の進行をリセットすること。	contract-lifecycle	Timeliness	insurance-specialist	both	時効
+催告権	さいこくけん	right to demand	催告を行う権限。	contract-lifecycle	Timeliness	insurance-specialist	both	催告
+
+被保険者変更	ひほけんしゃ へんこう	change of the insured	被保険者を変える手続き。	contract-lifecycle	Changes	n2-bridge	non-life	契約者変更
+名義変更手続き	めいぎ へんこう てつづき	change-of-name procedure	契約の名義を変える手続き。	contract-lifecycle	Changes	n2-bridge	both	名義変更
+承継	しょうけい	succession	権利や契約をそのまま受け継ぐこと。	contract-lifecycle	Changes	insurance-specialist	both	名義変更
+承継手続き	しょうけい てつづき	succession procedure	契約を受け継ぐための手続き。	contract-lifecycle	Changes	insurance-specialist	both	承継
+分割承継	ぶんかつ しょうけい	partial succession	契約を分けて受け継ぐこと。	contract-lifecycle	Changes	insurance-specialist	non-life	承継
+変更なし	へんこう なし	no change	変更がないこと。	contract-lifecycle	Changes	n3-bridge	it	変更
+異動	いどう	change of status	人員や所属などの変わり目。	contract-lifecycle	Changes	n2-bridge	it	変更
+事後届出	じご とどけで	retrospective notification	発生した後にする届出。	contract-lifecycle	Changes	insurance-specialist	non-life	届出
+変更届出	へんこう とどけで	notification of change	変更について届出ること。	contract-lifecycle	Changes	n2-bridge	both	変更届
+変更事項	へんこう じこう	items to be changed	変更される項目。	contract-lifecycle	Changes	n3-bridge	it	変更
+変更理由	へんこう りゆう	reason for change	変更を求める理由。	contract-lifecycle	Changes	n3-bridge	it	変更事項
+変更日	へんこうび	effective date of change	変更が適用される日。	contract-lifecycle	Changes	n3-bridge	it	変更適用
+変更履歴	へんこう りれき	change history	変更の記録。	contract-lifecycle	Changes	n3-bridge	it	履歴
+更新履歴	こうしん りれき	renewal history	更新の記録。	contract-lifecycle	Renewal	n3-bridge	it	履歴
+解約手続き	かいやく てつづき	surrender procedure	契約を解約するための手続き。	contract-lifecycle	Termination	n3-bridge	both	解約
+解約申出	かいやく もうしで	notice of surrender	解約する意思を伝えること。	contract-lifecycle	Termination	insurance-specialist	both	解約請求
+解約処理	かいやく しょり	surrender processing	解約をシステムで処理すること。	contract-lifecycle	Termination	n3-bridge	it	解約
+取消し通知	とりけし つうち	notice of rescission	取り消したことを知らせる通知。	contract-lifecycle	Termination	n2-bridge	both	取消し
+無効通知	むこう つうち	notice of voidance	契約が無効であることを知らせる通知。	contract-lifecycle	Termination	n2-bridge	both	無効
+解除日	かいじょび	date of cancellation	契約が解除された日。	contract-lifecycle	Termination	n2-bridge	both	解除
+取消日	とりけしび	date of rescission	契約が取り消された日。	contract-lifecycle	Termination	n2-bridge	both	取消し
+無効日	むこうび	date of voidance	契約が無効とされた日。	contract-lifecycle	Termination	n2-bridge	both	無効
+遡及	そきゅう	retroactive effect	後にした行為が前にさかのぼって効力を持つこと。	contract-lifecycle	Termination	insurance-specialist	both	効力発生日
+元戻	もともち	reversal	処理を取り消して元に戻すこと。	contract-lifecycle	Termination	insurance-specialist	it	取消処理
+振替	ふるてかえ	reassignment	処理や契約を他のものに置き換えること。	contract-lifecycle	Termination	n2-bridge	it	自動振替貸付
+払込取消	はらいこみ とりけし	cancelling a premium payment	保険料の払込を取り消すこと。	contract-lifecycle	Premium	n2-bridge	both	払込
+引落日	ひきおてつび	direct debit date	引き落とされる日。	contract-lifecycle	Premium	n3-bridge	both	引落し
+猶予期間	ゆうよ きかん	grace period	期限を過ぎても認める期間。	contract-lifecycle	Premium	n2-bridge	both	払込猶予期間

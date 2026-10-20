@@ -106,12 +106,14 @@ from its seed and the UI can show progress. The generator guarantees:
   in `session.skipped` instead of being padded with made-up options.
 
 Current coverage of the built-in dataset: the **179 hand-written core terms support all five
-modes**, and the generated screen-field pack brings the total built-in vocabulary to **1000
-terms**. The generated pack is intentionally marked `review-needed` and is allowed to be
-narrower for 類似語の区別, but it still materially increases coverage for the other modes.
-Those numbers are printed by `tests/questionGenerator.test.ts` on every run, and the test
-fails if the core dataset loses full coverage or if a mode drops below the minimum supported
-term count.
+modes**, and the curated corpus plus generated screen-field packs bring the current built-in
+vocabulary to **5175 terms**. There is no fixed 1000-entry cap: the generated packs are
+produced from `scripts/term_corpus/*.tsv` and pattern tables, and `--all` writes everything
+currently available. The generated screen-field pack is intentionally marked `review-needed`
+and is allowed to be narrower for 類似語の区別, but it still materially increases coverage
+for the other modes. Those numbers are printed by `tests/questionGenerator.test.ts` on every
+run, and the test fails if the core dataset loses full coverage or if a mode drops below the
+minimum supported term count.
 
 ## Spaced repetition
 
@@ -214,22 +216,28 @@ carries, among others:
 | `relatedTerms[]`, `tags` | cross-links and free labels |
 | `sourceUrl`, `verification`, `verificationNote` | how much trust to put in the wording — see the verification policy below |
 
-The built-in dataset is **1000 entries**: 179 hand-written core entries in the original JSON
-files under `src/data/vocabulary/`, plus a generated screen-field/operation pack in
-`src/data/vocabulary/extended-generated.json`. The generated pack is produced by
-`scripts/generate_extended_vocabulary.py` from the core entries and is marked
-`review-needed` because exact screen-field wording varies by company.
+The built-in dataset is **not capped at 1000 entries**. The current committed dataset has
+**5175 entries**: 179 hand-written core entries in the original JSON files under
+`src/data/vocabulary/`, a curated corpus pack in `src/data/vocabulary/corpus-generated.json`,
+and a generated screen-field/operation pack in `src/data/vocabulary/extended-generated.json`.
+The generated packs are produced by `scripts/generate_extended_vocabulary.py` from
+`scripts/term_corpus/*.tsv` and pattern tables. Screen-field wording is marked
+`review-needed` because exact naming varies by company.
 
-| Category | 日本語 | entries after expansion |
-| --- | --- | --- |
-| contract-fundamentals | 保険契約の基礎 | 125 |
-| life-benefits | 生命保険と給付 | 125 |
-| contract-lifecycle | 契約ライフサイクルと変更手続き | 125 |
-| underwriting | 引受査定とリスク審査 | 125 |
-| claims-payment | 請求と支払処理 | 125 |
-| products-coverage | 保険商品と保障 | 125 |
-| kyosai | 共済（JA共済）の用語 | 125 |
-| insurance-it | 保険ITと業務オペレーション | 125 |
+For context management and the expansion workflow, see `context.md`. Do not read the large
+generated JSON files into an agent context just to understand the project; use the counting
+commands in `context.md` instead.
+
+| Category | 日本語 | current entries |
+| --- | --- | ---: |
+| contract-fundamentals | 保険契約の基礎 | 509 |
+| life-benefits | 生命保険と給付 | 562 |
+| contract-lifecycle | 契約ライフサイクルと変更手続き | 562 |
+| underwriting | 引受査定とリスク審査 | 411 |
+| claims-payment | 請求と支払処理 | 504 |
+| products-coverage | 保険商品と保障 | 730 |
+| kyosai | 共済（JA共済）の用語 | 494 |
+| insurance-it | 保険ITと業務オペレーション | 1403 |
 
 The two original `insurance-it` files are kept separate because they come from different
 sources: `insurance-it.json` is written from insurance-IT project practice, while
@@ -241,16 +249,25 @@ malformed or duplicated.
 
 ## Adding vocabulary
 
-Two ways:
+Three ways:
 
 1. **In the app** — 用語一覧 → ＋ 自分の用語を追加. The form runs the same validator as the
    built-in data, so a saved entry is guaranteed to be usable by the question generator;
    validation problems are listed inline instead of being saved. Your terms are stored in
    IndexedDB, marked `origin: "user"`, included in every mode and session type, and
    included in backups.
-2. **In the repository** — add an object to one of the JSON files in
-   `src/data/vocabulary/`. `npm test` will tell you immediately if it breaks a required
-   field, duplicates an id, or drops a mode's coverage.
+2. **In the repository as a generated corpus row** — add a row to a file in
+   `scripts/term_corpus/`, then run:
+   ```bash
+   npm run generate:vocabulary
+   npm test
+   ```
+   This is the preferred way to grow the built-in dataset beyond the hand-written core.
+   The generator has no fixed total; `--all` writes every currently available corpus row
+   and every non-duplicate screen-field pattern.
+3. **In the repository as a hand-written JSON entry** — add an object to one of the JSON
+   files in `src/data/vocabulary/`. `npm test` will tell you immediately if it breaks a
+   required field, duplicates an id, or drops a mode's coverage.
 
 Keep the example sentence containing the term verbatim (or add a `blankVariant`), and add
 at least one `confusedTerms` entry with a `termId` if you want that term to appear in
@@ -351,7 +368,7 @@ src/
     time.ts                    local dates, streaks
   data/
     categories.ts              category/domain/difficulty/mode/grade labels
-    vocabulary/*.json          179 core entries + generated extended screen-field pack
+    vocabulary/*.json          179 core entries + generated corpus/screen-field packs
     kanji.json                 kanji pack used by the Kanji tab
     index.ts                   load + validate + export the typed vocabulary dataset
     kanji.ts                   load + validate + export the kanji dataset
@@ -359,22 +376,25 @@ src/
   pages/                       Dashboard, Study, Kanji, Browser, Statistics, Data
   styles/app.css               design tokens, light + dark themes, responsive rules
 scripts/
-  generate_extended_vocabulary.py  regenerates the 821-entry extended vocabulary pack
+  generate_extended_vocabulary.py  regenerates uncapped corpus + screen-field packs
+  term_corpus/*.tsv                curated and web-sourced term rows used by the generator
   generate_kanji_dataset.py        regenerates the kanji pack from core components + curated list
 tests/                         unit and app-shell tests
 docs/TERMINOLOGY_SOURCES.md
+context.md                     short agent context + dataset expansion workflow
 .github/workflows/deploy.yml   GitHub Pages deployment
 ```
 
 ## Development, tests and build
 
 ```bash
-npm run dev         # Vite dev server
-npm test            # vitest run
-npm run test:watch  # watch mode
-npm run typecheck   # tsc --noEmit (strict, noUnusedLocals)
-npm run build       # typecheck + vite build into dist/
-npm run preview     # serve dist/
+npm run dev                 # Vite dev server
+npm test                    # vitest run
+npm run test:watch          # watch mode
+npm run typecheck           # tsc --noEmit (strict, noUnusedLocals)
+npm run generate:vocabulary # regenerate uncapped generated vocabulary packs
+npm run build               # typecheck + vite build into dist/
+npm run preview             # serve dist/
 ```
 
 What the tests cover:
@@ -382,7 +402,8 @@ What the tests cover:
 - `schema.test.ts` — required fields, enums, id format, duplicate detection, sanitising;
 - `questionGenerator.test.ts` — four distinct choices, one correct answer, no ambiguous
   distractors, the blank appears exactly once, plus the per-mode coverage report and an
-  assertion that **every** built-in term is supported by all five modes;
+  assertion that the hand-written core remains fully supported and that each mode has a
+  large usable pool across the generated dataset;
 - `scheduler.test.ts` — intervals, ease clamping, relearn path, status transitions,
   weakness ranking, and the four self-assessment grades (hard keeps the streak but shortens
   the gap, easy extends it, もう一度 on a clicked-correct answer still counts as a miss,
